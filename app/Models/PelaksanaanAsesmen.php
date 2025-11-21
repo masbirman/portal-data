@@ -22,6 +22,7 @@ class PelaksanaanAsesmen extends Model
         'tempat_pelaksanaan',
         'nama_penanggung_jawab',
         'nama_proktor',
+        'keterangan',
     ];
 
     public function siklusAsesmen()

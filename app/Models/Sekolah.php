@@ -16,6 +16,7 @@ class Sekolah extends Model
         'tahun',
         'jenjang_pendidikan_id',
         'wilayah_id',
+        'status_sekolah',
     ];
 
     protected $casts = [
