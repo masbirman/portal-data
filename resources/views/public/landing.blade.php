@@ -4,12 +4,16 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-xl px-8 py-8 text-white mb-8">
+    <div class="bg-gradient-to-r from-blue-600 to-white-600 rounded-lg shadow-xl px-8 py-4 text-white mb-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <!-- Left Content -->
             <div>
                 <h1 class="text-4xl font-bold mb-3">Selamat Datang di <span class="inline">Portal Data</span></h1>
                 <h2 class="text-2xl font-semibold mb-4">AN-TKA Disdik Sulteng</h2>
+                <p class="text-black-600 mb-4">Menyajikan informasi data statistik tentang pelaksanaan<br>
+                    Asesmen Nasional Berbasis Komputer (ANBK) dan Tes Kemampuan Akademik (TKA) <br>
+                    
+                </p>
                 <a href="{{ route('public.dashboard') }}"
                     class="bg-white text-blue-600 px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-100 inline-block text-sm">
                     Lihat Dashboard →
@@ -18,13 +22,16 @@
 
             <!-- Right Content - Space for illustration -->
             <div class="hidden lg:flex justify-center items-center">
-                <img src="{{ asset('storage/illustration-hero.png') }}" alt="Ilustrasi Dashboard" class="w-full max-w-xs">
+                <img src="{{ asset('storage/illustration-hero.png') }}" alt="Ilustrasi Dashboard" class="w-full max-w-s">
             </div>
         </div>
     </div>
 
     <!-- Stats Overview -->
     @livewire('public.stats-overview')
+
+    <!-- Trend Chart -->
+    @livewire('public.trend-chart')
 
     <!-- Features -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -61,7 +68,7 @@
                 </svg>
             </div>
             <h3 class="text-xl font-bold text-gray-800 mb-2">Export Data</h3>
-            <p class="text-gray-600">Download data dalam format Excel atau PDF untuk analisis lebih lanjut.</p>
+            <p class="text-gray-600">Download data dalam format Excel untuk analisis lebih lanjut.</p>
         </div>
     </div>
 @endsection
