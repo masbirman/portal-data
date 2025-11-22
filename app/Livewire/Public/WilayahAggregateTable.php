@@ -5,56 +5,83 @@ namespace App\Livewire\Public;
 use App\Models\Wilayah;
 use App\Models\JenjangPendidikan;
 use App\Models\PelaksanaanAsesmen;
+use App\Models\Sekolah;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class WilayahAggregateTable extends Component
 {
     use WithPagination;
-    
+
     public $tahun;
     public $search = '';
-    
+
     public function mount($tahun)
     {
         $this->tahun = $tahun;
     }
-    
+
     public function updatingSearch()
     {
         $this->resetPage();
     }
-    
+
     public function render()
     {
-        $jenjangList = JenjangPendidikan::all();
+        // Define custom order for jenjang
+        $jenjangOrder = ['SMA', 'SMK', 'SMP', 'SD', 'SMALB', 'SMPLB', 'SDLB', 'PAKET C', 'PAKET B', 'PAKET A'];
         
-        // Get all wilayah dengan data agregat
-        $wilayahData = Wilayah::when($this->search, function($query) {
-                $query->where('nama', 'like', '%' . $this->search . '%');
-            })
-            ->orderBy('nama')
-            ->paginate(15);
+        // Get all unique jenjang
+        $allJenjang = JenjangPendidikan::all()->unique('nama');
         
-        // Untuk setiap wilayah, hitung jumlah sekolah per jenjang
-        foreach ($wilayahData as $wilayah) {
-            $wilayah->stats = [];
-            
-            foreach ($jenjangList as $jenjang) {
-                $count = PelaksanaanAsesmen::whereHas('siklusAsesmen', function($q) {
-                        $q->where('tahun', $this->tahun);
-                    })
-                    ->where('wilayah_id', $wilayah->id)
-                    ->whereHas('sekolah', function($q) use ($jenjang) {
-                        $q->where('jenjang_pendidikan_id', $jenjang->id);
-                    })
-                    ->distinct('sekolah_id')
-                    ->count('sekolah_id');
-                
-                $wilayah->stats[$jenjang->nama] = $count;
+        // Sort jenjang according to custom order
+        $jenjangList = collect();
+        foreach ($jenjangOrder as $nama) {
+            $jenjang = $allJenjang->firstWhere('nama', $nama);
+            if ($jenjang) {
+                $jenjangList->push($jenjang);
             }
         }
         
+        // Add any remaining jenjang not in the custom order
+        foreach ($allJenjang as $jenjang) {
+            if (!$jenjangList->contains('nama', $jenjang->nama)) {
+                $jenjangList->push($jenjang);
+            }
+        }
+        
+        // Get paginated wilayah
+        $wilayahData = Wilayah::orderBy('id', 'asc')
+            ->when($this->search, function ($query) {
+                $query->where('nama', 'like', '%' . $this->search . '%');
+            })
+            ->paginate(15);
+
+        // Transform the collection to add stats
+        $wilayahData->getCollection()->transform(function ($wilayah) use ($jenjangList) {
+            $stats = [];
+
+            // Get all schools for this wilayah and year
+            $schools = Sekolah::where('wilayah_id', $wilayah->id)
+                ->whereJsonContains('tahun', (string) $this->tahun)
+                ->with('jenjangPendidikan')
+                ->get();
+
+            // Group by jenjang name
+            $countsByJenjang = $schools->groupBy(function ($school) {
+                return $school->jenjangPendidikan->nama ?? 'Lainnya';
+            })->map->count();
+
+            foreach ($jenjangList as $jenjang) {
+                $stats[$jenjang->nama] = $countsByJenjang[$jenjang->nama] ?? 0;
+            }
+
+            // Attach stats to the wilayah object
+            $wilayah->stats = $stats;
+            
+            return $wilayah;
+        });
+
         return view('livewire.public.wilayah-aggregate-table', [
             'wilayahData' => $wilayahData,
             'jenjangList' => $jenjangList

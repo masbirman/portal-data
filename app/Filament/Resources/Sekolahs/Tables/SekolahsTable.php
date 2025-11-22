@@ -28,13 +28,22 @@ class SekolahsTable
                 TextColumn::make('nama')
                     ->label('Nama Sekolah')
                     ->searchable(),
+                TextColumn::make('status_sekolah')
+                    ->label('Status')
+                    ->sortable()
+                    ->badge()
+                    ->color(fn(string $state = null): string => match ($state) {
+                        'Negeri' => 'success',
+                        'Swasta' => 'warning',
+                        default => 'gray',
+                    }),
                 TextColumn::make('tahun')
                     ->label('Tahun')
                     ->sortable()
-                    
+
                     ->badge()
                     ->separator(',')
-                    ->color(fn (string $state): string => match ($state) {
+                    ->color(fn(string $state): string => match ($state) {
                         '2024' => 'success',
                         '2025' => 'info',
                         '2023' => 'warning',
@@ -46,18 +55,14 @@ class SekolahsTable
                 \Filament\Tables\Filters\SelectFilter::make('tahun_filter')
                     ->label('Tahun')
                     ->options(function (): array {
-                            $years = Sekolah::query()
-                                ->whereNotNull('tahun')
-                                ->pluck('tahun')
-                                ->flatten()
-                                ->unique()
-                                ->sortDesc()
-                                ->toArray();
-                            
-                            return array_combine($years, $years); 
-                        })
+                        // Use SiklusAsesmen as source of truth for years
+                        $years = \App\Models\SiklusAsesmen::query()
+                            ->pluck('tahun', 'tahun')
+                            ->sortDesc()
+                            ->toArray();
+                        return $years;
+                    })
                     ->query(function ($query, array $data) {
-                        // \Illuminate\Support\Facades\Log::info('Filter Data:', $data);
                         $values = $data['values'] ?? $data['value'] ?? null;
 
                         if (! empty($values)) {
@@ -72,7 +77,22 @@ class SekolahsTable
                     ->multiple(),
                 \Filament\Tables\Filters\SelectFilter::make('jenjang_pendidikan_id')
                     ->label('Jenjang Pendidikan')
-                    ->relationship('jenjangPendidikan', 'nama')
+                    ->options(function () {
+                        // Get unique jenjang names
+                        return \App\Models\JenjangPendidikan::query()
+                            ->distinct()
+                            ->pluck('nama', 'nama')
+                            ->toArray();
+                    })
+                    ->query(function ($query, array $data) {
+                        $values = $data['values'] ?? $data['value'] ?? null;
+
+                        if (! empty($values)) {
+                            $query->whereHas('jenjangPendidikan', function ($q) use ($values) {
+                                $q->whereIn('nama', (array) $values);
+                            });
+                        }
+                    })
                     ->preload()
                     ->multiple(),
                 \Filament\Tables\Filters\SelectFilter::make('wilayah_id')
@@ -81,6 +101,13 @@ class SekolahsTable
                     ->searchable()
                     ->preload()
                     ->multiple(),
+                \Filament\Tables\Filters\SelectFilter::make('status_sekolah')
+                    ->label('Status Sekolah')
+                    ->options([
+                        'Negeri' => 'Negeri',
+                        'Swasta' => 'Swasta',
+                    ])
+                    ->multiple(),
             ])
             ->actions([
                 \Filament\Actions\ActionGroup::make([
@@ -88,11 +115,20 @@ class SekolahsTable
                         ->modalWidth('md')
                         ->modalHeading('Detail Sekolah'),
                     EditAction::make(),
+                    \Filament\Actions\DeleteAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Sekolah?')
+                        ->modalDescription('PERHATIAN: Menghapus sekolah akan menghapus SEMUA data pelaksanaan asesmen yang terkait. Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Sekolah?')
+                        ->modalDescription('PERHATIAN: Menghapus sekolah akan menghapus SEMUA data pelaksanaan asesmen yang terkait dengan sekolah ini. Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ]);
     }

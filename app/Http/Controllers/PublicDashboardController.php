@@ -19,10 +19,7 @@ class PublicDashboardController extends Controller
 
     public function dashboard()
     {
-        $stats = $this->getOverviewStats();
-        $years = SiklusAsesmen::orderBy('tahun', 'desc')->pluck('tahun', 'id');
-        
-        return view('public.dashboard', compact('stats', 'years'));
+        return view('public.dashboard');
     }
 
     private function getOverviewStats()

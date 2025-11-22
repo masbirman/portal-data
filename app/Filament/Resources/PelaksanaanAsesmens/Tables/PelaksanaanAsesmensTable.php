@@ -30,6 +30,15 @@ class PelaksanaanAsesmensTable
                 TextColumn::make('sekolah.nama')
                     ->label('Nama Sekolah')
                     ->sortable(),
+                TextColumn::make('sekolah.status_sekolah')
+                    ->label('Status Sekolah')
+                    ->sortable()
+                    ->badge()
+                    ->color(fn(string $state = null): string => match ($state) {
+                        'Negeri' => 'success',
+                        'Swasta' => 'warning',
+                        default => 'gray',
+                    }),
                 TextColumn::make('jumlah_peserta')
                     ->label('Jumlah Peserta')
                     ->numeric()
@@ -67,14 +76,14 @@ class PelaksanaanAsesmensTable
                 \Filament\Tables\Filters\SelectFilter::make('jenjang_pendidikan')
                     ->label('Jenjang Pendidikan')
                     ->options(function () {
-                        return \App\Models\JenjangPendidikan::pluck('nama', 'id')->toArray();
+                        return \App\Models\JenjangPendidikan::distinct()->pluck('nama', 'nama')->toArray();
                     })
                     ->query(function ($query, array $data) {
                         $values = $data['values'] ?? $data['value'] ?? null;
 
                         if (! empty($values)) {
-                            $query->whereHas('sekolah', function ($q) use ($values) {
-                                $q->whereIn('jenjang_pendidikan_id', (array) $values);
+                            $query->whereHas('sekolah.jenjangPendidikan', function ($q) use ($values) {
+                                $q->whereIn('nama', (array) $values);
                             });
                         }
                     })
@@ -107,11 +116,20 @@ class PelaksanaanAsesmensTable
                         ->modalWidth('md')
                         ->modalHeading('Detail Pelaksanaan Asesmen'),
                     EditAction::make(),
+                    \Filament\Actions\DeleteAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Pelaksanaan Asesmen?')
+                        ->modalDescription('Apakah Anda yakin ingin menghapus data ini? Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Pelaksanaan Asesmen?')
+                        ->modalDescription('Apakah Anda yakin ingin menghapus data yang dipilih? Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ])
             ->searchDebounce('500ms')

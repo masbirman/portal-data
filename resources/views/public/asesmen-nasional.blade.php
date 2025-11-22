@@ -39,8 +39,6 @@
     </div>
 
     <!-- Footer Info -->
-    <div class="mt-8 text-center text-sm text-gray-500">
-        © {{ date('Y') }} | Sekretariat AN-TKA Disdik Sulteng
-    </div>
+    
 @endsection
 

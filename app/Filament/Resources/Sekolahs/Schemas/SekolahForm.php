@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Sekolahs\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TagsInput;
+use Filament\Forms\Components\Select;
 use Filament\Schemas\Schema;
 
 class SekolahForm
@@ -16,7 +17,15 @@ class SekolahForm
                     ->label('Kode Sekolah')
                     ->required(),
                 TextInput::make('nama')
+                    ->label('Nama Sekolah')
                     ->required(),
+                Select::make('status_sekolah')
+                    ->label('Status Sekolah')
+                    ->options([
+                        'Negeri' => 'Negeri',
+                        'Swasta' => 'Swasta',
+                    ])
+                    ->nullable(),
                 TagsInput::make('tahun')
                     ->label('Tahun')
                     ->placeholder('Tambah tahun')

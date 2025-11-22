@@ -23,22 +23,31 @@ class SekolahInfolist
                     ->label('Kode Sekolah')
                     ->alignCenter()
                     ->color('gray')
-                    ->badge(), 
+                    ->badge(),
                 \Filament\Infolists\Components\TextEntry::make('jenjangPendidikan.nama')
                     ->label('Jenjang Pendidikan')
                     ->alignCenter()
                     ->color('info')
-                    ->badge(), 
+                    ->badge(),
                 \Filament\Infolists\Components\TextEntry::make('wilayah.nama')
                     ->label('Kota/Kabupaten')
                     ->alignCenter()
                     ->color('warning')
                     ->badge(),
+                \Filament\Infolists\Components\TextEntry::make('status_sekolah')
+                    ->label('Status Sekolah')
+                    ->alignCenter()
+                    ->badge()
+                    ->color(fn(string $state = null): string => match ($state) {
+                        'Negeri' => 'success',
+                        'Swasta' => 'warning',
+                        default => 'gray',
+                    }),
                 \Filament\Infolists\Components\TextEntry::make('tahun')
                     ->label('Tahun Pelaksanaan')
                     ->alignCenter()
                     ->color('success')
-                    ->badge()        
+                    ->badge()
             ])
             ->columns(1);
     }

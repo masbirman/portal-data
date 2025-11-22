@@ -38,10 +38,19 @@ class WilayahsTable
                     ->modalWidth('sm')
                     ->modalHeading('Detail Kota/Kabupaten'),
                 EditAction::make(),
+                \Filament\Actions\DeleteAction::make()
+                    ->requiresConfirmation()
+                    ->modalHeading('Hapus Data Kota/Kabupaten?')
+                    ->modalDescription('PERHATIAN: Menghapus wilayah akan menghapus SEMUA data sekolah dan pelaksanaan asesmen yang terkait. Tindakan ini tidak dapat dibatalkan!')
+                    ->modalSubmitActionLabel('Ya, Hapus'),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Kota/Kabupaten?')
+                        ->modalDescription('PERHATIAN: Menghapus wilayah akan menghapus SEMUA data sekolah dan pelaksanaan asesmen yang terkait. Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ]);
     }

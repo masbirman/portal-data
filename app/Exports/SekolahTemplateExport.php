@@ -10,7 +10,7 @@ class SekolahTemplateExport implements FromArray, WithHeadings
     public function array(): array
     {
         return [
-            ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', '2024'],
+            ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', 'Negeri', '2024'],
         ];
     }
 
@@ -21,6 +21,7 @@ class SekolahTemplateExport implements FromArray, WithHeadings
             'kota_kabupaten',
             'kode_sekolah',
             'nama_sekolah',
+            'status_sekolah',
             'tahun',
         ];
     }

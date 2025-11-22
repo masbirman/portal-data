@@ -10,7 +10,7 @@ class PelaksanaanAsesmenTemplateExport implements FromArray, WithHeadings
     public function array(): array
     {
         return [
-            ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', 'Sudah Dilaksanakan', 'Online', 100, 100, 'Ruang Lab', 'Budi Santoso', 'Ahmad Yani'],
+            ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', 'Negeri', 50, 'Mandiri', 'Online', 100, 100, 'Ruang Lab', 'Budi Santoso', 'Ahmad Yani'],
         ];
     }
 
@@ -21,6 +21,8 @@ class PelaksanaanAsesmenTemplateExport implements FromArray, WithHeadings
             'kota_kabupaten',
             'kode_sekolah',
             'nama_sekolah',
+            'status_sekolah',
+            'jumlah_peserta',
             'status_pelaksanaan',
             'moda_pelaksanaan',
             'partisipasi_literasi',

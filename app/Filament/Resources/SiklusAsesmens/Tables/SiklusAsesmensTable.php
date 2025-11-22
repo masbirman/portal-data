@@ -30,10 +30,19 @@ class SiklusAsesmensTable
                     ->modalWidth('sm')
                     ->modalHeading('Detail Tahun Asesmen'),
                 EditAction::make(),
+                \Filament\Actions\DeleteAction::make()
+                    ->requiresConfirmation()
+                    ->modalHeading('Hapus Data Siklus Asesmen?')
+                    ->modalDescription('PERHATIAN: Menghapus siklus asesmen akan menghapus SEMUA data pelaksanaan asesmen untuk tahun ini. Tindakan ini tidak dapat dibatalkan!')
+                    ->modalSubmitActionLabel('Ya, Hapus'),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->requiresConfirmation()
+                        ->modalHeading('Hapus Data Siklus Asesmen?')
+                        ->modalDescription('PERHATIAN: Menghapus siklus asesmen akan menghapus SEMUA data pelaksanaan asesmen untuk tahun ini. Tindakan ini tidak dapat dibatalkan!')
+                        ->modalSubmitActionLabel('Ya, Hapus'),
                 ]),
             ]);
     }
