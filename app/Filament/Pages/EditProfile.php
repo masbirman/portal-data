@@ -21,9 +21,12 @@ class EditProfile extends Page
 
     protected static ?string $slug = 'edit-profile';
 
-    protected static string $view = 'filament.pages.edit-profile';
-
     public ?array $data = [];
+
+    public function getView(): string
+    {
+        return 'filament.pages.edit-profile';
+    }
 
     public function mount(): void
     {
