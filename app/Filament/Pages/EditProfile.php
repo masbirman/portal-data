@@ -2,16 +2,17 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Pages\Page;
 use Filament\Actions\Action;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Pages\Page;
+use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
 
 class EditProfile extends Page
 {
-    use Forms\Concerns\InteractsWithForms;
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-circle';
 
@@ -37,13 +38,13 @@ class EditProfile extends Page
         ]);
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\Section::make('Informasi Profile')
+        return $schema
+            ->components([
+                Section::make('Informasi Profile')
                     ->schema([
-                        Forms\Components\FileUpload::make('avatar')
+                        FileUpload::make('avatar')
                             ->label('Avatar')
                             ->image()
                             ->avatar()
@@ -53,36 +54,36 @@ class EditProfile extends Page
                             ->maxSize(2048)
                             ->columnSpanFull(),
 
-                        Forms\Components\TextInput::make('name')
+                        TextInput::make('name')
                             ->label('Nama')
                             ->required()
                             ->maxLength(255),
 
-                        Forms\Components\TextInput::make('email')
+                        TextInput::make('email')
                             ->label('Email')
                             ->email()
                             ->required()
                             ->maxLength(255),
                     ]),
 
-                Forms\Components\Section::make('Ubah Password')
+                Section::make('Ubah Password')
                     ->description('Kosongkan jika tidak ingin mengubah password')
                     ->schema([
-                        Forms\Components\TextInput::make('current_password')
+                        TextInput::make('current_password')
                             ->label('Password Saat Ini')
                             ->password()
                             ->revealable()
                             ->dehydrated(false)
                             ->rules(['required_with:new_password']),
 
-                        Forms\Components\TextInput::make('new_password')
+                        TextInput::make('new_password')
                             ->label('Password Baru')
                             ->password()
                             ->revealable()
                             ->dehydrated(false)
                             ->rules(['nullable', 'min:8', 'confirmed']),
 
-                        Forms\Components\TextInput::make('new_password_confirmation')
+                        TextInput::make('new_password_confirmation')
                             ->label('Konfirmasi Password Baru')
                             ->password()
                             ->revealable()
