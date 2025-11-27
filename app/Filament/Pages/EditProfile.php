@@ -13,9 +13,15 @@ class EditProfile extends Page
 {
     use Forms\Concerns\InteractsWithForms;
 
+    protected static ?string $navigationIcon = 'heroicon-o-user-circle';
+
     protected static ?string $navigationLabel = 'Profile';
 
     protected static ?string $title = 'Edit Profile';
+
+    protected static ?string $slug = 'edit-profile';
+
+    protected static string $view = 'filament.pages.edit-profile';
 
     public ?array $data = [];
 
@@ -130,10 +136,5 @@ class EditProfile extends Page
     public static function getNavigationGroup(): ?string
     {
         return 'Pengaturan';
-    }
-
-    public function getView(): string
-    {
-        return 'filament.pages.edit-profile';
     }
 }
