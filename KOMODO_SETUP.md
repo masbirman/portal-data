@@ -1,32 +1,158 @@
 # Setup Deployment dengan Komodo Panel
 
+## Informasi VPS & Repository
+
+**Komodo Panel URL:**
+
+```
+http://103.150.227.7:9120
+```
+
+**VPS IP:**
+
+```
+103.150.227.7
+```
+
+**Repository GitHub:**
+
+```
+https://github.com/masbirman/portal-data.git
+```
+
+**Branch:** `dev` (atau `main` untuk production)
+
+---
+
+## Ringkasan Proses (Overview)
+
+Berikut urutan yang akan kita lakukan:
+
+1. ✅ **Login ke Komodo** → Akses panel di browser
+2. ✅ **Tambah Server** → Koneksikan VPS ke Komodo
+3. ✅ **Buat Deployment** → Setup project dari GitHub
+4. ✅ **Setup Database** → Buat database MySQL
+5. ✅ **Konfigurasi Environment** → Set variable .env
+6. ✅ **Setup Domain & SSL** → (Optional) Jika punya domain
+7. ✅ **Setup Queue Worker** → Background jobs
+8. ✅ **Deploy & Test** → Deploy pertama kali
+
+**Estimasi waktu:** 30-60 menit untuk setup pertama kali
+
+---
+
 ## Langkah-langkah Setup di Komodo
 
 ### 1. Login ke Komodo Dashboard
 
-Akses Komodo panel Anda di browser
+Akses Komodo panel Anda di browser:
+
+```
+http://103.150.227.7:9120
+```
+
+Login dengan credentials Komodo Anda.
 
 ### 2. Buat Server Baru (jika belum ada)
 
--   Klik "Servers" → "Add Server"
--   Masukkan IP VPS dan SSH credentials
--   Komodo akan install dependencies otomatis
+#### A. Klik "Servers" di sidebar kiri
+
+#### B. Klik tombol "New Server"
+
+#### C. Isi form New Server:
+
+**Server Name:** (bebas, contoh)
+
+```
+vps-anbk-sulteng
+```
+
+**Server Address/IP:**
+
+```
+103.150.227.7
+```
+
+**SSH Port:** (default)
+
+```
+22
+```
+
+**SSH Username:** (biasanya)
+
+```
+root
+```
+
+**SSH Authentication Method:**
+
+-   Pilih "Password" atau "SSH Key" (tergantung setup VPS Anda)
+-   Jika Password: masukkan password SSH VPS
+-   Jika SSH Key: paste private key Anda
+
+#### D. Klik "Create"
+
+Komodo akan:
+
+-   Test koneksi SSH
+-   Install dependencies otomatis (Docker, Git, dll)
+-   Setup environment
+
+**Tunggu proses selesai** (bisa 5-10 menit untuk instalasi pertama)
 
 ### 3. Buat Deployment Baru
 
 #### A. Pilih Deployment Type
 
--   Klik "Deployments" → "Create"
--   Pilih "Git Repository"
+1. Klik "Deployments" di sidebar kiri
+2. Klik tombol "Create" atau "New Deployment"
+3. Isi **Deployment Name:** (contoh)
+    ```
+    portal-anbk-production
+    ```
+4. Pilih **Server:** `vps-anbk-sulteng` (server yang tadi dibuat)
+5. Pilih **Deployment Type:** "Stack" atau "Git Repository"
 
 #### B. Repository Configuration
 
+**Repository URL:**
+
 ```
-Repository URL: [URL git repository Anda]
-Branch: main
+https://github.com/masbirman/portal-data.git
 ```
 
+**Branch:**
+
+```
+dev
+```
+
+(atau `main` jika sudah merge ke production)
+
+**Git Provider:** GitHub
+
+**Authentication:**
+
+-   Jika repository public: tidak perlu credentials
+-   Jika private: masukkan GitHub Personal Access Token atau SSH key
+
 #### C. Build Configuration
+
+**PENTING:** Untuk Laravel dengan Komodo, ada 2 cara setup:
+
+**Cara 1: Menggunakan Stack (Recommended untuk Komodo)**
+
+-   Komodo akan setup PHP, MySQL, Nginx otomatis via Docker
+-   Lebih mudah untuk pemula
+-   Ikuti wizard Komodo
+
+**Cara 2: Manual Setup (Advanced)**
+
+-   Install PHP, MySQL, Nginx manual di VPS
+-   Lebih fleksibel tapi lebih kompleks
+
+**Untuk Cara 1 (Stack), isi:**
 
 **Build Command:**
 
@@ -35,6 +161,11 @@ composer install --no-dev --optimize-autoloader && npm install && npm run build 
 ```
 
 **Start Command:** (kosongkan, karena PHP-FPM yang handle)
+
+**Port:**
+
+-   Web: `80` (HTTP) dan `443` (HTTPS)
+-   Jika ada konflik, bisa gunakan port lain seperti `8080`
 
 #### D. Environment Variables
 
@@ -156,17 +287,58 @@ crontab -e
 
 ### 8. Deploy Pertama Kali
 
-1. Klik "Deploy" di Komodo dashboard
-2. Tunggu build selesai
-3. SSH ke server dan jalankan:
+#### A. Klik "Deploy" di Komodo Dashboard
+
+1. Buka deployment Anda: `portal-anbk-production`
+2. Klik tombol "Deploy" atau "Build & Deploy"
+3. Monitor logs di tab "Logs" atau "Build Logs"
+4. Tunggu sampai status "Running" atau "Success"
+
+#### B. Jalankan Migration & Setup (Via SSH atau Komodo Terminal)
+
+**Via Komodo Terminal:**
+
+1. Di deployment page, klik "Terminal" atau "Console"
+2. Jalankan commands berikut:
+
+**Via SSH Manual:**
 
 ```bash
-cd /var/www/html  # atau path project Anda
+# Login SSH
+ssh root@103.150.227.7
+
+# Masuk ke directory project (sesuaikan path)
+cd /home/komodo/portal-anbk-production
+# atau
+cd /var/www/html
+
+# Generate APP_KEY jika belum
+php artisan key:generate --force
+
+# Run migrations
 php artisan migrate --force
-php artisan db:seed --force  # jika ada seeder
+
+# Run seeders (jika ada)
+php artisan db:seed --force
+
+# Set permissions
 chmod -R 775 storage bootstrap/cache
 chown -R www-data:www-data storage bootstrap/cache
+
+# Clear & optimize
+php artisan optimize:clear
+php artisan optimize
 ```
+
+#### C. Test Aplikasi
+
+Buka browser dan akses:
+
+```
+http://103.150.227.7
+```
+
+atau domain Anda jika sudah setup
 
 ### 9. Verifikasi Deployment
 
