@@ -50,7 +50,9 @@ class EditProfile extends Page
                             ->avatar()
                             ->imageEditor()
                             ->circleCropper()
+                            ->disk('public')
                             ->directory('avatars')
+                            ->visibility('public')
                             ->maxSize(2048)
                             ->columnSpanFull(),
 
