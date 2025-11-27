@@ -2,30 +2,20 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
+use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Hash;
 
-class EditProfile extends Page implements HasForms
+class EditProfile extends Page
 {
-    use InteractsWithForms;
+    use Forms\Concerns\InteractsWithForms;
 
     protected static ?string $navigationLabel = 'Profile';
 
     protected static ?string $title = 'Edit Profile';
-
-    protected string $view = 'filament.pages.edit-profile';
-
-    public static function getNavigationGroup(): ?string
-    {
-        return 'Pengaturan';
-    }
 
     public ?array $data = [];
 
@@ -42,9 +32,9 @@ class EditProfile extends Page implements HasForms
     {
         return $form
             ->schema([
-                Section::make('Informasi Profile')
+                Forms\Components\Section::make('Informasi Profile')
                     ->schema([
-                        FileUpload::make('avatar')
+                        Forms\Components\FileUpload::make('avatar')
                             ->label('Avatar')
                             ->image()
                             ->avatar()
@@ -54,36 +44,36 @@ class EditProfile extends Page implements HasForms
                             ->maxSize(2048)
                             ->columnSpanFull(),
 
-                        TextInput::make('name')
+                        Forms\Components\TextInput::make('name')
                             ->label('Nama')
                             ->required()
                             ->maxLength(255),
 
-                        TextInput::make('email')
+                        Forms\Components\TextInput::make('email')
                             ->label('Email')
                             ->email()
                             ->required()
                             ->maxLength(255),
                     ]),
 
-                Section::make('Ubah Password')
+                Forms\Components\Section::make('Ubah Password')
                     ->description('Kosongkan jika tidak ingin mengubah password')
                     ->schema([
-                        TextInput::make('current_password')
+                        Forms\Components\TextInput::make('current_password')
                             ->label('Password Saat Ini')
                             ->password()
                             ->revealable()
                             ->dehydrated(false)
                             ->rules(['required_with:new_password']),
 
-                        TextInput::make('new_password')
+                        Forms\Components\TextInput::make('new_password')
                             ->label('Password Baru')
                             ->password()
                             ->revealable()
                             ->dehydrated(false)
                             ->rules(['nullable', 'min:8', 'confirmed']),
 
-                        TextInput::make('new_password_confirmation')
+                        Forms\Components\TextInput::make('new_password_confirmation')
                             ->label('Konfirmasi Password Baru')
                             ->password()
                             ->revealable()
@@ -93,13 +83,21 @@ class EditProfile extends Page implements HasForms
             ->statePath('data');
     }
 
+    protected function getFormActions(): array
+    {
+        return [
+            Action::make('save')
+                ->label('Simpan Perubahan')
+                ->submit('save'),
+        ];
+    }
+
     public function save(): void
     {
         $data = $this->form->getState();
 
         $user = auth()->user();
 
-        // Validate current password if trying to change password
         if (!empty($data['current_password'])) {
             if (!Hash::check($data['current_password'], $user->password)) {
                 Notification::make()
@@ -114,7 +112,6 @@ class EditProfile extends Page implements HasForms
             }
         }
 
-        // Update profile data
         $user->name = $data['name'];
         $user->email = $data['email'];
 
@@ -128,5 +125,15 @@ class EditProfile extends Page implements HasForms
             ->title('Profile berhasil diperbarui')
             ->success()
             ->send();
+    }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return 'Pengaturan';
+    }
+
+    public function getView(): string
+    {
+        return 'filament.pages.edit-profile';
     }
 }
