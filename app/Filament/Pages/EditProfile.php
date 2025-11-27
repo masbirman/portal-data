@@ -7,16 +7,22 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Hash;
 
-class EditProfile extends Page
+class EditProfile extends Page implements HasForms
 {
-    protected static string $view = 'filament.pages.edit-profile';
+    use InteractsWithForms;
 
     protected static ?string $navigationLabel = 'Profile';
 
     protected static ?string $title = 'Edit Profile';
+
+    protected static ?string $navigationGroup = 'Pengaturan';
+
+    protected static string $view = 'filament.pages.edit-profile';
 
     public ?array $data = [];
 
