@@ -12,15 +12,11 @@ use Illuminate\Support\Facades\Hash;
 
 class EditProfile extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-o-user-circle';
-
     protected static string $view = 'filament.pages.edit-profile';
 
     protected static ?string $navigationLabel = 'Profile';
 
     protected static ?string $title = 'Edit Profile';
-
-    protected static ?int $navigationSort = 100;
 
     public ?array $data = [];
 
