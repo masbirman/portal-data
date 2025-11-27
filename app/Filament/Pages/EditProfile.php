@@ -20,9 +20,12 @@ class EditProfile extends Page implements HasForms
 
     protected static ?string $title = 'Edit Profile';
 
-    protected static ?string $navigationGroup = 'Pengaturan';
-
     protected static string $view = 'filament.pages.edit-profile';
+
+    public static function getNavigationGroup(): ?string
+    {
+        return 'Pengaturan';
+    }
 
     public ?array $data = [];
 
