@@ -99,7 +99,7 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-95"
-                             class="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                             class="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
                              style="display: none;">
                             <div class="py-1">
                                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}"
@@ -111,8 +111,16 @@
                                     📊 Asesmen Nasional 2024
                                 </a>
                                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}"
-                                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
                                     📊 Asesmen Nasional 2025
+                                </a>
+                                <a href="#"
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
+                                    📊 Survei Lingkungan Belajar 2024
+                                </a>
+                                <a href="#"
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
+                                    📊 Tes Kemampuan Akademik 2025
                                 </a>
                             </div>
                         </div>
@@ -135,7 +143,7 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-95"
-                             class="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                             class="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
                              style="display: none;">
                             <div class="py-1">
                                 <a href="#"
@@ -149,6 +157,10 @@
                                 <a href="#"
                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
                                     🗺️ Asesmen Nasional 2025
+                                </a>
+                                <a href="#"
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
+                                    🗺️ Tes Kemampuan Akademik 2025
                                 </a>
                             </div>
                         </div>

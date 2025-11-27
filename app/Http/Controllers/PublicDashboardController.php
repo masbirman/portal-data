@@ -13,7 +13,7 @@ class PublicDashboardController extends Controller
     public function landing()
     {
         $stats = $this->getOverviewStats();
-        
+
         return view('public.landing', compact('stats'));
     }
 
@@ -28,8 +28,8 @@ class PublicDashboardController extends Controller
             'total_sekolah' => PelaksanaanAsesmen::distinct('sekolah_id')->count(),
             'total_peserta' => PelaksanaanAsesmen::sum('jumlah_peserta'),
             'total_wilayah' => Wilayah::whereHas('pelaksanaanAsesmen')->count(),
-            'avg_partisipasi_literasi' => round(PelaksanaanAsesmen::avg('partisipasi_literasi'), 1),
-            'avg_partisipasi_numerasi' => round(PelaksanaanAsesmen::avg('partisipasi_numerasi'), 1),
+            'avg_partisipasi_literasi' => round(PelaksanaanAsesmen::avg('partisipasi_literasi') ?? 0, 1),
+            'avg_partisipasi_numerasi' => round(PelaksanaanAsesmen::avg('partisipasi_numerasi') ?? 0, 1),
         ];
     }
 }
