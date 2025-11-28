@@ -2,22 +2,26 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
+use Filament\Schemas\Components\Actions;
+use Filament\Schemas\Components\EmbeddedSchema;
+use Filament\Schemas\Components\Form;
 use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class EditProfile extends Page
 {
-
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-circle';
     protected static ?string $navigationLabel = 'Profile';
     protected static ?string $title = 'Edit Profile';
     protected static ?string $slug = 'edit-profile';
-    protected string $view = 'filament.pages.edit-profile';
+    protected string $view = 'filament-panels::pages.page';
 
     public ?array $data = [];
 
@@ -30,7 +34,7 @@ class EditProfile extends Page
         ]);
     }
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Schema $schema): Schema
     {
         return $schema
             ->components([
@@ -42,11 +46,6 @@ class EditProfile extends Page
                             ->directory('avatars')
                             ->disk('public')
                             ->visibility('public')
-                            ->live()
-                            ->downloadable()
-                            ->previewable()
-                            ->openable()
-                            ->deletable(false)
                             ->maxSize(2048),
 
                         TextInput::make('name')
@@ -80,6 +79,23 @@ class EditProfile extends Page
                     ]),
             ])
             ->statePath('data');
+    }
+
+    public function content(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                Form::make([EmbeddedSchema::make('form')])
+                    ->id('form')
+                    ->livewireSubmitHandler('save')
+                    ->footer([
+                        Actions::make([
+                            Action::make('save')
+                                ->label('Simpan Perubahan')
+                                ->submit('save'),
+                        ]),
+                    ]),
+            ]);
     }
 
     public function save(): void
@@ -119,8 +135,6 @@ class EditProfile extends Page
             ->title('Profile berhasil diperbarui')
             ->success()
             ->send();
-
-        redirect(static::getUrl());
     }
 
     public static function getNavigationGroup(): ?string
