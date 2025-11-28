@@ -20,6 +20,8 @@ class EditProfile extends Page
 
     public ?array $data = [];
 
+    protected static string $view = 'filament.pages.edit-profile';
+
     public function mount(): void
     {
         $this->form->fill([
