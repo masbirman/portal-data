@@ -2,15 +2,14 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
-use Filament\Schemas\Components\Section;
-use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
 
 class EditProfile extends Page implements HasForms
@@ -25,12 +24,9 @@ class EditProfile extends Page implements HasForms
 
     protected static ?string $slug = 'edit-profile';
 
-    public ?array $data = [];
+    protected static string $view = 'filament.pages.edit-profile';
 
-    public function getView(): string
-    {
-        return 'filament.pages.edit-profile';
-    }
+    public ?array $data = [];
 
     public function mount(): void
     {
@@ -41,10 +37,10 @@ class EditProfile extends Page implements HasForms
         ]);
     }
 
-    public function form(Schema $schema): Schema
+    public function form(Form $form): Form
     {
-        return $schema
-            ->components([
+        return $form
+            ->schema([
                 Section::make('Informasi Profile')
                     ->schema([
                         FileUpload::make('avatar')
@@ -98,15 +94,6 @@ class EditProfile extends Page implements HasForms
                     ]),
             ])
             ->statePath('data');
-    }
-
-    protected function getFormActions(): array
-    {
-        return [
-            Action::make('save')
-                ->label('Simpan Perubahan')
-                ->submit('save'),
-        ];
     }
 
     public function save(): void
