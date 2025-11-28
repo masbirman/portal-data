@@ -3,15 +3,10 @@
 namespace App\Filament\Pages;
 
 use App\Settings\GeneralSettings;
-use Filament\Forms;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
 
-class ManageGeneralSettings extends SettingsPage implements HasForms
+class ManageGeneralSettings extends SettingsPage
 {
-    use InteractsWithForms;
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
     protected static ?string $navigationLabel = 'Pengaturan Sistem';
@@ -49,8 +44,11 @@ class ManageGeneralSettings extends SettingsPage implements HasForms
                             ->visibility('public')
                             ->imagePreviewHeight('200')
                             ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/svg+xml', 'image/webp'])
-                            ->nullable()
-                            ->deletable(),
+                            ->panelLayout('integrated')
+                            ->removeUploadedFileButtonPosition('right')
+                            ->uploadButtonPosition('left')
+                            ->uploadProgressIndicatorPosition('left')
+                            ->nullable(),
                     ]),
             ]);
     }
