@@ -103,6 +103,7 @@ class EditProfile extends Page
 
         $user = auth()->user();
 
+        // Validasi password jika diisi
         if (!empty($data['current_password'])) {
             if (!Hash::check($data['current_password'], $user->password)) {
                 Notification::make()
@@ -117,14 +118,27 @@ class EditProfile extends Page
             }
         }
 
+        // Update nama dan email
         $user->name = $data['name'];
         $user->email = $data['email'];
 
-        if (!empty($data['avatar'])) {
+        // Update avatar jika ada perubahan
+        if (isset($data['avatar'])) {
+            // Hapus avatar lama jika ada dan berbeda
+            if ($user->avatar && $user->avatar !== $data['avatar']) {
+                \Storage::disk('public')->delete($user->avatar);
+            }
             $user->avatar = $data['avatar'];
         }
 
         $user->save();
+
+        // Refresh form dengan data terbaru
+        $this->form->fill([
+            'name' => $user->name,
+            'email' => $user->email,
+            'avatar' => $user->avatar,
+        ]);
 
         Notification::make()
             ->title('Profile berhasil diperbarui')
