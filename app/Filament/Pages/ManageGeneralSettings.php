@@ -3,51 +3,48 @@
 namespace App\Filament\Pages;
 
 use App\Settings\GeneralSettings;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
 
 class ManageGeneralSettings extends SettingsPage
 {
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-cog-6-tooth';
-
     protected static ?string $navigationLabel = 'Pengaturan Sistem';
-
     protected static string|\UnitEnum|null $navigationGroup = 'Pengaturan';
-
     protected static string $settings = GeneralSettings::class;
 
-    public function form(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function form(Form $form): Form
     {
-        return $schema
-            ->components([
-                \Filament\Schemas\Components\Section::make('Mode Maintenance')
+        return $form
+            ->schema([
+                Section::make('Mode Maintenance')
                     ->description('Atur status ketersediaan website untuk publik.')
                     ->schema([
-                        \Filament\Forms\Components\Toggle::make('site_active')
+                        Toggle::make('site_active')
                             ->label('Status Website Aktif')
-                            ->helperText('Jika dimatikan, website akan menampilkan halaman maintenance untuk pengunjung umum.')
+                            ->helperText('Jika dimatikan, website akan menampilkan halaman maintenance.')
                             ->onColor('success')
                             ->offColor('danger')
                             ->default(true),
 
-                        \Filament\Forms\Components\Textarea::make('maintenance_message')
+                        Textarea::make('maintenance_message')
                             ->label('Pesan Maintenance')
-                            ->helperText('Pesan yang akan ditampilkan kepada pengunjung saat mode maintenance aktif.')
+                            ->helperText('Pesan yang akan ditampilkan saat mode maintenance aktif.')
                             ->rows(3)
                             ->default('Kami sedang melakukan pemeliharaan sistem.')
                             ->required(),
 
-                        \Filament\Forms\Components\FileUpload::make('maintenance_image')
+                        FileUpload::make('maintenance_image')
                             ->label('Gambar Ilustrasi')
-                            ->helperText('Upload gambar ilustrasi untuk halaman maintenance (max 2MB).')
+                            ->helperText('Upload gambar ilustrasi untuk halaman maintenance.')
                             ->image()
-                            ->disk('public')
                             ->directory('maintenance')
-                            ->visibility('public')
-                            ->imageResizeMode('cover')
-                            ->imageResizeTargetWidth('800')
-                            ->imageResizeTargetHeight('600')
-                            ->maxSize(2048)
-                            ->nullable(),
+                            ->disk('public')
+                            ->visibility('public'),
                     ]),
             ]);
     }

@@ -3,30 +3,26 @@
 namespace App\Filament\Pages;
 
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
-use Filament\Schemas\Components\Section;
-use Filament\Schemas\Schema;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
-class EditProfile extends Page
+class EditProfile extends Page implements HasForms
 {
+    use InteractsWithForms;
+
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-circle';
-
     protected static ?string $navigationLabel = 'Profile';
-
     protected static ?string $title = 'Edit Profile';
-
     protected static ?string $slug = 'edit-profile';
 
     public ?array $data = [];
-
-    public function getView(): string
-    {
-        return 'filament.pages.edit-profile';
-    }
 
     public function mount(): void
     {
@@ -37,36 +33,27 @@ class EditProfile extends Page
         ]);
     }
 
-    public function form(Schema $schema): Schema
+    public function form(Form $form): Form
     {
-        return $schema
-            ->components([
+        return $form
+            ->schema([
                 Section::make('Informasi Profile')
                     ->schema([
                         FileUpload::make('avatar')
                             ->label('Avatar')
                             ->image()
-                            ->disk('public')
                             ->directory('avatars')
-                            ->visibility('public')
-                            ->imageResizeMode('cover')
-                            ->imageCropAspectRatio('1:1')
-                            ->imageResizeTargetWidth('200')
-                            ->imageResizeTargetHeight('200')
-                            ->maxSize(2048)
-                            ->nullable()
-                            ->columnSpanFull(),
+                            ->disk('public')
+                            ->visibility('public'),
 
                         TextInput::make('name')
                             ->label('Nama')
-                            ->required()
-                            ->maxLength(255),
+                            ->required(),
 
                         TextInput::make('email')
                             ->label('Email')
                             ->email()
-                            ->required()
-                            ->maxLength(255),
+                            ->required(),
                     ]),
 
                 Section::make('Ubah Password')
@@ -75,20 +62,17 @@ class EditProfile extends Page
                         TextInput::make('current_password')
                             ->label('Password Saat Ini')
                             ->password()
-                            ->revealable()
                             ->dehydrated(false),
 
                         TextInput::make('new_password')
                             ->label('Password Baru')
                             ->password()
-                            ->revealable()
                             ->dehydrated(false)
                             ->confirmed(),
 
                         TextInput::make('new_password_confirmation')
                             ->label('Konfirmasi Password Baru')
                             ->password()
-                            ->revealable()
                             ->dehydrated(false),
                     ]),
             ])
@@ -100,7 +84,6 @@ class EditProfile extends Page
         $data = $this->form->getState();
         $user = auth()->user();
 
-        // Validasi password jika diisi
         if (!empty($data['current_password'])) {
             if (!Hash::check($data['current_password'], $user->password)) {
                 Notification::make()
@@ -115,21 +98,16 @@ class EditProfile extends Page
             }
         }
 
-        // Update data user
         $user->fill([
             'name' => $data['name'],
             'email' => $data['email'],
         ]);
 
-        // Handle avatar upload
-        if (array_key_exists('avatar', $data)) {
-            if ($data['avatar'] !== $user->avatar) {
-                // Hapus avatar lama jika ada
-                if ($user->avatar) {
-                    Storage::disk('public')->delete($user->avatar);
-                }
-                $user->avatar = $data['avatar'];
+        if (array_key_exists('avatar', $data) && $data['avatar'] !== $user->avatar) {
+            if ($user->avatar) {
+                Storage::disk('public')->delete($user->avatar);
             }
+            $user->avatar = $data['avatar'];
         }
 
         $user->save();
@@ -139,8 +117,7 @@ class EditProfile extends Page
             ->success()
             ->send();
 
-        // Redirect untuk refresh data
-        redirect()->to(static::getUrl());
+        redirect(static::getUrl());
     }
 
     public static function getNavigationGroup(): ?string
