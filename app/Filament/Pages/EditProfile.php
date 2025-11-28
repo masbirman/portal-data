@@ -9,6 +9,7 @@ use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class EditProfile extends Page
 {
@@ -20,12 +21,12 @@ class EditProfile extends Page
 
     protected static ?string $slug = 'edit-profile';
 
+    public ?array $data = [];
+
     public function getView(): string
     {
         return 'filament.pages.edit-profile';
     }
-
-    public ?array $data = [];
 
     public function mount(): void
     {
@@ -45,17 +46,15 @@ class EditProfile extends Page
                         FileUpload::make('avatar')
                             ->label('Avatar')
                             ->image()
-                            ->avatar()
                             ->disk('public')
                             ->directory('avatars')
                             ->visibility('public')
+                            ->imageResizeMode('cover')
+                            ->imageCropAspectRatio('1:1')
+                            ->imageResizeTargetWidth('200')
+                            ->imageResizeTargetHeight('200')
                             ->maxSize(2048)
-                            ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/gif', 'image/webp'])
-                            ->imagePreviewHeight('150')
-                            ->panelLayout('integrated')
-                            ->removeUploadedFileButtonPosition('right')
-                            ->uploadButtonPosition('left')
-                            ->uploadProgressIndicatorPosition('left')
+                            ->nullable()
                             ->columnSpanFull(),
 
                         TextInput::make('name')
@@ -77,15 +76,14 @@ class EditProfile extends Page
                             ->label('Password Saat Ini')
                             ->password()
                             ->revealable()
-                            ->dehydrated(false)
-                            ->rules(['required_with:new_password']),
+                            ->dehydrated(false),
 
                         TextInput::make('new_password')
                             ->label('Password Baru')
                             ->password()
                             ->revealable()
                             ->dehydrated(false)
-                            ->rules(['nullable', 'min:8', 'confirmed']),
+                            ->confirmed(),
 
                         TextInput::make('new_password_confirmation')
                             ->label('Konfirmasi Password Baru')
@@ -100,7 +98,6 @@ class EditProfile extends Page
     public function save(): void
     {
         $data = $this->form->getState();
-
         $user = auth()->user();
 
         // Validasi password jika diisi
@@ -118,32 +115,32 @@ class EditProfile extends Page
             }
         }
 
-        // Update nama dan email
-        $user->name = $data['name'];
-        $user->email = $data['email'];
+        // Update data user
+        $user->fill([
+            'name' => $data['name'],
+            'email' => $data['email'],
+        ]);
 
-        // Update avatar jika ada perubahan
-        if (isset($data['avatar'])) {
-            // Hapus avatar lama jika ada dan berbeda
-            if ($user->avatar && $user->avatar !== $data['avatar']) {
-                \Storage::disk('public')->delete($user->avatar);
+        // Handle avatar upload
+        if (array_key_exists('avatar', $data)) {
+            if ($data['avatar'] !== $user->avatar) {
+                // Hapus avatar lama jika ada
+                if ($user->avatar) {
+                    Storage::disk('public')->delete($user->avatar);
+                }
+                $user->avatar = $data['avatar'];
             }
-            $user->avatar = $data['avatar'];
         }
 
         $user->save();
-
-        // Refresh form dengan data terbaru
-        $this->form->fill([
-            'name' => $user->name,
-            'email' => $user->email,
-            'avatar' => $user->avatar,
-        ]);
 
         Notification::make()
             ->title('Profile berhasil diperbarui')
             ->success()
             ->send();
+
+        // Redirect untuk refresh data
+        redirect()->to(static::getUrl());
     }
 
     public static function getNavigationGroup(): ?string

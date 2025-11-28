@@ -28,26 +28,25 @@ class ManageGeneralSettings extends SettingsPage
                             ->onColor('success')
                             ->offColor('danger')
                             ->default(true),
+
                         \Filament\Forms\Components\Textarea::make('maintenance_message')
                             ->label('Pesan Maintenance')
                             ->helperText('Pesan yang akan ditampilkan kepada pengunjung saat mode maintenance aktif.')
                             ->rows(3)
                             ->default('Kami sedang melakukan pemeliharaan sistem.')
                             ->required(),
+
                         \Filament\Forms\Components\FileUpload::make('maintenance_image')
                             ->label('Gambar Ilustrasi')
-                            ->helperText('Upload gambar ilustrasi untuk halaman maintenance (max 2MB, format: JPG, PNG, SVG).')
+                            ->helperText('Upload gambar ilustrasi untuk halaman maintenance (max 2MB).')
                             ->image()
-                            ->maxSize(2048)
                             ->disk('public')
                             ->directory('maintenance')
                             ->visibility('public')
-                            ->imagePreviewHeight('200')
-                            ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/svg+xml', 'image/webp'])
-                            ->panelLayout('integrated')
-                            ->removeUploadedFileButtonPosition('right')
-                            ->uploadButtonPosition('left')
-                            ->uploadProgressIndicatorPosition('left')
+                            ->imageResizeMode('cover')
+                            ->imageResizeTargetWidth('800')
+                            ->imageResizeTargetHeight('600')
+                            ->maxSize(2048)
                             ->nullable(),
                     ]),
             ]);
