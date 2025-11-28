@@ -24,7 +24,10 @@ class EditProfile extends Page implements HasForms
 
     protected static ?string $slug = 'edit-profile';
 
-    protected static string $view = 'filament.pages.edit-profile';
+    public function getView(): string
+    {
+        return 'filament.pages.edit-profile';
+    }
 
     public ?array $data = [];
 
