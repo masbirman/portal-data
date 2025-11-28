@@ -41,7 +41,13 @@ class EditProfile extends Page
                             ->image()
                             ->directory('avatars')
                             ->disk('public')
-                            ->visibility('public'),
+                            ->visibility('public')
+                            ->live()
+                            ->downloadable()
+                            ->previewable()
+                            ->openable()
+                            ->deletable(false)
+                            ->maxSize(2048),
 
                         TextInput::make('name')
                             ->label('Nama')
