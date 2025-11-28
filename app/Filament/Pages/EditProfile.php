@@ -5,14 +5,17 @@ namespace App\Filament\Pages;
 use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Hash;
 
-class EditProfile extends Page
+class EditProfile extends Page implements HasForms
 {
+    use InteractsWithForms;
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-circle';
 
@@ -54,6 +57,8 @@ class EditProfile extends Page
                             ->directory('avatars')
                             ->visibility('public')
                             ->maxSize(2048)
+                            ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/gif', 'image/webp'])
+                            ->deletable()
                             ->columnSpanFull(),
 
                         TextInput::make('name')
