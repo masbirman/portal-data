@@ -1,7 +1,7 @@
 <x-filament-panels::page>
-    @livewire(\Filament\Schemas\Livewire\SchemaComponent::class, [
-        'schema' => $this->form($this->makeSchema()),
-    ])
+    <x-filament-panels::form wire:submit="save">
+        {{ $this->form }}
 
-    <x-filament-actions::modals />
+        <x-filament-panels::form.actions :actions="$this->getCachedFormActions()" />
+    </x-filament-panels::form>
 </x-filament-panels::page>
