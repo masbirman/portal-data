@@ -4,25 +4,57 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-blue-600 to-white-600 rounded-lg shadow-xl px-8 py-4 text-white mb-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+    <div class="relative overflow-hidden bg-slate-900 rounded-2xl shadow-2xl px-8 py-12 text-white mb-12">
+        <!-- Background Pattern -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-slate-800 opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-slate-800 opacity-50 blur-3xl"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Left Content -->
-            <div>
-                <h1 class="text-4xl font-bold mb-3">Selamat Datang di <span class="inline">Portal Data</span></h1>
-                <h2 class="text-2xl font-semibold mb-4">AN-TKA Disdik Sulteng</h2>
-                <p class="text-black-600 mb-4">Menyajikan informasi data statistik tentang pelaksanaan<br>
-                    Asesmen Nasional Berbasis Komputer (ANBK) dan Tes Kemampuan Akademik (TKA) <br>
-                    
+            <div class="lg:col-span-7">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-amber-400 text-xs font-medium mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                    </span>
+                    Portal Data Resmi
+                </div>
+
+                <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight tracking-tight">
+                    Asesmen Skala Nasional <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Disdik Prov.
+                        Sulteng</span>
+                </h1>
+
+                <p class="text-slate-300 text-lg mb-8 leading-relaxed max-w-xl">
+                    Menyajikan informasi statistik komprehensif pelaksanaan Asesmen Nasional (ANBK) dan Tes Kemampuan
+                    Akademik (TKA) secara transparan dan akurat.
                 </p>
-                <a href="{{ route('public.dashboard') }}"
-                    class="bg-white text-blue-600 px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-100 inline-block text-sm">
-                    Lihat Dashboard →
-                </a>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="{{ route('public.dashboard') }}"
+                        class="group bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold hover:bg-amber-400 transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)]">
+                        Lihat Dashboard
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
-            <!-- Right Content - Space for illustration -->
-            <div class="hidden lg:flex justify-center items-center">
-                <img src="{{ asset('storage/illustration-hero.png') }}" alt="Ilustrasi Dashboard" class="w-full max-w-s">
+            <!-- Right Content - Illustration -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative">
+                    <!-- Glow effect behind image -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 blur-2xl rounded-full">
+                    </div>
+                    <img src="{{ asset('storage/illustration-hero.png') }}" alt="Ilustrasi Dashboard"
+                        class="relative z-10 w-full max-w-md drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+                </div>
             </div>
         </div>
     </div>
@@ -32,43 +64,4 @@
 
     <!-- Trend Chart -->
     @livewire('public.trend-chart')
-
-    <!-- Features -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="text-blue-600 mb-4">
-                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                    </path>
-                </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Visualisasi Data</h3>
-            <p class="text-gray-600">Lihat data pelaksanaan AN-TKA dalam bentuk grafik dan chart yang mudah dipahami.</p>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="text-green-600 mb-4">
-                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z">
-                    </path>
-                </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Filter & Pencarian</h3>
-            <p class="text-gray-600">Cari data berdasarkan tahun, jenjang pendidikan, dan wilayah dengan mudah.</p>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <div class="text-purple-600 mb-4">
-                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                    </path>
-                </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Export Data</h3>
-            <p class="text-gray-600">Download data dalam format Excel untuk analisis lebih lanjut.</p>
-        </div>
-    </div>
 @endsection
