@@ -40,6 +40,12 @@ class ManageGeneralSettings extends SettingsPage
                             ->directory('maintenance')
                             ->disk('public')
                             ->visibility('public'),
+
+                        \Filament\Forms\Components\TextInput::make('maintenance_estimated_time')
+                            ->label('Estimasi Waktu Selesai')
+                            ->helperText('Contoh: 2 jam, 30 menit, 1 hari')
+                            ->placeholder('Contoh: 2 jam')
+                            ->maxLength(100),
                     ]),
             ]);
     }
