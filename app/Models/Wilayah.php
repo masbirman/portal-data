@@ -13,7 +13,17 @@ class Wilayah extends Model
     protected $fillable = [
         'nama',
         'logo',
+        'urutan',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('order', function ($builder) {
+            $builder->orderBy('urutan', 'asc')->orderBy('nama', 'asc');
+        });
+    }
 
     public function sekolah()
     {
