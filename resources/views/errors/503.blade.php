@@ -1,3 +1,4 @@
+kenapa`
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +17,8 @@
 </head>
 
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden text-center p-6 md:p-8">
+    <div
+        class="max-w-2xl w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl shadow-xl overflow-hidden text-center p-6 md:p-8">
         <div class="mb-6">
             @php
                 $settings = app(\App\Settings\GeneralSettings::class);
@@ -53,10 +55,10 @@
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
                 </span>
             </div>
-            <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Sedang Dalam Pemeliharaan</h1>
+            <h1 class="text-2xl md:text-3xl font-bold text-white">Sedang Dalam Pemeliharaan</h1>
         </div>
 
-        <p class="text-base text-gray-600 mb-4 leading-relaxed">
+        <p class="text-base text-gray-300 mb-4 leading-relaxed">
             {{ $settings->maintenance_message ?? 'Kami sedang melakukan pemeliharaan sistem untuk meningkatkan layanan. Silakan kembali lagi nanti.' }}
         </p>
 
@@ -73,7 +75,7 @@
             <div class="mb-6"></div>
         @endif
 
-        <div class="text-sm text-gray-400">
+        <div class="text-sm text-gray-500">
             &copy; {{ date('Y') }} {{ config('app.name') }}
         </div>
     </div>
