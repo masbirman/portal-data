@@ -87,7 +87,7 @@ class WilayahDetailTable extends Component
         $chartStats = $this->getChartStats();
 
         return view('livewire.public.wilayah-detail-table', [
-            'data' => $query->orderBy('id')->paginate(10),
+            'data' => $query->orderBy('id')->paginate(10)->onEachSide(1),
             'chartStats' => $chartStats,
             'jenjangList' => $jenjangList
         ]);
