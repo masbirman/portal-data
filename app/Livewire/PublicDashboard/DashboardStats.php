@@ -63,7 +63,7 @@ class DashboardStats extends Component
 
         // Custom Sort Order
         $customOrder = ['SMA', 'SMK', 'SMP', 'SD', 'SMALB', 'SMPLB', 'SDLB', 'PAKET C', 'PAKET B', 'PAKET A'];
-        
+
         $sortedJenjangs = $allJenjangs->sortBy(function ($jenjang) use ($customOrder) {
             $index = array_search(strtoupper($jenjang->nama), $customOrder);
             return $index === false ? 999 : $index;
@@ -71,7 +71,7 @@ class DashboardStats extends Component
 
         foreach ($sortedJenjangs as $jenjang) {
             $items = $grouped->get($jenjang->nama, collect());
-            
+
             // Status Counts
             $mandiri = $items->filter(fn($i) => strtoupper($i->status_pelaksanaan) === 'MANDIRI')->count();
             $menumpang = $items->filter(fn($i) => strtoupper($i->status_pelaksanaan) === 'MENUMPANG')->count();
@@ -125,7 +125,7 @@ class DashboardStats extends Component
         });
 
         $tableWilayah = [];
-        $allWilayahs = Wilayah::orderBy('id')->get();
+        $allWilayahs = Wilayah::orderBy('urutan')->get();
 
         foreach ($allWilayahs as $wilayah) {
             $items = $groupedWilayah->get($wilayah->nama, collect());
@@ -157,7 +157,7 @@ class DashboardStats extends Component
 
         // Grand Totals for Header
         $totalSekolah = $data->unique('sekolah_id')->count();
-        
+
         $totalMandiri = $data->filter(fn($i) => strtoupper($i->status_pelaksanaan) === 'MANDIRI')->unique('sekolah_id')->count();
         $totalMenumpang = $data->filter(fn($i) => strtoupper($i->status_pelaksanaan) === 'MENUMPANG')->unique('sekolah_id')->count();
         $totalBelumStatus = $totalSekolah - $totalMandiri - $totalMenumpang;
