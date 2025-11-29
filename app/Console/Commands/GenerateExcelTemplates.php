@@ -38,7 +38,7 @@ class GenerateExcelTemplates extends Command
         // Example data
         $exampleData = [
             ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', 'Negeri', '2024'],
-            ['SMP', 'Kab. Donggala', '40301567', 'SMP Swasta Al-Azhar', 'Swasta', '2024'],
+            ['SMP', 'Donggala', '40301567', 'SMP Swasta Al-Azhar', 'Swasta', '2024'],
         ];
         $sheet->fromArray($exampleData, null, 'A2');
 
@@ -82,7 +82,7 @@ class GenerateExcelTemplates extends Command
         // Example data
         $exampleData = [
             ['SMA', 'Kota Palu', '40201234', 'SMA Negeri 1 Palu', 'Negeri', 50, 'Mandiri', 'Online', 98.5, 95.0, 'SMA Negeri 1 Palu', 'Budi Santoso, S.Pd', 'Andi Wijaya'],
-            ['SMP', 'Kab. Donggala', '40301567', 'SMP Swasta Al-Azhar', 'Swasta', 45, 'Menumpang', 'Semi Online', 87.3, 82.1, 'SMA Negeri 1 Banawa', 'Siti Aminah, S.Pd', 'Rudi Hartono'],
+            ['SMP', 'Donggala', '40301567', 'SMP Swasta Al-Azhar', 'Swasta', 45, 'Menumpang', 'Semi Online', 87.3, 82.1, 'SMA Negeri 1 Banawa', 'Siti Aminah, S.Pd', 'Rudi Hartono'],
         ];
         $sheet->fromArray($exampleData, null, 'A2');
 

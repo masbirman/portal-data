@@ -112,8 +112,8 @@ class SekolahImport implements ToCollection, WithHeadingRow, WithChunkReading
 
     /**
      * Normalize wilayah name to prevent duplicates
-     * - Replace "Kab." with "Kabupaten"
-     * - Replace "Kab " with "Kabupaten "
+     * - Remove "Kabupaten" prefix but keep "Kota" for Kota Palu
+     * - Normalize "Kab." or "Kab " variations
      * - Trim and normalize spaces
      * - Title case
      */
@@ -121,8 +121,13 @@ class SekolahImport implements ToCollection, WithHeadingRow, WithChunkReading
     {
         $name = trim($name);
         
-        // Replace "Kab." or "Kab " with "Kabupaten "
-        $name = preg_replace('/^Kab\.?\s+/i', 'Kabupaten ', $name);
+        // Special case: Keep "Kota Palu" as is
+        if (stripos($name, 'Palu') !== false) {
+            return 'Kota Palu';
+        }
+        
+        // Remove "Kabupaten" prefix (including variations like "Kab." or "Kab ")
+        $name = preg_replace('/^(Kabupaten|Kab\.?)\s+/i', '', $name);
         
         // Normalize multiple spaces to single space
         $name = preg_replace('/\s+/', ' ', $name);
