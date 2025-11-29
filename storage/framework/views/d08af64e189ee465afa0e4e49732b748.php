@@ -1,0 +1,86 @@
+<div>
+    <!-- Search Bar -->
+    <div class="mb-4">
+        <input type="text" wire:model.live.debounce.300ms="search" placeholder="Cari Kabupaten/Kota..."
+            class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-blue-600 text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">No</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Kabupaten/Kota</th>
+                    <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $jenjangList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $jenjang): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <th class="px-6 py-3 text-center text-xs font-bold uppercase tracking-wider">
+                            <?php echo e($jenjang->nama); ?></th>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                <!--[if BLOCK]><![endif]--><?php $__empty_1 = true; $__currentLoopData = $wilayahData; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $wilayah): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                    <tr class="hover:bg-blue-50 cursor-pointer transition-colors duration-150"
+                        onclick="window.location='<?php echo e(route('asesmen-nasional.wilayah', ['tahun' => $tahun, 'wilayah' => $wilayah->id])); ?>'">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            <?php echo e($wilayahData->firstItem() + $index); ?>
+
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center">
+                                <!--[if BLOCK]><![endif]--><?php if($wilayah->logo): ?>
+                                    <img src="<?php echo e(asset('storage/' . $wilayah->logo)); ?>" alt="<?php echo e($wilayah->nama); ?>"
+                                        class="h-8 w-8 rounded-full mr-3 object-cover"
+                                        onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="h-8 w-8 rounded-full mr-3 bg-blue-100 items-center justify-center"
+                                        style="display:none;">
+                                        <span class="text-blue-600 font-bold text-xs">
+                                            <?php echo e(substr($wilayah->nama, 0, 2)); ?>
+
+                                        </span>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="h-8 w-8 rounded-full mr-3 bg-blue-100 flex items-center justify-center">
+                                        <span class="text-blue-600 font-bold text-xs">
+                                            <?php echo e(substr($wilayah->nama, 0, 2)); ?>
+
+                                        </span>
+                                    </div>
+                                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+                                <span class="text-sm font-medium text-gray-900"><?php echo e($wilayah->nama); ?></span>
+                            </div>
+                        </td>
+                        <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $jenjangList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $jenjang): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <span
+                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-semibold
+                                    <?php echo e($wilayah->stats[$jenjang->nama] > 0 ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-500'); ?>">
+                                    <?php echo e($wilayah->stats[$jenjang->nama]); ?>
+
+                                </span>
+                            </td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+                    </tr>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                    <tr>
+                        <td colspan="<?php echo e(count($jenjangList) + 2); ?>" class="px-6 py-8 text-center text-gray-500">
+                            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <p class="mt-2">Tidak ada data ditemukan</p>
+                        </td>
+                    </tr>
+                <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="mt-4">
+        <?php echo e($wilayahData->links()); ?>
+
+    </div>
+</div>
+<?php /**PATH /var/www/resources/views/livewire/public/wilayah-aggregate-table.blade.php ENDPATH**/ ?>

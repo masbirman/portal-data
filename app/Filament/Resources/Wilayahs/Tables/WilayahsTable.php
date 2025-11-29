@@ -15,13 +15,13 @@ class WilayahsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->defaultSort('urutan', 'asc')
             ->columns([
-                TextColumn::make('id')
+                TextColumn::make('urutan')
                     ->label('No')
                     ->sortable(),
                 \Filament\Tables\Columns\ImageColumn::make('logo')
                     ->label('Logo')
-                    ->disk('public')
                     ->circular()
                     ->defaultImageUrl(url('/images/default-logo.png'))
                     ->size(40),

@@ -37,13 +37,8 @@ class AsesmenImport implements ToCollection, WithHeadingRow, WithChunkReading
         $this->preloadCache();
 
         foreach ($rows as $row) {
-            // Normalize Wilayah name
-            $wilayahName = $row['kota_kabupaten'] ?? ''; // Ensure it's not null
-            // Fix specific case for Tojo Unauna (remove hyphen if present)
-            if (stripos($wilayahName, 'Tojo Una-una') !== false) {
-                $wilayahName = str_ireplace('Tojo Una-una', 'Tojo Unauna', $wilayahName);
-            }
-            $wilayahName = Str::title($wilayahName);
+            // Get Wilayah name
+            $wilayahName = trim($row['kota_kabupaten'] ?? '');
             if (!$wilayahName) continue;
 
             $wilayahId = $this->getWilayahId($wilayahName);
@@ -91,9 +86,11 @@ class AsesmenImport implements ToCollection, WithHeadingRow, WithChunkReading
 
     protected function preloadCache()
     {
-        // Cache Wilayah
+        // Cache Wilayah: normalized lowercase name -> id
         $this->wilayahCache = Wilayah::all()->mapWithKeys(function ($item) {
-            return [strtolower($item->nama) => $item->id];
+            // Normalize the wilayah name from database before caching
+            $normalizedName = $this->normalizeWilayahName($item->nama);
+            return [strtolower($normalizedName) => $item->id];
         })->toArray();
 
         // Cache Jenjang
@@ -110,14 +107,49 @@ class AsesmenImport implements ToCollection, WithHeadingRow, WithChunkReading
 
     protected function getWilayahId($name)
     {
-        $lowerName = strtolower($name);
+        // Normalize wilayah name to prevent duplicates
+        $normalizedName = $this->normalizeWilayahName($name);
+        $lowerName = strtolower($normalizedName);
+        
         if (isset($this->wilayahCache[$lowerName])) {
             return $this->wilayahCache[$lowerName];
         }
 
-        $wilayah = Wilayah::create(['nama' => ucwords($lowerName)]);
+        $wilayah = Wilayah::create(['nama' => $normalizedName]);
         $this->wilayahCache[$lowerName] = $wilayah->id;
         return $wilayah->id;
+    }
+
+    /**
+     * Normalize wilayah name to prevent duplicates
+     * - Replace "Kab." with "Kabupaten"
+     * - Replace "Kab " with "Kabupaten "
+     * - Trim and normalize spaces
+     * - Title case
+     */
+    protected function normalizeWilayahName($name)
+    {
+        $name = trim($name);
+        
+        // Replace "Kab." or "Kab " with "Kabupaten "
+        $name = preg_replace('/^Kab\.?\s+/i', 'Kabupaten ', $name);
+        
+        // Normalize multiple spaces to single space
+        $name = preg_replace('/\s+/', ' ', $name);
+        
+        // Fix specific cases
+        // "Tolitoli" => "Toli-Toli"
+        if (stripos($name, 'Tolitoli') !== false) {
+            $name = str_ireplace('Tolitoli', 'Toli-Toli', $name);
+        }
+        
+        // "Tojo Unauna" or "Tojo Una-una" => "Tojo Una-Una"
+        if (stripos($name, 'Tojo Una') !== false) {
+            $name = preg_replace('/Tojo\s+Una[-\s]?una/i', 'Tojo Una-Una', $name);
+        }
+        
+        // Apply title case
+        return Str::title($name);
     }
 
     protected function getJenjangId($name)

@@ -11,24 +11,29 @@ class CheckMaintenanceMode
 {
     public function handle(Request $request, Closure $next): Response
     {
-        // Allow if site is active
-        if (app(GeneralSettings::class)->site_active) {
+        try {
+            // Allow if site is active
+            if (app(GeneralSettings::class)->site_active) {
+                return $next($request);
+            }
+
+            // Allow if user is logged in (Admin)
+            if (auth()->check()) {
+                return $next($request);
+            }
+
+            // Allow Filament admin routes (to allow login)
+            if ($request->is('admin*') || $request->is('livewire*')) {
+                return $next($request);
+            }
+
+            // Otherwise, show maintenance page
+            return response()->view('errors.503', [
+                'message' => app(GeneralSettings::class)->maintenance_message
+            ], 503);
+        } catch (\Throwable $e) {
+            // If settings table doesn't exist yet (e.g. during migration), allow request
             return $next($request);
         }
-
-        // Allow if user is logged in (Admin)
-        if (auth()->check()) {
-            return $next($request);
-        }
-
-        // Allow Filament admin routes (to allow login)
-        if ($request->is('admin*') || $request->is('livewire*')) {
-            return $next($request);
-        }
-
-        // Otherwise, show maintenance page
-        return response()->view('errors.503', [
-            'message' => app(GeneralSettings::class)->maintenance_message
-        ], 503);
     }
 }

@@ -14,6 +14,12 @@ class WilayahForm
                 TextInput::make('nama')
                     ->label('Kota/Kabupaten')
                     ->required(),
+                TextInput::make('urutan')
+                    ->label('Urutan')
+                    ->numeric()
+                    ->required()
+                    ->default(999)
+                    ->helperText('Urutan tampilan di tabel (semakin kecil semakin atas)'),
                 \Filament\Forms\Components\FileUpload::make('logo')
                     ->label('Logo Kota/Kabupaten')
                     ->image()

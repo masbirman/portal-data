@@ -13,6 +13,7 @@ class Wilayah extends Model
     protected $fillable = [
         'nama',
         'logo',
+        'urutan',
     ];
 
     public function sekolah()

@@ -15,6 +15,7 @@ Route::get('/asesmen-nasional/{tahun}/wilayah/{wilayah}', [AsesmenNasionalContro
 
 // Legacy routes (keep for backward compatibility)
 Route::get('/dashboard', [PublicDashboardController::class, 'dashboard'])->name('public.dashboard');
+Route::get('/peta-data/{tahun?}', [PublicDashboardController::class, 'peta'])->name('public.peta');
 Route::get('/old', [AsesmenController::class, 'index'])->name('home');
 Route::get('/asesmen/{tahun}', [AsesmenController::class, 'rekap'])->name('asesmen.rekap');
 Route::get('/asesmen/{tahun}/wilayah/{wilayah_id}', [AsesmenController::class, 'detail'])->name('asesmen.detail');
@@ -49,3 +50,4 @@ Route::get('/test-export', function() {
         ], 500);
     }
 });
+
