@@ -29,6 +29,7 @@ class WilayahsTable
                     ->label('Kota/Kabupaten')
                     ->searchable(),
             ])
+            ->defaultSort('id', 'asc')
             ->filters([
                 //
             ])
