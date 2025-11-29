@@ -36,42 +36,46 @@
                             type: 'line', // Base type
                             toolbar: { show: false },
                             zoom: { enabled: false },
-                            fontFamily: 'Inter, sans-serif'
+                            fontFamily: 'Instrument Sans, sans-serif',
+                            background: 'transparent'
                         },
-                        colors: ['#3B82F6', '#F97316'], // Blue-500, Orange-500
+                        colors: ['#0f172a', '#f59e0b'], // Slate-900, Amber-500
                         fill: {
                             type: ['gradient', 'solid'],
                             gradient: {
                                 shadeIntensity: 1,
-                                opacityFrom: 0.7,
-                                opacityTo: 0.2,
-                                stops: [0, 90, 100]
+                                opacityFrom: 0.4, // More subtle opacity
+                                opacityTo: 0.05,
+                                stops: [0, 100]
                             }
                         },
                         dataLabels: {
                             enabled: true,
                             enabledOnSeries: [1],
                             style: {
-                                colors: ['#F97316']
+                                colors: ['#f59e0b'],
+                                fontSize: '12px',
+                                fontWeight: 600,
                             },
                             background: {
                                 enabled: true,
                                 foreColor: '#fff',
-                                borderRadius: 4,
-                                padding: 4,
-                                opacity: 0.9,
+                                borderRadius: 6,
+                                padding: 6,
+                                opacity: 1,
                                 borderWidth: 1,
-                                borderColor: '#F97316'
+                                borderColor: '#f59e0b'
                             }
                         },
                         stroke: {
                             curve: 'smooth',
-                            width: [0, 4] // 0 width for area stroke (optional, or 2), 4 for line
+                            width: [2, 4], // Thinner area stroke
+                            dashArray: [0, 0]
                         },
                         markers: {
                             size: [4, 6],
-                            colors: ['#fff', '#F97316'],
-                            strokeColors: ['#3B82F6', '#fff'],
+                            colors: ['#fff', '#f59e0b'],
+                            strokeColors: ['#0f172a', '#fff'],
                             strokeWidth: 2,
                             hover: {
                                 size: 8
@@ -79,18 +83,24 @@
                         },
                         xaxis: {
                             categories: data.categories,
-                            title: { text: 'Tahun Periode' },
+                            title: { 
+                                text: 'Tahun Periode',
+                                style: { color: '#64748b', fontSize: '12px' }
+                            },
                             axisBorder: { show: false },
-                            axisTicks: { show: false }
+                            axisTicks: { show: false },
+                            labels: {
+                                style: { colors: '#64748b' }
+                            }
                         },
                         yaxis: [
                             {
                                 title: { 
                                     text: 'Jumlah Peserta',
-                                    style: { color: '#3B82F6' }
+                                    style: { color: '#0f172a', fontWeight: 600 }
                                 },
                                 labels: {
-                                    style: { colors: '#3B82F6' },
+                                    style: { colors: '#64748b' },
                                     formatter: (val) => val.toLocaleString('id-ID')
                                 }
                             },
@@ -98,21 +108,24 @@
                                 opposite: true,
                                 title: { 
                                     text: 'Keikutsertaan (%)',
-                                    style: { color: '#F97316' }
+                                    style: { color: '#f59e0b', fontWeight: 600 }
                                 },
                                 max: 100,
                                 labels: {
-                                    style: { colors: '#F97316' },
+                                    style: { colors: '#64748b' },
                                     formatter: (val) => val + "%"
                                 }
                             }
                         ],
                         grid: {
-                            borderColor: '#f3f4f6',
+                            borderColor: '#f1f5f9',
                             strokeDashArray: 4,
-                            xaxis: { lines: { show: true } }   
+                            xaxis: { lines: { show: true } },
+                            yaxis: { lines: { show: true } },
+                            padding: { top: 0, right: 0, bottom: 0, left: 10 }
                         },
                         tooltip: {
+                            theme: 'light',
                             shared: true,
                             intersect: false,
                             y: {
@@ -120,11 +133,25 @@
                                     if(seriesIndex === 0) return y.toLocaleString('id-ID') + " Siswa";
                                     return y + "%";
                                 }
+                            },
+                            style: {
+                                fontSize: '12px'
+                            },
+                            marker: {
+                                show: true,
+                            },
+                            x: {
+                                show: true,
                             }
                         },
                         legend: {
                             position: 'top',
                             horizontalAlign: 'right',
+                            fontFamily: 'Instrument Sans, sans-serif',
+                            fontWeight: 500,
+                            labels: {
+                                colors: '#475569'
+                            },
                             markers: { radius: 12 }
                         }
                     };
