@@ -22,6 +22,8 @@ class WilayahsTable
                     ->sortable(),
                 \Filament\Tables\Columns\ImageColumn::make('logo')
                     ->label('Logo')
+                    ->disk('public')
+                    ->visibility('public')
                     ->circular()
                     ->defaultImageUrl(url('/images/default-logo.png'))
                     ->size(40),
