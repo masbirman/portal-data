@@ -30,10 +30,10 @@ class WilayahAggregateTable extends Component
     {
         // Define custom order for jenjang
         $jenjangOrder = ['SMA', 'SMK', 'SMP', 'SD', 'SMALB', 'SMPLB', 'SDLB', 'PAKET C', 'PAKET B', 'PAKET A'];
-        
+
         // Get all unique jenjang
         $allJenjang = JenjangPendidikan::all()->unique('nama');
-        
+
         // Sort jenjang according to custom order
         $jenjangList = collect();
         foreach ($jenjangOrder as $nama) {
@@ -42,16 +42,16 @@ class WilayahAggregateTable extends Component
                 $jenjangList->push($jenjang);
             }
         }
-        
+
         // Add any remaining jenjang not in the custom order
         foreach ($allJenjang as $jenjang) {
             if (!$jenjangList->contains('nama', $jenjang->nama)) {
                 $jenjangList->push($jenjang);
             }
         }
-        
+
         // Get paginated wilayah
-        $wilayahData = Wilayah::orderBy('id', 'asc')
+        $wilayahData = Wilayah::orderBy('urutan', 'asc')
             ->when($this->search, function ($query) {
                 $query->where('nama', 'like', '%' . $this->search . '%');
             })
@@ -78,7 +78,7 @@ class WilayahAggregateTable extends Component
 
             // Attach stats to the wilayah object
             $wilayah->stats = $stats;
-            
+
             return $wilayah;
         });
 
