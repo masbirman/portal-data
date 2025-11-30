@@ -139,7 +139,10 @@
                 <!-- Submit Button -->
                 <!-- Turnstile -->
                 <div class="mb-6">
-                    <x-turnstile />
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        Verifikasi <span class="text-red-500">*</span>
+                    </label>
+                    <div class="cf-turnstile" data-sitekey="{{ config('turnstile.turnstile_site_key') }}" data-theme="light"></div>
                 </div>
 
                 <div class="flex items-center justify-between pt-4">

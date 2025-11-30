@@ -42,6 +42,9 @@
             document.documentElement.classList.add('dark');
         }
     </script>
+    
+    <!-- Cloudflare Turnstile -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-200" 
