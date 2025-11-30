@@ -46,7 +46,7 @@ class DownloadRequestForm
                     ->options(function () {
                         $currentYear = date('Y');
                         $years = [];
-                        for ($year = $currentYear; $year >= 2020; $year--) {
+                        for ($year = $currentYear; $year >= 2023; $year--) {
                             $years[$year] = $year;
                         }
                         return $years;
@@ -54,12 +54,16 @@ class DownloadRequestForm
                     ->required(),
                 Select::make('wilayah_id')
                     ->label('Wilayah')
-                    ->options(Wilayah::pluck('nama', 'id'))
+                    ->options(function () {
+                        return [0 => 'Semua Wilayah'] + Wilayah::pluck('nama', 'id')->toArray();
+                    })
                     ->searchable()
                     ->required(),
                 Select::make('jenjang_pendidikan_id')
                     ->label('Jenjang Pendidikan')
-                    ->relationship('jenjangPendidikan', 'nama')
+                    ->options(function () {
+                        return [0 => 'Semua Jenjang'] + JenjangPendidikan::pluck('nama', 'id')->toArray();
+                    })
                     ->searchable()
                     ->required(),
                 Select::make('status')

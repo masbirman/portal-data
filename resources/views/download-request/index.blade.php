@@ -96,7 +96,7 @@
                     <select name="tahun" id="tahun" required
                         class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Pilih Tahun</option>
-                        @for($year = date('Y'); $year >= 2020; $year--)
+                        @for($year = date('Y'); $year >= 2023; $year--)
                             <option value="{{ $year }}" {{ old('tahun') == $year ? 'selected' : '' }}>{{ $year }}</option>
                         @endfor
                     </select>
@@ -110,6 +110,7 @@
                     <select name="wilayah_id" id="wilayah_id" required
                         class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Pilih Wilayah</option>
+                        <option value="0" {{ old('wilayah_id') == '0' ? 'selected' : '' }}>Semua Wilayah</option>
                         @foreach($wilayahs as $wilayah)
                             <option value="{{ $wilayah->id }}" {{ old('wilayah_id') == $wilayah->id ? 'selected' : '' }}>
                                 {{ $wilayah->nama }}
@@ -126,6 +127,7 @@
                     <select name="jenjang_pendidikan_id" id="jenjang_pendidikan_id" required
                         class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white">
                         <option value="">Pilih Jenjang</option>
+                        <option value="0" {{ old('jenjang_pendidikan_id') == '0' ? 'selected' : '' }}>Semua Jenjang</option>
                         @foreach($jenjangs as $jenjang)
                             <option value="{{ $jenjang->id }}" {{ old('jenjang_pendidikan_id') == $jenjang->id ? 'selected' : '' }}>
                                 {{ $jenjang->nama }}

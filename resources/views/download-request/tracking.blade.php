@@ -128,11 +128,11 @@
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Wilayah</p>
-                                    <p class="font-semibold text-gray-900 dark:text-white">{{ $request->wilayah->nama ?? '-' }}</p>
+                                    <p class="font-semibold text-gray-900 dark:text-white">{{ $request->wilayah_id ? ($request->wilayah->nama ?? '-') : 'Semua Wilayah' }}</p>
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Jenjang</p>
-                                    <p class="font-semibold text-gray-900 dark:text-white">{{ $request->jenjangPendidikan->nama ?? '-' }}</p>
+                                    <p class="font-semibold text-gray-900 dark:text-white">{{ $request->jenjang_pendidikan_id ? ($request->jenjangPendidikan->nama ?? '-') : 'Semua Jenjang' }}</p>
                                 </div>
                                 <div>
                                     <p class="text-sm text-gray-500 dark:text-gray-400">Instansi</p>

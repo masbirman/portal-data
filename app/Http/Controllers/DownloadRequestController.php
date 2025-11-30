@@ -24,9 +24,9 @@ class DownloadRequestController extends Controller
             'instansi' => 'required|string|max:255',
             'tujuan_penggunaan' => 'required|string',
             'data_type' => 'required|in:asesmen_nasional,survei_lingkungan_belajar,tes_kemampuan_akademik',
-            'tahun' => 'required|integer|min:2020|max:' . date('Y'),
-            'wilayah_id' => 'required|exists:wilayah,id',
-            'jenjang_pendidikan_id' => 'required|exists:jenjang_pendidikan,id',
+            'tahun' => 'required|integer|min:2023|max:' . date('Y'),
+            'wilayah_id' => 'required|integer|min:0',
+            'jenjang_pendidikan_id' => 'required|integer|min:0',
         ]);
 
         if ($validator->fails()) {
@@ -40,8 +40,8 @@ class DownloadRequestController extends Controller
             'tujuan_penggunaan' => $request->tujuan_penggunaan,
             'data_type' => $request->data_type,
             'tahun' => $request->tahun,
-            'wilayah_id' => $request->wilayah_id,
-            'jenjang_pendidikan_id' => $request->jenjang_pendidikan_id,
+            'wilayah_id' => $request->wilayah_id == 0 ? null : $request->wilayah_id,
+            'jenjang_pendidikan_id' => $request->jenjang_pendidikan_id == 0 ? null : $request->jenjang_pendidikan_id,
             'status' => 'pending',
         ]);
 
@@ -65,14 +65,14 @@ class DownloadRequestController extends Controller
         $downloadRequest->markAsDownloaded();
 
         // Generate filename
-        $wilayah = $downloadRequest->wilayah->nama ?? 'Unknown';
-        $jenjang = $downloadRequest->jenjangPendidikan->nama ?? 'Unknown';
+        $wilayah = $downloadRequest->wilayah_id == null ? 'Semua_Wilayah' : str_replace(' ', '_', $downloadRequest->wilayah->nama ?? 'Unknown');
+        $jenjang = $downloadRequest->jenjang_pendidikan_id == null ? 'Semua_Jenjang' : ($downloadRequest->jenjangPendidikan->nama ?? 'Unknown');
         $filename = sprintf(
             'Data_%s_%s_%s_%s_%s.xlsx',
             ucfirst(str_replace('_', ' ', $downloadRequest->data_type)),
             $downloadRequest->tahun,
             $jenjang,
-            str_replace(' ', '_', $wilayah),
+            $wilayah,
             now()->format('Ymd')
         );
 
