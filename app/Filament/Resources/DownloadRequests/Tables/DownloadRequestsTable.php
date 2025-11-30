@@ -41,13 +41,17 @@ class DownloadRequestsTable
                 TextColumn::make('tahun')
                     ->label('Tahun')
                     ->sortable(),
-                TextColumn::make('wilayah.nama')
+                TextColumn::make('wilayah_display')
                     ->label('Wilayah')
-                    ->formatStateUsing(fn ($record) => $record->wilayah_id ? ($record->wilayah->nama ?? '-') : 'Semua Wilayah')
+                    ->state(function ($record) {
+                        return $record->wilayah_id ? ($record->wilayah->nama ?? '-') : 'Semua Wilayah';
+                    })
                     ->sortable(),
-                TextColumn::make('jenjangPendidikan.nama')
+                TextColumn::make('jenjang_display')
                     ->label('Jenjang')
-                    ->formatStateUsing(fn ($record) => $record->jenjang_pendidikan_id ? ($record->jenjangPendidikan->nama ?? '-') : 'Semua Jenjang')
+                    ->state(function ($record) {
+                        return $record->jenjang_pendidikan_id ? ($record->jenjangPendidikan->nama ?? '-') : 'Semua Jenjang';
+                    })
                     ->badge(),
                 TextColumn::make('status')
                     ->label('Status')
