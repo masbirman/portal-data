@@ -43,9 +43,11 @@ class DownloadRequestsTable
                     ->sortable(),
                 TextColumn::make('wilayah.nama')
                     ->label('Wilayah')
+                    ->formatStateUsing(fn ($record) => $record->wilayah_id ? ($record->wilayah->nama ?? '-') : 'Semua Wilayah')
                     ->sortable(),
                 TextColumn::make('jenjangPendidikan.nama')
                     ->label('Jenjang')
+                    ->formatStateUsing(fn ($record) => $record->jenjang_pendidikan_id ? ($record->jenjangPendidikan->nama ?? '-') : 'Semua Jenjang')
                     ->badge(),
                 TextColumn::make('status')
                     ->label('Status')
