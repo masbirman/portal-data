@@ -18,6 +18,31 @@ class DownloadRequestController extends Controller
 
     public function store(Request $request)
     {
+        // Rate limiting per IP (2 requests per day)
+        $ipAddress = $request->ip();
+        $whitelistedIps = explode(',', env('RATE_LIMIT_WHITELIST_IPS', ''));
+        $whitelistedIps = array_map('trim', $whitelistedIps);
+
+        // Check if IP is whitelisted
+        if (!in_array($ipAddress, $whitelistedIps)) {
+            $today = now()->startOfDay();
+            $requestCount = DownloadRequest::where('ip_address', $ipAddress)
+                ->where('created_at', '>=', $today)
+                ->count();
+
+            if ($requestCount >= 2) {
+                $tomorrow = now()->addDay()->startOfDay();
+                $hoursLeft = now()->diffInHours($tomorrow);
+                $minutesLeft = now()->diffInMinutes($tomorrow) % 60;
+
+                return back()
+                    ->withErrors([
+                        'rate_limit' => "Anda sudah mencapai batas maksimal 2 request per hari. Silakan coba lagi dalam {$hoursLeft} jam {$minutesLeft} menit."
+                    ])
+                    ->withInput();
+            }
+        }
+
         $validator = Validator::make($request->all(), [
             'nama' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -44,6 +69,7 @@ class DownloadRequestController extends Controller
             'wilayah_id' => $request->wilayah_id == 0 ? null : $request->wilayah_id,
             'jenjang_pendidikan_id' => $request->jenjang_pendidikan_id == 0 ? null : $request->jenjang_pendidikan_id,
             'status' => 'pending',
+            'ip_address' => $ipAddress,
         ]);
 
         return redirect()->route('download-request.success');

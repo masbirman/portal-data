@@ -11,6 +11,7 @@ class DownloadRequest extends Model
     protected $fillable = [
         'nama',
         'email',
+        'ip_address',
         'instansi',
         'tujuan_penggunaan',
         'data_type',
@@ -56,8 +57,8 @@ class DownloadRequest extends Model
 
     public function isTokenValid(): bool
     {
-        return $this->download_token 
-            && $this->token_expires_at 
+        return $this->download_token
+            && $this->token_expires_at
             && $this->token_expires_at->isFuture()
             && $this->status === 'approved';
     }
