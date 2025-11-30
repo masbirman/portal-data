@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\DownloadRequest;
+use App\Models\User;
 use App\Models\Wilayah;
+use Filament\Notifications\Actions\Action as NotificationAction;
+use Filament\Notifications\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -59,7 +62,7 @@ class DownloadRequestController extends Controller
             return back()->withErrors($validator)->withInput();
         }
 
-        DownloadRequest::create([
+        $downloadRequest = DownloadRequest::create([
             'nama' => $request->nama,
             'email' => $request->email,
             'instansi' => $request->instansi,
@@ -71,6 +74,22 @@ class DownloadRequestController extends Controller
             'status' => 'pending',
             'ip_address' => $ipAddress,
         ]);
+
+        // Send notification to all admin users
+        $admins = User::all();
+        foreach ($admins as $admin) {
+            Notification::make()
+                ->title('Pengajuan Download Baru')
+                ->body("Pengajuan dari {$downloadRequest->nama} ({$downloadRequest->instansi}) menunggu persetujuan.")
+                ->icon('heroicon-o-document-arrow-down')
+                ->iconColor('warning')
+                ->actions([
+                    NotificationAction::make('lihat')
+                        ->button()
+                        ->url('/admin/download-requests'),
+                ])
+                ->sendToDatabase($admin);
+        }
 
         return redirect()->route('download-request.success');
     }

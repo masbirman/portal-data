@@ -55,6 +55,8 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->login(\App\Filament\Pages\Auth\Login::class)
-            ->profile(\App\Filament\Pages\EditProfile::class);
+            ->profile(\App\Filament\Pages\EditProfile::class)
+            ->databaseNotifications()
+            ->databaseNotificationsPolling('30s');
     }
 }
