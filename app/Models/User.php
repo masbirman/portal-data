@@ -22,7 +22,7 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function getFilamentAvatarUrl(): ?string
     {
-        return $this->avatar ? asset('storage/' . $this->avatar) : null;
+        return $this->avatar ? \Storage::disk('public')->url($this->avatar) : null;
     }
 
     /**

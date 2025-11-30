@@ -4,10 +4,19 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AsesmenController;
 use App\Http\Controllers\AsesmenNasionalController;
+use App\Http\Controllers\DownloadRequestController;
 use App\Http\Controllers\PublicDashboardController;
 
 // Public Routes
 Route::get('/', [PublicDashboardController::class, 'landing'])->name('public.landing');
+
+// Download Request Routes
+Route::get('/request-download', [DownloadRequestController::class, 'index'])->name('download-request.index');
+Route::post('/request-download', [DownloadRequestController::class, 'store'])->name('download-request.store');
+Route::get('/request-download/success', [DownloadRequestController::class, 'success'])->name('download-request.success');
+Route::get('/request-download/tracking', [\App\Http\Controllers\DownloadRequestTrackingController::class, 'index'])->name('download-request.tracking');
+Route::post('/request-download/tracking', [\App\Http\Controllers\DownloadRequestTrackingController::class, 'check'])->name('download-request.tracking.check');
+Route::get('/download/{token}', [DownloadRequestController::class, 'download'])->name('download-request.download');
 
 // Asesmen Nasional Routes (New Structure)
 Route::get('/asesmen-nasional/{tahun}', [AsesmenNasionalController::class, 'index'])->name('asesmen-nasional.index');

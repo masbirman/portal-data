@@ -65,8 +65,8 @@
             <div class="flex justify-between h-16">
                 <div class="flex items-center space-x-3">
                     <!-- Logo Provinsi Sulawesi Tengah -->
-                    <img src="{{ asset('storage/logo-sulteng.png') }}" alt="Logo Sulawesi Tengah" class="h-12 w-auto">
-                    <h1 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-white">Portal Data AN-TKA Disdik Sulteng</h1>
+                    <img src="{{ asset('storage/logo-sulteng.png') }}" alt="Logo Sulawesi Tengah" class="h-10 w-auto">
+                    <h1 class="text-base md:text-lg font-bold text-gray-800 dark:text-white">Portal Data AN-TKA Disdik Sulteng</h1>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -81,6 +81,38 @@
                         class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
                         Dashboard
                     </a>
+                    
+                    <!-- Dropdown Pengajuan Unduh Data -->
+                    <div class="relative" x-data="{ openRequestDropdown: false }" @mouseenter="openRequestDropdown = true" @mouseleave="openRequestDropdown = false">
+                        <button class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
+                            Pengajuan Unduh Data
+                            <svg class="ml-1 h-4 w-4 transition-transform" :class="{'rotate-180': openRequestDropdown}" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        
+                        <!-- Dropdown Menu -->
+                        <div x-show="openRequestDropdown"
+                             x-transition:enter="transition ease-out duration-100"
+                             x-transition:enter-start="transform opacity-0 scale-95"
+                             x-transition:enter-end="transform opacity-100 scale-100"
+                             x-transition:leave="transition ease-in duration-75"
+                             x-transition:leave-start="transform opacity-100 scale-100"
+                             x-transition:leave-end="transform opacity-0 scale-95"
+                             class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                             style="display: none;">
+                            <div class="py-1">
+                                <a href="{{ route('download-request.index') }}"
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
+                                    📝 Ajukan Permintaan
+                                </a>
+                                <a href="{{ route('download-request.tracking') }}"
+                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
+                                    🔍 Tracking Status
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     
                     <!-- Dropdown Data Statistik -->
                     <div class="relative" @mouseenter="openDropdown = true" @mouseleave="openDropdown = false">
@@ -179,11 +211,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                         </svg>
                     </button>
-                    
-                    <a href="/admin"
-                        class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
-                        Login
-                    </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -215,8 +242,6 @@
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2023</a>
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2024</a>
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2025</a>
-                
-                <a href="/admin" class="block mx-4 mt-2 px-4 py-2 bg-blue-600 text-white text-center rounded-md text-sm font-medium hover:bg-blue-700">Admin Login</a>
             </div>
         </div>
     </nav>
