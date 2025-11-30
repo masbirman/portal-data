@@ -132,6 +132,28 @@ class DownloadRequestsTable
                                 ->success()
                                 ->send();
                         }),
+                    Action::make('regenerate_token')
+                        ->label('Regenerate Token')
+                        ->icon('heroicon-o-arrow-path')
+                        ->color('warning')
+                        ->visible(fn ($record) => $record->status === 'approved' && !$record->isTokenValid())
+                        ->requiresConfirmation()
+                        ->modalHeading('Regenerate Download Token')
+                        ->modalDescription('Token baru akan digenerate dan email akan dikirim ulang ke user. Lanjutkan?')
+                        ->action(function ($record) {
+                            $record->generateDownloadToken();
+                            $record->downloaded_at = null;
+                            $record->save();
+
+                            // Send email notification
+                            \Illuminate\Support\Facades\Mail::to($record->email)
+                                ->send(new \App\Mail\DownloadRequestApproved($record));
+
+                            Notification::make()
+                                ->title('Token berhasil di-regenerate dan email telah dikirim')
+                                ->success()
+                                ->send();
+                        }),
                     EditAction::make(),
                 ]),
             ])
