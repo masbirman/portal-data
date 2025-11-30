@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\DownloadRequests\Tables;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -81,59 +82,124 @@ class DownloadRequestsTable
                     ]),
             ])
             ->recordActions([
-                Action::make('approve')
-                    ->label('Approve')
-                    ->icon('heroicon-o-check-circle')
-                    ->color('success')
-                    ->visible(fn ($record) => $record->status === 'pending')
-                    ->requiresConfirmation()
-                    ->action(function ($record) {
-                        $record->status = 'approved';
-                        $record->approved_by = auth()->id();
-                        $record->approved_at = now();
-                        $record->generateDownloadToken();
-                        $record->save();
+                ActionGroup::make([
+                    Action::make('approve')
+                        ->label('Approve')
+                        ->icon('heroicon-o-check-circle')
+                        ->color('success')
+                        ->visible(fn ($record) => $record->status === 'pending')
+                        ->requiresConfirmation()
+                        ->action(function ($record) {
+                            $record->status = 'approved';
+                            $record->approved_by = auth()->id();
+                            $record->approved_at = now();
+                            $record->generateDownloadToken();
+                            $record->save();
 
-                        // Send email notification
-                        \Illuminate\Support\Facades\Mail::to($record->email)
-                            ->send(new \App\Mail\DownloadRequestApproved($record));
-                        
-                        Notification::make()
-                            ->title('Request disetujui dan email telah dikirim')
-                            ->success()
-                            ->send();
-                    }),
-                Action::make('reject')
-                    ->label('Reject')
-                    ->icon('heroicon-o-x-circle')
-                    ->color('danger')
-                    ->visible(fn ($record) => $record->status === 'pending')
-                    ->requiresConfirmation()
-                    ->form([
-                        \Filament\Forms\Components\Textarea::make('admin_notes')
-                            ->label('Alasan Penolakan')
-                            ->required(),
-                    ])
-                    ->action(function ($record, array $data) {
-                        $record->status = 'rejected';
-                        $record->admin_notes = $data['admin_notes'];
-                        $record->approved_by = auth()->id();
-                        $record->approved_at = now();
-                        $record->save();
+                            // Send email notification
+                            \Illuminate\Support\Facades\Mail::to($record->email)
+                                ->send(new \App\Mail\DownloadRequestApproved($record));
 
-                        // Send email notification
-                        \Illuminate\Support\Facades\Mail::to($record->email)
-                            ->send(new \App\Mail\DownloadRequestRejected($record));
-                        
-                        Notification::make()
-                            ->title('Request ditolak dan email telah dikirim')
-                            ->success()
-                            ->send();
-                    }),
-                EditAction::make(),
+                            Notification::make()
+                                ->title('Request disetujui dan email telah dikirim')
+                                ->success()
+                                ->send();
+                        }),
+                    Action::make('reject')
+                        ->label('Reject')
+                        ->icon('heroicon-o-x-circle')
+                        ->color('danger')
+                        ->visible(fn ($record) => $record->status === 'pending')
+                        ->requiresConfirmation()
+                        ->form([
+                            \Filament\Forms\Components\Textarea::make('admin_notes')
+                                ->label('Alasan Penolakan')
+                                ->required(),
+                        ])
+                        ->action(function ($record, array $data) {
+                            $record->status = 'rejected';
+                            $record->admin_notes = $data['admin_notes'];
+                            $record->approved_by = auth()->id();
+                            $record->approved_at = now();
+                            $record->save();
+
+                            // Send email notification
+                            \Illuminate\Support\Facades\Mail::to($record->email)
+                                ->send(new \App\Mail\DownloadRequestRejected($record));
+
+                            Notification::make()
+                                ->title('Request ditolak dan email telah dikirim')
+                                ->success()
+                                ->send();
+                        }),
+                    EditAction::make(),
+                ]),
             ])
-            ->toolbarActions([
+            ->bulkActions([
                 BulkActionGroup::make([
+                    \Filament\Actions\BulkAction::make('bulk_approve')
+                        ->label('Approve Selected')
+                        ->icon('heroicon-o-check-circle')
+                        ->color('success')
+                        ->requiresConfirmation()
+                        ->deselectRecordsAfterCompletion()
+                        ->action(function ($records) {
+                            $count = 0;
+                            foreach ($records as $record) {
+                                if ($record->status === 'pending') {
+                                    $record->status = 'approved';
+                                    $record->approved_by = auth()->id();
+                                    $record->approved_at = now();
+                                    $record->generateDownloadToken();
+                                    $record->save();
+
+                                    // Send email notification
+                                    \Illuminate\Support\Facades\Mail::to($record->email)
+                                        ->send(new \App\Mail\DownloadRequestApproved($record));
+
+                                    $count++;
+                                }
+                            }
+
+                            Notification::make()
+                                ->title("$count request berhasil disetujui dan email telah dikirim")
+                                ->success()
+                                ->send();
+                        }),
+                    \Filament\Actions\BulkAction::make('bulk_reject')
+                        ->label('Reject Selected')
+                        ->icon('heroicon-o-x-circle')
+                        ->color('danger')
+                        ->requiresConfirmation()
+                        ->deselectRecordsAfterCompletion()
+                        ->form([
+                            \Filament\Forms\Components\Textarea::make('admin_notes')
+                                ->label('Alasan Penolakan')
+                                ->required(),
+                        ])
+                        ->action(function ($records, array $data) {
+                            $count = 0;
+                            foreach ($records as $record) {
+                                if ($record->status === 'pending') {
+                                    $record->status = 'rejected';
+                                    $record->admin_notes = $data['admin_notes'];
+                                    $record->approved_by = auth()->id();
+                                    $record->approved_at = now();
+                                    $record->save();
+
+                                    // Send email notification
+                                    \Illuminate\Support\Facades\Mail::to($record->email)
+                                        ->send(new \App\Mail\DownloadRequestRejected($record));
+
+                                    $count++;
+                                }
+                            }
+
+                            Notification::make()
+                                ->title("$count request berhasil ditolak dan email telah dikirim")
+                                ->success()
+                                ->send();
+                        }),
                     DeleteBulkAction::make(),
                 ]),
             ]);
