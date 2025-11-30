@@ -52,7 +52,7 @@ class DownloadRequestController extends Controller
             'tahun' => 'required|integer|min:2023|max:' . date('Y'),
             'wilayah_id' => 'required|integer|min:0',
             'jenjang_pendidikan_id' => 'required|integer|min:0',
-            'cf-turnstile-response' => 'required|turnstile',
+            // 'cf-turnstile-response' => 'required|turnstile',
         ]);
 
         if ($validator->fails()) {
