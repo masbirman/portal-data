@@ -32,6 +32,17 @@
       0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
     ),
   ),
+  'coderflex/laravel-turnstile' => 
+  array (
+    'aliases' => 
+    array (
+      'LaravelTurnstile' => 'Coderflex\\LaravelTurnstile\\Facades\\LaravelTurnstile',
+    ),
+    'providers' => 
+    array (
+      0 => 'Coderflex\\LaravelTurnstile\\LaravelTurnstileServiceProvider',
+    ),
+  ),
   'filament/actions' => 
   array (
     'providers' => 

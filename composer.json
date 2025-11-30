@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "*",
+        "coderflex/laravel-turnstile": "^2.0",
         "doctrine/dbal": "^4.3",
         "filament/filament": "4.0",
         "filament/spatie-laravel-settings-plugin": "*",

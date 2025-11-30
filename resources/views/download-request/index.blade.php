@@ -137,6 +137,11 @@
                 </div>
 
                 <!-- Submit Button -->
+                <!-- Turnstile -->
+                <div class="mb-6">
+                    <x-turnstile />
+                </div>
+
                 <div class="flex items-center justify-between pt-4">
                     <a href="{{ route('public.landing') }}" 
                         class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">

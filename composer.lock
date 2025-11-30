@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02839f602f1a401bf1cef362846675e6",
+    "content-hash": "b4779d802f40df02abe5f03aee7fc3ce",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -586,6 +586,80 @@
                 }
             ],
             "time": "2024-07-16T11:13:48+00:00"
+        },
+        {
+            "name": "coderflex/laravel-turnstile",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coderflexx/laravel-turnstile.git",
+                "reference": "1c1d0c5829851efaa1febcde34733537780eb0a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coderflexx/laravel-turnstile/zipball/1c1d0c5829851efaa1febcde34733537780eb0a9",
+                "reference": "1c1d0c5829851efaa1febcde34733537780eb0a9",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.7",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0|^8.0",
+                "nunomaduro/larastan": "^2.8.0|^3.1.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.7",
+                "pestphp/pest-plugin-arch": "^2.0|^3.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
+                "phpstan/phpstan-phpunit": "^1.0|^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "LaravelTurnstile": "Coderflex\\LaravelTurnstile\\Facades\\LaravelTurnstile"
+                    },
+                    "providers": [
+                        "Coderflex\\LaravelTurnstile\\LaravelTurnstileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coderflex\\LaravelTurnstile\\": "src/",
+                    "Coderflex\\LaravelTurnstile\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ousid",
+                    "email": "oussama@coderflex.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to help you implement the Cloudflare turnstile \"CAPTCHA Alternative\"",
+            "homepage": "https://github.com/coderflexx/laravel-turnstile",
+            "keywords": [
+                "cloudflare",
+                "coderflex",
+                "laravel",
+                "laravel-turnstile",
+                "turnstile"
+            ],
+            "support": {
+                "issues": "https://github.com/coderflexx/laravel-turnstile/issues",
+                "source": "https://github.com/coderflexx/laravel-turnstile/tree/2.1.1"
+            },
+            "time": "2025-03-01T13:04:55+00:00"
         },
         {
             "name": "composer/pcre",
@@ -11938,5 +12012,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
