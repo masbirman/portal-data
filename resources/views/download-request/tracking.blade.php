@@ -147,7 +147,7 @@
                             @if($request->status === 'approved')
                                 <div class="mt-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                                     <p class="text-sm text-green-800 dark:text-green-200">
-                                        <strong>Link berlaku hingga:</strong> {{ $request->token_expires_at->format('d M Y, H:i') }} WIB
+                                        <strong>Link berlaku hingga:</strong> {{ $request->token_expires_at->format('d M Y, H:i') }} WITA
                                     </p>
                                     @if($request->downloaded_at)
                                         <p class="text-sm text-green-600 dark:text-green-300 mt-1">
