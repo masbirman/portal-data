@@ -3,15 +3,15 @@
 namespace App\Filament\Pages\Auth;
 
 use Coderflex\FilamentTurnstile\Forms\Components\Turnstile;
-use Filament\Forms\Form;
+use Filament\Schemas\Schema;
 use Filament\Auth\Pages\Login as BaseLogin;
 
 class Login extends BaseLogin
 {
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 $this->getEmailFormComponent(),
                 $this->getPasswordFormComponent(),
                 $this->getRememberFormComponent(),
