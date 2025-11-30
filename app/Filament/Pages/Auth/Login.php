@@ -4,7 +4,7 @@ namespace App\Filament\Pages\Auth;
 
 use Coderflex\FilamentTurnstile\Forms\Components\Turnstile;
 use Filament\Forms\Form;
-use Filament\Pages\Auth\Login as BaseLogin;
+use Filament\Auth\Pages\Login as BaseLogin;
 
 class Login extends BaseLogin
 {
