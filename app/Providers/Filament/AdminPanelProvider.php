@@ -54,7 +54,7 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->plugin(\Coderflex\FilamentTurnstile\TurnstilePlugin::make())
+            ->login(\App\Filament\Pages\Auth\Login::class)
             ->profile(\App\Filament\Pages\EditProfile::class);
     }
 }
