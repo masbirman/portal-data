@@ -32,12 +32,12 @@ class DownloadRequestController extends Controller
 
             if ($requestCount >= 2) {
                 $tomorrow = now()->addDay()->startOfDay();
-                $hoursLeft = now()->diffInHours($tomorrow);
-                $minutesLeft = now()->diffInMinutes($tomorrow) % 60;
+                $hoursLeft = (int) now()->diffInHours($tomorrow);
+                $minutesLeft = (int) (now()->diffInMinutes($tomorrow) % 60);
 
                 return back()
                     ->withErrors([
-                        'rate_limit' => "Anda sudah mencapai batas maksimal 2 request per hari. Silakan coba lagi dalam {$hoursLeft} jam {$minutesLeft} menit."
+                        'rate_limit' => "Anda telah mencapai batas maksimal pengajuan hari ini (2 pengajuan per hari). Silakan coba lagi besok atau dalam {$hoursLeft} jam {$minutesLeft} menit."
                     ])
                     ->withInput();
             }
