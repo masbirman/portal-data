@@ -185,6 +185,9 @@ class DownloadRequestsTable
                                     $record->generateDownloadToken();
                                     $record->save();
 
+                                    // Log activity
+                                    ActivityLog::log('approve', "Menyetujui pengajuan download dari {$record->nama} ({$record->email}) [bulk]", $record);
+
                                     // Send email notification
                                     \Illuminate\Support\Facades\Mail::to($record->email)
                                         ->send(new \App\Mail\DownloadRequestApproved($record));
@@ -218,6 +221,9 @@ class DownloadRequestsTable
                                     $record->approved_by = auth()->id();
                                     $record->approved_at = now();
                                     $record->save();
+
+                                    // Log activity
+                                    ActivityLog::log('reject', "Menolak pengajuan download dari {$record->nama} ({$record->email}) [bulk]. Alasan: {$data['admin_notes']}", $record);
 
                                     // Send email notification
                                     \Illuminate\Support\Facades\Mail::to($record->email)
