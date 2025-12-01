@@ -17,10 +17,7 @@
         {{-- Backup List --}}
         <x-filament::section>
             <x-slot name="heading">
-                <div class="flex items-center gap-2">
-                    <x-heroicon-o-cloud class="w-5 h-5" />
-                    Daftar Backup di Google Drive
-                </div>
+                Daftar Backup di Google Drive
             </x-slot>
 
             @if (count($backups) > 0)
@@ -67,7 +64,11 @@
                 </div>
             @else
                 <div class="text-center py-8 text-gray-500">
-                    <x-heroicon-o-cloud class="w-12 h-12 mx-auto mb-3 opacity-50" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 mx-auto mb-3 opacity-50">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                    </svg>
                     <p>Belum ada backup tersimpan di Google Drive</p>
                 </div>
             @endif
@@ -76,10 +77,7 @@
         {{-- Settings --}}
         <x-filament::section collapsible collapsed>
             <x-slot name="heading">
-                <div class="flex items-center gap-2">
-                    <x-heroicon-o-cog-6-tooth class="w-5 h-5" />
-                    Pengaturan Backup
-                </div>
+                Pengaturan Backup
             </x-slot>
 
             <form wire:submit="saveSettings" class="space-y-6">
