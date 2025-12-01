@@ -36,12 +36,14 @@ class GoogleDriveService
             ]);
 
             $content = file_get_contents($filePath);
+            $mimeType = str_ends_with($fileName, '.gz') ? 'application/gzip' : 'application/octet-stream';
 
             $file = $this->driveService->files->create($fileMetadata, [
                 'data' => $content,
-                'mimeType' => 'application/gzip',
+                'mimeType' => $mimeType,
                 'uploadType' => 'multipart',
                 'fields' => 'id',
+                'supportsAllDrives' => true,
             ]);
 
             return $file->id;
