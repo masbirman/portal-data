@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\DownloadRequest;
 use App\Models\User;
 use App\Models\Wilayah;
+use App\Services\TelegramService;
 use Filament\Notifications\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -58,6 +59,25 @@ class DownloadRequestController extends Controller
                 ->iconColor('warning')
                 ->sendToDatabase($admin);
         }
+
+        // Send Telegram notification
+        $dataType = match ($downloadRequest->data_type) {
+            'asesmen_nasional' => 'ANBK',
+            'survei_lingkungan_belajar' => 'SLB',
+            'tes_kemampuan_akademik' => 'TKA',
+            default => $downloadRequest->data_type,
+        };
+
+        $telegramMessage = "📥 <b>Pengajuan Download Baru</b>\n\n"
+            . "👤 <b>Nama:</b> {$downloadRequest->nama}\n"
+            . "📧 <b>Email:</b> {$downloadRequest->email}\n"
+            . "🏢 <b>Instansi:</b> {$downloadRequest->instansi}\n"
+            . "📊 <b>Jenis Data:</b> {$dataType}\n"
+            . "📅 <b>Tahun:</b> {$downloadRequest->tahun}\n"
+            . "🕐 <b>Waktu:</b> " . now()->format('d M Y, H:i') . " WITA\n\n"
+            . "🔗 <a href='" . url('/admin/download-requests') . "'>Lihat di Admin Panel</a>";
+
+        (new TelegramService())->sendMessage($telegramMessage);
 
         return redirect()->route('download-request.success');
     }
