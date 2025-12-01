@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\DownloadRequest;
 use App\Models\User;
 use App\Models\Wilayah;
-use Filament\Notifications\Actions\Action as NotificationAction;
 use Filament\Notifications\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -57,11 +56,6 @@ class DownloadRequestController extends Controller
                 ->body("Pengajuan dari {$downloadRequest->nama} ({$downloadRequest->instansi}) menunggu persetujuan.")
                 ->icon('heroicon-o-document-arrow-down')
                 ->iconColor('warning')
-                ->actions([
-                    NotificationAction::make('lihat')
-                        ->button()
-                        ->url('/admin/download-requests'),
-                ])
                 ->sendToDatabase($admin);
         }
 
