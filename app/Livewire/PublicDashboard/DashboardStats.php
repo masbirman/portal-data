@@ -18,7 +18,12 @@ class DashboardStats extends Component
 
     public function mount()
     {
-        $this->selectedYear = SiklusAsesmen::max('tahun') ?? date('Y');
+        // Set default tahun ke tahun terakhir yang ada datanya
+        $latestYear = SiklusAsesmen::whereHas('pelaksanaanAsesmen')
+            ->orderBy('tahun', 'desc')
+            ->first();
+
+        $this->selectedYear = $latestYear?->tahun ?? date('Y');
     }
 
     public function getFiltersProperty()
