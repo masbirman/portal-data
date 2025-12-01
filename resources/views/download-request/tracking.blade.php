@@ -205,8 +205,8 @@
                             @elseif($request->status === 'pending')
                                 <div class="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                                     <p class="text-sm text-yellow-800 dark:text-yellow-200">
-                                        ⏳ Pengajuan Anda sedang dalam proses review. Kami akan mengirimkan notifikasi
-                                        melalui email setelah direview.
+                                        ⏳ Pengajuan Anda sedang dalam proses review. Silakan cek halaman ini secara berkala
+                                        untuk mengetahui status pengajuan Anda.
                                     </p>
                                 </div>
                             @endif
