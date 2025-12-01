@@ -16,6 +16,7 @@ class WilayahDetailTable extends Component
     public $wilayahId;
     public $jenjangIdFilter = 'all'; // Filter by jenjang ID
     public $search = '';
+    public $perPage = 10;
 
     public function mount($tahun, $wilayahId)
     {
@@ -33,6 +34,11 @@ class WilayahDetailTable extends Component
         $this->resetPage();
     }
 
+    public function updatingPerPage()
+    {
+        $this->resetPage();
+    }
+
     public function setJenjangFilter($jenjangId)
     {
         $this->jenjangIdFilter = $jenjangId;
@@ -43,10 +49,10 @@ class WilayahDetailTable extends Component
     {
         // Define custom order for jenjang
         $jenjangOrder = ['SMA', 'SMK', 'SMP', 'SD', 'SMALB', 'SMPLB', 'SDLB', 'PAKET C', 'PAKET B', 'PAKET A'];
-        
+
         // Get all unique jenjang
         $allJenjang = JenjangPendidikan::all()->unique('nama');
-        
+
         // Sort jenjang according to custom order
         $jenjangList = collect();
         foreach ($jenjangOrder as $nama) {
@@ -55,7 +61,7 @@ class WilayahDetailTable extends Component
                 $jenjangList->push($jenjang);
             }
         }
-        
+
         // Add any remaining jenjang not in the custom order
         foreach ($allJenjang as $jenjang) {
             if (!$jenjangList->contains('nama', $jenjang->nama)) {
@@ -87,7 +93,7 @@ class WilayahDetailTable extends Component
         $chartStats = $this->getChartStats();
 
         return view('livewire.public.wilayah-detail-table', [
-            'data' => $query->orderBy('id')->paginate(10),
+            'data' => $query->orderBy('id')->paginate($this->perPage),
             'chartStats' => $chartStats,
             'jenjangList' => $jenjangList
         ]);
@@ -101,7 +107,7 @@ class WilayahDetailTable extends Component
             })
             ->whereHas('sekolah', function ($q) {
                 $q->where('wilayah_id', $this->wilayahId);
-                
+
                 if ($this->jenjangIdFilter !== 'all') {
                     $q->where('jenjang_pendidikan_id', $this->jenjangIdFilter);
                 }
