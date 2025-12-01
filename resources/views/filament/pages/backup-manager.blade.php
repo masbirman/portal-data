@@ -1,178 +1,174 @@
 <x-filament-panels::page>
-    <div class="space-y-8">
-        {{-- Action Buttons --}}
-        <div class="flex gap-4">
-            <x-filament::button wire:click="createBackup" wire:loading.attr="disabled" icon="heroicon-o-cloud-arrow-up"
-                color="primary" size="lg">
-                <span wire:loading.remove wire:target="createBackup">Backup Sekarang</span>
-                <span wire:loading wire:target="createBackup">Memproses...</span>
-            </x-filament::button>
+    {{-- Action Buttons --}}
+    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+        <x-filament::button wire:click="createBackup" wire:loading.attr="disabled" icon="heroicon-o-cloud-arrow-up"
+            color="primary">
+            <span wire:loading.remove wire:target="createBackup">Backup Sekarang</span>
+            <span wire:loading wire:target="createBackup">Memproses...</span>
+        </x-filament::button>
 
-            <x-filament::button wire:click="loadBackups" wire:loading.attr="disabled" icon="heroicon-o-arrow-path"
-                color="gray" size="lg">
-                Refresh
-            </x-filament::button>
-        </div>
+        <x-filament::button wire:click="loadBackups" wire:loading.attr="disabled" icon="heroicon-o-arrow-path"
+            color="gray">
+            Refresh
+        </x-filament::button>
+    </div>
 
-        {{-- Backup List --}}
-        <x-filament::section>
-            <x-slot name="heading">
-                Daftar Backup di Google Drive
-            </x-slot>
+    {{-- Backup List --}}
+    <x-filament::section style="margin-bottom: 2rem;">
+        <x-slot name="heading">
+            Daftar Backup di Google Drive
+        </x-slot>
 
-            @if (count($backups) > 0)
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm">
-                        <thead>
-                            <tr class="border-b dark:border-gray-700">
-                                <th class="text-left py-4 px-4 font-medium">Nama File</th>
-                                <th class="text-left py-4 px-4 font-medium">Ukuran</th>
-                                <th class="text-left py-4 px-4 font-medium">Tanggal</th>
-                                <th class="text-right py-4 px-4 font-medium">Aksi</th>
+        @if (count($backups) > 0)
+            <x-filament::section>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <th style="text-align: left; padding: 1rem;">Nama File</th>
+                            <th style="text-align: left; padding: 1rem;">Ukuran</th>
+                            <th style="text-align: left; padding: 1rem;">Tanggal</th>
+                            <th style="text-align: right; padding: 1rem;">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($backups as $backup)
+                            <tr style="border-bottom: 1px solid #e5e7eb;">
+                                <td style="padding: 1rem; font-family: monospace; font-size: 0.75rem;">
+                                    {{ $backup['name'] }}</td>
+                                <td style="padding: 1rem;">{{ $this->formatBytes((int) $backup['size']) }}</td>
+                                <td style="padding: 1rem;">
+                                    {{ \Carbon\Carbon::parse($backup['created_at'])->format('d M Y, H:i') }}</td>
+                                <td style="padding: 1rem; text-align: right;">
+                                    <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
+                                        <x-filament::icon-button
+                                            wire:click="downloadBackup('{{ $backup['id'] }}', '{{ $backup['name'] }}')"
+                                            icon="heroicon-o-arrow-down-tray" color="info" tooltip="Download" />
+                                        <x-filament::icon-button
+                                            wire:click="restoreBackup('{{ $backup['id'] }}', '{{ $backup['name'] }}')"
+                                            wire:confirm="Restore backup ini?" icon="heroicon-o-arrow-path"
+                                            color="warning" tooltip="Restore" />
+                                        <x-filament::icon-button wire:click="deleteBackup('{{ $backup['id'] }}')"
+                                            wire:confirm="Hapus backup ini?" icon="heroicon-o-trash" color="danger"
+                                            tooltip="Hapus" />
+                                    </div>
+                                </td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($backups as $backup)
-                                <tr class="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
-                                    <td class="py-4 px-4 font-mono text-xs">{{ $backup['name'] }}</td>
-                                    <td class="py-4 px-4">{{ $this->formatBytes((int) $backup['size']) }}</td>
-                                    <td class="py-4 px-4">
-                                        {{ \Carbon\Carbon::parse($backup['created_at'])->format('d M Y, H:i') }}</td>
-                                    <td class="py-4 px-4">
-                                        <div class="flex justify-end gap-2">
-                                            <x-filament::icon-button
-                                                wire:click="downloadBackup('{{ $backup['id'] }}', '{{ $backup['name'] }}')"
-                                                icon="heroicon-o-arrow-down-tray" color="info" tooltip="Download" />
-                                            <x-filament::icon-button
-                                                wire:click="restoreBackup('{{ $backup['id'] }}', '{{ $backup['name'] }}')"
-                                                wire:confirm="Restore backup ini? Data akan ditimpa!"
-                                                icon="heroicon-o-arrow-path" color="warning" tooltip="Restore" />
-                                            <x-filament::icon-button wire:click="deleteBackup('{{ $backup['id'] }}')"
-                                                wire:confirm="Hapus backup ini?" icon="heroicon-o-trash" color="danger"
-                                                tooltip="Hapus" />
-                                        </div>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            @else
-                <div class="text-center py-16">
-                    <p class="text-6xl mb-6">☁️</p>
-                    <p class="text-gray-600 dark:text-gray-400">Belum ada backup tersimpan di Google Drive</p>
-                    <p class="text-sm mt-2 text-gray-400">Klik tombol Backup Sekarang untuk membuat backup pertama</p>
-                </div>
-            @endif
-        </x-filament::section>
+                        @endforeach
+                    </tbody>
+                </table>
+            </x-filament::section>
+        @else
+            <div style="text-align: center; padding: 3rem;">
+                <p style="font-size: 3rem; margin-bottom: 1rem;">☁️</p>
+                <p style="color: #6b7280;">Belum ada backup tersimpan di Google Drive</p>
+                <p style="font-size: 0.875rem; color: #9ca3af; margin-top: 0.5rem;">Klik tombol Backup Sekarang untuk
+                    membuat backup pertama</p>
+            </div>
+        @endif
+    </x-filament::section>
 
-        {{-- Settings --}}
-        <x-filament::section collapsible>
-            <x-slot name="heading">
-                Pengaturan Backup
-            </x-slot>
+    {{-- Settings --}}
+    <x-filament::section collapsible>
+        <x-slot name="heading">
+            Pengaturan Backup
+        </x-slot>
 
-            <form wire:submit="saveSettings">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {{-- Backup Otomatis --}}
-                    <div class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6">
-                        <h4 class="font-semibold mb-6 flex items-center gap-3 text-base">
-                            <span class="text-2xl">🕐</span>
-                            <span>Backup Otomatis</span>
-                        </h4>
-                        <div class="space-y-5">
-                            <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" wire:model.live="scheduled_backup_enabled"
-                                    class="w-5 h-5 rounded border-gray-300 text-primary-600">
+        <form wire:submit="saveSettings">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                {{-- Backup Otomatis --}}
+                <x-filament::section>
+                    <x-slot name="heading">
+                        🕐 Backup Otomatis
+                    </x-slot>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <x-filament::input.wrapper>
+                            <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                                <x-filament::input.checkbox wire:model.live="scheduled_backup_enabled" />
                                 <span>Aktifkan Backup Terjadwal</span>
                             </label>
-                            @if ($scheduled_backup_enabled)
-                                <div class="space-y-4 mt-4 ml-8 p-4 bg-white dark:bg-gray-900 rounded-lg">
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-600 mb-2">Jadwal</label>
-                                        <select wire:model="backup_schedule"
-                                            class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-800">
-                                            <option value="daily">Setiap Hari</option>
-                                            <option value="weekly">Setiap Minggu</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-600 mb-2">Waktu</label>
-                                        <input type="time" wire:model="backup_time"
-                                            class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-800">
-                                    </div>
-                                </div>
-                            @endif
-                        </div>
+                        </x-filament::input.wrapper>
+                        @if ($scheduled_backup_enabled)
+                            <div style="margin-left: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                                <x-filament::input.wrapper label="Jadwal">
+                                    <x-filament::input.select wire:model="backup_schedule">
+                                        <option value="daily">Setiap Hari</option>
+                                        <option value="weekly">Setiap Minggu</option>
+                                    </x-filament::input.select>
+                                </x-filament::input.wrapper>
+                                <x-filament::input.wrapper label="Waktu">
+                                    <x-filament::input type="time" wire:model="backup_time" />
+                                </x-filament::input.wrapper>
+                            </div>
+                        @endif
                     </div>
+                </x-filament::section>
 
-                    {{-- Keamanan --}}
-                    <div class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6">
-                        <h4 class="font-semibold mb-6 flex items-center gap-3 text-base">
-                            <span class="text-2xl">🔒</span>
-                            <span>Keamanan</span>
-                        </h4>
-                        <div class="space-y-5">
-                            <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" wire:model.live="encryption_enabled"
-                                    class="w-5 h-5 rounded border-gray-300 text-primary-600">
+                {{-- Keamanan --}}
+                <x-filament::section>
+                    <x-slot name="heading">
+                        🔒 Keamanan
+                    </x-slot>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <x-filament::input.wrapper>
+                            <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                                <x-filament::input.checkbox wire:model.live="encryption_enabled" />
                                 <span>Enkripsi File Backup</span>
                             </label>
-                            @if ($encryption_enabled)
-                                <div class="mt-4 ml-8 p-4 bg-white dark:bg-gray-900 rounded-lg">
-                                    <label class="block text-sm font-medium text-gray-600 mb-2">Password</label>
-                                    <input type="password" wire:model="encryption_password"
-                                        placeholder="Masukkan password"
-                                        class="w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-800">
-                                    <p class="text-xs text-gray-400 mt-2">Diperlukan saat restore</p>
-                                </div>
-                            @endif
-                        </div>
+                        </x-filament::input.wrapper>
+                        @if ($encryption_enabled)
+                            <div style="margin-left: 2rem;">
+                                <x-filament::input.wrapper label="Password Enkripsi" hint="Diperlukan saat restore">
+                                    <x-filament::input type="password" wire:model="encryption_password"
+                                        placeholder="Masukkan password" />
+                                </x-filament::input.wrapper>
+                            </div>
+                        @endif
                     </div>
+                </x-filament::section>
 
-                    {{-- Retention --}}
-                    <div class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6">
-                        <h4 class="font-semibold mb-6 flex items-center gap-3 text-base">
-                            <span class="text-2xl">🗑️</span>
-                            <span>Retention</span>
-                        </h4>
-                        <div class="space-y-5">
-                            <label class="flex items-center gap-3 cursor-pointer">
-                                <input type="checkbox" wire:model.live="auto_delete_enabled"
-                                    class="w-5 h-5 rounded border-gray-300 text-primary-600">
+                {{-- Retention --}}
+                <x-filament::section>
+                    <x-slot name="heading">
+                        🗑️ Retention
+                    </x-slot>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <x-filament::input.wrapper>
+                            <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                                <x-filament::input.checkbox wire:model.live="auto_delete_enabled" />
                                 <span>Auto-Delete Backup Lama</span>
                             </label>
-                            @if ($auto_delete_enabled)
-                                <div class="flex items-center gap-3 mt-4 ml-8">
-                                    <span class="text-gray-600">Simpan selama</span>
-                                    <input type="number" wire:model="retention_days" min="1" max="365"
-                                        class="w-20 rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-800 text-center">
-                                    <span class="text-gray-600">hari</span>
-                                </div>
-                            @endif
-                        </div>
+                        </x-filament::input.wrapper>
+                        @if ($auto_delete_enabled)
+                            <div style="margin-left: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+                                <span>Simpan selama</span>
+                                <x-filament::input type="number" wire:model="retention_days" min="1"
+                                    max="365" style="width: 5rem; text-align: center;" />
+                                <span>hari</span>
+                            </div>
+                        @endif
                     </div>
+                </x-filament::section>
 
-                    {{-- Notifikasi --}}
-                    <div class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6">
-                        <h4 class="font-semibold mb-6 flex items-center gap-3 text-base">
-                            <span class="text-2xl">📱</span>
-                            <span>Notifikasi</span>
-                        </h4>
-                        <label class="flex items-center gap-3 cursor-pointer">
-                            <input type="checkbox" wire:model="telegram_notification_enabled"
-                                class="w-5 h-5 rounded border-gray-300 text-primary-600">
+                {{-- Notifikasi --}}
+                <x-filament::section>
+                    <x-slot name="heading">
+                        📱 Notifikasi
+                    </x-slot>
+                    <x-filament::input.wrapper>
+                        <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                            <x-filament::input.checkbox wire:model="telegram_notification_enabled" />
                             <span>Kirim Notifikasi Telegram</span>
                         </label>
-                    </div>
-                </div>
+                    </x-filament::input.wrapper>
+                </x-filament::section>
+            </div>
 
-                <div class="flex justify-end mt-8 pt-6 border-t dark:border-gray-700">
-                    <x-filament::button type="submit" color="success" icon="heroicon-o-check" size="lg">
-                        Simpan Pengaturan
-                    </x-filament::button>
-                </div>
-            </form>
-        </x-filament::section>
-    </div>
+            <div
+                style="display: flex; justify-content: flex-end; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+                <x-filament::button type="submit" color="success" icon="heroicon-o-check">
+                    Simpan Pengaturan
+                </x-filament::button>
+            </div>
+        </form>
+    </x-filament::section>
 </x-filament-panels::page>
