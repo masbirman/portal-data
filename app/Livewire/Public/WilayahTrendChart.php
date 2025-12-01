@@ -2,23 +2,28 @@
 
 namespace App\Livewire\Public;
 
-use Livewire\Component;
-use App\Models\SiklusAsesmen;
+use App\Models\JenjangPendidikan;
 use App\Models\PelaksanaanAsesmen;
+use App\Models\SiklusAsesmen;
 use App\Models\Wilayah;
+use Livewire\Component;
 
 class WilayahTrendChart extends Component
 {
     public $selectedWilayah = '';
+    public $selectedJenjang = '';
 
     public function render()
     {
         $wilayahs = Wilayah::orderBy('urutan')->orderBy('nama')->get();
+        $jenjangs = JenjangPendidikan::orderBy('id')->get();
         $years = SiklusAsesmen::whereHas('pelaksanaanAsesmen')->orderBy('tahun')->pluck('tahun')->toArray();
 
         $chartData = $this->getChartData($years);
+        $selectedWilayahName = $this->selectedWilayah ? Wilayah::find($this->selectedWilayah)?->nama : null;
+        $selectedJenjangName = $this->selectedJenjang ? JenjangPendidikan::find($this->selectedJenjang)?->nama : 'Semua Jenjang';
 
-        return view('livewire.public.wilayah-trend-chart', compact('wilayahs', 'chartData', 'years'));
+        return view('livewire.public.wilayah-trend-chart', compact('wilayahs', 'jenjangs', 'chartData', 'years', 'selectedWilayahName', 'selectedJenjangName'));
     }
 
     public function getChartData($years)
@@ -27,7 +32,7 @@ class WilayahTrendChart extends Component
             return null;
         }
 
-        $cacheKey = 'wilayah_trend_' . $this->selectedWilayah;
+        $cacheKey = 'wilayah_trend_' . $this->selectedWilayah . '_' . ($this->selectedJenjang ?: 'all');
 
         return \Illuminate\Support\Facades\Cache::remember($cacheKey, 3600, function () use ($years) {
             $categories = [];
@@ -42,15 +47,14 @@ class WilayahTrendChart extends Component
                     $q->where('tahun', $tahun);
                 })->whereHas('sekolah', function ($q) {
                     $q->where('wilayah_id', $this->selectedWilayah);
+                    if ($this->selectedJenjang) {
+                        $q->where('jenjang_pendidikan_id', $this->selectedJenjang);
+                    }
                 });
 
-                // Jumlah Sekolah
                 $seriesSekolah[] = (clone $query)->count();
-
-                // Total Peserta
                 $seriesPeserta[] = (clone $query)->sum('jumlah_peserta');
 
-                // Keikutsertaan (Avg Partisipasi)
                 $avgLiterasi = (clone $query)->avg('partisipasi_literasi') ?? 0;
                 $avgNumerasi = (clone $query)->avg('partisipasi_numerasi') ?? 0;
                 $seriesKeikutsertaan[] = round(($avgLiterasi + $avgNumerasi) / 2, 1);
@@ -65,10 +69,5 @@ class WilayahTrendChart extends Component
                 ]
             ];
         });
-    }
-
-    public function updatedSelectedWilayah()
-    {
-        // Clear cache when wilayah changes to get fresh data
     }
 }

@@ -4,18 +4,37 @@
         <p class="text-gray-600 text-sm">Perkembangan data asesmen per kota/kabupaten dari tahun ke tahun.</p>
     </div>
 
-    <div class="mb-6">
-        <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Wilayah</label>
-        <select wire:model.live="selectedWilayah"
-            class="w-full md:w-1/3 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent">
-            <option value="">-- Pilih Kota/Kabupaten --</option>
-            @foreach ($wilayahs as $wilayah)
-                <option value="{{ $wilayah->id }}">{{ $wilayah->nama }}</option>
-            @endforeach
-        </select>
+    <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Wilayah</label>
+            <select wire:model.live="selectedWilayah"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent">
+                <option value="">-- Pilih Kota/Kabupaten --</option>
+                @foreach ($wilayahs as $wilayah)
+                    <option value="{{ $wilayah->id }}">{{ $wilayah->nama }}</option>
+                @endforeach
+            </select>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Jenjang</label>
+            <select wire:model.live="selectedJenjang"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent">
+                <option value="">Semua Jenjang</option>
+                @foreach ($jenjangs as $jenjang)
+                    <option value="{{ $jenjang->id }}">{{ $jenjang->nama }}</option>
+                @endforeach
+            </select>
+        </div>
     </div>
 
     @if ($chartData)
+        <div class="mb-4 p-3 bg-slate-100 rounded-lg">
+            <p class="text-sm text-gray-700">
+                <span class="font-semibold">{{ $selectedWilayahName }}</span> -
+                <span class="text-slate-600">{{ $selectedJenjangName }}</span>
+            </p>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             @php
                 $latestIdx = count($chartData['categories']) - 1;
@@ -69,7 +88,7 @@
         </div>
 
         <div x-data="wilayahTrendChart(@js($chartData))" x-init="initChart" class="w-full h-[350px]"
-            wire:key="chart-{{ $selectedWilayah }}">
+            wire:key="chart-{{ $selectedWilayah }}-{{ $selectedJenjang }}">
             <div x-ref="chart"></div>
         </div>
     @else
