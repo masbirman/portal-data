@@ -10,7 +10,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class DownloadRequestRejected extends Mailable implements ShouldQueue
+class DownloadRequestRejected extends Mailable
 {
     use Queueable, SerializesModels;
 
