@@ -82,29 +82,57 @@ class BackupService
 
     protected function mysqldump(string $outputPath): array
     {
-        $host = config('database.connections.mysql.host');
-        $port = config('database.connections.mysql.port');
-        $database = config('database.connections.mysql.database');
-        $username = config('database.connections.mysql.username');
-        $password = config('database.connections.mysql.password');
+        try {
+            $tables = \DB::select('SHOW TABLES');
+            $database = config('database.connections.mysql.database');
 
-        $command = sprintf(
-            'mysqldump -h%s -P%s -u%s -p%s %s > %s 2>&1',
-            escapeshellarg($host),
-            escapeshellarg($port),
-            escapeshellarg($username),
-            escapeshellarg($password),
-            escapeshellarg($database),
-            escapeshellarg($outputPath)
-        );
+            $output = "-- Database Backup\n";
+            $output .= "-- Generated: " . now()->toDateTimeString() . "\n";
+            $output .= "-- Database: {$database}\n\n";
+            $output .= "SET FOREIGN_KEY_CHECKS=0;\n\n";
 
-        exec($command, $output, $returnCode);
+            foreach ($tables as $table) {
+                $tableName = array_values((array) $table)[0];
 
-        if ($returnCode !== 0 || !file_exists($outputPath)) {
-            return ['success' => false, 'message' => 'Mysqldump gagal: ' . implode("\n", $output)];
+                // Get create table statement
+                $createTable = \DB::select("SHOW CREATE TABLE `{$tableName}`");
+                $output .= "-- Table: {$tableName}\n";
+                $output .= "DROP TABLE IF EXISTS `{$tableName}`;\n";
+                $output .= $createTable[0]->{'Create Table'} . ";\n\n";
+
+                // Get table data
+                $rows = \DB::table($tableName)->get();
+                if ($rows->count() > 0) {
+                    $columns = array_keys((array) $rows->first());
+                    $columnList = '`' . implode('`, `', $columns) . '`';
+
+                    foreach ($rows->chunk(100) as $chunk) {
+                        $values = [];
+                        foreach ($chunk as $row) {
+                            $rowValues = [];
+                            foreach ((array) $row as $value) {
+                                if (is_null($value)) {
+                                    $rowValues[] = 'NULL';
+                                } else {
+                                    $rowValues[] = "'" . addslashes($value) . "'";
+                                }
+                            }
+                            $values[] = '(' . implode(', ', $rowValues) . ')';
+                        }
+                        $output .= "INSERT INTO `{$tableName}` ({$columnList}) VALUES\n" . implode(",\n", $values) . ";\n";
+                    }
+                    $output .= "\n";
+                }
+            }
+
+            $output .= "SET FOREIGN_KEY_CHECKS=1;\n";
+
+            file_put_contents($outputPath, $output);
+
+            return ['success' => true];
+        } catch (\Exception $e) {
+            return ['success' => false, 'message' => 'Mysqldump gagal: ' . $e->getMessage()];
         }
-
-        return ['success' => true];
     }
 
     protected function compress(string $source, string $destination): void
@@ -215,29 +243,16 @@ class BackupService
 
     protected function mysqlImport(string $sqlPath): array
     {
-        $host = config('database.connections.mysql.host');
-        $port = config('database.connections.mysql.port');
-        $database = config('database.connections.mysql.database');
-        $username = config('database.connections.mysql.username');
-        $password = config('database.connections.mysql.password');
+        try {
+            $sql = file_get_contents($sqlPath);
 
-        $command = sprintf(
-            'mysql -h%s -P%s -u%s -p%s %s < %s 2>&1',
-            escapeshellarg($host),
-            escapeshellarg($port),
-            escapeshellarg($username),
-            escapeshellarg($password),
-            escapeshellarg($database),
-            escapeshellarg($sqlPath)
-        );
+            // Split by semicolon but be careful with strings
+            \DB::unprepared($sql);
 
-        exec($command, $output, $returnCode);
-
-        if ($returnCode !== 0) {
-            return ['success' => false, 'message' => 'MySQL import gagal: ' . implode("\n", $output)];
+            return ['success' => true];
+        } catch (\Exception $e) {
+            return ['success' => false, 'message' => 'MySQL import gagal: ' . $e->getMessage()];
         }
-
-        return ['success' => true];
     }
 
     public function deleteOldBackups(int $retentionDays): int
