@@ -29,6 +29,7 @@ class BackupManager extends Page implements HasForms
 
     public array $backups = [];
     public bool $isLoading = false;
+    public bool $isGoogleConnected = false;
 
     // Settings form
     public bool $scheduled_backup_enabled = false;
@@ -43,7 +44,35 @@ class BackupManager extends Page implements HasForms
     public function mount(): void
     {
         $this->loadSettings();
-        $this->loadBackups();
+        $this->checkGoogleConnection();
+        if ($this->isGoogleConnected) {
+            $this->loadBackups();
+        }
+    }
+
+    protected function checkGoogleConnection(): void
+    {
+        $googleDrive = new \App\Services\GoogleDriveService();
+        $this->isGoogleConnected = $googleDrive->isAuthenticated();
+    }
+
+    public function connectGoogle(): void
+    {
+        $googleDrive = new \App\Services\GoogleDriveService();
+        $this->redirect($googleDrive->getAuthUrl());
+    }
+
+    public function disconnectGoogle(): void
+    {
+        $googleDrive = new \App\Services\GoogleDriveService();
+        $googleDrive->disconnect();
+        $this->isGoogleConnected = false;
+        $this->backups = [];
+
+        Notification::make()
+            ->title('Google Drive terputus')
+            ->success()
+            ->send();
     }
 
     protected function loadSettings(): void

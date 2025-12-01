@@ -7,6 +7,21 @@ use App\Http\Controllers\AsesmenNasionalController;
 use App\Http\Controllers\DownloadRequestController;
 use App\Http\Controllers\PublicDashboardController;
 
+// Google Drive OAuth Callback
+Route::get('/admin/backup-manager/oauth-callback', function () {
+    $code = request('code');
+    if (!$code) {
+        return redirect('/admin/backup-manager')->with('error', 'OAuth gagal');
+    }
+
+    $googleDrive = new \App\Services\GoogleDriveService();
+    if ($googleDrive->authenticate($code)) {
+        return redirect('/admin/backup-manager')->with('success', 'Google Drive terhubung');
+    }
+
+    return redirect('/admin/backup-manager')->with('error', 'OAuth gagal');
+})->middleware(['web', 'auth']);
+
 // Public Routes
 Route::get('/', [PublicDashboardController::class, 'landing'])->name('public.landing');
 
@@ -45,10 +60,10 @@ Route::get('/test-export', function() {
             ]
         ];
     })->toArray();
-    
+
     try {
         return \Maatwebsite\Excel\Facades\Excel::download(
-            new \App\Exports\DashboardStatsExport($data, 2023), 
+            new \App\Exports\DashboardStatsExport($data, 2023),
             'test.xlsx'
         );
     } catch (\Exception $e) {
