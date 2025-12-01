@@ -64,4 +64,7 @@
 
     <!-- Trend Chart -->
     @livewire('public.trend-chart')
+
+    <!-- Wilayah Trend Chart -->
+    @livewire('public.wilayah-trend-chart')
 @endsection
