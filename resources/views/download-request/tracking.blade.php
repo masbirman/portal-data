@@ -182,6 +182,10 @@
                                                 ✓ Diunduh pada {{ $request->downloaded_at->format('d M Y, H:i') }}
                                             </p>
                                         @endif
+                                        <p class="text-sm text-green-700 dark:text-green-300 mt-2">
+                                            📧 Link download juga telah dikirim ke email
+                                            <strong>{{ $request->email }}</strong>. Silakan cek inbox atau folder spam.
+                                        </p>
                                     </div>
                                 @else
                                     <div
