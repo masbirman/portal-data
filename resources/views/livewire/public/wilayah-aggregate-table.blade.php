@@ -8,7 +8,7 @@
     <!-- Table -->
     <div class="overflow-x-auto bg-white rounded-lg shadow">
         <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-blue-600 text-white">
+            <thead class="bg-slate-900 text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">No</th>
                     <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Kabupaten/Kota</th>
@@ -48,12 +48,9 @@
                             </div>
                         </td>
                         @foreach ($jenjangList as $jenjang)
-                            <td class="px-6 py-4 whitespace-nowrap text-center">
-                                <span
-                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-semibold
-                                    {{ $wilayah->stats[$jenjang->nama] > 0 ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-500' }}">
-                                    {{ $wilayah->stats[$jenjang->nama] }}
-                                </span>
+                            <td
+                                class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium {{ $wilayah->stats[$jenjang->nama] > 0 ? 'text-gray-900' : 'text-gray-400' }}">
+                                {{ $wilayah->stats[$jenjang->nama] }}
                             </td>
                         @endforeach
                     </tr>
