@@ -62,9 +62,6 @@
     <!-- Stats Overview -->
     @livewire('public.stats-overview')
 
-    <!-- Trend Chart -->
-    @livewire('public.trend-chart')
-
-    <!-- Wilayah Trend Chart -->
+    <!-- Statistik Per Wilayah & Jenjang -->
     @livewire('public.wilayah-trend-chart')
 @endsection
