@@ -10,7 +10,7 @@ use Livewire\Component;
 
 class WilayahTrendChart extends Component
 {
-    public $selectedWilayah = '';
+    public $selectedWilayah = 'all';
     public $selectedJenjang = '';
 
     public function render()
@@ -20,19 +20,32 @@ class WilayahTrendChart extends Component
         $years = SiklusAsesmen::whereHas('pelaksanaanAsesmen')->orderBy('tahun')->pluck('tahun')->toArray();
 
         $chartData = $this->getChartData($years);
-        $selectedWilayahName = $this->selectedWilayah ? Wilayah::find($this->selectedWilayah)?->nama : null;
-        $selectedJenjangName = $this->selectedJenjang ? JenjangPendidikan::find($this->selectedJenjang)?->nama : 'Semua Jenjang';
+
+        if ($this->selectedWilayah === 'all') {
+            $selectedWilayahName = 'Semua Kota/Kabupaten';
+        } else {
+            $selectedWilayahName = Wilayah::find($this->selectedWilayah)?->nama ?? '-';
+        }
+
+        if ($this->selectedJenjang === 'all') {
+            $selectedJenjangName = 'Semua Jenjang';
+        } elseif ($this->selectedJenjang) {
+            $selectedJenjangName = JenjangPendidikan::find($this->selectedJenjang)?->nama ?? '-';
+        } else {
+            $selectedJenjangName = null;
+        }
 
         return view('livewire.public.wilayah-trend-chart', compact('wilayahs', 'jenjangs', 'chartData', 'years', 'selectedWilayahName', 'selectedJenjangName'));
     }
 
     public function getChartData($years)
     {
-        if (empty($this->selectedWilayah)) {
+        // Harus pilih jenjang dulu
+        if (empty($this->selectedJenjang)) {
             return null;
         }
 
-        $cacheKey = 'wilayah_trend_' . $this->selectedWilayah . '_' . ($this->selectedJenjang ?: 'all');
+        $cacheKey = 'wilayah_trend_' . ($this->selectedWilayah ?: 'all') . '_' . ($this->selectedJenjang ?: 'all');
 
         return \Illuminate\Support\Facades\Cache::remember($cacheKey, 3600, function () use ($years) {
             $categories = [];
@@ -45,9 +58,16 @@ class WilayahTrendChart extends Component
 
                 $query = PelaksanaanAsesmen::whereHas('siklusAsesmen', function ($q) use ($tahun) {
                     $q->where('tahun', $tahun);
-                })->whereHas('sekolah', function ($q) {
-                    $q->where('wilayah_id', $this->selectedWilayah);
-                    if ($this->selectedJenjang) {
+                });
+
+                // Build filter untuk sekolah
+                $query->whereHas('sekolah', function ($q) {
+                    // Filter wilayah jika bukan "all"
+                    if ($this->selectedWilayah && $this->selectedWilayah !== 'all') {
+                        $q->where('wilayah_id', $this->selectedWilayah);
+                    }
+                    // Filter jenjang jika bukan "all"
+                    if ($this->selectedJenjang && $this->selectedJenjang !== 'all') {
                         $q->where('jenjang_pendidikan_id', $this->selectedJenjang);
                     }
                 });
