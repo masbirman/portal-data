@@ -78,6 +78,15 @@
                 </div>
             </div>
         </div>
+
+        {{-- Trend Chart --}}
+        <div class="mt-6 bg-white border border-gray-200 rounded-lg p-4">
+            <h4 class="text-sm font-semibold text-gray-700 mb-3">Tren Perbandingan Antar Tahun</h4>
+            <div x-data="trendChart(@js($chartData['trend']))" x-init="initChart"
+                wire:key="trend-{{ $selectedWilayah }}-{{ $selectedJenjang }}">
+                <div x-ref="chart" class="h-[350px]"></div>
+            </div>
+        </div>
     @else
         <div class="flex flex-col items-center justify-center py-12 text-gray-500">
             <svg class="w-16 h-16 mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,6 +164,112 @@
                                     size: '60%'
                                 }
                             }
+                        }
+                    };
+
+                    this.chart = new ApexCharts(this.$refs.chart, options);
+                    this.chart.render();
+                }
+            }));
+
+            Alpine.data('trendChart', (data) => ({
+                chart: null,
+                initChart() {
+                    if (this.chart) this.chart.destroy();
+
+                    let options = {
+                        series: [{
+                            name: 'Jumlah Sekolah',
+                            type: 'column',
+                            data: data.sekolah
+                        }, {
+                            name: 'Jumlah Peserta',
+                            type: 'line',
+                            data: data.peserta
+                        }, {
+                            name: 'Keikutsertaan (%)',
+                            type: 'line',
+                            data: data.keikutsertaan
+                        }],
+                        chart: {
+                            height: 350,
+                            type: 'line',
+                            toolbar: {
+                                show: false
+                            },
+                            fontFamily: 'Instrument Sans, sans-serif'
+                        },
+                        colors: ['#cbd5e1', '#0f172a', '#f59e0b'],
+                        stroke: {
+                            width: [0, 3, 3],
+                            curve: 'smooth'
+                        },
+                        plotOptions: {
+                            bar: {
+                                borderRadius: 4,
+                                columnWidth: '60%'
+                            }
+                        },
+                        markers: {
+                            size: [0, 5, 5],
+                            colors: ['#cbd5e1', '#0f172a', '#f59e0b'],
+                            strokeColors: '#fff',
+                            strokeWidth: 2
+                        },
+                        xaxis: {
+                            categories: data.categories,
+                            title: {
+                                text: 'Tahun',
+                                style: {
+                                    color: '#64748b'
+                                }
+                            }
+                        },
+                        yaxis: [{
+                            title: {
+                                text: 'Jumlah Sekolah',
+                                style: {
+                                    color: '#64748b'
+                                }
+                            },
+                            labels: {
+                                formatter: (val) => Math.round(val)
+                            }
+                        }, {
+                            opposite: true,
+                            title: {
+                                text: 'Jumlah Peserta',
+                                style: {
+                                    color: '#0f172a'
+                                }
+                            },
+                            labels: {
+                                formatter: (val) => val.toLocaleString('id-ID')
+                            }
+                        }, {
+                            opposite: true,
+                            show: false,
+                            max: 100
+                        }],
+                        legend: {
+                            position: 'top',
+                            horizontalAlign: 'right'
+                        },
+                        tooltip: {
+                            shared: true,
+                            intersect: false,
+                            y: {
+                                formatter: function(y, {
+                                    seriesIndex
+                                }) {
+                                    if (seriesIndex === 2) return y + "%";
+                                    return y.toLocaleString('id-ID');
+                                }
+                            }
+                        },
+                        grid: {
+                            borderColor: '#f1f5f9',
+                            strokeDashArray: 4
                         }
                     };
 

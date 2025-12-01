@@ -11,8 +11,8 @@ use Livewire\Component;
 class WilayahTrendChart extends Component
 {
     public $selectedTahun = '';
-    public $selectedWilayah = '';
-    public $selectedJenjang = '';
+    public $selectedWilayah = 'all';
+    public $selectedJenjang = 'all';
 
     public function mount()
     {
@@ -100,13 +100,58 @@ class WilayahTrendChart extends Component
                 ->pluck('total', 'moda_pelaksanaan')
                 ->toArray();
 
+            // Data trend antar tahun
+            $trendData = $this->getTrendData();
+
             return [
                 'jumlah_sekolah' => $jumlahSekolah,
                 'jumlah_peserta' => $jumlahPeserta,
                 'keikutsertaan' => $keikutsertaan,
                 'status' => $statusData,
                 'moda' => $modaData,
+                'trend' => $trendData,
             ];
         });
+    }
+
+    private function getTrendData()
+    {
+        $years = SiklusAsesmen::whereHas('pelaksanaanAsesmen')->orderBy('tahun')->pluck('tahun')->toArray();
+
+        $categories = [];
+        $seriesSekolah = [];
+        $seriesPeserta = [];
+        $seriesKeikutsertaan = [];
+
+        foreach ($years as $tahun) {
+            $categories[] = $tahun;
+
+            $query = PelaksanaanAsesmen::whereHas('siklusAsesmen', function ($q) use ($tahun) {
+                $q->where('tahun', $tahun);
+            });
+
+            $query->whereHas('sekolah', function ($q) {
+                if ($this->selectedWilayah && $this->selectedWilayah !== 'all') {
+                    $q->where('wilayah_id', $this->selectedWilayah);
+                }
+                if ($this->selectedJenjang && $this->selectedJenjang !== 'all') {
+                    $q->where('jenjang_pendidikan_id', $this->selectedJenjang);
+                }
+            });
+
+            $seriesSekolah[] = (clone $query)->count();
+            $seriesPeserta[] = (clone $query)->sum('jumlah_peserta');
+
+            $avgLiterasi = (clone $query)->avg('partisipasi_literasi') ?? 0;
+            $avgNumerasi = (clone $query)->avg('partisipasi_numerasi') ?? 0;
+            $seriesKeikutsertaan[] = round(($avgLiterasi + $avgNumerasi) / 2, 1);
+        }
+
+        return [
+            'categories' => $categories,
+            'sekolah' => $seriesSekolah,
+            'peserta' => $seriesPeserta,
+            'keikutsertaan' => $seriesKeikutsertaan,
+        ];
     }
 }
