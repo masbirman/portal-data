@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\DownloadRequests\Tables;
 
+use App\Models\ActivityLog;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
@@ -34,7 +35,7 @@ class DownloadRequestsTable
                     ->label('Jenis Data')
                     ->formatStateUsing(fn (string $state): string => match ($state) {
                         'asesmen_nasional' => 'ANBK',
-                        'survei_lingkungan_belajar' => 'SLB',
+                        'survei_lingkungan_belajar' => 'SULINGJAR',
                         'tes_kemampuan_akademik' => 'TKA',
                         default => $state,
                     })
@@ -96,6 +97,9 @@ class DownloadRequestsTable
                             $record->generateDownloadToken();
                             $record->save();
 
+                            // Log activity
+                            ActivityLog::log('approve', "Menyetujui pengajuan download dari {$record->nama} ({$record->email})", $record);
+
                             // Send email notification
                             \Illuminate\Support\Facades\Mail::to($record->email)
                                 ->send(new \App\Mail\DownloadRequestApproved($record));
@@ -123,6 +127,9 @@ class DownloadRequestsTable
                             $record->approved_at = now();
                             $record->save();
 
+                            // Log activity
+                            ActivityLog::log('reject', "Menolak pengajuan download dari {$record->nama} ({$record->email}). Alasan: {$data['admin_notes']}", $record);
+
                             // Send email notification
                             \Illuminate\Support\Facades\Mail::to($record->email)
                                 ->send(new \App\Mail\DownloadRequestRejected($record));
@@ -144,6 +151,9 @@ class DownloadRequestsTable
                             $record->generateDownloadToken();
                             $record->downloaded_at = null;
                             $record->save();
+
+                            // Log activity
+                            ActivityLog::log('approve', "Regenerate token untuk {$record->nama} ({$record->email})", $record);
 
                             // Send email notification
                             \Illuminate\Support\Facades\Mail::to($record->email)

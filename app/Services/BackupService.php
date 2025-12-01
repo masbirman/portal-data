@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\ActivityLog;
 use App\Settings\BackupSettings;
 use Illuminate\Support\Facades\Process;
 
@@ -63,6 +64,9 @@ class BackupService
             $this->sendNotification(false, 'Upload ke Google Drive gagal');
             return ['success' => false, 'message' => 'Upload ke Google Drive gagal'];
         }
+
+        // Log activity
+        ActivityLog::log('backup', "Backup database berhasil: {$gzFilename}");
 
         // Send notification
         $this->sendNotification(true, "Backup {$gzFilename} berhasil");
@@ -218,6 +222,9 @@ class BackupService
                 $this->sendNotification(false, 'Restore gagal: ' . $result['message']);
                 return $result;
             }
+
+            // Log activity
+            ActivityLog::log('restore', 'Restore database berhasil');
 
             $this->sendNotification(true, 'Restore database berhasil');
             return ['success' => true, 'message' => 'Restore berhasil'];
