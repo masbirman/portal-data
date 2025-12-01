@@ -3,7 +3,7 @@
     <p class="text-center text-gray-500 mb-8">Statistik Asesmen Nasional</p>
 
     {{-- Filters (Sticky) --}}
-    <div class="sticky top-16 z-40 bg-white p-4 rounded-xl shadow-lg border border-gray-100 mb-8">
+    <div class="sticky top-20 z-40 bg-white p-4 rounded-xl shadow-lg border border-gray-100 mb-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <select wire:model.live="selectedYear"
                 class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500">
