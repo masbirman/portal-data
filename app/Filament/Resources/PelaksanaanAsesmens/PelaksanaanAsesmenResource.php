@@ -44,9 +44,14 @@ class PelaksanaanAsesmenResource extends Resource
         return PelaksanaanAsesmensTable::configure($table);
     }
 
+    /**
+     * Get the Eloquent query for the resource.
+     * Super Admin sees all data without scope filters.
+     */
     public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
     {
         return parent::getEloquentQuery()
+            ->withoutGlobalScopes()
             ->with([
                 'siklusAsesmen',
                 'sekolah.jenjangPendidikan',

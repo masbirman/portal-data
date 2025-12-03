@@ -7,6 +7,9 @@ use App\Http\Controllers\AsesmenNasionalController;
 use App\Http\Controllers\DownloadRequestController;
 use App\Http\Controllers\PublicDashboardController;
 
+// Single Login Entry Point - redirect to admin login
+Route::get('/login', fn () => redirect('/admin/login'))->name('login');
+
 // Google Drive OAuth Callback
 Route::get('/admin/backup-manager/oauth-callback', function () {
     $code = request('code');

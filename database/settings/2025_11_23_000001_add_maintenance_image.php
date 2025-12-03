@@ -6,6 +6,9 @@ return new class extends SettingsMigration
 {
     public function up(): void
     {
-        $this->migrator->add('general.maintenance_image', null);
+        // Skip if setting already exists
+        if (!\DB::table('settings')->where('name', 'maintenance_image')->where('group', 'general')->exists()) {
+            $this->migrator->add('general.maintenance_image', null);
+        }
     }
 };

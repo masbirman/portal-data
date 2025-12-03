@@ -30,6 +30,16 @@ class SekolahResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'nama';
 
+    /**
+     * Get the Eloquent query for the resource.
+     * Super Admin sees all data without scope filters.
+     */
+    public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
+    {
+        return parent::getEloquentQuery()
+            ->withoutGlobalScopes();
+    }
+
     public static function form(Schema $schema): Schema
     {
         return SekolahForm::configure($schema);

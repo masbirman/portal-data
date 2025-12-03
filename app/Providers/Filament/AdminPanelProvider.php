@@ -2,6 +2,12 @@
 
 namespace App\Providers\Filament;
 
+use App\Http\Middleware\EnsureUserHasRole;
+use App\Http\Middleware\EnsureUserIsActive;
+use Caresome\FilamentAuthDesigner\AuthDesignerPlugin;
+use Caresome\FilamentAuthDesigner\Enums\AuthLayout;
+use Caresome\FilamentAuthDesigner\Enums\MediaDirection;
+use Caresome\FilamentAuthDesigner\Enums\ThemePosition;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -18,6 +24,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Resma\FilamentAwinTheme\FilamentAwinTheme;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -28,8 +35,15 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->colors([
-                'primary' => Color::Slate,
+            ->plugins([
+                FilamentAwinTheme::make(),
+                AuthDesignerPlugin::make()
+                    ->login(
+                        layout: AuthLayout::Split,
+                        media: asset('images/login-bg.svg'),
+                        direction: MediaDirection::Right
+                    )
+                    ->themeToggle(ThemePosition::TopRight),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
@@ -53,6 +67,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+                EnsureUserIsActive::class,
+                EnsureUserHasRole::class . ':super_admin',
             ])
             ->login(\App\Filament\Pages\Auth\Login::class)
             ->profile(\App\Filament\Pages\EditProfile::class)

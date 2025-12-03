@@ -8,9 +8,12 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('wilayah', function (Blueprint $table) {
-            $table->integer('urutan')->default(999)->after('logo');
-        });
+        // Skip if column already exists
+        if (!Schema::hasColumn('wilayah', 'urutan')) {
+            Schema::table('wilayah', function (Blueprint $table) {
+                $table->integer('urutan')->default(999)->after('logo');
+            });
+        }
 
         // Set urutan sesuai kebutuhan
         $urutan = [

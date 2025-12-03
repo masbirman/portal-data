@@ -8,7 +8,6 @@ services:
         working_dir: /var/www/html
         volumes:
             - ./:/var/www/html
-            - ./storage:/var/www/html/storage
         environment:
             - APP_NAME=${APP_NAME}
             - APP_ENV=${APP_ENV}

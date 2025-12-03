@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "330f2c508451e87c2e0b77842b8f2a30",
+    "content-hash": "3604c53bca88c32e6ac0d039f334c971",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -427,6 +427,80 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "caresome/filament-auth-designer",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caresome/filament-auth-designer.git",
+                "reference": "8133757020f778db7e54dc56769bc994603a17f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caresome/filament-auth-designer/zipball/8133757020f778db7e54dc56769bc994603a17f8",
+                "reference": "8133757020f778db7e54dc56769bc994603a17f8",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "illuminate/contracts": "^11.0||^12.0",
+                "php": "^8.2|^8.3|^8.4",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.8",
+                "orchestra/testbench": "^10.0.0||^9.0.0",
+                "pestphp/pest": "^4.0",
+                "pestphp/pest-plugin-arch": "^4.0",
+                "pestphp/pest-plugin-laravel": "^4.0",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "spatie/laravel-ray": "^1.35"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Caresome\\FilamentAuthDesigner\\AuthDesignerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caresome\\FilamentAuthDesigner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caresome",
+                    "email": "dev@caresome.app",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Transform Filament's default auth pages into stunning, brand-ready experiences",
+            "homepage": "https://github.com/caresome/filament-auth-designer",
+            "keywords": [
+                "Authentication",
+                "auth-designer",
+                "auth-pages",
+                "caresome",
+                "filament",
+                "filament-plugin",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/caresome/filament-auth-designer/issues",
+                "source": "https://github.com/caresome/filament-auth-designer/tree/v1.0.0"
+            },
+            "time": "2025-10-12T09:55:29+00:00"
         },
         {
             "name": "chillerlan/php-qrcode",
@@ -6720,6 +6794,69 @@
             "time": "2025-09-04T20:59:21+00:00"
         },
         {
+            "name": "resma/filament-awin-theme",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/resmatech/filament-awin-theme.git",
+                "reference": "3e15436749d373631846e58f6bbc0962492b6437"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/resmatech/filament-awin-theme/zipball/3e15436749d373631846e58f6bbc0962492b6437",
+                "reference": "3e15436749d373631846e58f6bbc0962492b6437",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentAwinTheme": "Resma\\FilamentAwinTheme\\Facades\\FilamentAwinTheme"
+                    },
+                    "providers": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Resma\\FilamentAwinTheme\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rebwar Mustafa",
+                    "email": "hello@resma.tech",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A modern, responsive, and customizable theme for FilamentPHP, designed to elevate your admin panel with a sleek interface and seamless user experience.",
+            "homepage": "https://github.com/resmatech/filament-awin-theme",
+            "keywords": [
+                "Resma",
+                "filament",
+                "filament-awin-theme",
+                "filamentphp",
+                "laravel",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/resmatech/filament-awin-theme/issues",
+                "source": "https://github.com/resmatech/filament-awin-theme"
+            },
+            "time": "2025-11-21T06:42:48+00:00"
+        },
+        {
             "name": "ryangjchandler/blade-capture-directive",
             "version": "v1.1.0",
             "source": {
@@ -12489,5 +12626,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }

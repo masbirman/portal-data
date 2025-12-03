@@ -4,7 +4,9 @@ namespace App\Filament\Resources\ActivityLogs\Tables;
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 
 class ActivityLogsTable
 {
@@ -17,9 +19,24 @@ class ActivityLogsTable
                     ->dateTime('d M Y, H:i:s')
                     ->sortable(),
                 TextColumn::make('user.name')
-                    ->label('Admin')
+                    ->label('User')
                     ->searchable()
                     ->default('-'),
+                TextColumn::make('user.role')
+                    ->label('Role')
+                    ->badge()
+                    ->color(fn (?string $state): string => match ($state) {
+                        'super_admin' => 'danger',
+                        'admin_wilayah' => 'warning',
+                        'user_sekolah' => 'info',
+                        default => 'gray',
+                    })
+                    ->formatStateUsing(fn (?string $state): string => match ($state) {
+                        'super_admin' => 'Super Admin',
+                        'admin_wilayah' => 'Admin Wilayah',
+                        'user_sekolah' => 'User Sekolah',
+                        default => '-',
+                    }),
                 TextColumn::make('action')
                     ->label('Aksi')
                     ->badge()
@@ -43,10 +60,31 @@ class ActivityLogsTable
                         'restore' => 'Restore',
                         'login' => 'Login',
                         'logout' => 'Logout',
+                        'create' => 'Create',
+                        'update' => 'Update',
+                        'delete' => 'Delete',
                     ]),
+                SelectFilter::make('role')
+                    ->label('Role')
+                    ->options([
+                        'super_admin' => 'Super Admin',
+                        'admin_wilayah' => 'Admin Wilayah',
+                        'user_sekolah' => 'User Sekolah',
+                    ])
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query->when(
+                            $data['value'],
+                            fn (Builder $query, string $role): Builder => $query->whereHas(
+                                'user',
+                                fn (Builder $query) => $query->where('role', $role)
+                            )
+                        );
+                    }),
                 SelectFilter::make('user_id')
-                    ->label('Admin')
-                    ->relationship('user', 'name'),
+                    ->label('User')
+                    ->relationship('user', 'name')
+                    ->searchable()
+                    ->preload(),
             ])
             ->actions([])
             ->bulkActions([]);

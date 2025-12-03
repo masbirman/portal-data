@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
+use App\Http\Responses\LogoutResponse;
 use App\Listeners\LogAuthenticationActivity;
-use Illuminate\Auth\Events\Login;
+use Filament\Auth\Http\Responses\Contracts\LogoutResponse as LogoutResponseContract;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
@@ -15,7 +16,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Register custom logout response
+        $this->app->singleton(LogoutResponseContract::class, LogoutResponse::class);
     }
 
     /**
@@ -27,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
         }
 
-        // Register authentication event listeners for activity logging
-        Event::listen(Login::class, [LogAuthenticationActivity::class, 'handleLogin']);
+        // Register logout event listener for activity logging
+        // Note: Login logging is handled in each panel's Login page
         Event::listen(Logout::class, [LogAuthenticationActivity::class, 'handleLogout']);
     }
 }

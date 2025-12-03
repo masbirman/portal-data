@@ -2,10 +2,21 @@
 
 namespace App\Models;
 
+use App\Models\Scopes\SekolahScope;
+use App\Models\Scopes\WilayahJenjangScope;
 use Illuminate\Database\Eloquent\Model;
 
 class Sekolah extends Model
 {
+    /**
+     * Boot the model and apply global scopes
+     */
+    protected static function booted(): void
+    {
+        static::addGlobalScope(new WilayahJenjangScope());
+        static::addGlobalScope(new SekolahScope());
+    }
+
     public $timestamps = false;
 
     protected $table = 'sekolah';

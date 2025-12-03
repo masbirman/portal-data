@@ -32,6 +32,13 @@
       0 => 'BladeUI\\Icons\\BladeIconsServiceProvider',
     ),
   ),
+  'caresome/filament-auth-designer' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Caresome\\FilamentAuthDesigner\\AuthDesignerServiceProvider',
+    ),
+  ),
   'coderflex/filament-turnstile' => 
   array (
     'aliases' => 
@@ -193,6 +200,16 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    ),
+  ),
+  'resma/filament-awin-theme' => 
+  array (
+    'aliases' => 
+    array (
+      'FilamentAwinTheme' => 'Resma\\FilamentAwinTheme\\Facades\\FilamentAwinTheme',
+    ),
+    'providers' => 
+    array (
     ),
   ),
   'ryangjchandler/blade-capture-directive' => 

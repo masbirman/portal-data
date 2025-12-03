@@ -4,9 +4,12 @@ namespace App\Filament\Pages;
 
 use Filament\Auth\Pages\EditProfile as BaseEditProfile;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\ValidationException;
 
 class EditProfile extends BaseEditProfile
 {
@@ -33,10 +36,19 @@ class EditProfile extends BaseEditProfile
                         $this->getEmailFormComponent(),
                     ]),
                 Section::make('Ubah Password')
-                    ->description('Kosongkan jika tidak ingin mengubah password')
+                    ->description('Kosongkan jika tidak ingin mengubah password. Password lama wajib diisi untuk mengubah password.')
                     ->schema([
-                        $this->getPasswordFormComponent(),
-                        $this->getPasswordConfirmationFormComponent(),
+                        TextInput::make('current_password')
+                            ->label('Password Lama')
+                            ->password()
+                            ->revealable()
+                            ->requiredWith('password')
+                            ->currentPassword()
+                            ->dehydrated(false),
+                        $this->getPasswordFormComponent()
+                            ->label('Password Baru'),
+                        $this->getPasswordConfirmationFormComponent()
+                            ->label('Konfirmasi Password Baru'),
                     ]),
             ]);
     }
@@ -49,6 +61,9 @@ class EditProfile extends BaseEditProfile
                 Storage::disk('public')->delete(auth()->user()->avatar);
             }
         }
+
+        // Remove current_password from data as it's only for validation
+        unset($data['current_password']);
 
         return parent::mutateFormDataBeforeSave($data);
     }

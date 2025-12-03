@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "*",
+        "caresome/filament-auth-designer": "*",
         "coderflex/filament-turnstile": "*",
         "coderflex/laravel-turnstile": "^2.0",
         "doctrine/dbal": "^4.3",
@@ -18,6 +19,7 @@
         "laravel/tinker": "^2.10.1",
         "maatwebsite/excel": "^3.1",
         "phpoffice/phpspreadsheet": "^1.30",
+        "resma/filament-awin-theme": "*",
         "spatie/laravel-settings": "*"
     },
     "require-dev": {
