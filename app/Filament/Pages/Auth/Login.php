@@ -89,6 +89,9 @@ class Login extends BaseLogin
 
         session()->regenerate();
 
+        // Debug: log user role
+        \Log::info('Login debug', ['user_id' => $user->id, 'role' => $user->role]);
+
         // Determine target panel based on user role
         $targetPanel = match ($user->role) {
             'super_admin' => 'admin',
@@ -96,6 +99,8 @@ class Login extends BaseLogin
             'user_sekolah' => 'sekolah',
             default => 'admin',
         };
+
+        \Log::info('Target panel', ['targetPanel' => $targetPanel]);
 
         // Log successful login
         ActivityLog::log(
