@@ -77,6 +77,11 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function canAccessPanel(Panel $panel): bool
     {
+        // Allow access to login page (user not authenticated yet)
+        if (!auth()->check()) {
+            return true;
+        }
+
         if (!$this->is_active) {
             return false;
         }
