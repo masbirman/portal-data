@@ -70,15 +70,9 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->profile(\App\Filament\Pages\EditProfile::class)
+            ->logout(\App\Filament\Pages\Auth\Logout::class)
             ->databaseNotifications()
             ->databaseNotificationsPolling('30s')
-            ->userMenuItems([
-                'logout' => MenuItem::make()
-                    ->label('Logout')
-                    ->icon('heroicon-o-arrow-left-on-rectangle')
-                    ->url('/logout')
-                    ->openUrlInNewTab(false),
-            ])
             ->authGuard('web');
     }
 }

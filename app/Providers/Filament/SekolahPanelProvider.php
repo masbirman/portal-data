@@ -70,14 +70,8 @@ class SekolahPanelProvider extends PanelProvider
                 EnsureUserHasRole::class . ':user_sekolah',
             ])
             ->profile(\App\Filament\SekolahPanel\Pages\EditProfile::class)
+            ->logout(\App\Filament\SekolahPanel\Pages\Auth\Logout::class)
             ->brandName('Portal Sekolah')
-            ->userMenuItems([
-                'logout' => MenuItem::make()
-                    ->label('Logout')
-                    ->icon('heroicon-o-arrow-left-on-rectangle')
-                    ->url('/logout')
-                    ->openUrlInNewTab(false),
-            ])
             ->authGuard('web');
     }
 }
