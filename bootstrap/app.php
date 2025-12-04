@@ -22,6 +22,9 @@ return Application::configure(basePath: dirname(__DIR__))
             'active' => \App\Http\Middleware\EnsureUserIsActive::class,
             'permission' => \App\Http\Middleware\CheckPermission::class,
         ]);
+
+        // Use custom Authenticate middleware for redirecting to /login
+        $middleware->redirectGuestsTo(fn () => route('login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

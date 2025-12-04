@@ -16,6 +16,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
+use Filament\Navigation\MenuItem;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -31,7 +32,7 @@ class SekolahPanelProvider extends PanelProvider
         return $panel
             ->id('sekolah')
             ->path('sekolah')
-            ->login(\App\Filament\SekolahPanel\Pages\Auth\Login::class)
+            ->login(false)
             ->plugins([
                 FilamentAwinTheme::make()
                     ->primaryColor(Color::Blue),
@@ -69,6 +70,13 @@ class SekolahPanelProvider extends PanelProvider
                 EnsureUserHasRole::class . ':user_sekolah',
             ])
             ->profile(\App\Filament\SekolahPanel\Pages\EditProfile::class)
-            ->brandName('Portal Sekolah');
+            ->brandName('Portal Sekolah')
+            ->userMenuItems([
+                'logout' => MenuItem::make()
+                    ->label('Logout')
+                    ->icon('heroicon-o-arrow-left-on-rectangle')
+                    ->url(fn () => route('logout'))
+                    ->openUrlInNewTab(false),
+            ]);
     }
 }

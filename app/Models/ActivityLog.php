@@ -33,18 +33,24 @@ class ActivityLog extends Model
         return $this->morphTo('model');
     }
 
-    public static function log(string $action, string $description, $model = null, array $properties = []): self
+    public static function log(string $action, string $description, $model = null, array $properties = []): ?self
     {
-        return self::create([
-            'user_id' => auth()->id(),
-            'action' => $action,
-            'model_type' => $model ? get_class($model) : null,
-            'model_id' => $model?->id,
-            'description' => $description,
-            'properties' => $properties ?: null,
-            'ip_address' => request()->ip(),
-            'user_agent' => request()->userAgent(),
-        ]);
+        try {
+            return self::create([
+                'user_id' => auth()->id(),
+                'action' => $action,
+                'model_type' => $model ? get_class($model) : null,
+                'model_id' => $model?->id,
+                'description' => $description,
+                'properties' => $properties ?: null,
+                'ip_address' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+            ]);
+        } catch (\Exception $e) {
+            // Silently fail if table doesn't exist or database is not connected
+            \Log::debug('ActivityLog failed: ' . $e->getMessage());
+            return null;
+        }
     }
 
     public function getActionBadgeColorAttribute(): string

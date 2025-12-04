@@ -2,9 +2,7 @@
 
 namespace App\Providers;
 
-use App\Http\Responses\LogoutResponse;
 use App\Listeners\LogAuthenticationActivity;
-use Filament\Auth\Http\Responses\Contracts\LogoutResponse as LogoutResponseContract;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
@@ -16,8 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // Register custom logout response
-        $this->app->singleton(LogoutResponseContract::class, LogoutResponse::class);
+        //
     }
 
     /**

@@ -18,6 +18,7 @@ use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+use Filament\Navigation\MenuItem;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -34,7 +35,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->login()
+            ->login(false)
             ->plugins([
                 FilamentAwinTheme::make(),
                 AuthDesignerPlugin::make()
@@ -68,9 +69,15 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->login(\App\Filament\Pages\Auth\Login::class)
             ->profile(\App\Filament\Pages\EditProfile::class)
             ->databaseNotifications()
-            ->databaseNotificationsPolling('30s');
+            ->databaseNotificationsPolling('30s')
+            ->userMenuItems([
+                'logout' => MenuItem::make()
+                    ->label('Logout')
+                    ->icon('heroicon-o-arrow-left-on-rectangle')
+                    ->url(fn () => route('logout'))
+                    ->openUrlInNewTab(false),
+            ]);
     }
 }

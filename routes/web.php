@@ -7,8 +7,10 @@ use App\Http\Controllers\AsesmenNasionalController;
 use App\Http\Controllers\DownloadRequestController;
 use App\Http\Controllers\PublicDashboardController;
 
-// Single Login Entry Point - redirect to admin login
-Route::get('/login', fn () => redirect('/admin/login'))->name('login');
+// Single Login Entry Point - unified login for all users
+Route::get('/login', [\App\Http\Controllers\Auth\UnifiedLoginController::class, 'show'])->name('login');
+Route::post('/login', [\App\Http\Controllers\Auth\UnifiedLoginController::class, 'authenticate'])->name('login.authenticate');
+Route::match(['get', 'post'], '/logout', [\App\Http\Controllers\Auth\UnifiedLoginController::class, 'logout'])->name('logout');
 
 // Google Drive OAuth Callback
 Route::get('/admin/backup-manager/oauth-callback', function () {

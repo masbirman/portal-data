@@ -17,6 +17,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
+use Filament\Navigation\MenuItem;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -32,7 +33,7 @@ class WilayahPanelProvider extends PanelProvider
         return $panel
             ->id('wilayah')
             ->path('wilayah')
-            ->login(\App\Filament\WilayahPanel\Pages\Auth\Login::class)
+            ->login(false)
             ->plugins([
                 FilamentAwinTheme::make()
                     ->primaryColor(Color::Emerald),
@@ -70,6 +71,13 @@ class WilayahPanelProvider extends PanelProvider
                 EnsureUserHasRole::class . ':admin_wilayah',
             ])
             ->profile(\App\Filament\WilayahPanel\Pages\EditProfile::class)
-            ->brandName('Portal Admin Wilayah');
+            ->brandName('Portal Admin Wilayah')
+            ->userMenuItems([
+                'logout' => MenuItem::make()
+                    ->label('Logout')
+                    ->icon('heroicon-o-arrow-left-on-rectangle')
+                    ->url(fn () => route('logout'))
+                    ->openUrlInNewTab(false),
+            ]);
     }
 }
