@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use App\Http\Responses\LogoutResponse;
 use App\Listeners\LogAuthenticationActivity;
-use Filament\Http\Responses\Auth\Contracts\LogoutResponse as LogoutResponseContract;
+use Filament\Auth\Http\Responses\Contracts\LogoutResponse as LogoutResponseContract;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
