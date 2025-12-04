@@ -76,7 +76,7 @@ class WilayahPanelProvider extends PanelProvider
                 'logout' => MenuItem::make()
                     ->label('Logout')
                     ->icon('heroicon-o-arrow-left-on-rectangle')
-                    ->url(route('logout'))
+                    ->url('/logout')
                     ->openUrlInNewTab(false),
             ])
             ->authGuard('web');
