@@ -75,8 +75,9 @@ class SekolahPanelProvider extends PanelProvider
                 'logout' => MenuItem::make()
                     ->label('Logout')
                     ->icon('heroicon-o-arrow-left-on-rectangle')
-                    ->url(fn () => route('logout'))
+                    ->url(route('logout'))
                     ->openUrlInNewTab(false),
-            ]);
+            ])
+            ->authGuard('web');
     }
 }
