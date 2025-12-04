@@ -70,7 +70,6 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->profile(\App\Filament\Pages\EditProfile::class)
-            ->logout(\App\Filament\Pages\Auth\Logout::class)
             ->databaseNotifications()
             ->databaseNotificationsPolling('30s')
             ->authGuard('web');

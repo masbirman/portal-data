@@ -71,7 +71,6 @@ class WilayahPanelProvider extends PanelProvider
                 EnsureUserHasRole::class . ':admin_wilayah',
             ])
             ->profile(\App\Filament\WilayahPanel\Pages\EditProfile::class)
-            ->logout(\App\Filament\WilayahPanel\Pages\Auth\Logout::class)
             ->brandName('Portal Admin Wilayah')
             ->authGuard('web');
     }

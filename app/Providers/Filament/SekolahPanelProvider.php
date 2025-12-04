@@ -70,7 +70,6 @@ class SekolahPanelProvider extends PanelProvider
                 EnsureUserHasRole::class . ':user_sekolah',
             ])
             ->profile(\App\Filament\SekolahPanel\Pages\EditProfile::class)
-            ->logout(\App\Filament\SekolahPanel\Pages\Auth\Logout::class)
             ->brandName('Portal Sekolah')
             ->authGuard('web');
     }
