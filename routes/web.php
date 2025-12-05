@@ -40,6 +40,7 @@ Route::get('/download/{token}', [DownloadRequestController::class, 'download'])-
 
 // Asesmen Nasional Routes (New Structure)
 Route::get('/asesmen-nasional/{tahun}', [AsesmenNasionalController::class, 'index'])->name('asesmen-nasional.index');
+Route::get('/asesmen-nasional/{tahun}/peta', [AsesmenNasionalController::class, 'peta'])->name('asesmen-nasional.peta');
 Route::get('/asesmen-nasional/{tahun}/wilayah/{wilayah}', [AsesmenNasionalController::class, 'wilayah'])->name('asesmen-nasional.wilayah');
 
 // Legacy routes (keep for backward compatibility)

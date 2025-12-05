@@ -4,10 +4,12 @@ namespace App\Models;
 
 use App\Models\Scopes\SekolahScope;
 use App\Models\Scopes\WilayahJenjangScope;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Sekolah extends Model
 {
+    use HasFactory;
     /**
      * Boot the model and apply global scopes
      */
@@ -28,10 +30,15 @@ class Sekolah extends Model
         'jenjang_pendidikan_id',
         'wilayah_id',
         'status_sekolah',
+        'latitude',
+        'longitude',
+        'alamat',
     ];
 
     protected $casts = [
         'tahun' => 'array',
+        'latitude' => 'decimal:8',
+        'longitude' => 'decimal:8',
     ];
 
     public function jenjangPendidikan()

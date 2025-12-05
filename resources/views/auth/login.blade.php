@@ -147,8 +147,8 @@
                 <!-- Right Side - Illustration -->
                 <div class="hidden lg:block bg-gradient-to-br from-blue-600 to-blue-800 p-12 relative overflow-hidden">
                     <!-- Background Pattern -->
-                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-500 opacity-20 blur-3xl"></div>
-                    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-blue-700 opacity-20 blur-3xl"></div>
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-white-500 opacity-20 blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-white-700 opacity-20 blur-3xl"></div>
 
                     <div class="relative z-10 h-full flex flex-col justify-center">
                         <img src="{{ asset('images/login-bg.svg') }}" alt="Login Illustration" class="w-full max-w-md mx-auto mb-8 drop-shadow-2xl">

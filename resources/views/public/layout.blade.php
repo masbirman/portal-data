@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Portal Data AN-TKA Disdik Sulteng')</title>
+    <title>{{ $title ?? 'Portal Data AN-TKA Disdik Sulteng' }}</title>
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,6 +35,7 @@
     <!-- Alpine.js is injected by Livewire 3 automatically -->
 
     @livewireStyles
+    @stack('styles')
     
     <script>
         // Dark mode initialization
@@ -149,6 +150,7 @@
                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
                                     📊 Asesmen Nasional 2025
                                 </a>
+                                <div class="border-t border-gray-200 dark:border-gray-600 my-1"></div>
                                 <a href="#"
                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
                                     📊 Survei Lingkungan Belajar 2024
@@ -178,24 +180,16 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-95"
-                             class="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                             class="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
                              style="display: none;">
                             <div class="py-1">
-                                <a href="#"
+                                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2023]) }}"
                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Asesmen Nasional 2023
+                                    Peta Data 2023
                                 </a>
-                                <a href="#"
+                                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2024]) }}"
                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Asesmen Nasional 2024
-                                </a>
-                                <a href="#"
-                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Asesmen Nasional 2025
-                                </a>
-                                <a href="#"
-                                   class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Tes Kemampuan Akademik 2025
+                                    Peta Data 2024
                                 </a>
                             </div>
                         </div>
@@ -237,14 +231,28 @@
                  x-transition:leave-end="opacity-0 -translate-y-1"
                  class="md:hidden pb-4"
                  style="display: none;">
-                <a href="{{ route('public.landing') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Beranda</a>
+                <a href="{{ route('public.landing') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Beranda</a>
+                <a href="{{ route('public.dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Dashboard</a>
                 
-                <div class="px-4 py-2">
-                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Data Statistik</p>
+                <div class="px-4 py-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Pengajuan Unduh Data</p>
                 </div>
-                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2023</a>
-                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2024</a>
-                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}" class="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100">📊 Asesmen Nasional 2025</a>
+                <a href="{{ route('download-request.index') }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📝 Ajukan Permintaan</a>
+                <a href="{{ route('download-request.tracking') }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">🔍 Tracking Status</a>
+                
+                <div class="px-4 py-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Data Statistik</p>
+                </div>
+                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊 Asesmen Nasional 2023</a>
+                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊 Asesmen Nasional 2024</a>
+                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊 Asesmen Nasional 2025</a>
+                
+                <div class="px-4 py-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Peta Data</p>
+                </div>
+                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2023]) }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Peta Data 2023</a>
+                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2024]) }}" class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Peta Data 2024</a>
+                
             </div>
         </div>
     </nav>
@@ -268,11 +276,25 @@
     </button>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        @yield('content')
-    </main>
+    @hasSection('content')
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            @yield('content')
+        </main>
+    @else
+        {{-- For Livewire full-page components --}}
+        @if(isset($slot))
+            @if(isset($fullWidth) && $fullWidth)
+                {{ $slot }}
+            @else
+                <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                    {{ $slot }}
+                </main>
+            @endif
+        @endif
+    @endif
 
     <!-- Footer -->
+    @if(!isset($fullWidth) || !$fullWidth)
     <footer class="bg-white dark:bg-gray-800 shadow-lg mt-12 transition-colors duration-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <p class="text-center text-gray-600 dark:text-gray-400 text-sm">
@@ -280,8 +302,10 @@
             </p>
         </div>
     </footer>
+    @endif
 
     @livewireScripts
+    @stack('scripts')
 </body>
 
 </html>

@@ -14,4 +14,9 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    test: {
+        globals: false,
+        environment: 'node',
+        include: ['tests/js/**/*.test.js'],
+    },
 });
