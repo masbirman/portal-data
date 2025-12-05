@@ -1,28 +1,28 @@
 /**
  * Map Visualization Module for Sulawesi Tengah Assessment Data
- * 
+ *
  * This module provides functions for initializing and managing an interactive
  * Leaflet map with GeoJSON polygon visualization for kabupaten/kota data.
  */
 
 // Color palette for polygon fills
 const POLYGON_COLORS = [
-    '#3b82f6', // blue
-    '#10b981', // emerald
-    '#f59e0b', // amber
-    '#ef4444', // red
-    '#8b5cf6', // violet
-    '#ec4899', // pink
-    '#06b6d4', // cyan
-    '#84cc16', // lime
-    '#f97316', // orange
-    '#6366f1', // indigo
-    '#14b8a6', // teal
-    '#a855f7', // purple
-    '#22c55e', // green
+    "#3b82f6", // blue
+    "#10b981", // emerald
+    "#f59e0b", // amber
+    "#ef4444", // red
+    "#8b5cf6", // violet
+    "#ec4899", // pink
+    "#06b6d4", // cyan
+    "#84cc16", // lime
+    "#f97316", // orange
+    "#6366f1", // indigo
+    "#14b8a6", // teal
+    "#a855f7", // purple
+    "#22c55e", // green
 ];
 
-const UNMATCHED_COLOR = '#9ca3af'; // gray-400
+const UNMATCHED_COLOR = "#9ca3af"; // gray-400
 
 /**
  * Initialize a Leaflet map centered on Sulawesi Tengah
@@ -34,8 +34,8 @@ function initMap(containerId, options = {}) {
     const defaultOptions = {
         center: [-1.0, 121.0],
         zoom: 7,
-        tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        attribution: '© OpenStreetMap contributors'
+        tileUrl: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        attribution: "© OpenStreetMap contributors",
     };
 
     const config = { ...defaultOptions, ...options };
@@ -44,7 +44,7 @@ function initMap(containerId, options = {}) {
 
     L.tileLayer(config.tileUrl, {
         attribution: config.attribution,
-        maxZoom: 18
+        maxZoom: 18,
     }).addTo(map);
 
     return map;
@@ -52,38 +52,69 @@ function initMap(containerId, options = {}) {
 
 /**
  * Match a GeoJSON feature to wilayah data using kode_wilayah
+ * Supports multiple GeoJSON formats:
+ * - Format 1: kode_provinsi + kode_kabkota (e.g., "72" + "01")
+ * - Format 2: code with dot notation (e.g., "72.01" -> "7201")
  * @param {Object} feature - GeoJSON feature object
  * @param {Array} wilayahData - Array of wilayah data objects
  * @returns {Object|null} Matched wilayah object or null if no match
  */
 function matchWilayahToFeature(feature, wilayahData) {
-    if (!feature || !feature.properties || !wilayahData || !Array.isArray(wilayahData)) {
+    if (
+        !feature ||
+        !feature.properties ||
+        !wilayahData ||
+        !Array.isArray(wilayahData)
+    ) {
         return null;
     }
 
     const featureProps = feature.properties;
-    
-    // Build kode_wilayah from kode_provinsi + kode_kabkota
-    const featureKodeWilayah = featureProps.kode_provinsi && featureProps.kode_kabkota
-        ? featureProps.kode_provinsi + featureProps.kode_kabkota
-        : null;
+
+    // Method 1: Build kode_wilayah from kode_provinsi + kode_kabkota (old format)
+    let featureKodeWilayah = null;
+    if (featureProps.kode_provinsi && featureProps.kode_kabkota) {
+        featureKodeWilayah =
+            featureProps.kode_provinsi + featureProps.kode_kabkota;
+    }
+
+    // Method 2: Convert "code" with dot notation to kode_wilayah (new format)
+    // e.g., "72.01" -> "7201", "72.71" -> "7271"
+    if (!featureKodeWilayah && featureProps.code) {
+        featureKodeWilayah = featureProps.code.replace(".", "");
+    }
 
     // Try matching by kode_wilayah first
     if (featureKodeWilayah) {
-        const matchByKode = wilayahData.find(w => w.kode_wilayah === featureKodeWilayah);
+        const matchByKode = wilayahData.find(
+            (w) => w.kode_wilayah === featureKodeWilayah
+        );
         if (matchByKode) {
             return matchByKode;
         }
     }
 
-    // Fallback: try matching by nama (case-insensitive, partial match)
-    const featureName = (featureProps.nama || '').toLowerCase().trim();
+    // Fallback: try matching by nama/name (case-insensitive, partial match)
+    const featureName = (featureProps.nama || featureProps.name || "")
+        .toLowerCase()
+        .trim();
     if (featureName) {
-        const matchByName = wilayahData.find(w => {
-            const wilayahName = (w.nama || '').toLowerCase().trim();
-            return wilayahName === featureName || 
-                   wilayahName.includes(featureName) || 
-                   featureName.includes(wilayahName);
+        const matchByName = wilayahData.find((w) => {
+            const wilayahName = (w.nama || "").toLowerCase().trim();
+            // Normalize names: remove "kabupaten " or "kota " prefix for comparison
+            const normalizedFeatureName = featureName.replace(
+                /^(kabupaten|kota)\s+/i,
+                ""
+            );
+            const normalizedWilayahName = wilayahName.replace(
+                /^(kabupaten|kota)\s+/i,
+                ""
+            );
+            return (
+                normalizedWilayahName === normalizedFeatureName ||
+                normalizedWilayahName.includes(normalizedFeatureName) ||
+                normalizedFeatureName.includes(normalizedWilayahName)
+            );
         });
         if (matchByName) {
             return matchByName;
@@ -102,7 +133,7 @@ function matchWilayahToFeature(feature, wilayahData) {
  */
 function getPolygonStyle(_feature, wilayah, index = 0) {
     const isMatched = wilayah !== null;
-    const fillColor = isMatched 
+    const fillColor = isMatched
         ? POLYGON_COLORS[index % POLYGON_COLORS.length]
         : UNMATCHED_COLOR;
 
@@ -110,11 +141,10 @@ function getPolygonStyle(_feature, wilayah, index = 0) {
         fillColor: fillColor,
         weight: 2,
         opacity: 1,
-        color: '#ffffff',
-        fillOpacity: 0.6
+        color: "#ffffff",
+        fillOpacity: 0.6,
     };
 }
-
 
 /**
  * Get highlight style for polygon on hover
@@ -123,10 +153,10 @@ function getPolygonStyle(_feature, wilayah, index = 0) {
  */
 function getHighlightStyle() {
     return {
-        weight: 4,           // Increased from default 2 (Requirement 2.1)
+        weight: 4, // Increased from default 2 (Requirement 2.1)
         opacity: 1,
-        color: '#ffffff',    // Keep white border
-        fillOpacity: 0.85    // Increased opacity for highlight (Requirement 2.1)
+        color: "#ffffff", // Keep white border
+        fillOpacity: 0.85, // Increased opacity for highlight (Requirement 2.1)
     };
 }
 
@@ -138,17 +168,17 @@ function getHighlightStyle() {
  */
 function bindHoverEvents(layer, geojsonLayer) {
     layer.on({
-        mouseover: function(e) {
+        mouseover: function (e) {
             const targetLayer = e.target;
             // Apply highlight style (Requirement 2.1)
             targetLayer.setStyle(getHighlightStyle());
             // Bring to front so borders are visible
             targetLayer.bringToFront();
         },
-        mouseout: function(e) {
+        mouseout: function (e) {
             // Restore default style (Requirement 2.3)
             geojsonLayer.resetStyle(e.target);
-        }
+        },
     });
 }
 
@@ -160,16 +190,16 @@ function bindHoverEvents(layer, geojsonLayer) {
  */
 function bindClickEvents(layer, map) {
     layer.on({
-        click: function(e) {
+        click: function (e) {
             // Open popup centered above the polygon (Requirement 3.3)
             // The popup is already bound, so clicking will open it automatically
             // Optionally fit bounds to show the full polygon
             const bounds = e.target.getBounds();
-            map.fitBounds(bounds, { 
+            map.fitBounds(bounds, {
                 padding: [50, 50],
-                maxZoom: 10  // Don't zoom in too much
+                maxZoom: 10, // Don't zoom in too much
             });
-        }
+        },
     });
 }
 
@@ -190,34 +220,39 @@ async function loadGeoJSON(map, geojsonUrl, wilayahData, tahun) {
         }
 
         const geojsonData = await response.json();
-        
+
         let featureIndex = 0;
-        
+
         // Track which wilayah IDs have been matched to polygons
         const matchedWilayahIds = new Set();
-        
+
+        // Store layers for post-processing hover events
+        const layersToProcess = [];
+
         const geojsonLayer = L.geoJSON(geojsonData, {
-            style: function(feature) {
+            style: function (feature) {
                 const wilayah = matchWilayahToFeature(feature, wilayahData);
                 return getPolygonStyle(feature, wilayah, featureIndex++);
             },
-            onEachFeature: function(feature, layer) {
+            onEachFeature: function (feature, layer) {
                 const wilayah = matchWilayahToFeature(feature, wilayahData);
-                
+
                 // Track matched wilayah for fallback rendering
                 if (wilayah && wilayah.id) {
                     matchedWilayahIds.add(wilayah.id);
                 }
-                
+
                 // Bind tooltip - shows on hover (Requirement 2.2)
-                const tooltipContent = wilayah 
+                const tooltipContent = wilayah
                     ? createTooltipContent(wilayah)
-                    : feature.properties.nama || 'Unknown';
+                    : feature.properties.name ||
+                      feature.properties.nama ||
+                      "Unknown";
                 layer.bindTooltip(tooltipContent, {
                     permanent: false,
-                    direction: 'top',
-                    className: 'map-tooltip',
-                    sticky: true  // Tooltip follows mouse
+                    direction: "top",
+                    className: "map-tooltip",
+                    sticky: true, // Tooltip follows mouse
                 });
 
                 // Bind popup - shows on click (Requirement 3.1)
@@ -225,33 +260,50 @@ async function loadGeoJSON(map, geojsonUrl, wilayahData, tahun) {
                     const popupContent = createPopupContent(wilayah, tahun);
                     layer.bindPopup(popupContent, {
                         maxWidth: 300,
-                        className: 'map-popup',
-                        autoPan: true,           // Auto-pan to show popup
-                        autoPanPadding: [50, 50] // Padding for auto-pan
+                        className: "map-popup",
+                        autoPan: true, // Auto-pan to show popup
+                        autoPanPadding: [50, 50], // Padding for auto-pan
                     });
                 }
 
-                // Bind hover events using helper function (Requirements 2.1, 2.3)
-                bindHoverEvents(layer, geojsonLayer);
-                
-                // Bind click events using helper function (Requirements 3.1, 3.2, 3.3)
+                // Store layer for post-processing (hover events need geojsonLayer reference)
+                layersToProcess.push(layer);
+
+                // Bind click events
                 bindClickEvents(layer, map);
-            }
+            },
         }).addTo(map);
+
+        // Bind hover events after geojsonLayer is created
+        layersToProcess.forEach((layer) => {
+            bindHoverEvents(layer, geojsonLayer);
+        });
+
+        // Render markers at ibukota (capital) coordinates for matched wilayah
+        const matchedWilayah = wilayahData.filter((w) =>
+            matchedWilayahIds.has(w.id)
+        );
+        renderIbukotaMarkers(map, matchedWilayah, tahun);
 
         // Render circle markers for unmatched wilayah (Requirement 1.4)
         // Filter wilayah that were not matched to any polygon
-        const unmatchedWilayah = wilayahData.filter(w => !matchedWilayahIds.has(w.id));
+        const unmatchedWilayah = wilayahData.filter(
+            (w) => !matchedWilayahIds.has(w.id)
+        );
         if (unmatchedWilayah.length > 0) {
-            console.warn(`Rendering ${unmatchedWilayah.length} unmatched wilayah as circle markers`);
+            console.warn(
+                `Rendering ${unmatchedWilayah.length} unmatched wilayah as circle markers`
+            );
             renderFallbackMarkers(map, unmatchedWilayah, tahun);
         }
 
         return geojsonLayer;
     } catch (error) {
-        console.error('Error loading GeoJSON:', error);
+        console.error("Error loading GeoJSON:", error);
         // Fallback: render all wilayah as circle markers when GeoJSON fails (Requirement 1.4)
-        console.warn('GeoJSON load failed, rendering fallback circle markers for all wilayah');
+        console.warn(
+            "GeoJSON load failed, rendering fallback circle markers for all wilayah"
+        );
         renderFallbackMarkers(map, wilayahData, tahun);
         return null;
     }
@@ -268,39 +320,60 @@ function createPopupContent(wilayah, tahun) {
         return '<div style="color: #6b7280;">Data tidak tersedia</div>';
     }
 
-    const nama = wilayah.nama || 'Unknown';
+    const nama = wilayah.nama || "Unknown";
+    const logo = wilayah.logo || null;
     const totalSekolah = wilayah.total_sekolah ?? 0;
     const totalPeserta = wilayah.total_peserta ?? 0;
     const statusMandiri = wilayah.status_mandiri ?? 0;
     const statusMenumpang = wilayah.status_menumpang ?? 0;
     const url = generateWilayahUrl(tahun, wilayah.id);
 
+    // Logo HTML - small logo (28x28) next to the name
+    const logoHtml = logo
+        ? `<img src="/storage/${escapeHtml(
+              logo
+          )}" alt="" style="width: 28px; height: 28px; border-radius: 4px; object-fit: contain; background: white; margin-right: 10px; flex-shrink: 0;">`
+        : `<div style="width: 28px; height: 28px; border-radius: 4px; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; font-size: 11px; font-weight: bold;">${escapeHtml(
+              nama.substring(0, 2)
+          )}</div>`;
+
     return `
         <div style="min-width: 220px; padding: 4px; font-family: system-ui, -apple-system, sans-serif;">
-            <div style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 12px; margin: -12px -12px 12px -12px; border-radius: 8px 8px 0 0;">
-                <h3 style="font-weight: bold; font-size: 16px; margin: 0;">${escapeHtml(nama)}</h3>
+            <div style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 10px 12px; margin: -12px -12px 12px -12px; border-radius: 8px 8px 0 0; display: flex; align-items: center;">
+                ${logoHtml}
+                <h3 style="font-weight: bold; font-size: 15px; margin: 0; line-height: 1.2;">${escapeHtml(
+                    nama
+                )}</h3>
             </div>
             <div style="font-size: 13px; line-height: 1.6;">
                 <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e5e7eb;">
                     <span style="color: #6b7280;">Sekolah</span>
-                    <strong style="color: #1f2937;">${formatNumber(totalSekolah)}</strong>
+                    <strong style="color: #1f2937;">${formatNumber(
+                        totalSekolah
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e5e7eb;">
                     <span style="color: #6b7280;">Peserta</span>
-                    <strong style="color: #1f2937;">${formatNumber(totalPeserta)}</strong>
+                    <strong style="color: #1f2937;">${formatNumber(
+                        totalPeserta
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e5e7eb;">
                     <span style="color: #6b7280;">Mandiri</span>
-                    <strong style="color: #16a34a;">${formatNumber(statusMandiri)}</strong>
+                    <strong style="color: #16a34a;">${formatNumber(
+                        statusMandiri
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 6px 0;">
                     <span style="color: #6b7280;">Menumpang</span>
-                    <strong style="color: #ca8a04;">${formatNumber(statusMenumpang)}</strong>
+                    <strong style="color: #ca8a04;">${formatNumber(
+                        statusMenumpang
+                    )}</strong>
                 </div>
             </div>
-            <a href="${url}" 
+            <a href="${url}"
                style="display: block; text-align: center; background-color: #2563eb; color: white; padding: 10px 12px; border-radius: 6px; font-size: 14px; text-decoration: none; margin-top: 12px; font-weight: 500; transition: background-color 0.2s;"
-               onmouseover="this.style.backgroundColor='#1d4ed8'" 
+               onmouseover="this.style.backgroundColor='#1d4ed8'"
                onmouseout="this.style.backgroundColor='#2563eb'">
                 Lihat Detail →
             </a>
@@ -315,10 +388,10 @@ function createPopupContent(wilayah, tahun) {
  */
 function createTooltipContent(wilayah) {
     if (!wilayah) {
-        return 'Data tidak tersedia';
+        return "Data tidak tersedia";
     }
 
-    const nama = wilayah.nama || 'Unknown';
+    const nama = wilayah.nama || "Unknown";
     const totalSekolah = wilayah.total_sekolah ?? 0;
     const totalPeserta = wilayah.total_peserta ?? 0;
     const statusMandiri = wilayah.status_mandiri ?? 0;
@@ -332,19 +405,27 @@ function createTooltipContent(wilayah) {
             <div style="font-size: 13px; line-height: 1.5;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <span style="color: #6b7280;">Sekolah:</span>
-                    <strong style="color: #1f2937;">${formatNumber(totalSekolah)}</strong>
+                    <strong style="color: #1f2937;">${formatNumber(
+                        totalSekolah
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <span style="color: #6b7280;">Peserta:</span>
-                    <strong style="color: #1f2937;">${formatNumber(totalPeserta)}</strong>
+                    <strong style="color: #1f2937;">${formatNumber(
+                        totalPeserta
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
                     <span style="color: #6b7280;">Mandiri:</span>
-                    <strong style="color: #16a34a;">${formatNumber(statusMandiri)}</strong>
+                    <strong style="color: #16a34a;">${formatNumber(
+                        statusMandiri
+                    )}</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between;">
                     <span style="color: #6b7280;">Menumpang:</span>
-                    <strong style="color: #ca8a04;">${formatNumber(statusMenumpang)}</strong>
+                    <strong style="color: #ca8a04;">${formatNumber(
+                        statusMenumpang
+                    )}</strong>
                 </div>
             </div>
         </div>
@@ -367,10 +448,10 @@ function generateWilayahUrl(tahun, wilayahId) {
  * @returns {string} Escaped text
  */
 function escapeHtml(text) {
-    if (typeof text !== 'string') {
+    if (typeof text !== "string") {
         return String(text);
     }
-    const div = document.createElement('div');
+    const div = document.createElement("div");
     div.textContent = text;
     return div.innerHTML;
 }
@@ -381,10 +462,10 @@ function escapeHtml(text) {
  * @returns {string} Formatted number string
  */
 function formatNumber(num) {
-    if (typeof num !== 'number' || isNaN(num)) {
-        return '0';
+    if (typeof num !== "number" || isNaN(num)) {
+        return "0";
     }
-    return num.toLocaleString('id-ID');
+    return num.toLocaleString("id-ID");
 }
 
 /**
@@ -392,9 +473,9 @@ function formatNumber(num) {
  * @param {string} color - Color for the pin
  * @returns {L.DivIcon} Custom div icon with pulse animation
  */
-function createPulsingPinIcon(color = '#3b82f6') {
+function createPulsingPinIcon(color = "#3b82f6") {
     return L.divIcon({
-        className: 'pulsing-pin-container',
+        className: "pulsing-pin-container",
         html: `
             <div class="pulsing-pin" style="--pin-color: ${color};">
                 <div class="pin-pulse"></div>
@@ -407,8 +488,125 @@ function createPulsingPinIcon(color = '#3b82f6') {
         `,
         iconSize: [32, 42],
         iconAnchor: [16, 42],
-        popupAnchor: [0, -42]
+        popupAnchor: [0, -42],
     });
+}
+
+/**
+ * Render markers at ibukota (capital city) coordinates for each wilayah
+ * These markers are displayed on top of the polygon layer
+ * @param {L.Map} map - Leaflet map instance
+ * @param {Array} wilayahData - Array of wilayah data objects with latitude/longitude
+ * @param {string} tahun - Current year for navigation links
+ */
+function renderIbukotaMarkers(map, wilayahData, tahun) {
+    if (!wilayahData || !Array.isArray(wilayahData)) {
+        return;
+    }
+
+    // Add CSS for pulsing animation if not already added
+    addPulsingPinStyles();
+
+    // Color palette for different wilayah
+    const pinColors = [
+        "#3b82f6",
+        "#10b981",
+        "#f59e0b",
+        "#ef4444",
+        "#8b5cf6",
+        "#ec4899",
+        "#06b6d4",
+        "#84cc16",
+        "#f97316",
+        "#6366f1",
+        "#14b8a6",
+        "#a855f7",
+        "#22c55e",
+    ];
+
+    wilayahData.forEach(function (wilayah, index) {
+        if (wilayah.latitude && wilayah.longitude) {
+            const color = pinColors[index % pinColors.length];
+            const icon = createPulsingPinIcon(color);
+
+            const marker = L.marker([wilayah.latitude, wilayah.longitude], {
+                icon: icon,
+                zIndexOffset: 1000, // Ensure markers are above polygons
+            }).addTo(map);
+
+            marker.bindPopup(createPopupContent(wilayah, tahun), {
+                maxWidth: 300,
+                className: "map-popup",
+            });
+
+            marker.bindTooltip(createTooltipContent(wilayah), {
+                permanent: false,
+                direction: "top",
+                className: "map-tooltip",
+                offset: [0, -42],
+            });
+        }
+    });
+}
+
+/**
+ * Add CSS styles for pulsing pin animation
+ */
+function addPulsingPinStyles() {
+    if (document.getElementById("pulsing-pin-styles")) {
+        return; // Already added
+    }
+
+    const style = document.createElement("style");
+    style.id = "pulsing-pin-styles";
+    style.textContent = `
+        .pulsing-pin-container {
+            background: transparent !important;
+            border: none !important;
+        }
+        .pulsing-pin {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pin-icon {
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        .pin-pulse {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: var(--pin-color, #3b82f6);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: pulse 2s ease-out infinite;
+            z-index: 1;
+        }
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(0.5);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateX(-50%) scale(2.5);
+                opacity: 0;
+            }
+        }
+        .pulsing-pin:hover .pin-icon svg {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+    `;
+    document.head.appendChild(style);
 }
 
 /**
@@ -422,93 +620,52 @@ function renderFallbackMarkers(map, wilayahData, tahun) {
         return;
     }
 
-    // Add CSS for pulsing animation if not already added
-    if (!document.getElementById('pulsing-pin-styles')) {
-        const style = document.createElement('style');
-        style.id = 'pulsing-pin-styles';
-        style.textContent = `
-            .pulsing-pin-container {
-                background: transparent !important;
-                border: none !important;
-            }
-            .pulsing-pin {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .pin-icon {
-                position: relative;
-                z-index: 2;
-                filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-            }
-            .pin-pulse {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 20px;
-                height: 20px;
-                background-color: var(--pin-color, #3b82f6);
-                border-radius: 50%;
-                opacity: 0.6;
-                animation: pulse 2s ease-out infinite;
-                z-index: 1;
-            }
-            @keyframes pulse {
-                0% {
-                    transform: translateX(-50%) scale(0.5);
-                    opacity: 0.8;
-                }
-                50% {
-                    opacity: 0.4;
-                }
-                100% {
-                    transform: translateX(-50%) scale(2.5);
-                    opacity: 0;
-                }
-            }
-            .pulsing-pin:hover .pin-icon svg {
-                transform: scale(1.1);
-                transition: transform 0.2s ease;
-            }
-        `;
-        document.head.appendChild(style);
-    }
+    // Add CSS for pulsing animation
+    addPulsingPinStyles();
 
     // Color palette for different wilayah
     const pinColors = [
-        '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
-        '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#6366f1',
-        '#14b8a6', '#a855f7', '#22c55e'
+        "#3b82f6",
+        "#10b981",
+        "#f59e0b",
+        "#ef4444",
+        "#8b5cf6",
+        "#ec4899",
+        "#06b6d4",
+        "#84cc16",
+        "#f97316",
+        "#6366f1",
+        "#14b8a6",
+        "#a855f7",
+        "#22c55e",
     ];
 
-    wilayahData.forEach(function(wilayah, index) {
+    wilayahData.forEach(function (wilayah, index) {
         if (wilayah.latitude && wilayah.longitude) {
             const color = pinColors[index % pinColors.length];
             const icon = createPulsingPinIcon(color);
-            
+
             const marker = L.marker([wilayah.latitude, wilayah.longitude], {
-                icon: icon
+                icon: icon,
             }).addTo(map);
 
             marker.bindPopup(createPopupContent(wilayah, tahun), {
                 maxWidth: 300,
-                className: 'map-popup'
+                className: "map-popup",
             });
-            
+
             marker.bindTooltip(createTooltipContent(wilayah), {
                 permanent: false,
-                direction: 'top',
-                className: 'map-tooltip',
-                offset: [0, -42]
+                direction: "top",
+                className: "map-tooltip",
+                offset: [0, -42],
             });
         }
     });
 }
 
 // Export functions for use in other modules and testing
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
     module.exports = {
         initMap,
         loadGeoJSON,
@@ -520,16 +677,18 @@ if (typeof module !== 'undefined' && module.exports) {
         createPopupContent,
         createTooltipContent,
         generateWilayahUrl,
+        renderIbukotaMarkers,
         renderFallbackMarkers,
+        addPulsingPinStyles,
         escapeHtml,
         formatNumber,
         POLYGON_COLORS,
-        UNMATCHED_COLOR
+        UNMATCHED_COLOR,
     };
 }
 
 // Also expose to window for browser usage
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
     window.MapVisualization = {
         initMap,
         loadGeoJSON,
@@ -541,10 +700,12 @@ if (typeof window !== 'undefined') {
         createPopupContent,
         createTooltipContent,
         generateWilayahUrl,
+        renderIbukotaMarkers,
         renderFallbackMarkers,
+        addPulsingPinStyles,
         escapeHtml,
         formatNumber,
         POLYGON_COLORS,
-        UNMATCHED_COLOR
+        UNMATCHED_COLOR,
     };
 }

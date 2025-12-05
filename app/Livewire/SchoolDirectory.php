@@ -47,6 +47,11 @@ class SchoolDirectory extends Component
         $this->resetPage();
     }
 
+    public function updatingPerPage(): void
+    {
+        $this->resetPage();
+    }
+
     public function getSchoolsProperty(): LengthAwarePaginator
     {
         return $this->buildSchoolsQuery()->paginate($this->perPage);
@@ -103,7 +108,7 @@ class SchoolDirectory extends Component
     public function render(): View
     {
         $schools = $this->schools;
-        
+
         return view('livewire.school-directory', [
             'schools' => $schools,
             'wilayahOptions' => Wilayah::withoutGlobalScopes()->orderBy('nama')->pluck('nama', 'id'),

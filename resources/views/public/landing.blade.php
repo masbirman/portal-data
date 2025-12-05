@@ -14,13 +14,49 @@
             <div class="lg:col-span-7">
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-amber-400 text-xs font-medium mb-6">
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-                    </span>
-                    Portal Data
+                    <span class="text-base animate-wave inline-block origin-[70%_70%]">👋</span>
+                    Selamat Datang di Portal Data
                 </div>
+
+                <style>
+                    @keyframes wave {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        10% {
+                            transform: rotate(14deg);
+                        }
+
+                        20% {
+                            transform: rotate(-8deg);
+                        }
+
+                        30% {
+                            transform: rotate(14deg);
+                        }
+
+                        40% {
+                            transform: rotate(-4deg);
+                        }
+
+                        50% {
+                            transform: rotate(10deg);
+                        }
+
+                        60% {
+                            transform: rotate(0deg);
+                        }
+
+                        100% {
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    .animate-wave {
+                        animation: wave 2.5s infinite;
+                    }
+                </style>
 
                 <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight tracking-tight">
                     Asesmen Skala Nasional <br>
