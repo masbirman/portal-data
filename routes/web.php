@@ -6,6 +6,7 @@ use App\Http\Controllers\AsesmenController;
 use App\Http\Controllers\AsesmenNasionalController;
 use App\Http\Controllers\DownloadRequestController;
 use App\Http\Controllers\PublicDashboardController;
+use App\Http\Controllers\SchoolDirectoryController;
 
 // Single Login Entry Point - unified login for all users
 Route::get('/login', [\App\Http\Controllers\Auth\UnifiedLoginController::class, 'show'])->name('login');
@@ -29,6 +30,10 @@ Route::get('/admin/backup-manager/oauth-callback', function () {
 
 // Public Routes
 Route::get('/', [PublicDashboardController::class, 'landing'])->name('public.landing');
+
+// School Directory Routes (Public)
+Route::get('/direktori-sekolah', [SchoolDirectoryController::class, 'index'])->name('direktori-sekolah.index');
+Route::get('/direktori-sekolah/{sekolah}', [SchoolDirectoryController::class, 'show'])->name('direktori-sekolah.show');
 
 // Download Request Routes
 Route::get('/request-download', [DownloadRequestController::class, 'index'])->name('download-request.index');

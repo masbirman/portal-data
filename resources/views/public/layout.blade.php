@@ -86,6 +86,12 @@
                         Dashboard
                     </a>
                     
+                    <!-- Direktori Sekolah Menu -->
+                    <a href="{{ route('direktori-sekolah.index') }}"
+                        class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                        Direktori Sekolah
+                    </a>
+                    
                     <!-- Dropdown Pengajuan Unduh Data -->
                     <div class="relative" x-data="{ openRequestDropdown: false }" @mouseenter="openRequestDropdown = true" @mouseleave="openRequestDropdown = false">
                         <button class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
@@ -233,6 +239,7 @@
                  style="display: none;">
                 <a href="{{ route('public.landing') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Beranda</a>
                 <a href="{{ route('public.dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Dashboard</a>
+                <a href="{{ route('direktori-sekolah.index') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Direktori Sekolah</a>
                 
                 <div class="px-4 py-2 mt-2">
                     <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Pengajuan Unduh Data</p>

@@ -15,7 +15,7 @@
                     <input type="text" 
                            id="search"
                            wire:model.live.debounce.300ms="search" 
-                           placeholder="Nama sekolah atau NPSN..."
+                           placeholder="Nama sekolah atau kode sekolah..."
                            class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,21 +92,21 @@
     <div wire:loading.remove class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         @forelse($schools as $school)
             <!-- School Card -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
                 <!-- Placeholder Image -->
-                <div class="h-32 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                <div class="h-32 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                     <svg class="w-16 h-16 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                     </svg>
                 </div>
                 
                 <!-- Card Content -->
-                <div class="p-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white text-lg leading-tight mb-1 line-clamp-2">
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="font-semibold text-gray-800 dark:text-white text-lg leading-tight mb-1 line-clamp-2 min-h-[3.5rem]">
                         {{ $school->nama }}
                     </h3>
                     <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
-                        NPSN: {{ $school->kode_sekolah }}
+                        Kode: {{ $school->kode_sekolah }}
                     </p>
                     
                     @if($school->alamat)
@@ -132,11 +132,13 @@
                         </span>
                     </div>
                     
-                    <!-- Action Button -->
-                    <a href="{{ route('sekolah.show', $school) }}" 
-                       class="block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors text-sm font-medium">
-                        Lihat Detail
-                    </a>
+                    <!-- Action Button - Always at bottom -->
+                    <div class="mt-auto">
+                        <a href="{{ route('direktori-sekolah.show', $school) }}" 
+                           class="block w-full text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors text-sm font-medium">
+                            Lihat Detail
+                        </a>
+                    </div>
                 </div>
             </div>
         @empty
