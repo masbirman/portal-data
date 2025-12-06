@@ -1,0 +1,95 @@
+FROM php:8.3-fpm
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    libicu-dev \
+    zip \
+    unzip \
+    libzip-dev \
+    nginx \
+    supervisor \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js 20.x
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip intl opcache
+
+# Configure OPcache for production
+RUN echo "opcache.enable=1" >> /usr/local/etc/php/conf.d/opcache.ini \
+    && echo "opcache.memory_consumption=256" >> /usr/local/etc/php/conf.d/opcache.ini \
+    && echo "opcache.interned_strings_buffer=16" >> /usr/local/etc/php/conf.d/opcache.ini \
+    && echo "opcache.max_accelerated_files=20000" >> /usr/local/etc/php/conf.d/opcache.ini \
+    && echo "opcache.validate_timestamps=0" >> /usr/local/etc/php/conf.d/opcache.ini \
+    && echo "opcache.save_comments=1" >> /usr/local/etc/php/conf.d/opcache.ini
+
+# PHP configuration
+RUN echo "upload_max_filesize = 50M" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "post_max_size = 50M" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "memory_limit = 256M" >> /usr/local/etc/php/conf.d/custom.ini \
+    && echo "max_execution_time = 300" >> /usr/local/etc/php/conf.d/custom.ini
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy composer files first for better caching
+COPY composer.json composer.lock ./
+
+# Install PHP dependencies
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+
+# Copy package files for npm
+COPY package.json package-lock.json ./
+
+# Install npm dependencies
+RUN npm ci
+
+# Copy application files
+COPY . .
+
+# Run composer scripts after copying all files
+RUN composer dump-autoload --optimize
+
+# Build frontend assets
+RUN npm run build && rm -rf node_modules
+
+# Copy nginx configuration
+COPY docker/nginx/dokploy.conf /etc/nginx/sites-available/default
+
+# Copy supervisor configuration
+COPY docker/supervisor/dokploy.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
+# Create log directories
+RUN mkdir -p /var/log/supervisor \
+    && mkdir -p /var/www/html/storage/logs
+
+# Copy entrypoint script
+COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost/health || exit 1
+
+# Expose port 80
+EXPOSE 80
+
+# Use entrypoint for initialization
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
