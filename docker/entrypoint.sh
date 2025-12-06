@@ -53,6 +53,12 @@ done
 
 # Run Laravel setup commands
 echo "Running Laravel setup..."
+
+# Clear any cached config/packages from build phase
+rm -f /var/www/html/bootstrap/cache/packages.php
+rm -f /var/www/html/bootstrap/cache/services.php
+rm -f /var/www/html/bootstrap/cache/config.php
+
 php artisan package:discover --ansi || true
 php artisan migrate --force || true
 php artisan config:cache || true

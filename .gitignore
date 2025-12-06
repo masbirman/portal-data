@@ -13,6 +13,7 @@
 /.zed
 /auth.json
 /node_modules
+/bootstrap/cache/*.php
 /public/build
 /public/hot
 /public/storage
