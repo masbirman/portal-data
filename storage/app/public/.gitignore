@@ -1,2 +1,4 @@
-*
-!.gitignore
+imports/*
+!imports/.gitignore
+avatars/*
+!avatars/.gitignore
