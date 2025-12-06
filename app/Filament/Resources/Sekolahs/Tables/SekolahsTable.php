@@ -17,21 +17,41 @@ class SekolahsTable
         return $table
             ->columns([
                 TextColumn::make('jenjangPendidikan.nama')
-                    ->label('Jenjang Pendidikan')
-                    ->sortable(),
+                    ->label('Jenjang')
+                    ->sortable()
+                    ->toggleable(),
                 TextColumn::make('wilayah.nama')
-                    ->label('Kota/Kabupaten')
-                    ->sortable(),
+                    ->label('Kab/Kota')
+                    ->sortable()
+                    ->toggleable(),
+                TextColumn::make('npsn')
+                    ->label('NPSN')
+                    ->searchable()
+                    ->sortable()
+                    ->copyable()
+                    ->placeholder('-')
+                    ->color(fn(?string $state): string => $state ? 'success' : 'danger'),
                 TextColumn::make('kode_sekolah')
-                    ->label('Kode Sekolah')
-                    ->searchable(),
+                    ->label('Kode')
+                    ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('nama')
                     ->label('Nama Sekolah')
-                    ->searchable(),
+                    ->searchable()
+                    ->wrap()
+                    ->limit(40),
+                TextColumn::make('alamat')
+                    ->label('Alamat')
+                    ->searchable()
+                    ->wrap()
+                    ->limit(30)
+                    ->toggleable()
+                    ->placeholder('-'),
                 TextColumn::make('status_sekolah')
                     ->label('Status')
                     ->sortable()
                     ->badge()
+                    ->toggleable()
                     ->color(fn(string $state = null): string => match ($state) {
                         'Negeri' => 'success',
                         'Swasta' => 'warning',
@@ -40,9 +60,9 @@ class SekolahsTable
                 TextColumn::make('tahun')
                     ->label('Tahun')
                     ->sortable()
-
                     ->badge()
                     ->separator(',')
+                    ->toggleable()
                     ->color(fn(string $state): string => match ($state) {
                         '2024' => 'success',
                         '2025' => 'info',
@@ -52,10 +72,18 @@ class SekolahsTable
                     }),
             ])
             ->filters([
+                \Filament\Tables\Filters\TernaryFilter::make('npsn_status')
+                    ->label('Status NPSN')
+                    ->placeholder('Semua')
+                    ->trueLabel('Sudah ada NPSN')
+                    ->falseLabel('Belum ada NPSN')
+                    ->queries(
+                        true: fn ($query) => $query->whereNotNull('npsn')->where('npsn', '!=', ''),
+                        false: fn ($query) => $query->where(fn ($q) => $q->whereNull('npsn')->orWhere('npsn', '')),
+                    ),
                 \Filament\Tables\Filters\SelectFilter::make('tahun_filter')
                     ->label('Tahun')
                     ->options(function (): array {
-                        // Use SiklusAsesmen as source of truth for years
                         $years = \App\Models\SiklusAsesmen::query()
                             ->pluck('tahun', 'tahun')
                             ->sortDesc()
@@ -78,7 +106,6 @@ class SekolahsTable
                 \Filament\Tables\Filters\SelectFilter::make('jenjang_pendidikan_id')
                     ->label('Jenjang Pendidikan')
                     ->options(function () {
-                        // Get unique jenjang names
                         return \App\Models\JenjangPendidikan::query()
                             ->distinct()
                             ->pluck('nama', 'nama')
