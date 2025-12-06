@@ -101,15 +101,17 @@ function matchWilayahToFeature(feature, wilayahData) {
     if (featureName) {
         const matchByName = wilayahData.find((w) => {
             const wilayahName = (w.nama || "").toLowerCase().trim();
-            // Normalize names: remove "kabupaten " or "kota " prefix for comparison
-            const normalizedFeatureName = featureName.replace(
-                /^(kabupaten|kota)\s+/i,
-                ""
-            );
-            const normalizedWilayahName = wilayahName.replace(
-                /^(kabupaten|kota)\s+/i,
-                ""
-            );
+            // Normalize names: remove "kabupaten " or "kota " prefix and hyphens for comparison
+            const normalizedFeatureName = featureName
+                .replace(/^(kabupaten|kota)\s+/i, "")
+                .replace(/-/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+            const normalizedWilayahName = wilayahName
+                .replace(/^(kabupaten|kota)\s+/i, "")
+                .replace(/-/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
             return (
                 normalizedWilayahName === normalizedFeatureName ||
                 normalizedWilayahName.includes(normalizedFeatureName) ||

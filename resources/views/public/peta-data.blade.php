@@ -167,6 +167,18 @@
 @push('styles')
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
+        /* Fix z-index agar peta tidak menimpa navbar sticky */
+        .leaflet-pane,
+        .leaflet-control,
+        .leaflet-top,
+        .leaflet-bottom {
+            z-index: 40 !important;
+        }
+
+        .leaflet-control {
+            z-index: 41 !important;
+        }
+
         /* Popup Styles */
         .leaflet-popup-content-wrapper {
             border-radius: 8px;
@@ -208,8 +220,8 @@
         }
 
         /* ========================================
-           Responsive Map Styles (Requirement 7.1, 7.3)
-           ======================================== */
+               Responsive Map Styles (Requirement 7.1, 7.3)
+               ======================================== */
 
         /* Default map container height */
         #map {

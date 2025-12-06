@@ -18,7 +18,7 @@ class AsesmenNasionalController extends Controller
     {
         // Validasi tahun
         $siklus = SiklusAsesmen::where('tahun', $tahun)->first();
-        
+
         if (!$siklus) {
             abort(404, 'Data asesmen untuk tahun ' . $tahun . ' tidak ditemukan.');
         }
@@ -36,14 +36,14 @@ class AsesmenNasionalController extends Controller
     {
         // Validasi tahun
         $siklus = SiklusAsesmen::where('tahun', $tahun)->first();
-        
+
         if (!$siklus) {
             abort(404, 'Data asesmen untuk tahun ' . $tahun . ' tidak ditemukan.');
         }
 
         // Validasi wilayah
         $wilayah = Wilayah::find($wilayahId);
-        
+
         if (!$wilayah) {
             abort(404, 'Wilayah tidak ditemukan.');
         }
@@ -62,14 +62,14 @@ class AsesmenNasionalController extends Controller
     {
         // Validasi tahun
         $siklus = SiklusAsesmen::where('tahun', $tahun)->first();
-        
+
         if (!$siklus) {
             abort(404, 'Data asesmen untuk tahun ' . $tahun . ' tidak ditemukan.');
         }
 
         // Ambil data wilayah
         $wilayahList = Wilayah::all();
-        
+
         // Ambil statistik pelaksanaan asesmen per wilayah (bypass global scope dengan query langsung)
         $pelaksanaanStats = DB::table('pelaksanaan_asesmen')
             ->select(
@@ -97,10 +97,11 @@ class AsesmenNasionalController extends Controller
         $wilayahData = $wilayahList->map(function ($wilayah) use ($pelaksanaanStats, $sekolahCounts) {
             $stats = $pelaksanaanStats->get($wilayah->id);
             $sekolah = $sekolahCounts->get($wilayah->id);
-            
+
             return [
                 'id' => $wilayah->id,
                 'nama' => $wilayah->nama,
+                'kode_wilayah' => $wilayah->kode_wilayah,
                 'logo' => $wilayah->logo,
                 'latitude' => $wilayah->latitude,
                 'longitude' => $wilayah->longitude,
