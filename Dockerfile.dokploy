@@ -45,35 +45,36 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy composer files first for better caching
-COPY composer.json composer.lock ./
-
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
-
-# Copy package files for npm
-COPY package.json package-lock.json ./
-
-# Install npm dependencies
-RUN npm ci
-
 # Copy application files
 COPY . .
 
-# Create .env file for build (will be overwritten by runtime env)
-RUN cp .env.example .env && php artisan key:generate
+# Create minimal .env for build phase only
+RUN echo "APP_NAME=PortalData" > .env \
+    && echo "APP_ENV=production" >> .env \
+    && echo "APP_KEY=base64:dummykeyforbuildonlyxxxxxxxxxx=" >> .env \
+    && echo "APP_DEBUG=false" >> .env \
+    && echo "DB_CONNECTION=mysql" >> .env \
+    && echo "DB_HOST=127.0.0.1" >> .env \
+    && echo "DB_DATABASE=dummy" >> .env \
+    && echo "DB_USERNAME=dummy" >> .env \
+    && echo "DB_PASSWORD=dummy" >> .env
 
-# Run composer scripts after copying all files
+# Install PHP dependencies without running scripts
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+
+# Manually run autoload dump without artisan commands
 RUN composer dump-autoload --optimize --no-scripts
 
-# Build frontend assets
-RUN npm run build && rm -rf node_modules
+# Install npm and build assets
+RUN npm ci && npm run build && rm -rf node_modules
 
-# Remove .env after build (runtime will use environment variables)
+# Remove dummy .env (will be created at runtime)
 RUN rm -f .env
 
 # Copy nginx configuration
 COPY docker/nginx/dokploy.conf /etc/nginx/sites-available/default
+RUN rm -f /etc/nginx/sites-enabled/default \
+    && ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
 # Copy supervisor configuration
 COPY docker/supervisor/dokploy.conf /etc/supervisor/conf.d/supervisord.conf
@@ -84,7 +85,9 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # Create log directories
 RUN mkdir -p /var/log/supervisor \
-    && mkdir -p /var/www/html/storage/logs
+    && mkdir -p /var/www/html/storage/logs \
+    && touch /var/www/html/storage/logs/laravel.log \
+    && chown -R www-data:www-data /var/www/html/storage/logs
 
 # Copy entrypoint script
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
