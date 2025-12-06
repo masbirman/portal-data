@@ -21,7 +21,7 @@ services:
       DB_HOST: mysql
       DB_PORT: 3306
       DB_DATABASE: "${DB_DATABASE}"
-      DB_USERNAME: "${DB_USERNAME}"
+      DB_USERNAME: root
       DB_PASSWORD: "${DB_PASSWORD}"
 
       CACHE_DRIVER: file
@@ -61,8 +61,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
       MYSQL_DATABASE: "${DB_DATABASE}"
-      MYSQL_USER: "${DB_USERNAME}"
-      MYSQL_PASSWORD: "${DB_PASSWORD}"
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
@@ -93,7 +91,7 @@ services:
       DB_HOST: mysql
       DB_PORT: 3306
       DB_DATABASE: "${DB_DATABASE}"
-      DB_USERNAME: "${DB_USERNAME}"
+      DB_USERNAME: root
       DB_PASSWORD: "${DB_PASSWORD}"
 
       QUEUE_CONNECTION: database
@@ -124,7 +122,7 @@ services:
       DB_HOST: mysql
       DB_PORT: 3306
       DB_DATABASE: "${DB_DATABASE}"
-      DB_USERNAME: "${DB_USERNAME}"
+      DB_USERNAME: root
       DB_PASSWORD: "${DB_PASSWORD}"
 
       QUEUE_CONNECTION: database
