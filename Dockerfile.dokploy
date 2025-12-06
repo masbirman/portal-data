@@ -60,11 +60,17 @@ RUN npm ci
 # Copy application files
 COPY . .
 
+# Create .env file for build (will be overwritten by runtime env)
+RUN cp .env.example .env && php artisan key:generate
+
 # Run composer scripts after copying all files
-RUN composer dump-autoload --optimize
+RUN composer dump-autoload --optimize --no-scripts
 
 # Build frontend assets
 RUN npm run build && rm -rf node_modules
+
+# Remove .env after build (runtime will use environment variables)
+RUN rm -f .env
 
 # Copy nginx configuration
 COPY docker/nginx/dokploy.conf /etc/nginx/sites-available/default

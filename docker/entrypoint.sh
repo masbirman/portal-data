@@ -3,6 +3,10 @@ set -e
 
 echo "🚀 Starting Laravel application..."
 
+# Create .env from environment variables
+echo "📝 Creating .env file from environment variables..."
+env | grep -E '^(APP_|DB_|CACHE_|SESSION_|QUEUE_|MAIL_|REDIS_|BROADCAST_|FILESYSTEM_|TURNSTILE_|TELEGRAM_|LOG_|BCRYPT_)' > /var/www/html/.env || true
+
 # Wait for database to be ready
 echo "⏳ Waiting for database connection..."
 max_tries=30
