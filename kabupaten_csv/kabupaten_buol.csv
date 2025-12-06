@@ -1,0 +1,458 @@
+npsn,nama,alamat,kecamatan,kabupaten,provinsi,bentuk_pendidikan,status_sekolah,latitude,longitude
+40202919,SD NEGERI 1 EEYA,Jl. Trans Sulawesi,Kec. Palasa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4161,121.0907
+40202824,SD NEGERI 3 TULADENGGI,Desa Tuladenggi Sibatang,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4127,121.1191
+P2961146,PKBM USAHA BARU,Jl.Trans Sulawesi Desa Tuladenggi Sibatang,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,PKBM,SWASTA,0.4227,121.1291
+40202908,SD NEGERI 1 TULADENGGI,Desa Tuladenggi Pantai,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.424,121.136
+69996044,TK TERPADU NUR HASANAH,Desa Lambunu,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.4514,120.9938
+40205386,TK ALKH MIFTAHUL JANNAH,Jl. Komp. Masjid Jami,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.45268,120.998523
+40203224,SD INPRES 2 LAMBUNU,Jl. Trans Sulawesi,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4526,120.9953
+40203005,SD NEGERI LAMBUNU,Jl. Padang Raya No. 92,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4566,120.9798
+40210233,MTSS ALKHAIRAAT LAMBUNU,JALAN PENDIDIKAN KOMP MASJID JAMI,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,SWASTA,0.4566,120.9797
+40206771,SMKS HILAL KHAIRAAT,Jl. Pendidikan Kompl. Mesin Jami Lambunu,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMK,SWASTA,0.4566,120.9791
+40203064,SD INPRES 1 LAMBUNU,Jl. Trans Sulawesi No. 17,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4557,120.9754
+40203156,SD INPRES BAJO,Jl. Pelabuhan,Kec. Bolano,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4226,120.9562
+40206487,SMP ALKHAIRAAT BAJO,jln pelabuhan Desa Bajo,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,SWASTA,0.4229,120.956
+40205221,SD NEGERI BILALEA,Jl. Trans Sulawesi Desa Bilalea,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4509,121.0607
+69829421,KB HARAPAN KITA,Trans Sulawesi,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.451,121.0609
+60727764,MTSS ALKHAIRAAT PALAPI,JLN. TRANS SULAWESI NO. 87 PALAPI KEC. TAOPA,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,SWASTA,0.4565,121.0755
+40203182,SD INPRES PALAPI,Jl. Trans Sulawesi No. 26,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4571,121.0752
+69936496,TK MIFTAHUL KHAIRAAT,Dusun II,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.4576,121.0755
+40202829,SD NEGERI 4 TULADENGGI,Dusun 4 Jalan Calae ,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4447,121.1125
+40202942,SMKN 1 TAOPA,JL. TRANS SULAWESI DESA TAOPA NO.27,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMK,NEGERI,0.4603,121.0895
+40202822,SD NEGERI 2 TULADENGGI,Dusun 1,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4362,121.1293
+40202956,SMP NEGERI 1 TAOPA,Jl. Trans Sulawesi No. 103,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.4639,121.0935
+40202897,SD INPRES TULADENGGI,Jl. Siswa,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4495,121.1231
+70000747,SMP ISLAM KHODIMUL QURAN,"Jl. Pramuka, NO. 36",Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,SWASTA,0.4632,121.1161
+70032382,SMA Islam Khodimul Quran,Jl. Pramuka No. 36 ,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMA,SWASTA,0.4632,121.116
+40202859,SD NEGERI GIO,Jl. Mustika No. 89,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4642,121.1176
+40203218,SD INPRES 2 GIO,Desa Aedan Raya,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4609,121.1482
+40202820,SD NEGERI 3 MOUTONG,Jl. Pelabuhan,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4595,121.2091
+69935819,TK ALKHAIRAAT MOUTONG BARAT,Jl. Pelabuhan,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.4616,121.2101
+40205398,TK NEGERI 2 MOUTONG,Jl. Muara No. 71,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.4612,121.2334
+40202837,SD NEGERI 2 MOUTONG,Jl Hi Lasarika No 46,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4634,121.2361
+40202926,SD NEGERI 1 MOUTONG,Jl. Sambaragi No. 169,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4628,121.2297
+40203178,SD INPRES MOUTONG TENGAH,Jl. Sambaragi No. 213,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4629,121.2284
+69937985,TK NEGERI 4 BOLANO LAMBUNU,Jl. Padat Karya ,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.4821,121.0036
+40205218,SD NEGERI SIENDENG,Siendeng,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4588,120.968
+40210229,MTSN 3 PARIGI,JLN. TRANS SULAWESI NO. 60 BOLANO KEC. BOLANO LAMBUNU,Kec. Bolano,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,NEGERI,0.4431,120.9586
+P9926540,PKBM ABADI,"DS. BOLANO, KEC. BOLANO, KAB. PARIGI MOUTONG, SULAWESI TENGAH",Kec. Bolano,Kab. Parigi Moutong,Prov. Sulawesi Tengah,PKBM,SWASTA,0.4429,120.9575
+40209778,SMP DDI SIENDENG,JL Siendang Kilometer 7 Ds Siendeng ,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,SWASTA,0.4795,120.9666
+69988512,SMA Alkhairaat Taopa,Desa Palapi,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMA,SWASTA,0.46869,121.054059
+40205397,TK CAHAYA BUNDA NUNURANTAI,NUNURANTAI,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.4708,121.0612
+69792662,KB MAKARTI JAYA,Jln. Datuk Karama,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.4712,121.0611
+40203180,SD INPRES NUNURANTAI,Jl.Siswa No.01 Dusun II,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4712,121.0615
+70024597,KB PERTIWI TAOPA,Jl. Anoa,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.4775,121.0766
+40202889,SD INPRES TAOPA,Jl. Trans Sulawesi,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4647,121.0971
+69982106,TK NEGERI 1 TAOPA,Jl. Anoa,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.4693,121.0987
+40202901,SD MUHAMMADIYAH TAOPA,Jl. Mesjid Jami Dusun II Desa Paria,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,SWASTA,0.4648,121.1035
+69792705,KB KASIH SAYANG,Jl. Trans Sulawesi,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.4663,121.1051
+40203035,SDN TAOPA,"TRANS SULAWESI, TAOPA",Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4663,121.1059
+40209865,MAS AN-NUR GIO,DESA GIO,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MA,SWASTA,0.4666,121.1169
+40203059,SD INPRES 1 GIO,Jl. Trans Sulawesi No. 79,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4661,121.1229
+60729543,MIS ALKHAIRAAT ONGKA,JLN. PELABUHAN KAYU JATI ONGKA KEC. BOLANO LAMBUNU,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MI,SWASTA,0.490351,121.127652
+40203177,SD INPRES MOUTONG BARAT,Jl. Trans Sulawesi,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4708,121.18
+40205223,SD NEGERI PEMBUNI,Jl. Mosilang,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4695,121.1961
+40202938,SMP NEGERI 1 MOUTONG,Jl. Pramuka no. 18 Moutong Tengah,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.4667,121.2283
+40202943,SMAN 1 MOUTONG,JL. SISWA NO. 20,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMA,NEGERI,0.467,121.2346
+40203179,SD INPRES MOUTONG TIMUR,Jl. Tombolotutu II,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4716,121.2331
+40203200,SD INPRES LOBU GIO,Jl Hi Husen,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4809,121.2222
+40203185,SD INPRES RAJA BASAR,Jl. Raja Basar ,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4908,121.2136
+40202825,SD NEGERI 4 MOUTONG,Jln. Trans Sulawesi,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4932,121.2591
+40202874,SD NEGERI PADANG RAYA,Jl. Padang Raya,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4939,120.9829
+40205393,TK AL- JAMIATUL WASHLIYAH,Jl. Padang Raya,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.4973,120.9838
+40205276,TK PERTIWI OGRANDU,Jl. Padat Karya,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.5055,121.0049
+69940624,KB TEJA KUMARA,Jl. Cendrawasih,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.511322,121.008956
+69935169,TK AISYIYAH BUSTANUL ATHFAL,Jl. Colano No. 01,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,0.5122,120.9933
+69940621,TK NEGERI 3 BOLANO LAMBUNU,Jl. Ki. Hajar Dewantara No. 46,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.4956,120.969
+40203216,SD NEGERI ANUTAPURA,Jl. Ki Hajar Dewantara,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.496,120.9692
+40203070,SD INPRES 1 WANAGADING,Jl. Sukarno Hatta No 66,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5157,121.0003
+40203245,SD INPRES 2 WANAGADING,Desa Wanagading,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5162,120.9995
+40206486,SMP NEGERI 6 BOLANO LAMBUNU,Jl. Soekarno  Hatta,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.5173,121.0022
+40210231,MTSN 4 PARIGI,DESA BUKIT MAKMUR KEC. BOLANO LAMBUNU,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,NEGERI,0.5177,121.001
+69792675,KB PELITA HATI,JLN. KEBUN JERUK,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.511214,121.023254
+40203194,SD INPRES GUNUNGSARI,Desa GUNUNGSARI,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5124,121.0246
+40202972,SMP NEGERI 1 BOLANO LAMBUNU,Jl. Datuk Karama No. 500,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.5145,120.9758
+40203195,SD INPRES KARYA AGUNG,Jl. Maman Abdulrahman,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4969,121.0426
+69863280,SD NEGERI KARYA AGUNG,Desa Karya Agung,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4972,121.0529
+60729959,MAS ALKHAIRAAT MOUTONG,JL. TRANS SULAWESI NO. 87 MOUTONG KEC. MOUTONG,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MA,SWASTA,0.4957,121.1576
+60729961,MAN 3 PARIGI,JL. ASSANUSIYAH NO. 03 BERINGIN JAYA KEC. BOLANO KAB. PARIGI MOUTONG,Kec. Bolano,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MA,NEGERI,0.5176,121.1753
+40205224,SD KECIL OLONGGATA,Olonggata,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4954,121.2789
+60729540,MIS ANNUR TAOPA,JLN. BIDADARI TAOPA UTARA KEC. TAOPA,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MI,SWASTA,0.4978,121.3188
+40203011,SD NEGERI SEJOLI,Desa Sejoli,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.4954,121.3264
+40202949,SMAN 1 BOLANO LAMBUNU,JL. KI HAJAR DEWANTARA,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMA,NEGERI,0.5117,120.966
+40203221,SD INPRES 2 KOTANAGAYA,Jl. Patimura No. 142,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.528,120.9695
+69937986,TK NEGERI 1 BOLANO LAMBUNU,Desa Kotanagaya,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.526508,120.968471
+70041173,SMA IT Darul Maarif,Jl. Cempaka No. 99,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMA,SWASTA,0.5268,120.9679
+40203043,SD INPRES 1 MARGAPURA,Jl. Siswa No.1 Margapura,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5055,120.9606
+40203062,SD INPRES 1 KOTANAGAYA,Jl. Juanda NO. 140,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5351,120.9661
+40203003,SD NEGERI KUALA BUGIS,Desa Bukit Makmur,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5526,120.9961
+69936508,TK NEGERI 5 BOLANO LAMBUNU,Jl. Anoa,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,0.5355,120.9656
+40205688,SD K PADAT KARYA,PADAT KARYA,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.5527,120.9961
+69942258,KB BUKIT PERTIWI,Desa Bukit Makmur,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,0.5528,120.9958
+69988961,SDN 1 GANONGOLSARI,Jl. KARYASARI,Kec. Bolano Lambunu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,0.536225,120.959924
+60723469,MIS MUHAMMADIYAH BOLANO,JALAN TRANS SULAWESI NO. 59,Kec. Bolano,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MI,SWASTA,0.575424,121.110531
+P2961928,PKBM HANDAYANI,Jl. Trans Sulawesi,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,PKBM,SWASTA,0.5837098,121.2166995
+40204246,SMP NEGERI 3 SAUSU,Jl. Rajawali No. 11,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.5738,121.2846
+40205143,SMP NEGERI SATU ATAP NEGERI 2 MOUTONG,JL Trans Sulawesi Desa Sejoli ,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.6064,121.071
+40210230,MTSS ALKHAIRAAT LOBU GIO,JL. RAJABESAR NO.101 DESA LOBU GIO KEC. MOUTONG,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,SWASTA,0.6049,121.0902
+40205141,SMP NEGERI SATU ATAP NEGERI 1 MOUTONG,JL Siswa Desa Pande,Kec. Moutong,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.6199,121.0251
+60723468,MIS ALKHAIRAAT PALAPI TAOPA,JALAN TRANS SULAWESI NO 87,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MI,SWASTA,0.625184,121.127652
+40205167,SMP NEGERI 2 TAOPA,Desa Karya Agung ,Kec. Taopa,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,0.6648,121.011
+69886000,RA. Dwp I Kanwil Departemen Agama,Jl. Bantilan No. 8 ,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775002,121.5002
+69751247,RA/BA/TA ALKHAIRAAT LERE,JL. TEMBANG LRG. II PALU,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775003,121.5003
+69751244,RA/BA/TA AL-MUHAJIRIN,JL. KUNDURI KOMPLEKX AL-MUHAJIRIN,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775004,121.5004
+69751254,RA/BA/TA AL-IKHLAS BIROBULI,JL. BANTENG KOMPLEKS BTN PERUMAHAN BIROBULI,Kec. Palu Selatan,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775,121.5005
+69751246,RA/BA/TA ALKHAIRAAT DUYU,JL.PADANJAKAYA LRG. IV,Kec. Tatanga,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775007,121.5007
+69751245,RA/BA/TA ALKHAIRAAT BALAROA,JL. YAMBAERE,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775008,121.5008
+69751243,RA/BA/TA AL-KHAIRAAT DONGGALA KODI,JL. ST ALAUDDIN,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775009,121.5009
+69751242,RA/BA/TA AL-IKHLAS DUYU,JL. GAWALISE NO. 192,Kec. Tatanga,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.77501,121.501
+69751251,RA/BA/TA II DWP KEMENAG SULTENG,JL. MASMANSUR I. NO.3 PALU,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775011,121.5011
+69751255,RA/BA/TA ALKHAIRAAT DUPA INDAH,JL. DUPA INDAH,Kec. Palu Timur,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775012,121.5012
+69751248,RA/BA/TA ALKHAIRAAT SILAE,JL. MUNIF RAHMAN,Kec. Ulujadi,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775015,121.5015
+69751252,RA DWP UIN DATO KARAMA PALU,JL. PONEGORO NO. 23 PALU,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775016,121.5016
+69886001,RA. Ra. Al Jamiah,Jl. HOS. Cokroaminoto,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775017,121.5017
+69886002,RA.  Gazah Ummahat Ddi,Jl. Sungai Sausu No. 1 Palu,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,RA,SWASTA,0.775019,121.5019
+69947639,Darul Da`wah Wal Irsyad (DDI) Palu,Jl. Diponegoro No. 12 palu,Kec. Palu Barat,Kota Palu,Prov. Sulawesi Tengah,MA,SWASTA,0.775107,121.5107
+70005379,SMP NEGERI 5 TILOAN,Desa Air Terang,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.8532445,121.1078335
+40202425,SD NEGERI 2 MAIBUA,Desa Muliasari,Kec. Lampasio,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,0.8723,120.9956
+60723461,MIS USWATUN HASANAH MODO,JL. TRANS NO. 304,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,0.911381,121.459766
+40210222,MTSS Tarbiyatul Muhajirin,Jalan Ir. Sukarno No.28 ,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,0.940685,121.120554
+40209838,MAS USWATUN HASANAH MODO,TRANS NO. 304,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MA,SWASTA,0.929607,121.344336
+40209776,SMP Negeri 7 Bukal,Bukal Sp3,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.9287,121.4302
+40205487,SD NEGERI 15 BUKAL,Desa Bukal Sp3,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9289,121.4304
+40202139,SD NEGERI 13 BUKAL,Binuang,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9391,121.4715
+40209775,SMPN 6 BUKAL SATAP POTANGOAN,DESA POTANGOAN,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.9325,121.5583
+69793152,TK NEGERI PERTIWI MANTANGISI,Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,0.9255,121.6819
+69917971,TK. MANDIRI BATURATA,JL.SISWA,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.927703,121.924982
+69903279,TK.DAHLIA MANDIRI,JL.KANTONG PRODUKSI,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.918778,121.982832
+70004319,SMP TAHFIDZUL QUR AN DARUD DA WAH WAL IRSYAD TOLITOLI,JL.H.ABD.MADJIED MALLE DUSUN SIAPO,Kec. Baolan,Kab. Tolitoli,Prov. Sulawesi Tengah,SMP,SWASTA,0.9671145,120.9855449
+69830502,SMP NEGERI  4 SATAP TILOAN,Jl. Cendana,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.9535,121.2124
+40205485,SD Negeri 12 Tiloan,Dusun Kalaka,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9537,121.2124
+69900110,SD NEGERI 17 BUKAL,JL. PENDIDIKAN NO. 05,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.946288,121.413125
+40204642,SD NEGERI 14 BUKAL,Jl. Trans Sulawesi,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9463,121.4133
+40209746,TK MUKTITAMA,Jl. Siswa ,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.9505,121.4459
+40202055,SD NEGERI 11 BUKAL,Jl. Siswa ,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9506,121.4467
+40202025,SMP NEGERI 2 BUKAL,Jl. Siswa No. 36,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.9512,121.4471
+69984342,SMAS Plus Mamba Ul Hisan,Jl. Muktitama Rinjani II,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMA,SWASTA,0.964556,121.424529
+40202071,SD NEGERI 12 BUKAL,Jl. Muktitama II No.65,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9666,121.4177
+40204632,SMP NEGERI 3 BUKAL,Jln Siswa Muktitama No 67,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,0.9667,121.4189
+69902951,TK.IKAJAYA,Jl. Muktitama,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.9671,121.4185
+69987456,SMP PLUS MAMBAUL HISAN,Desa Winangun Kec. Bukal Kab. Buol,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,SWASTA,0.967197,121.423015
+69895259,Annuur Winangun,Jl. Melati No.5,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,0.969,121.4184
+60723460,MIS AN NUR WINANGUN,JL. Melati No. 05,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,0.9695,121.4185
+69944452,SMK Marga Bhakti,Jl. Bukit Jabal Rahmah,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMK,SWASTA,0.949869,121.5088362
+69751201,RA/BA/TA USWATUN HASANAH,DESA MODO,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,RA,SWASTA,0.9606,121.5011
+40209765,TK DHARMA WANITA PALELEH,PAELEH,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.965721,122.069607
+40201965,SD NEGERI 7 TILOAN,Kokobuka,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9818,121.2589
+40204643,SD PELITA HARDAYA,PT. Hardaya Inti Plantations,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,SWASTA,0.9801,121.4273
+69880253,SMK NEGERI 1 BUKAL,Jln. Pendidikan,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,0.9895,121.4515
+40202076,SD NEGERI 10 BUKAL,Jl.Siswa No.201,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9892,121.4534
+69902712,TK.SETIA BUDI,Jl. Siswa No.200,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.9902,121.453
+69995491,SD NEGERI 11 PALELEH BARAT,Jl. Trans Sulawesi Desa Oyak,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,0.9873965,121.8398014
+40209767,TK KWONDO KWALA BESAR,JL.PADAT KARYA,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.981855,121.875887
+69918371,TK. FAJAR MANDIRI,JL.SISWA,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.002709,121.925068
+40209766,TK KEMALA BHAYANGKARI,JL. KEELA,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,0.976534,122.018881
+40202047,SD NEGERI 9 TILOAN,Ir. Soekarno Hatta,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0302,121.2841
+40204618,SMP NEGERI 2 TILOAN,Jl. Ir. Soekarno-Hatta,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0308,121.2841
+40204633,SMPN 3 TILOAN,JLN. SISWA NO. 65,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0269,121.3421
+40202058,SD NEGERI 10 TILOAN,Desa Jati Mulya,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0268,121.3429
+40209774,TK PELITA HARDAYA II,JATI MULYA,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0263,121.3662
+40202038,SD NEGERI 8 BUKAL,Jln. Barru,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0069,121.4083
+69877306,SMP NEGERI 8 BUKAL,Jalan Kembang,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0135,121.4561
+40202029,SD NEGERI 9 BUKAL,Jalan Kembang,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0133,121.4572
+60727170,MIS MARAQITTALIMAT,JL. RINJANI NO. 10,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.015,121.4562
+60727740,MTSS MARAQITTALIMAT MODO,JLN. RINJANI NO. 10,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.0147,121.4566
+40209719,SMPN 5 Bokat (Satap Duamayo),Jln. Bukit Abd. Jalil No. 11,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0164,121.4981
+40202107,SD NEGERI 19 BOKAT,Desa Duwamayo,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0162,121.4988
+69966671,SMP ISLAM FARID AS-SHOLEH NW,SMP ISLAM FARID AS-SHOLEH NW,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,SWASTA,1.0222164,121.5133629
+40202141,SD NEGERI 15 BOKAT,Langudon,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0329,121.5136
+40204619,SMPN 3 BOKAT,JLN. TRANSMIGRASI,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0336,121.5141
+40202148,SD NEGERI 16 BOKAT,Jl.jamrud No. 11,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.031,121.5493
+40204620,SMPN 4 B0KAT,Jln. Jamrut,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0312,121.5501
+40202143,SD NEGERI 17 BOKAT,Tikopo,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0325,121.5323
+40202138,SD NEGERI 13 BUNOBOGU,Jln. Kantong Produksi,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0283,121.5661
+40202054,SD NEGERI 11 BUNOBOGU,Lonu,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0303,121.5626
+40202024,SMP NEGERI 2 BUNOBOGU,Jl. Kesehatan no. 6,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0325,121.5634
+40204635,SMPN 5 Bunobogu SATAP INALATAN,"JLN, TRANS SULAWESI",Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0146,121.6486
+40202096,SD NEGERI 1 BUNOBOGU,JL. Trans Sulawesi ,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0285,121.6487
+40202069,SD NEGERI 12 GADUNG,Jl. Trans Sulawesi No. 11,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0303,121.6727
+40206502,SMPN 3 GADUNGSATAP NANDU,DESA NANDU,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0306,121.6728
+P9934579,PKBM PELITA,JL. TRANS SULAWESI NO. 10 DESA MATINAN KEC. GADANG KAB. BUOL PROV. SULAWESI TENG,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,PKBM,SWASTA,1.0275491,121.7362048
+69971632,SMP Negeri 6 Gadung,Jl. Daimalimbo,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0298307,121.7475018
+69787771,SD NEGERI 6 PALELEH,PENDIDKAN NO. 01,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0214,121.9712
+40201962,SD NEGERI 8 PALELEH,Jl. Kihajar Dewantara No. 56,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0214,121.9712
+69774630,SMPN 5 Paleleh,Desa Talaki,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0288,121.965
+40202033,SD NEGERI 10 PALELEH,Kwalabesar,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0326,121.9546
+40210224,MTSS KWALABESAR,JL. SISWA NO. 01,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.0334,121.9549
+40201966,SD NEGERI 9 PALELEH,Jln. Garuda No. 26,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0171,121.997
+40201958,SD NEGERI 7 PALELEH,Jalan Pendidikan Nomor 2,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0212,121.998
+69787192,SMPN 6 PALELEH,"Jln. Karim Mbouw, No. 30 Dusun 2, Desa Pionoto, Kec. Paleleh",Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0279,122.0638
+60727176,MIS ALKHAIRAAT TOMADO,TOMADO,Kec. Lindu,Kab. Sigi,Prov. Sulawesi Tengah,MI,SWASTA,1.0631,121.017549
+40202032,SD NEGERI 8 TILOAN,Lomuli,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0386,121.2656
+40206485,SMKN 1 TILOAN,Jln. Siswa No.01 Dusun Biongan,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,1.0622,121.2542
+69902920,TK.AL-HIDAYAH,JL. AIR TERANG,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0621,121.2548
+40201976,SD NEGERI 5 BUKAL,Jl. PT. HIP,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0394,121.4171
+40201997,SD NEGERI 4 BUKAL,Jl. Kelapa Sawit,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0554,121.4398
+40201971,SD NEGERI 7 BUKAL,Jl. Malandati,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0407,121.4551
+40202008,SMP NEGERI 1 BUKAL,Jl. Kelapa Sawit No. 92,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0566,121.4387
+40204614,SMAN 1 BUKAL,JL. KEBUN SAWIT NO. 9,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.0573,121.4385
+40201954,SD NEGERI 6 BUKAL,Jl. Todael,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0559,121.4599
+69902517,TK CAHAYA KASIH,Jl. Siswa,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0355,121.5285
+40202070,SD NEGERI 12 BUNOBOGU,Bunobogu,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0393,121.5653
+40210217,MTSN 4 BUOL,JL. SISWA NO. 02,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,MTs,NEGERI,1.0554,121.5644
+40202112,SD NEGERI 18 BOKAT,JLN. TRANS SULAWESI,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0578,121.5628
+40204634,SMPN 4 Bunobogu,Tamit,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0584,121.575
+40201970,SD NEGERI 7 BUNOBOGU,Jalan Trans Sulawesi,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0356,121.6056
+40202039,SD NEGERI 9 BUNOBOGU,Desa. Botugolu,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.046,121.5989
+40202063,SD NEGERI 10 BUNOBOGU,Desa. Tamit,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0588,121.5753
+40202007,SMP NEGERI 1 BUNOBOGU,Jl. Siswa Rw I Rt III,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0374,121.6138
+40206673,SMK TUNAS HARAPAN BUNOBOGU,Jl. Siswa,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMK,SWASTA,1.0372,121.6143
+40201953,SD NEGERI 6 BUNOBOGU,Jln. Trans sulawesi,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0387,121.6124
+40202037,SD NEGERI 8 BUNOBOGU,Desa Bunobogu Selatan,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0378,121.614
+40210219,MTSS AL KHAIRAAT,JL. TRANS SULAWESI DESA BUNOBOGU KEC. BUNOBOGU,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.0399,121.6128
+60727171,MIS DARUSSAADAH,JL. UDANGI,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.0405,121.6134
+40202044,SMAN 1 BUNOBOGU,JL.TRANS SULAWESI  NO. 33,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.039,121.6156
+40201996,SD NEGERI 4 BUNOBOGU,Jl. Kartini,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0428,121.6132
+40201975,SD NEGERI 5 BUNOBOGU,Jl. Adiyaksa,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0453,121.6134
+P9952877,PKBM PONUNDUTAN,JALAN TRANS SULAWESI,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,PKBM,SWASTA,1.0478,121.624
+40201981,SD NEGERI 3 BUNOBOGU,Desa Konamukan,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0535,121.6184
+40202126,SD NEGERI 2 BUNOBOGU,Jl. Siswa,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0441,121.6434
+40204637,SMPN 3 Bunobogu,JL. SISWA,Kec. Bunobogu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0442,121.6436
+40202023,SMP NEGERI 2 GADUNG,Jl. Pendidikan N0.74,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0447,121.6833
+40201969,SD NEGERI 7 GADUNG,Lipubogu,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0467,121.6838
+40202064,SD NEGERI 11 GADUNG,Jl. Pelabuhan,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.056,121.6609
+40204627,SD NEGERI 13 GADUNG,Jl. Trans Sulawesi,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0406,121.6929
+40210218,MTSN 2 BUOL,JL. PENDIDIKAN NO.45,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,MTs,NEGERI,1.058414,121.680026
+40209837,MAS NURUL IHSAN MATINAN,DESA MATINAN,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,MA,SWASTA,1.0601,121.6793
+40209721,SMPN 5 GADUNG,Lokodoka,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0343,121.7111
+40201952,SD NEGERI 6 GADUNG,Jln Pendidikan,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0351,121.7116
+40206503,SMP NEGERI 4 GADUNG ,Jl. Pertanian,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.058,121.6916
+40202040,SD NEGERI 9 GADUNG,Taat,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0582,121.6919
+40202036,SD NEGERI 8 GADUNG,JL. TRANS SULAWESI,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.061,121.6804
+40201974,SD NEGERI 5 GADUNG,Desa. Labuton,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0524,121.7213
+40205486,SD NEGERI 14 GADUNG,Jl. Siswa,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0587,121.7412
+69978308,SLB NEGERI PALELEH,Desa Dutuno,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SLB,NEGERI,1.038652,121.946635
+40202048,SD NEGERI 11 PALELEH,Dutuno,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0387,121.9492
+40202042,SMAN 1 PALELEH,JL.TADULAKO NO.30,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.0384,121.95
+40202059,SD Negeri 12 Paleleh,Tolau,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.046,121.9428
+60723463,MIS PALELEH,JL. KEPITING,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.0439,121.9493
+40202074,SD NEGERI 13 PALELEH,Jl . Banno No. 55,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0466,121.9487
+40202004,SMP NEGERI 1 PALELEH,Jl. Bano No. 30,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0462,121.9498
+40202066,SD Negeri 14  Paleleh,Jl. Trans Sulawesi,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0488,121.9511
+40202108,SD NEGERI 4 PALELEH BARAT,Timbulon,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0564,121.9416
+40202135,SD NEGERI 15 paleleh,Jl. Trans Sulawesi,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0529,121.952
+69903233,TK.DOPALAK MANDIRI,JL.MANDIRI,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.054413,121.952662
+40202092,SD NEGERI 1 PALELEH,Umu,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0492,122.0644
+40205489,SD NEGERI 5 PALELEH,dusun kelembetu,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0579,122.0782
+40202017,SMP NEGERI 2 PALELEH,Jl. Pendidikan,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0428,122.1239
+40202121,SD NEGERI 2 PALELEH,Jln. Pendidikan,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0428,122.1243
+40206484,SMP NEGERI 4 PALELEH SATAP UMU ,Budi Utomo,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0405,122.1836
+40201963,SD NEGERI 6 TILOAN,Desa Air Terang,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0626,121.2551
+40201957,SD NEGERI 5 TILOAN,DESA BALAU,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0708,121.2786
+40201991,SD NEGERI 4 TILOAN,jln.trans sulawesi,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0852,121.2766
+40202003,SMP NEGERI 1 TILOAN,Jl. Gunung Pogogul,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0785,121.2994
+40202091,SD NEGERI 1 TILOAN,"Jl. Trans, Desa Boilan, Kec.Tiloan, Kab. Buol",Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0779,121.302
+40201987,SD NEGERI 3 TILOAN,Maniala,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0722,121.3135
+69902918,TK.TUNAS HARAPAN,JL.DURIAN,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0726,121.3141
+40202118,SDN 20 MOMUNU,Desa Suraya,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0709,121.335
+40202120,SD NEGERI 2 TILOAN,MANIALA,Kec. Tiloan,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0862,121.3192
+40202105,SD NEGERI 19 MOMUNU,Desa Momunu,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0933,121.3356
+40209777,SMPN 4 Momunu,TRANS SULAWESI ,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0934,121.3353
+40201982,SD NEGERI 03 BUKAL,Jl. Trans Kelapa Sawit,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0663,121.4363
+P9956929,PKBM CEMPAKA,JALAN SAWIT,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,PKBM,SWASTA,1.0791,121.4482
+40202115,SD NEGERI 2 BUKAL,Biau,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0788,121.4494
+69788591,SD NEGERI 16 BUKAL,Jln.PT.HIP ,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0834,121.4587
+40202097,SD NEGERI 1 BUKAL,Bungkudu,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0938,121.4581
+40209720,SMP 5 Bukal,JLN. TRANS MODO,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0942,121.4575
+40202077,SD NEGERI 10 BOKAT,Butukan,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0785,121.4889
+70040764,TK MANDIRI JAYA,Dusun 2 ,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0786,121.4886
+40202030,SD NEGERI 9 BOKAT,Jln. Mislaini,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0845,121.4793
+40202051,SD NEGERI 8 BOKAT,Kodolagon,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0868,121.4774
+40204617,SMP MUHAMMADIYAH KODOLAGON,Jl. AT Hamzah,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,SWASTA,1.088,121.4784
+40202009,SMP NEGERI 1 BOKAT,Ds. Bokat,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0884,121.5008
+40202027,SMKN 1 BOKAT,JL. PUSADAN,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,1.0892,121.5005
+40201983,SD NEGERI 3 BOKAT,Bokat,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0837,121.5097
+40202056,SD NEGERI 11 BOKAT,Doulan,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0799,121.5256
+40202045,SMAN 1 BOKAT,KOMPLEKS LAPANGAN BOLA KAKI DESA BONGO,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.0716,121.5365
+40202098,SD NEGERI 1 BOKAT,Tang,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0822,121.5227
+40202072,SD NEGERI 12 BOKAT,Jl. Trans Sulawesi,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0759,121.5331
+40202015,SMP NEGERI 2 BOKAT,Jl. Ki Hajar Dewantor No. 6 Bongo,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0725,121.5365
+40202129,SD NEGERI 13 BOKAT,Bongo,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0732,121.5379
+40206279,TK PEMBINA KECAMATAN BOKAT,DESA BONGO KECAMATAN BOKAT,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.070598,121.541511
+40202114,SD NEGERI 2 BOKAT/ SD PEMBINA KAB. BUOL,Jl. Trans Sulawesi,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0896,121.5031
+40202133,SD NEGERI 14 BOKAT,Jl. Trans Sulawesi,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0656,121.5487
+40204638,SMKN PERIKANAN DAN KELAUTAN,SISWA NO.,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,1.0659,121.7221
+40202006,SMP NEGERI 1 GADUNG,Jl. Siswa,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0676,121.7226
+40201980,SD NEGERI 3 GADUNG,Desa Bulagidun Tanjung,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0759,121.7172
+69925568,TK NEGERI 1 GADUNG,JL RABAT,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.0699,121.7229
+40201995,SD NEGERI 4 GADUNG,Desa. Bulagidun,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0648,121.7258
+40202125,SD NEGERI 2 GADUNG,Jln. Tamrin,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0678,121.7252
+40202127,SD Negeri 3 Paleleh Barat,JL. KIHAJARDEWANTARA,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0641,121.7378
+40202095,SD NEGERI 1 GADUNG,JL. Trans Sulawesi,Kec. Gadung,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0718,121.7319
+40201986,SD NEGERI 09 PALELEH BARAT,Bodi,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0693,121.7673
+40202001,SD NEGERI 10 PALELEH BARAT,Jl. Trans Sulawesi,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0695,121.7673
+40206471,SMPN 3 Paleleh Barat,JLN. TRANS SULAWESI,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0757,121.7746
+40202016,SMPN 2 Paleleh Barat,Desa Harmoni,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0754,121.8091
+40202102,SD NEGERI 8 PALELEH BARAT,Jl. Trans Sulawesi,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0756,121.8094
+40202104,SD NEGERI 6 PALELEH BARAT,Jln. Trans Sulawesi,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0781,121.8193
+40202117,SD NEGERI 7 PALELEH BARAT,HARMONI,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0819,121.8202
+69924809,TK. NURUL YAQIN,JL.TRANS SULAWESI,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0813,121.8226
+40201985,SD NEGERI 5 PALELEH BARAT,Dutuno,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0864,121.8639
+69822749,SMAN 1 PALELEH BARAT,Jl. Malaitom No. 2,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.0731,121.877
+40202020,SMPN 1 Paleleh Barat,JLN. Hi. KARIM,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0803,121.874
+40202145,SD NEGERI 2 PALELEH BARAT,Oyak,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0912,121.9043
+40202150,SD NEGERI 16 PALELEH,Jl.pangeran Simbogolo,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0786,121.9334
+69902514,TK. AMAL,JL.PENDIDIKAN,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.070397,121.940442
+40202052,SD NEGERI 1 PALELEH BARAT,Jln.Trans sulawesi,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0874,121.9321
+69728403,SMPN 4 PALELEH BARAT SATAP HULUBALANG,DESA HULUBALANG,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0875,121.9319
+40201992,SD NEGERI 4 PALELEH,Lilito,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0636,122.063
+40204636,SMP NEGERI 3 PALELEH,DESA LILITO,Kec. Paleleh,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.064,122.0634
+40210184,MTSS ISTIQAMAH DUNGINGIS,JL. MASJID TAQWA NO. 7 DUNGINGIS,Kec. Dako Pemean,Kab. Tolitoli,Prov. Sulawesi Tengah,MTs,SWASTA,1.124,121.0681
+40210223,MTSS USWATUN HASANAH MODO,JL. TRANS NO. 304,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.111383,121.319064
+40209839,MAS NURUL IHSAN TONGON,DESA TONGON,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,MA,SWASTA,1.108399,121.350803
+40202109,SD NEGERI 18 MOMUNU,Desa Taluan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0945,121.3752
+69902627,TK.POGOGUL,JL.TRANS SULAWESI,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.0966,121.3764
+40202021,SMP NEGERI 2 MOMUNU,Jl.siswa No.25,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0965,121.3819
+40202151,SD NEGERI 15 MOMUNU,Desa. Pujimulyo,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.098,121.3826
+40202146,SD NEGERI 16 MOMUNU,Desa Pinamula,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1126,121.3656
+40202131,SD NEGERI 14 MOMUNU,Desa Potugu,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0986,121.3933
+69951863,PPS DDI Nurul Hidayah Potugu,Jl. Trans Momunu Tiloan No.31 Desa Potugu,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,Pondok Pesantren,SWASTA,1.099,121.3981
+60723462,MIS DDI NURUL HIDAYAH,TRANS MOMUNU NO.31,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.0997,121.3978
+40210221,MTSN 3 BUOL,JL. PENDIDIKAN NO.06,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,MTs,NEGERI,1.0998,121.4026
+40202067,SD NEGERI 12 MOMUNU,Jl. Pendidikan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0999,121.4041
+40202075,SD NEGERI 11 MOMUNU,Panimbul,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.0981,121.4141
+40202136,SD NEGERI 13 MOMUNU,Desa Mangubi,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1075,121.4085
+69772327,SMAN 1 MOMUNU,"Jalan Kali Momunu, Desa Lamadong",Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.1132,121.412
+40201993,SD NEGERI 4 MOMUNU,Jln. Trans Sulawesi,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1136,121.4116
+40202049,SD NEGERI 9 MOMUNU,JLN. SAMATOA,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1043,121.4283
+40206501,SMPN 3 Momunu,Ds pomayagon,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1051,121.4279
+40201967,SD NEGERI 7 MOMUNU,Jl. Pendidikan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1167,121.4206
+40202060,SD NEGERI 10 MOMUNU,Jl. Pendidikan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1132,121.4362
+40201959,SD NEGERI 5 MOMUNU,Jl. Gunung Lopak,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1181,121.4146
+40202002,SMP NEGERI 1 MOMUNU,"Jl. Tadulako, No. 10",Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1245,121.4151
+40201998,SD NEGERI 4 BOKAT,Jl. A. Ellah,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1028,121.4883
+40201972,SD NEGERI 7 BOKAT,Jl. Trans Sulawesi,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.123,121.4697
+40209745,TK SATAP NEGERI LAMA,BOKAT,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.123015,121.469733
+69812063,SMPN SATAP 5 PALELEH BARAT,Desa Oyak,Kec. Paleleh Barat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.0973,121.9194
+69757936,SMP NEGERI 5 MOMUNU SATAP PINAMULA,"JL. TRANS PINAMULA KEC. MOMUNU KAB. BUOL, SULAWESI TENGAH",Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1275,121.3536
+40202128,SD NEGERI 17 MOMUNU,Dusun Permata Putih,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1282,121.3536
+40201978,SD NEGERI 3 MOMUNU,Jln. Pendidikan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.125,121.4143
+40202122,SD NEGERI 2 MOMUNU,Dusun Lamolan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1358,121.412
+40202093,SD NEGERI 1 MOMUNU,Jl. Pendidikan,Kec. Momunu,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1436,121.4124
+163032  ,STISIPOL Mujahidin,Jl Tirtarya Kelurahan Kulango,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,1.1477201,121.4055107
+40202013,SMK Negeri 2 Biau,JL. ANOA NO. 32,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,1.1488,121.4055
+40206683,TK NEG PEMBINA KEC BIAU,JLN PADAT KARYA,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.149,121.4082
+40202050,SD NEGERI 9 BIAU,BUOYONG,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1394,121.4353
+69787768,SMP NEGERI 5 BIAU,"Jln.Gagak Lingk. Buoyong Kel.Buol,Kec.Biau,Kab.Buol",Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1396,121.4359
+40210216,MTSS AL MISBAH,JL. DR. WAHIDIN NO.07,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.13206,121.450316
+40202094,SD NEGERI 1 BIAU,Jln. U. Hanggi,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1504396,121.412851
+40202068,SD NEGERI 12 BIAU,Jl.merpati 01,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1339,121.455
+40202137,SD NEGERI 13 BIAU,Jl. Trans Sulawesi,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1347,121.4559
+60723454,MIS USWATUN HASANAH LEOK 1,JL. HI. M. SUHONG NO. 26 KEL. LEOK I,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.15388,121.411859
+69988478,SMA Plus Farid as-Sholeh NW Negeri Lama,Negeri Lama,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SMA,SWASTA,1.125533,121.465144
+40201955,SD NEGERI 6 BOKAT,Jln.Trans Sulawesi,Kec. Bokat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1256,121.4666
+40202018,SMP NEGERI 3 BIAU,Jl. Trans Sulawesi,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1307,121.46
+60723457,MIS AL KHAIRAT LAKEA,JL. TRANS SULAWESI,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.164985,121.139077
+40206688,TK MAWAR ILAMBE,DESA TUINAN,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.174854,121.319876
+40209836,MAS ABNAUL KHAIRAAT LAKEA,DESA LAKEA / NGUNE,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MA,SWASTA,1.177881,121.350492
+40210215,MTSS USWATUN HASANAH LEOK I,JL. H. M. SUHONG,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.158243,121.394403
+40202124,SD NEGERI 2 BIAU ,Kel. Kulango,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1573,121.4146
+40201960,SD NEGERI 5 BIAU,Jl. Sanzibar  No. 416,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1645,121.4123
+40201968,SD NEGERI 7 BIAU,JLN. MT HARYONO NO. 28,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.172749,121.396561
+69987461,SDIT AL WAHDAH BUOL,Jl. Kemiri Kel.Kali Kec. Biau,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,SWASTA,1.16455,121.418302
+69751197,RA/BA/TA NURUL IHSAN,JL. PRAMUKA NO. 214,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,RA,SWASTA,1.158608,121.426581
+40202041,SMA Negeri 2 BIAU,JL. M.A. Turungku 76,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.1609,121.4258
+60723453,MIN BUOL,JL. PRAMUKA NO.214 KEL. KALI KEC. BIAU KAB. BUOL,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MI,NEGERI,1.1585,121.4272
+40210213,MTSN 1 BUOL,JL. H.M DATUIDING NO.15,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MTs,NEGERI,1.1593,121.4268
+40202043,SMAN 1 BIAU,JL. MA. TURUNGKU NO. 74,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.1607,121.4266
+40202022,SMP NEGERI 2 BIAU,Jl. MA.Turungku Nomor 64,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1608,121.4277
+40202028,SMK NEGERI 1 BIAU,Jl. Y.A. Lamaka No. 143,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMK,NEGERI,1.1634,121.427
+69922964,SLB NEGERI BUOL,Jl. Ki Hajar Dewantoro No 26,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SLB,NEGERI,1.1731,121.4196
+40201979,SD NEGERI 3 BIAU,Jl. Ma. Turungku,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1608,121.4296
+40201994,SD NEGERI 4 BIAU,Jl. P. Marhun No. 61,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1618,121.4298
+40202061,SD NEGERI 10 BIAU,Jln. T Mangkona No. 6,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1568,121.4375
+40209724,TK AISYIYAH BUSTANUL ATFAL I,JL. BUMI NIPAH NO.01,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,1.161124,121.432614
+40202065,SD NEGERI 11 BIAU,Jl. MT Haryono No 60,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1581,121.4371
+40209834,MAN BUOL,JL. Syarif Mansur No.274,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MA,NEGERI,1.1638,121.4305
+40202035,SD NEGERI 8 BIAU ,Kel. Buol,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1554,121.4413
+40202147,SD NEGERI 16 BIAU,JLN. T KAWANDAUD,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1665,121.4278
+40202142,SD NEGERI 17 BIAU,JLN. SYARIF MANSUR,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1708,121.4268
+60723455,MIS AL MISBAH,JLN. Dr. Wahidin Sudiro Husodo NO.04 KELURAHAN LEOK II,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.1746,121.4204
+40202132,SD NEGERI 14 BIAU,Jl. Pemuda,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1801,121.4219
+40204630,SMPI AL HIJRAH,Jln. syarif mansyur no. 03,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,SWASTA,1.1823,121.4189
+40209835,MAS AL HIJRAH,JL. SYARIF MANSUR,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MA,SWASTA,1.1823,121.4188
+40202152,SD NEGERI 15 BIAU,Jl. Siswa,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1843,121.4163
+60727172,MIS AR RAHMA,JL. TRANS SULAWESI,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.184995,121.254544
+69959133,SMP NEGERI 4 LAKEA,Jl. Trans Sulawesi,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2068626,121.2620918
+40202026,SMKS AMIRUL MUKMININ,Jl. Sultan Hasanudin No. 02,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMK,SWASTA,1.1971,121.3711
+69899398,SMP NEGERI 6 BIAU,Jl. Tirtaria,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2047195,121.3757445
+40202110,SD NEGERI 18 BIAU ,Jl. Sedap Malam,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1865,121.418
+40204648,SD 22 BIAU,KEL. LEOK 1,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1917,121.4143
+40202005,SMP NEGERI 1 BIAU ,Jl.Ahmad Yani No. 54 Kel. Leok I Kec. Biau Kab. Buol,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.1871,121.4184
+40205488,SDN 23 BIAU,LINGKUNGAN DAMAR LEOK 1,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.1987,121.4195
+40202106,SD NEGERI 19 BIAU,Jl. Trans Sulawesi,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.204,121.4155
+P9956926,SKB BUOL,Y.A LAMAKA NO 12,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SKB,NEGERI,1.209,121.4083
+P9956928,PKBM MIRANTI,TRANS SULAWESI NO. 128,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,PKBM,SWASTA,1.214784,121.2200565
+60723458,MIS ABNAUL KHAIRAAT LAKEA,JL. KANTONG PRODUKSI,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.2266,121.2378
+40202140,SD NEGERI 7 LAKEA ,Jl. Latalebo,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2376,121.2262
+40210214,MTSS LAKEA,JL. TRANS SULAWESI TOLIS-BUOL,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.2369,121.2279
+40202053,SD NEGERI 6 LAKEA ,Jl. Pendidikan,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.236,121.2307
+40202010,SMP NEGERI 1 LAKEA,Jl. Trans Sulawesi No. 129,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2391,121.225
+40202046,SMAN 1 LAKEA,JL. TRANS SULAWESI,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.244,121.2161
+69903556,TK NEGERI 1 LAKEA,JL.KANTOR CAMAT,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.2279,121.2459
+40202134,SD NEGERI 5 LAKEA,Desa. Lakea Ii,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.228,121.2494
+40202149,SD NEGERI 4 LAKEA,JL. PENDIDIKAN,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2294,121.2532
+40206681,SMPN 3 LAKEA SATAP BUKAAN,DESA BUKAAN,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2277,121.2773
+40202144,SD NEGERI 3 LAKEA,Jln. Pendidikan No. 07 Desa Bukaan Kec. Lakea Kab. Buol,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2284,121.2772
+40202073,SD NEGERI 2 LAKEA ,Desa Tuinan,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2363,121.2861
+40202057,SD NEGERI 1 LAKEA ,Jl. Pendidikan No.86,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2355,121.2885
+40202011,SMP MUHAMMADIYAH LAKEA,Jl. Trans Sulawesi,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMP,SWASTA,1.236,121.29
+69787767,SMP NEGERI 4 BIAU,JLN. TRANS SULAWESI,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2231,121.3622
+40202119,SD NEGERI 20 BIAU,JLN. TRANS SULAWESI,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2245,121.4109
+40202211,SD NEGERI 4 BINONTOAN,Desa Binontoan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2626,121.1269
+40202361,SD NEGERI 1 LAKUAN TOLITOLI,Desa Lakuan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2698,121.1695
+40204613,SMPN 2 LAKEA SATAP LAKUAN BUOL,Jl. Trans Sulawesi,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2635,121.1851
+40202113,SD NEGERI 8 LAKEA,Jl. Trans Sulawesi,Kec. Lakea,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2644,121.1849
+40202477,SD NEGERI 2 LAKUAN TOLITOLI,LAKUAN TOLITOLI,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2701,121.1711
+40201964,SD NEGERI 4 KARAMAT ,Jl. Trans Sulawesi,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2533,121.3194
+40204639,SMPN 3 KARAMAT SATAP LAMAKAN,DESA LAMAKAN,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2534,121.3197
+40201973,SD NEGERI 3 KARAMAT,Desa Busak II,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2445,121.3452
+60723459,MIS BUSAK,JL. TRANS SULAWESI,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,MI,SWASTA,1.2475,121.3608
+40202014,SMPN 1 Karamat,DESA BUSAK I,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2479,121.3609
+40201956,SD NEGERI 1 KARAMAT ,Desa Busak I,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2485,121.3611
+40202031,SD NEGERI 5 KARAMAT,Desa Busak I,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2517,121.3644
+40210220,MTSS BUSAK,JL. TRANS SULAWESI NO. 25,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,MTs,SWASTA,1.252,121.3644
+69876822,SMA NEGERI 1 KARAMAT,Desa Monano,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMA,NEGERI,1.2534,121.3774
+40202078,SD NEGERI 9 KARAMAT ,DESA MONANO,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2544,121.3761
+40202019,SMPN 2 Karamat,JLN. TRANS SULAWESI NO. 25,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2579,121.3972
+40202103,SD NEGERI 2 KARAMAT,Jl. Trans Sulawesi,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2532,121.4074
+40202099,SD NEGERI 7 KARAMAT,Desa Baruga,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2586,121.3972
+40206695,TK NEGERI 1 KARAMAT,DESA MOKUPO,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,TK,NEGERI,1.253972,121.409483
+40201984,SD NEGERI 6 KARAMAT,Jl. Trans Sulawesi,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2539,121.4096
+40202116,SD NEGERI 21 BIAU,Jl. Trans Sulawesi,Kec. Biau,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2473,121.4169
+40205686,SMPN 4 KARAMAT SATAP MENDAAN,jalan tanjung dako,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2659,121.4108
+40201990,SD NEGERI 10 KARAMAT,Mendaan,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.266,121.4113
+40202293,SD NEGERI PINJAN,Desa Pinjan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.299,121.0611
+40204182,SMP NEGERI 4 TOLITOLI UTARA,Jln. Trans Sulawesi no. 139 Desa Pinjan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SMP,NEGERI,1.2993,121.0618
+40202434,SD NEGERI 3 BINONTOAN,Desa Binontoan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2849,121.1309
+40202272,SMP NEGERI 2 TOLI TOLI UTARA,Jl. Trans Toli Toli Buol,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SMP,NEGERI,1.2882,121.1293
+40202322,SD NEGERI 1 BINONTOAN,Desa Binotoan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2869,121.1329
+40202230,SD NEGERI 5 BINONTOAN,Desa Binontoan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2884,121.13
+69856938,SMK NEGERI 1 TOLITOLI UTARA,JALAN PERIKANAN ,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SMK,NEGERI,1.2906,121.1297
+40202485,SD NEGERI 2 BINONTOAN,Desa Binontoan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.2879,121.1465
+40206257,SMP NEGERI 3 TOLITOLI UTARA,Jl. Trans Sulawesi  Desa Lakuan,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SMP,NEGERI,1.2787,121.1594
+69757937,SMP NEGERI 5 KARAMAT,Tanjung Dako,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SMP,NEGERI,1.2877,121.4609
+40201988,SD NEGERI 8 KARAMAT,Tanjung Dako,Kec. Karamat,Kab. Buol,Prov. Sulawesi Tengah,SD,NEGERI,1.2878,121.461
+40204877,TK NEGERI FLAMBOYAN MALONAS,Jln. Pendidikan,Kec. Dampelas,Kab. Donggala,Prov. Sulawesi Tengah,TK,NEGERI,1.292401,121.712187
+40202170,SD NEGERI DIULE,Desa Diule,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.3228,121.0128
+40205709,SMP NEGERI 5 TOLITOLI UTARA,JL.ZAINAL BURHANUDIN NO.149,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SMP,NEGERI,1.323,121.0129
+40206489,SMP NEGERI 5 SATAP TOILI,Desa Uemea,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,1.3205,122.2338
+70026115,MI HI.HAYYUN SALUMPAGA,Jln Mahrus lawali,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,MI,SWASTA,1.3342,120.9871
+60728260,MAS HI. HAYYUN SALUMPAGA,"JL. KI HAJAR DEWANTORO NO. 4, kode Pos: 94562",Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,MA,SWASTA,1.3368,120.9807
+40202417,SD NEGERI 2 SALUMPAGA,Jl. Trans Sulawesi Desa Salumpaga,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.3378,120.9798
+40202467,SD NEGERI 1 SALUMPAGA,Desa Salumpaga,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.338,120.9799
+60727782,MTSS HI. HAYYUN SALUMPAGA,JL. KI. HAJAR DEWANTORO NO. 4,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,MTs,SWASTA,1.3402,120.9723
+40202155,SD NEGERI HARAPAN JAYA,Jln. Kantong Produksi,Kec. Tolitoli Utara,Kab. Tolitoli,Prov. Sulawesi Tengah,SD,NEGERI,1.3185,120.9555
+70030065,TK ALKHAIRAAT TANAMBI,DUSUN IV TANAMBI DESA NGGAWIA KECAMATAN TOJO BARAT,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,1.4401,121.0118
+69768321,TK KATOLIK SANTO PAULUS RUSA KENCANA,DESA RUSAKENCANA,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,1.4517,122.3361
+40210129,MTSS DARUL ULUM TOILI,JL.AHMAD YANI NO.52,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,1.4517,122.3376

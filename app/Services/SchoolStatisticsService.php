@@ -55,8 +55,48 @@ class SchoolStatisticsService
                     'jumlah_peserta' => (int) $assessment->jumlah_peserta,
                     'partisipasi_literasi' => (float) $assessment->partisipasi_literasi,
                     'partisipasi_numerasi' => (float) $assessment->partisipasi_numerasi,
+                    'nama_penanggung_jawab' => $assessment->nama_penanggung_jawab,
+                    'nama_proktor' => $assessment->nama_proktor,
                 ];
             });
+    }
+
+    /**
+     * Get latest penanggung jawab and proktor from most recent assessment.
+     *
+     * @param Sekolah $sekolah
+     * @return array{nama_penanggung_jawab: string|null, nama_proktor: string|null}
+     */
+    public function getLatestOfficials(Sekolah $sekolah): array
+    {
+        // Get the most recent assessment that has non-empty PJ or Proktor
+        $latest = $sekolah->pelaksanaanAsesmen()
+            ->with('siklusAsesmen')
+            ->orderByDesc('siklus_asesmen_id')
+            ->where(function ($q) {
+                $q->where('nama_penanggung_jawab', '!=', '')
+                  ->where('nama_penanggung_jawab', '!=', '-')
+                  ->orWhere('nama_proktor', '!=', '')
+                  ->where('nama_proktor', '!=', '-');
+            })
+            ->first();
+
+        if (!$latest) {
+            return [
+                'nama_penanggung_jawab' => null,
+                'nama_proktor' => null,
+                'siklus' => null,
+            ];
+        }
+
+        $pj = $latest->nama_penanggung_jawab;
+        $proktor = $latest->nama_proktor;
+
+        return [
+            'nama_penanggung_jawab' => ($pj && $pj !== '-') ? $pj : null,
+            'nama_proktor' => ($proktor && $proktor !== '-') ? $proktor : null,
+            'siklus' => $latest->siklusAsesmen?->nama,
+        ];
     }
 
     /**

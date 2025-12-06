@@ -6,6 +6,7 @@
     $statistics = $statisticsService->getStatistics($sekolah);
     $assessmentHistory = $statisticsService->getAssessmentHistory($sekolah);
     $nearbySchools = $statisticsService->getNearbySchools($sekolah);
+    $latestOfficials = $statisticsService->getLatestOfficials($sekolah);
 
     // Helper function to format percentage without unnecessary decimals
     $formatPercent = function ($value) {
@@ -37,7 +38,7 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                         <a href="{{ route('direktori-sekolah.index') }}"
-                            class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Direktori
+                            class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Data
                             Sekolah</a>
                     </div>
                 </li>
@@ -65,18 +66,9 @@
                         <img src="{{ asset('storage/' . $sekolah->foto) }}" alt="Foto {{ $sekolah->nama }}"
                             class="w-full h-full object-cover absolute inset-0">
                     @else
-                        <!-- Placeholder -->
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center absolute inset-0">
-                            <div class="text-center p-6">
-                                <svg class="w-24 h-24 mx-auto text-white/50 mb-4" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                </svg>
-                                <p class="text-white/70 text-sm">Foto Sekolah</p>
-                            </div>
-                        </div>
+                        <!-- Illustration Placeholder -->
+                        <img src="{{ asset('images/school-illustration.svg') }}" alt="Ilustrasi Sekolah"
+                            class="w-full h-full object-cover absolute inset-0">
                     @endif
                 </div>
 
@@ -104,6 +96,17 @@
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                            </svg>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">NPSN</p>
+                                <p class="font-semibold text-gray-800 dark:text-white">{{ $sekolah->npsn ?? '-' }}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                             </svg>
                             <div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">Kode Sekolah</p>
@@ -142,7 +145,8 @@
                             </svg>
                             <div>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">Status</p>
-                                <p class="font-semibold text-gray-800 dark:text-white">{{ $sekolah->status_sekolah ?? '-' }}
+                                <p class="font-semibold text-gray-800 dark:text-white">
+                                    {{ $sekolah->status_sekolah ?? '-' }}
                                 </p>
                             </div>
                         </div>
@@ -165,16 +169,49 @@
                     </div>
                 </div>
 
-                <!-- Wilayah Logo -->
-                @if ($sekolah->wilayah && $sekolah->wilayah->logo)
+                <!-- Wilayah Logo & Officials -->
+                @if ($sekolah->wilayah)
                     <div
-                        class="hidden lg:flex items-center justify-center p-6 border-l border-gray-100 dark:border-gray-700">
-                        <div class="text-center">
-                            <img src="{{ asset('storage/' . $sekolah->wilayah->logo) }}"
-                                alt="Logo {{ $sekolah->wilayah->nama }}" class="w-24 h-24 object-contain mx-auto mb-2">
+                        class="hidden lg:flex flex-col items-center justify-center p-6 border-l border-gray-100 dark:border-gray-700">
+                        <div class="text-center mb-4">
+                            @if ($sekolah->wilayah->logo)
+                                <img src="{{ asset('storage/' . $sekolah->wilayah->logo) }}"
+                                    alt="Logo {{ $sekolah->wilayah->nama }}"
+                                    class="w-20 h-20 object-contain mx-auto mb-2">
+                            @endif
                             <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">{{ $sekolah->wilayah->nama }}
                             </p>
                         </div>
+
+                        <!-- Penanggung Jawab & Proktor -->
+                        @if ($latestOfficials['nama_penanggung_jawab'] || $latestOfficials['nama_proktor'])
+                            <div class="w-full space-y-3 mb-4">
+                                @if ($latestOfficials['nama_penanggung_jawab'])
+                                    <div class="text-center">
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Penanggung Jawab</p>
+                                        <p class="font-semibold text-gray-800 dark:text-white text-sm">
+                                            {{ $latestOfficials['nama_penanggung_jawab'] }}</p>
+                                    </div>
+                                @endif
+                                @if ($latestOfficials['nama_proktor'])
+                                    <div class="text-center">
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Proktor</p>
+                                        <p class="font-semibold text-gray-800 dark:text-white text-sm">
+                                            {{ $latestOfficials['nama_proktor'] }}</p>
+                                    </div>
+                                @endif
+                            </div>
+                        @endif
+
+                        <!-- Link to Wilayah Statistics -->
+                        <a href="{{ route('asesmen-nasional.wilayah', ['tahun' => 2024, 'wilayah' => $sekolah->wilayah]) }}"
+                            class="inline-flex items-center px-3 py-1.5 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            Lihat Data Statistik
+                        </a>
                     </div>
                 @endif
             </div>
@@ -235,6 +272,12 @@
                                             <th
                                                 class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
                                                 Numerasi</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                                                Penanggung Jawab</th>
+                                            <th
+                                                class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase">
+                                                Proktor</th>
                                         </tr>
                                     </thead>
                                     <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
@@ -248,6 +291,12 @@
                                                     {{ $formatPercent($history['partisipasi_literasi']) }}%</td>
                                                 <td class="px-4 py-3 text-sm text-gray-500 dark:text-gray-400">
                                                     {{ $formatPercent($history['partisipasi_numerasi']) }}%</td>
+                                                <td class="px-4 py-3 text-sm text-gray-500 dark:text-gray-400">
+                                                    {{ $history['nama_penanggung_jawab'] && $history['nama_penanggung_jawab'] !== '-' ? $history['nama_penanggung_jawab'] : '-' }}
+                                                </td>
+                                                <td class="px-4 py-3 text-sm text-gray-500 dark:text-gray-400">
+                                                    {{ $history['nama_proktor'] && $history['nama_proktor'] !== '-' ? $history['nama_proktor'] : '-' }}
+                                                </td>
                                             </tr>
                                         @endforeach
                                     </tbody>

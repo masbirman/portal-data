@@ -1,13 +1,14 @@
 <div>
     <!-- Page Header -->
     <div class="mb-8">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">Direktori Sekolah</h1>
-        <p class="text-gray-600 dark:text-gray-400 mt-2">Temukan informasi sekolah di Sulawesi Tengah</p>
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">Data Satuan Pendidikan</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">Temukan informasi satuan pendidikan di Sulawesi Tengah</p>
     </div>
 
     <!-- Filters Section -->
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 md:p-6 mb-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- Row 1: Search, Tahun, Jenis Data -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
             <!-- Search Input -->
             <div class="lg:col-span-2">
                 <label for="search" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Cari
@@ -25,6 +26,35 @@
                 </div>
             </div>
 
+            <!-- Tahun Filter -->
+            <div>
+                <label for="tahun"
+                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Tahun</label>
+                <select id="tahun" wire:model.live="tahun"
+                    class="w-full py-2 px-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option value="">Semua Tahun</option>
+                    @foreach ($tahunOptions as $value => $label)
+                        <option value="{{ $value }}">{{ $label }}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <!-- Jenis Data Filter -->
+            <div>
+                <label for="jenisData" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Jenis
+                    Data</label>
+                <select id="jenisData" wire:model.live="jenisData"
+                    class="w-full py-2 px-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option value="">Semua Jenis</option>
+                    @foreach ($jenisDataOptions as $value => $label)
+                        <option value="{{ $value }}">{{ $label }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+
+        <!-- Row 2: Wilayah, Jenjang, Status -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <!-- Wilayah Filter -->
             <div>
                 <label for="wilayah"
@@ -71,9 +101,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
-                <span class="font-medium">Total: <span
-                        class="text-blue-600 dark:text-blue-400">{{ number_format($totalSchools) }}</span>
-                    sekolah</span>
+                <span class="font-medium">
+                    <span class="text-blue-600 dark:text-blue-400">{{ number_format($totalSchools) }}</span>
+                    dari {{ number_format($totalAllSchools) }} Satuan Pendidikan
+                </span>
             </div>
             <button wire:click="resetFilters"
                 class="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
@@ -98,13 +129,16 @@
             <!-- School Card -->
             <div
                 class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
-                <!-- Placeholder Image -->
+                <!-- School Image/Illustration -->
                 <div
-                    class="h-32 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-16 h-16 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
+                    class="h-32 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    @if ($school->foto)
+                        <img src="{{ asset('storage/' . $school->foto) }}" alt="{{ $school->nama }}"
+                            class="w-full h-full object-cover">
+                    @else
+                        <img src="{{ asset('images/school-illustration.svg') }}" alt="Ilustrasi Sekolah"
+                            class="w-full h-full object-cover">
+                    @endif
                 </div>
 
                 <!-- Card Content -->
@@ -113,7 +147,10 @@
                         class="font-semibold text-gray-800 dark:text-white text-lg leading-tight mb-1 line-clamp-2 min-h-[3.5rem]">
                         {{ $school->nama }}
                     </h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                        NPSN: {{ $school->npsn ?? '-' }}
+                    </p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500 mb-3">
                         Kode: {{ $school->kode_sekolah }}
                     </p>
 

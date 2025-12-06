@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#EBF4FF"/>
+
+  <!-- Clouds -->
+  <ellipse cx="80" cy="50" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="100" cy="45" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="320" cy="60" rx="35" ry="18" fill="white" opacity="0.8"/>
+  <ellipse cx="345" cy="55" rx="28" ry="14" fill="white" opacity="0.8"/>
+
+  <!-- Sun -->
+  <circle cx="350" cy="40" r="25" fill="#FCD34D" opacity="0.9"/>
+
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#86EFAC"/>
+
+  <!-- School Building Main -->
+  <rect x="100" y="120" width="200" height="120" fill="#3B82F6" rx="4"/>
+
+  <!-- Roof -->
+  <polygon points="90,120 200,60 310,120" fill="#1E40AF"/>
+
+  <!-- Clock/Emblem on roof -->
+  <circle cx="200" cy="95" r="15" fill="white"/>
+  <circle cx="200" cy="95" r="12" fill="#EBF4FF"/>
+  <line x1="200" y1="95" x2="200" y2="87" stroke="#1E40AF" stroke-width="2"/>
+  <line x1="200" y1="95" x2="206" y2="95" stroke="#1E40AF" stroke-width="2"/>
+
+  <!-- Windows Row 1 -->
+  <rect x="120" y="140" width="30" height="35" fill="#BFDBFE" rx="2"/>
+  <rect x="160" y="140" width="30" height="35" fill="#BFDBFE" rx="2"/>
+  <rect x="210" y="140" width="30" height="35" fill="#BFDBFE" rx="2"/>
+  <rect x="250" y="140" width="30" height="35" fill="#BFDBFE" rx="2"/>
+
+  <!-- Window frames -->
+  <line x1="135" y1="140" x2="135" y2="175" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="120" y1="157" x2="150" y2="157" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="175" y1="140" x2="175" y2="175" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="160" y1="157" x2="190" y2="157" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="225" y1="140" x2="225" y2="175" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="210" y1="157" x2="240" y2="157" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="265" y1="140" x2="265" y2="175" stroke="#1E40AF" stroke-width="1"/>
+  <line x1="250" y1="157" x2="280" y2="157" stroke="#1E40AF" stroke-width="1"/>
+
+  <!-- Door -->
+  <rect x="175" y="190" width="50" height="50" fill="#1E40AF" rx="2"/>
+  <rect x="180" y="195" width="18" height="40" fill="#60A5FA"/>
+  <rect x="202" y="195" width="18" height="40" fill="#60A5FA"/>
+  <circle cx="196" cy="220" r="3" fill="#FCD34D"/>
+
+  <!-- Steps -->
+  <rect x="165" y="240" width="70" height="8" fill="#9CA3AF"/>
+  <rect x="160" y="248" width="80" height="8" fill="#6B7280"/>
+
+  <!-- Flag pole -->
+  <rect x="305" y="80" width="3" height="80" fill="#6B7280"/>
+  <polygon points="308,80 340,90 308,100" fill="#EF4444"/>
+
+  <!-- Trees -->
+  <rect x="55" y="200" width="10" height="40" fill="#92400E"/>
+  <ellipse cx="60" cy="180" rx="25" ry="30" fill="#22C55E"/>
+  <ellipse cx="50" cy="190" rx="18" ry="22" fill="#16A34A"/>
+
+  <rect x="335" y="200" width="10" height="40" fill="#92400E"/>
+  <ellipse cx="340" cy="180" rx="25" ry="30" fill="#22C55E"/>
+  <ellipse cx="350" cy="190" rx="18" ry="22" fill="#16A34A"/>
+
+  <!-- Fence -->
+  <rect x="20" y="230" width="60" height="3" fill="#D1D5DB"/>
+  <rect x="25" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="40" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="55" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="70" y="220" width="3" height="20" fill="#D1D5DB"/>
+
+  <rect x="320" y="230" width="60" height="3" fill="#D1D5DB"/>
+  <rect x="325" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="340" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="355" y="220" width="3" height="20" fill="#D1D5DB"/>
+  <rect x="370" y="220" width="3" height="20" fill="#D1D5DB"/>
+</svg>

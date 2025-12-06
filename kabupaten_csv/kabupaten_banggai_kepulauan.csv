@@ -1,0 +1,888 @@
+npsn,nama,alamat,kecamatan,kabupaten,provinsi,bentuk_pendidikan,status_sekolah,latitude,longitude
+40201932,SD INPRES MINAHAKI,Jl. Siswa,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4752,122.3827
+40201712,SD NEGERI TOU,Desa Tou,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4669,122.4089
+69960885,SMP NEGERI 11 TOILI,Jln. Pendidikan Nomor 1,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.466527,122.3890113
+40201766,SD INPRES 4 TOILI,Desa Minakarya,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4675,122.3799
+40201933,SD INPRES MINAKARYA,Jln. Setiabudi No. 01,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4664,122.3794
+40201608,SD NEGERI 6 TOILI,Desa Sentral Timur,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4729,122.3642
+40200269,SD INPRES APAL,Apal,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4817,122.8169
+69944212,TK. PELITA HATI APAL,DESA APAL,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.4825,122.8191
+40200370,SD NEGERI 1 LUMBI-LUMBIA,DESA LANDONAN BEBEAU,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4912,122.8233
+40200319,SDN INPRES 2 LUMBI-LUMBIA,Desa Lumbi-Lumbia,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4871,122.8233
+40200191,SMP TUNAS BANGSA LUMBI-LUMBIA,Jl. Lapangan Sentral No. 5 Lumbi-Lumbia,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.4867,122.8233
+40200273,SD INPRES 3 LUMBI-LUMBIA,Desa Lumbi-lumbia,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4835,122.8222
+40200403,SD INPRES PALAPAT,Desa Palapat Kecamatan Buko Selatan,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5051,122.8269
+40200253,SMAN 1 BUKO SELATAN,DS. LUMBI-LUMBIA,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4966,122.8271
+40200215,SMP NEGERI 1 BUKO SELATAN,Jl. Batu Mesea  No. 09,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4906,122.8265
+40200396,SD INPRES SAPELANG,Desa Sapelang,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4618,122.7873
+69880390,SMTK BUKIT INSPIRASI LUMBI LUMBIA,JL. OSCAR KARAMOY,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMTK,SWASTA,-1.4905,122.8291
+40200293,SD INPRES BUKO,Buko,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5082,122.8401
+40200358,SD NEGERI ALANI,Alani,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4893,122.8541
+40200374,SD INPRES OKULO,Jln. Pendidikan,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4878,122.8556
+70001103,SMA BINA KARYA BUKO SELATAN,Desa Seano,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,SWASTA,-1.5106499,122.8593444
+69788080,MAS MIFTAHUL JANNAH,DESA LUMBI-LUMBIA,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MA,SWASTA,-1.493245,122.862306
+60727736,MTSS MIFTAHUL JANNAH,LUMBI-LUMBIA,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.46761,122.850837
+40204005,SMP BUKIT SION ALANI,Desa Alani,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.4836,122.8636
+40205110,SD NEGERI EBENHEISER,Ebenheiser,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5169,122.8673
+40200329,SD GKLB LEMELU,Desa Lemelu,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4799,122.873
+40209788,SMP NEGERI SATU ATAP OKULO,Jl. Pendidikan Okulo Potil,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4878,122.8784
+69950544,SMK NEGERI 1 BUKO SELATAN,Jln. Lapangan Sentral Lumbi-Lumbia,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.467,122.8519
+40204212,SMP KRISTEN TATABAU,Tatabau,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.5332,122.8526
+40200352,SD INPRES TATABAU,Desa Tatabau,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5339,122.8534
+40200385,SDN INPRES MALANGGONG,Desa Malanggong,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4684,122.8755
+69759161,SMPN 4 BUKO SELATAN SATAP,DESA SAPELANG,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.513,122.8968
+69974946,SMK SEA-SEA TATARANDANG,Jl. Lingkar Peling,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,SWASTA,-1.4767968,122.9057394
+40204223,SMP NEGERI SATAP TATARANDANG,Desa Tatarandang,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5363,122.8896
+40200232,SD NEGERI TATARANDANG,Tatarandang,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5363,122.8902
+40200402,SD INPRES PALABATU 2,Palabatu 2,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.541,122.8686
+40200161,SD NEGERI BALALON,Balalon,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5176501,122.9507792
+40206741,SMP NEGERI 2 BULAGI SELATAN,Desa Balalon,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.539,122.9512
+40200183,SD INPRES BABANG,Babang,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.54019,122.946808
+69960392,SMPN 4 BULAGI SELATAN,JL. TRANS SEA SEA,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4708481,122.9711745
+40200132,SD NEGERI SABELAK,Sabelak,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.515,122.9884
+69934409,SDN INPRES LABOTANKANDI,DESA LABOTAKANDI,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5149,122.9885
+P9959773,PKBM FAJARKU,DESA LOLANTANG,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4748183,122.9811125
+69942698,KB. MUTIARA BALAYON,DESA BALAYON,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.485048,123.179054
+69894918,AL-HIKMAH PANAPAT ,Jl. Pandemak No. 2,KEC. BOKAN KEPULAUAN,Kab. Banggai Laut,Prov. Sulawesi Tengah,MA,SWASTA,-1.5132,123.18132
+40200195,SMP Negeri 2 Peling Tengah,LUK,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4781,123.1776
+40210198,MTSS SULLAMUL FALAH,TOMBOS,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.4693,123.1776
+40200344,SDN INPRES TOMBOS,Tombos,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4657,123.1753
+40200306,SMP NEGERI SATU ATAP POPISI,Siula Desa Popisi,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5438644,123.1501157
+69829142,KB IQRA,DESA SAMPEKONAN,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.505447,123.199267
+40200397,SD INPRES SAMPEKONAN,Sampekonan,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5053,123.1994
+40200341,SDN INPRES TUNGGALING,Desa Tunggaling,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4772,123.1959
+40200117,SD NEGERI MAMULUSAN,Desa Mamulusan,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5206,123.2094
+40210197,MTSS MIFTAHUL HUDA SALEATI,JL. TANOTU NO. 111,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.509603,123.21901
+40200158,SD NEGERI BASOSOL,Basosol,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4984,123.2256
+40200284,SD INPRES KINANDAL,Desa Kinandal,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4971,123.2333
+40200321,SDN 2 INPRES LIANG,Pal Sub Desa Liang,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5204,123.229
+40206644,SD NEGERI LOOLONG,Loolong,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.525,123.2333
+69725994,SMP NEGERI SATU ATAP KINDANDAL,Desa Kindandal Kec. Liang,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.479,123.2382
+40200151,SD NEGERI BOYOMOUTE,Boyomoute,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4953,123.2465
+40200160,SD NEGERI BALAYON,Balayon,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5141,123.2472
+69945888,TK. GANGGANG LAUT,DESA APAL,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.470976,123.241882
+40210196,MTSS AL QAMARIYAH POPIDOLON,DESA POPIDOLON,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.541333,123.222927
+69733954,SMP NEGERI 3 LIANG,Jl. Siswa No. 02 Desa Apal,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4716,123.2507
+40200208,SMP NEGERI 2 LIANG,Jl. Mokitos No. 4 ,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4715,123.2508
+40200335,SD NEGERI APAL,Jl. Siswa,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4677,123.2541
+40200316,SDN 2 INPRES OKUMEL,Dusun Sondang Bajo  ,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4643,123.2412
+69942596,KB. BUNDA TOBUNGIN,DESA TOBUNGIN,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.477776,123.364046
+40200373,SDN INPRES LESANTOBUNGIN,Tobungin,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.478,123.3643
+69751180,RA/BA/TA AL HIDAYAH MANSAMAT,DESA MANSAMAT B.,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,RA,SWASTA,-1.469604,123.359241
+40200381,SD INPRES MANSAMAT B,Desa Mansamat B,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4572,123.3375
+P9996601,PKBM MELATI,Desa Kampung Baru,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4632538,123.3558698
+40200211,SMP NEGERI 1 TINANGKUNG SELATAN,Jl. Pramuka No. 7 Mansamat,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4558,123.3381
+40200155,SD NEGERI BOBU,Desa Bobu,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.501,123.3823
+40206509,SMP NEGERI 2 TINANGKUNG SELATAN,JL. LORONG SAMUDERA NO 3,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5136,123.4183
+40200392,SD INPRES TABING,Desa Labibi,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5156,123.4188
+40200348,SD NEGERI TOBING,Tobing,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5156,123.4188
+40210200,MTSS AL-AMIN MANSAMAT,JL. TRAN SULAWESI,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.502469,123.424972
+40200386,SDN INPRES LUKSAGU,Desa Luksagu,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4642,123.4088
+40200167,SD NEGERI LOBUTON,Desa Lobuton,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4913,123.4535
+40200257,SD NEGERI TONUSON,Tonuson,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.5051,123.4611
+40200113,SD NEGERI MATA,Mata,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.465,123.4423
+40200274,SD INPRES 3 KALUMBATAN,Desa Kalumbatan,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4674,123.467
+40200205,SMP NEGERI 1 TOTIKUM SELATAN,Jln. Mangkamata,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.468,123.4705
+40200226,SD NEGERI TOBUNGKU,Desa Tobungku,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4648,123.4713
+69947396,SMA NEGERI TOTIKUM SELATAN,Jl. Siswa No. 01  Desa Tobungku Kec. Totikum Selatan,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4645,123.4719
+40200118,SD NEGERI PAISUMOSONI,Paisumosoni,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.5025169,123.5040024
+69829124,TK NEGERI 2 BANGGAI UTARA,DESA PAISUMOSONI,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,TK,NEGERI,-1.501479,123.507485
+40200224,SD NEGERI TOLISETUBONO,Desa Tolisetubono,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.5221,123.5005
+69979484,TK BINTANG KECIL,DUSUN 3,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,TK,SWASTA,-1.523006,123.5010093
+P9959734,PKBM NUSANTARA,DESA KALUMBATAN,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.468,123.4867
+40200134,SD NEGERI POPISI,DESA  POPISI,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.4999124,123.5127225
+69980505,SMK NEGERI 1 BANGGAI UTARA,JL. SISWA NO. 1,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SMK,NEGERI,-1.5059,123.5133
+40210203,MTSS KSM KALUMBATAN,JL. BUKIT PERMAI NO. 01,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.4672,123.4886
+40200324,SD INPRES 2 KALUMBATAN,Desa Kalumbatan,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4664,123.4867
+40200326,SD INPRES 1 KALUMBATAN,Desa Kalumbatan,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4662,123.4866
+40200290,SD INPRES KANALI,Desa Kanali,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4633,123.4836
+40206508,SMP NEGERI SATU ATAP BONE BARU,Bonebaru,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5355,123.4901
+40200153,SD NEGERI BONE BARU,Bone Baru,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.5356,123.4922
+40200148,SD NEGERI LOKOTOY,Lokotoy,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.509873,123.516992
+40200209,SMP Negeri 1 Banggai Utara,Jln. Siswa No. 1 Lokotoy,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5109,123.5176
+69931840,TK NEGERI 1 BANGGAI UTARA,"JALAN P.DJAHAL, DUSUN II ",Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,TK,NEGERI,-1.510571,123.520312
+40206494,SD NEGERI PAISUBATANGO,Dusun IV Paisubatango,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,SD,NEGERI,-1.5431,123.4817
+69829149,KB KASIH SEJATI,DESA LOKOTOY SUB DESA PAISU TANGA,Kec. Banggai Utara,Kab. Banggai Laut,Prov. Sulawesi Tengah,KB,SWASTA,-1.526919,123.51918
+69768333,TK TUNAS HARAPAN SLAMETHARJO,JL. RAYA LUWUK MOILONG,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.4547946,122.3857793
+40201910,SD INPRES BUMIBARU,Moilong ,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.451,122.4115
+40201922,SD INPRES KAYUKU RAHMAT,Jl.Siswa No.01,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4525,122.3863
+40201776,SD INPRES 3 TOILI,Desa Bumiharjo,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4581,122.3807
+40201642,SMP NEGERI 2 TOILI,Jl.Laginda No.1 Toili,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4439,122.3998
+69940597,TK MUTIARA JAYA MOILONG,Desa Karya jaya Kec. Moilong,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.4597,122.3748
+40201735,SD INPRES 2 SLAMETHARJO,Jln. Tadulako,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4431,122.3935
+40201934,SD INPRES MOILONG,"Desa Moilong, Kec. Moilong, Kab. Banggai, Sulawesi Tengah",Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4451,122.413
+69751129,RA/BA/TA ALKHAIRAAT MOILONG,DESA MOILONG KEC.MOILONG,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.4439,122.4115
+40201744,SD INPRES 1 SLAMETHARJO,Desa Slametharjo,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4423,122.3927
+69928488,PAUD TK PERMATA HATI,DESA SUMBERHARJO,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.441,122.3987
+40201569,SD NEGERI 1 TOILI,Desa Toili Dusun I,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.441,122.4022
+40201839,SD INPRES SIDOHARJO,Desa Sidoharjo,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4467,122.3804
+40201662,SMP NEGERI 1 TOILI,Jl. Ahmad yani No. 68,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4719,122.3639
+40203989,SMKN 1 TOILI,JL. AHMAD YANI NO. 68,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4715,122.3618
+40201850,SD INPRES SENTRAL SARI,Jl. A. Yani No 63,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4721,122.3607
+69963161,SMAN 1 MOILONG,JL. SISWA NO. 1,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4332145,122.3854421
+69899781,SMP NEGERI 10 TOILI,JL. SISWA NO. 1,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.456312,122.361341
+69888260,KB KARTINI,JL. GEMINI,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.4712706,122.3550523
+69733978,SMKS PAISUBATU,DS. PAISUBATU,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,SWASTA,-1.4432,122.8184
+40200280,SD INPRES LABANGUN,Labangun,Kec. Buko Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4263,122.7945
+69775708,SMK NEGERI 1 BUKO,JL. KAYU MANIS NO. 01 TATABA,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4421,122.8543
+69751133,RA/BA/TA ALKHAIRAAT SUMBER AGUNG,DESA SUMBER AGUNG KEC. NUHON,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.4290134,122.848848
+40200202,SMP NEGERI 1 BULAGI SELATAN,Jl. Lantoi No. 10 Lolantang,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.447,123.026
+P9948033,PKBM MONGOLONAN,Jl. Trans Bangkurung ,KEC. BANGKURUNG,Kab. Banggai Laut,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4395,123.0178
+69974945,SMP SATU ATAP OSAN,Desa Osan,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4262333,122.9919948
+40200119,SD NEGERI PALABATU I,"Desa Palabatu I, Kecamatan Bulagi Selatan Kabupaten Banggai Kepulauan",Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4335,123.0342
+40200360,SD 3 INPRES LIANG,Saleati,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4545,123.228
+40200349,SDN INPRES TINANGKUNG,Desa Tinangkung Kecamatan Tinangkung Selatan,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4331,123.3221
+40204016,SMAN 1 TINANGKUNG SELATAN,Jl. Trans Peling No. 01,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4461,123.3394
+69942167,TK NEGERI KAMPUNG BARU,DESA KAMPUNG BARU,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.430461,123.334061
+40200228,SD INPRES KAMPUNG BARU,Kampung Baru,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4304,123.3353
+69864646,SMP PERSADA KAMPUNG BARU,JL. TRANS PELING NO.  KAMPUNG BARU,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.4293,123.3367
+40200115,SD NEGERI MANSAMAT A,Mansamat A,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4307,123.3697
+40200227,SD NEGERI PAISUMOSONI,Desa Paisumosoni,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4339,123.4072
+40200339,SD KATHOLIK II NULION,Desa Nulion,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4467,123.4393
+40200340,SD KATOLIK I NULION,Nulion,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4331,123.4375
+40200337,SD MUHAMMADIYAH PELEY,Jl..Trans Peling,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4473,123.4644
+P9980061,PKBM MALEO,Dusun II Desa Sampaka,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4356192,123.4869111
+40200247,SMAN 1 TOTIKUM,Jl. Kapitan Labas No. 01,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4466,123.5154
+69775581,SMK NEGERI 1 MOILONG,Jl. Siswa  No. 01,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-1.422,122.3846
+40201650,SMP NEGERI 4 TOILI,Jl. Siswa No. 1 Mulyoharjo,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4214,122.3845
+69751141,RA/BA/TA HIDAYATURAHMAN MULYOHARJO,DESA MULYOHARJO,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.4238,122.382
+40201935,SD INPRES MULYOHARJO,Desa Mulyoharjo,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4238,122.3813
+69751130,RA/BA/TA DARUSSIDIQIN,TSM KM.10 ARGAKENCANA MOILONG,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.416277,122.363956
+40201551,SD NEGERI MANSAHANG,Mansahang,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4233,122.3602
+69963181,SMA NEGERI 2 TOILI,Desa Mansahang Kec. Toili Kab. Banggai Prov. Sulawesi Tengah,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4229,122.3597
+40204314,SD NEGERI 2 SINORANG,PADANG,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.4057,122.4568
+40200365,SD NEGERI 1 PAISUBATU,Paisubatu,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3994,122.7937
+40200197,SMP KRISTEN PAISUBATU,Desa Paisubatu,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.3982,122.7938
+69945305,SMA NEGERI 2 BULAGI SELATAN,Jl. Lulun No. 1 Desa Bonepuso,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4066189,122.9295685
+69829121,TK AKSARA LEME-LEME DARAT,DESA LEME-LEME DARAT,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.400617,122.904053
+40200256,SD NEGERI UNU,DESA UNU,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3971,123.052
+40200363,SD NEGERI 1 PATUKUKI,Patukuki,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4236,123.1718
+40200295,SD INPRES 2 PATUKUKI,Patukuki,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4237,123.1726
+40200255,SMAN 1 PELING TENGAH,Jl. Nusa Peling No.16,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4239,123.1735
+40200212,SMP NEGERI 1 PELING TENGAH,Jl. Siswa No. 12,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.423,123.1732
+P9985027,PKBM BANGKEP CENDEKIA,Desa Patukuki,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4232,123.1734
+40200281,SDN INPRES KOYOBUNGA,DESA KOYOBUNGA,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.41,123.1686
+40200173,SD NEGERI KOYOBUNGA,Koyobunga,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.41,123.1686
+40200320,SD INPRES LUK,"Jalan Sintua, Desa LUK, Kec. Peling Tengah",Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.406,123.2245
+40200116,SD NEGERI MANGGALAI,Desa Manggalai,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4146,123.2436
+40206659,SMKN PELING TENGAH,Jalan Kemuning No. 59,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4052,123.2493
+40200355,SD NEGERI AMBELANG,Jln. Montolutusan Ambelang,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.397,123.2469
+60726313,TK NEGERI AMBELANG,"AMBELANG, KEC. TINANGKUNG",Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.397657,123.253169
+40200388,SD INPRES LOMBOAN,Desa Lomboan,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.418503,123.322137
+69898766,Al-Hijrah Dwipakarya,Demak,Kec. Simpang Raya,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.415041,123.32041
+40200181,SD NEGERI GANSAL,Desa GANSAL,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4168,123.3295
+40204045,SD NEGERI SASAMPEAN,Sasampean,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4026,123.3232
+40206704,SLB NEGERI SALAKAN,Desa Kautu,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SLB,NEGERI,-1.4124,123.3386
+69863913,SMK TINANGKUNG SELATAN,JALAN TRANS PELING,Kec. Tinangkung Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,SWASTA,-1.413146,123.385386
+69949115,SMP NEGERI 2 TOTIKUM SELATAN,Nulion,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4182184,123.4360794
+69896925,SMKN 1 TOTIKUM SELATAN,"Jl. Keramat No. 01, Desa Kanali",Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4096609,123.4601997
+K9981476,LKP BIT,Desa Sambiut,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,Kursus,SWASTA,-1.4201,123.5234
+40200217,SMP NEGERI 1 TOTIKUM,Jl. Siswa No. 02,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4208,123.5248
+40200137,SD NEGERI PEMBINA SAMBIUT,Sambiut,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4196,123.5255
+40200210,SMP NEGERI 2 TOTIKUM,Jl. Adi Bungkuko Pusaka Sambiut,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4144,123.5253
+40204267,SMK NEGERI TOTIKUM,JL. ADI BUNGKUKO PUSAKA,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4144,123.5253
+40200338,SD KATOLIK ST THERESIA SAMBIUT,Tone,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4132,123.5268
+40200198,SMP KATOLIK MARIS STELLA SAMBIUT,Tone,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.4128,123.5266
+40210202,MTSN BANGGAI KEPULAUAN,JL. RAJA H. AWALUDIN NO. 03 ABASON,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,NEGERI,-1.4082,123.5305
+40200331,SD COKROAMINOTO ABASON,Abason,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.4045,123.533
+40200271,SD INPRES ABASON,Abason,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.4026,123.5345
+69751181,RA/BA/TA AN NUR SYIFAA,KOMP. MASJID AL KHAIRAAT,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,RA,SWASTA,-1.401647,123.534679
+69768334,TK MOTINDOK JAYA KAYOWA,JL. SUNGAI MOTINDOK,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3816,122.417
+70042922,SD-IT DARUL KHAIR GORI GORI,JL. KM. 9 DESA GORI GORI ,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-1.3784,122.4314
+40201674,SD NEGERI SINORANG,Sinorang Tengah,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3898,122.4521
+40201841,SD INPRES SINORANG,Desa Gori - gori,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3761,122.4426
+69888265,TK INDAH PERTIWI,DESA GORI-GORI,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3747,122.4399
+40201838,SD INPRES PAISUBULOLI,PAISUBOLOLI,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3769,122.4578
+69888263,TK SINAR HARAPAN,DESA PAISUBOLOLI,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3766,122.4582
+69934624,PAUD KB TUNAS BANGSA,Desa Paisubololi Kec. Batui Selatan,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.3766,122.4582
+69775323,SMKN 1 BATUI SELATAN,JL. Pengairan   No. 01 ,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-1.369639,122.455432
+40200328,SD GPIBK PAISUBATU,Paisubatu,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.3943,122.794
+69829125,TK. KEAPAUCER PAISUBATU,DESA PAISUBATU,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.3942,122.7943
+40200297,SD INPRES 2 PAISUBATU,Talas-talas,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3833,122.7937
+40200156,SD NEGERI BATANGONO,Desa Batangono,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3681,122.7984
+69940136,TK. KASIH BUNDA,DESA BATANGONO,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.3678,122.7982
+P9970690,SOPPY JAYA,Desa Paisubatu,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3761672,122.8769589
+40200261,SD INPRES BOLOY,Jl. Manunggal No. 4,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3775,122.9666
+40200347,SD INPRES TOI-TOI,Toi-toi,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3846,123.0251
+69759863,SMP NEGERI 3 BULAGI,Jl. Siswa No. 3 Kambal,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3891,123.0561
+69904332,SMK PENABUR KASIH BULAGI,Jl. Lingkar Peling No. 93,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,SWASTA,-1.3760664,123.031793
+40200241,SD NEGERI TOLO,Desa Tolo,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3865,123.0594
+40204019,SD Negeri Lalanday,Desa Lalanday,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3772,123.0655
+40210199,MTSS NURUL IMAN,JL. POROS LINTAS PELING NO. 1 KOLAK,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.3895,123.1686
+40209832,MAS NURUL IMAN,JL. POROS LINTAS PELING NO. 01,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MA,SWASTA,-1.3896,123.1688
+40200174,SD NEGERI KOLAK,Kolak,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.385,123.1658
+40200159,SD NEGERI BALOMBONG,Desa Balombong,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3722,123.1627
+69968734,TK NEGERI BALOMBONG,DESA BALOMBONG,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.371851,123.16317
+P9996132,PKBM CIPTA KARYA,Desa Patukuki,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3919265,123.2065776
+69945889,KB.LUMBATA KUAKON,DESA SALAKAN,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.372301,123.21991
+40206707,SD NEGERI KUAKON,Dusun IV Kuakon,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3721,123.2207
+40206701,SMP Negeri 3 Tinangkung,Jl. Poros Teduang,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.394075,123.24915
+40206733,SD NEGERI BAKUM,Dusun Bakum,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3908,123.2876
+40200359,SEKOLAH DASAR NEGERI ALAKASING,ALAKASING,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3709,123.3059
+40200147,SD NEGERI LOPITO,Lopito,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3788,123.4678
+69942547,TK NEGERI SALANGANO ,DESA SALANGANO,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.380185,123.488528
+40200398,SD INPRES SAMPAKA,Sampaka,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3801,123.4884
+40200130,SD NEGERI SALANGANO,"Salangano, Rt.05, Rw.06",Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3789,123.4866
+69751182,RA/BA/TA NURUL JIHAD SAMBIUT,SAMBIUT,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,RA,SWASTA,-1.378136,123.486128
+40201780,SD INPRES BATUI KAYOA SPA,Desa Sukamaju 1,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3416,122.4105
+69768340,TK KARTINI SUKAMAJU 1,JL. RA. KARTINI,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3397,122.4098
+69945062,SMP NEGERI SATAP TUMPU JAYA 2,Desa Sinorang ,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3578,122.3637
+40201664,SMP NEGERI 2 BATUI,Jl. Siswa No. 45 Bonebalantak,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3661,122.4479
+69768444,KB NURUL IMAN BONE BALANTAK,JL. RAYA LUWUK - TOILI,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.363,122.4591
+40201925,SD INPRES MANAMPAK,Jl. Raya Batui - Toili,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3461,122.4653
+69892179,TK AL MUNAWARA,LORONG SD INP. MANAMPAK,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3457,122.4647
+40201560,SD NEGERI 2 BATUI,Jl. Ra Kartini No 06,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3433,122.4677
+40201614,SMP DARUL KHAIR MASING,Jl. Raya Masing No. 21,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-1.3461,122.4879
+60723375,MIS DARUL KHAIR MASING,JL. RAYA MASING NO. 21 D,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.3462,122.4881
+40209812,MAS DARUL KHAIR MASING,JL. RAYA MASING NO.21,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.346,122.4879
+40210106,MTSS DARUL KHAIR MASING,JL. RAYA MASING NO. 21,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.3459,122.488
+40201930,SD INPRES MASING,MASING,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3454,122.4877
+40201531,SD NEGERI NONONG,Desa Nonong,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3374,122.5283
+40206615,SMP NEGERI 2 BUKO,Jl. MINANGA  No. 01,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3495,122.8078
+69733977,SMP NEGERI SATAP EBENHEIZER,"Desa Batangono, Dusun Ebenheizer,  Kec. Buko",Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3621,122.8314
+40200104,SD NEGERI OSAN,Osan,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3608,123.0291
+69728485,SMAN 1 BULAGI SELATAN,LOLANTANG,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3483,123.0384
+40200107,SD NEGERI MONTOMISAN,Desa Montomisan,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3658,123.0755
+40200239,SD NEGERI SUIT,Suit,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3598,123.0793
+40205416,SD NEGERI TOOLON,Desa Toolon,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3577,123.081
+40200240,SD NEGERI SOSOM,Desa Sosom,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3426,123.0926
+40210194,MTsN 2 Banggai Kepulauan,Jln. Merpati No. 2 Kelurahan Bulagi 1 kecamatan Bulagi,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,NEGERI,-1.3379,123.0961
+40209830,MAS NURUL JIHAD,JL. Merpati No 02,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MA,SWASTA,-1.3377,123.0962
+P9957029,SKB KAB. BANGGAI KEPULAUAN,"KILO METER 6, SALAKAN",Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SKB,NEGERI,-1.362,123.3029
+70032364,SD NEGERI 3 SALAKAN,Dusun Baka Tua,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3573,123.3282
+40209829,MAS AL MA`ARIF BUNGIN,DESA BUNGIN,KEC. BOKAN KEPULAUAN,Kab. Banggai Laut,Prov. Sulawesi Tengah,MA,SWASTA,-1.366059,123.344604
+40200131,SDN INPRES SAIYONG,Jl. Hasanuddin,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.36,123.343
+40200401,SD INPRES POPISI,Popisi,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3613,123.3554
+40200334,SDN INPRES LEMPEK,Lempek,Kec. Peling Tengah,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3613,123.3793
+40206745,SMP NEGERI 2 SATU ATAP TOTIKUM SELATAN,Jl. Lui Mosoni No.1,Kec. Totikum Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3505,123.4265
+40209833,MAS ASY-SYIFAA TOTIKUM,JL. RAJA H. AWALUDIN NO. 03,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MA,SWASTA,-1.364126,123.496288
+40200157,SD NEGERI BATANGBABASAL,Batangbabasal,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3629,123.5245
+40200200,SMP NEGERI 4 TOTIKUM,Jl. Keramat No. 10,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3566,123.5326
+40200353,SD NEGERI 1 KOMBUTOKAN,Desa Kombutokan,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3548,123.5364
+40200399,SD INPRES SAMBIUT,Sambiut,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.343,123.5221
+40206570,SMAN 2 TOTIKUM,Jln. Trans Peling Desa Kombutokan,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3499,123.5359
+69768339,TK PERTIWI SUKAMAJU SPB,JL. NGURAH RAI NO. 05,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.331,122.3979
+40201821,SD INPRES BATUI KAYOA SPB,Jl. Siswa,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3309,122.399
+69978146,SMAN 1 Batui Selatan,Jl. Hamka Puasa No. 1 Desa Sukamaju I,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3254,122.3936
+40201896,SD INPRES BATUI KAYOA SPC,Jl. Diponegoro,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.328,122.3869
+40204301,SMP NEGERI 3 BATUI,Jl. Kalimantan No.T 10,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3274,122.3876
+69888261,TK PERTIWI SPC,Jl. BALIKPAPAN No. 3,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3241,122.3992
+40204354,SD NEGERI TRIJADI 1 SUKAMAJU,Trijadi Rt 003,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.314081,122.4181694
+69987157,TK MUSTIKA,DESA TRIJADI SUKAMAJU 1,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.3136,122.4182
+40201585,SD NEGERI TUMPU JAYA 2,DUSUN TUMPU JAYA 2,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3584,122.3599
+40201767,SD INPRES MALEO JAYA 4,Desa Masungkang,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3345,122.4684
+40201907,SD INPRES KAYOWA,Jl. S. Matindok,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3233,122.5061
+69768439,KB MOTINDOK JAYA KAYOWA,JL. S. MATINDOK,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.318694,122.511034
+69892177,TK AL KHAIRAAT NONONG,NYIUR MELAMBAI NO. 52 NONONG,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.331715,122.525711
+40204227,SD NEGERI 4 BATUI,Bakung,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.3068,122.5304
+40205583,SMP NEGERI 4 BATUI,"Jl. Siswa, No.10",Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3066,122.5298
+40200279,SD INPRES LALENGAN,"Lalengan, Kec. Buko, Kab. Banggai Kepulauan",Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3238,122.8166
+40200143,SD NEGERI PELINGLALOMO,Desa Pelinglalomo,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3143,122.818
+69829133,KARTINI,OLUSI,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.3081,122.8281
+40210193,MTSS MIFTAHUL ULUM TATABA,DESA TATABA,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.326,122.8602
+69880391,SMTK SETIA BULAGI,DESA BULAGI II,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMTK,SWASTA,-1.3267,123.0377
+40200283,SD INPRES KOKONDONG,Kokondong,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3327,123.052
+69751175,RA/BA/TA AL AZHARI,BULAGI,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,RA,SWASTA,-1.326995,123.046675
+69733955,SMP NEGERI SATU ATAP ALUL,Desa Alul,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3108,123.0293
+40200356,SD NEGERI ALUL,Desa Alul,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3108,123.0291
+69913065,SDN KAMBAL,Jl. Lingkar Peling,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.310714,123.029088
+40200389,SD INPRES LOLANTANG,Lolantang,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3182,123.0592
+40200250,SMAN 1 BULAGI,JL. Pramuka No. 02 Bulagi,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3347,123.0981
+P9959665,PKBM GAMPI,Kel. Bulagi 1,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3343,123.0992
+40200336,SD NEGERI I BULAGI,Bulagi,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3309,123.1028
+69751176,RA/BA/TA MIFTAHUL KHAIR MONTOP,MONTOP,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,RA,SWASTA,-1.330085,123.101621
+40200275,SD INPRES 2 BULAGI,Jalan Siswa No.01,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3295,123.1025
+40200186,SMP NEGERI 1 BULAGI,Jl. Siswa No. 155,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3291,123.102
+69944170,TK NEGERI BULAGI,"JL. ALUMAN NO. 01, KEL. BULAGI KEC. BULAGI",Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.3294,123.1026
+40200140,SD NEGERI PEMBINA BULAGI,Jl. Taman Siswa No. 5,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3242,123.1041
+69959448,SMPTK Sola Gracia,Jl. Lingkar Peling,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMPTK,SWASTA,-1.3159,123.1092
+40200286,SDN INPRES KAYUBET,Desa Kayubet,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3282,123.1607
+40200282,SD INPRES KOMBA-KOMBA,Desa Komba-komba,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3232,123.1817
+69759864,SMPN 5 SATAP BULAGI,DESA KOMBA-KOMBA,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.323,123.1817
+69942659,TK. FAJAR kasih komba-komba,DESA KOMBA-KOMBA,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.329913,123.187637
+40200244,SMKN 1 TINANGKUNG,Jl. Bindana No. 3,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.3292,123.2862
+70024278,TK NEGERI PERCONTOHAN,Jln. Montolutusan ,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.3283,123.2876
+40200343,SD INPRES TOMPUDAU,Desa Tompudau,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3217,123.2834
+70016027,KB Qurani Hafidz Hafidzah,JL. BUKIT PERMAI NO. 1 BAKA KEC. TINANGKUNG,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.3235,123.2874
+69942094,KB. NYIUR MELAMBAY BONGGANAN,DESA BONGGANAN,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,KB,SWASTA,-1.314897,123.28512
+40200248,SMAN 1 TINANGKUNG,JL. KRI TELUK BAYUR,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3149,123.2899
+40200361,SD NEGERI 2 SALAKAN,Desa Bongganan,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3116,123.2887
+P9959743,PKBM MADANI,TOMPUDAU,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3154921,123.3201844
+40200138,SD NEGERI PEMBINA SALAKAN,Salakan,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3103,123.2923
+69942696,TK. NEGERI PERTIWI SALAKAN,JL. SULTAN HASANUDIN,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.308895,123.292005
+40200325,SD INPRES 1 SALAKAN,SALAKAN,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.307,123.2955
+40200218,SMP NEGERI 1 TINANGKUNG,Desa Salakan,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3056,123.2963
+60727739,MTSS AL KHAIRAAT SALAKAN,JL. KRI TRISULA NO. 75,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.312198,123.34609
+40200262,SD INPRES BOLONAN,Bolonan,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.335,123.4399
+40204094,SDN NOSUON,Nosuon,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3262,123.483
+69768338,TK HANDAYANI BAKUNG,JL. SISWA 45,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.304986,122.530625
+69768335,TK NEGERI TP PKK SISIPAN,JL. JAILOLO NO.42,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-1.299816,122.534798
+40201757,SD INPRES APPDT BATUI,Jl. Jailolo No. 46,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2942,122.5389
+69892187,KB ANGGEK SISIPAN,JAILOLO NO. 42,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.290872,122.544789
+40201707,SMAN 1 BATUI,JL. KOHUMAMA NO. 27 BATUI,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2909,122.5491
+69768336,TK AL KHAIRAAT TOLANDO,JL. JEND. AHMAD YANI NO. 167,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.2828,122.5543
+40201754,SD INPRES 5 BATUI,Jl. A. Yani No. 170,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2827,122.5541
+40201638,SMP NEGERI 1 BATUI,Jl. Siswa No 47,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2821,122.555
+40201580,SD NEGERI PEMBINA BATUI,"Jl. R.A.Kartini, No. 31 Batui",Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2791,122.5572
+69768337,TK PERTIWI BALANTANG,JL. RA. KARTINI NO.6,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.278825,122.557694
+40204309,SMAS AL KHAERAAT BATUI,JL. SIS ALJUFRI NO. 38,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMA,SWASTA,-1.2783,122.5596
+40200136,SD NEGERI PEMBINA TATABA,Desa Tataba,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2973,122.8245
+40200106,SD NEGERI OLUSI,Desa Olusi,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3043,122.829
+40200251,SMAN 1 BUKO,JL. SABOBOK NO. 1,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2954,122.8274
+60723440,MIN 1 BANGGAI KEPULAUAN,Jalan. Taman Pendidikan Islam No. 01 Tataba,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MI,NEGERI,-1.2916,122.8294
+40200187,SMP NEGERI 1 BUKO,Jl. Siswa Malanggong,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2838,122.8732
+40200379,SD INPRES MINANGA,Desa Minanga,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2797,122.9396
+40200404,SD INPRES PANDALUK,Pandaluk,Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2901,123.078
+40200110,SD NEGERI MESELESEK,Desa Meselesek,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3038,123.1143
+40200184,SD NEGERI SEASA,Desa Peling Seasa,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2845,123.1243
+40204011,SMP NEGERI 2 BULAGI,Jl. Mongutusian No. 01,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2831,123.127
+40200288,SD INPRES KAUTU,Desa Kautu,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2826,123.3253
+40200268,SDN INPRES BANGPANGA,Bangpanga,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.292,123.4376
+40206756,SMP NEGERI 3 TOTIKUM,Jl. Hasan Yella No. 1 Salangano,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2871,123.4631
+40210201,MTSS LUKSAGU,DESA LUKSAGU,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MTs,SWASTA,-1.283828,123.44809
+40200323,SDN Inpres 2 Kombutokan,Jl: Keramat  No: 10 Kombutokan,Kec. Totikum,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.3039,123.5213
+69993066,TK MALEO JAYA,Maleo jaya,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.2751,122.3961
+40201771,SD INPRES MALEO JAYA 3,Desa Maleo Jaya,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2742,122.3952
+40201924,SD INPRES ONDO-ONDOLU SPA,Desa Ondo-ondolu Spa,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2602,122.4673
+69892178,TK CINTA KASIH IBU,Jl. Trans Honbola,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.264743,122.560367
+40205703,SMP NEGERI 6 BATUI,"Jl Pelajar No. 01 Kel. Lamo, Kec. Batui, Kab. Banggai",Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2636,122.5578
+40201601,SD NEGERI 3 BATUI,Jln Trans Sulawesi ,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2626,122.5668
+40201879,SD INPRES USO,Batui,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2572,122.5745
+69892188,KB MAWAR,Jl. Pongkeari,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.256977,122.574808
+40200169,SD NEGERI LEME-LEME,Desa Leme-leme  Darat,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2709,122.8429
+69829119,TK SETIA BUDI TATENDENG,DESA TATENDENG,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.274995,122.863541
+40200231,SD NEGERI TATENDENG,Desa Tatendeng,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2506,122.8699
+40200393,SD NEGERI INPRES SUMONDUNG,Desa Sumondung,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2745,123.104
+40200267,SDN INPRES BANGUNEMO,DESA BANGUNEMO,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.263,123.1403
+40204369,SMKN 1 BULAGI UTARA,JL. SISWA NO. 6,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.2557,123.141
+69943469,TK NEGERI BANGUNEMO,DESA BANGUNEMO,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.260371,123.147704
+69940474,TK. EIRENE MINANGA,DESA MINANGA,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.260054,123.188496
+40200101,SD NEGERI PAISULUNO,Desa Paisuluno,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2709,123.2127
+69942096,TK. NURUL HUDA PAISULUNO,DESA PAISULUNO,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.270579,123.214065
+70002934,SMA PGRI Banggai Kepulauan,Jl. Bukit Ulos No. 01,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,SWASTA,-1.2741,123.3093
+40200162,SD NEGERI BAKALAN,Desa Bakalan,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2538,123.3131
+60726311,TKS PELITA HATI,"BAKALAN, KEC. TINANGKUNG",Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.251848,123.312521
+40200254,SMAN 1 TINANGKUNG UTARA,JL. TAMAN SISWA NO 1,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2593,123.4086
+60723444,MIS PONDING-PONDING,DESA PONDING-PONDING,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MI,SWASTA,-1.259,123.4081
+40200135,SD NEGERI PONDING-PONDING,Jl. Taman Siswa,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2596,123.4091
+69950327,SMK NEGERI TINANGKUNG UTARA,Jl. Trans Peling Desa Tatakalai Kec. Tinangkung Utara Kode Pos 94785,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.2632,123.4141
+40200206,SMP NEGERI 1 TINANGKUNG UTARA,Jl. Siliwangi No. 01,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2538,123.403
+40200233,SD NEGERI TATAKALAI,Desa Tatakalai,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2586,123.4145
+60723443,MIS LUKSAGU,DESA LUKSAGU,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MI,SWASTA,-1.2722,123.4333
+40200146,SD NEGERI LUKSAGU,Desa Luksagu,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2714,123.4339
+P9962947,PKBM WINDU,DESA TATAKALAI,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.2699484,123.4552178
+40206531,SMP NEGERI SATU ATAP PALAM,Palam,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2666,123.4813
+40200145,SD NEGERI PALAM,Palam,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2667,123.4814
+40201945,SD INPRES LAMO ,kelurahan Lamo,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2388,122.4189
+40204169,SMP NEGERI SATU ATAP,Unit Pemukiman Transmigrasi Batui 5,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2367,122.4241
+40201895,SD INPRES ONDO-ONDOLU SPC,Ondo-ondolu,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2208,122.4621
+P9956918,PKBM SARI ILMU MACOLLI LOLOE,JL. A. YANI NO. 31 ,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.2412366,122.5149223
+69768357,TK GEMPA PADANG,JL. S.A AMIR,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.244104,122.574463
+69766965,SMP NEGERI 3 KINTOM,Desa Babang Buyangge,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.223745,122.616075
+40201865,SD INPRES TOLITAN,Desa Babang Buyangge,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2237,122.6161
+69942552,TK NEGERI KINDANDAL,DESA KINDANDAL,Kec. Liang,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.228143,122.901156
+40204224,SMP NEGERI SATU ATAP TATENDENG,Tatendeng,Kec. Buko,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2203,122.8882
+40200390,SD INPRES OLUNO,Desa Oluno,Kec. Bulagi,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2401,123.0228
+69822746,SMA NEGERI BULAGI UTARA,SABANG,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2402,123.1429
+40209789,SD NEGERI PIPILOGOT,"Desa Pipilogot Paipaisu, Kecamatan Bulagi Selatan Kabupaten Banggai Kepulauan",Kec. Bulagi Selatan,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2297,123.1435
+40200100,SD NEGERI SAMBULANGAN,Desa Sambulangan,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2188,123.1466
+69942697,TK NEGERI SAMBULANGAN,DESA SAMBULANGAN,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.218154,123.146583
+69945345,SMK NEGERI 2 BULAGI UTARA,Jln. Taruna Iswahyudin Desa Montop,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,NEGERI,-1.2323333,123.2159868
+40200214,SMP NEGERI 1 BULAGI UTARA,Jln.Pramuka No.2 Montop,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2286,123.2442
+40200114,SD NEGERI MONTOP,Desa Montop,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.228,123.2429
+60723441,MIS MONTOP,JL. PENDIDIKAN NO. 02 MONTOP,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,MI,SWASTA,-1.227,123.243
+69910576,SMA NEGERI 2 TINANGKUNG,Jl. Mondoutus No. 1 Bulungkobit,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2454,123.2905
+40200192,SMP NEGERI 2 TINANGKUNG,JLN. UNTAD. NO. 25 BULUNGKOBIT ,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2444,123.2903
+40200150,SD NEGERI BULUNGKOBIT,Desa Bulungkobit,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.242,123.2883
+40200166,SD NEGERI BUNGIN,Desa Bungin,Kec. Tinangkung,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2185,123.2783
+40200172,SD NEGERI LALONG,Jl. Trans Peling,Kec. Tinangkung Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.235486,123.397644
+40201918,SD INPRES BONEBALANTAK,BONEBALANTAK,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2133,122.3836
+40201748,SD INPRES TUMPU JAYA 1,Desa Sinorang,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2247,122.3668
+40209811,MAS NURUL JIHAD BATUI,JL. DIPONEGORO NO. 22 DESA BALANTANG,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.213077,122.431594
+40210105,MTSS ALKHAIRAAT NONONG,JL. NYIUR MELAMBAI NO. 105 DUSUN I DESA NONONG,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.189282,122.397711
+60723376,MIS IKHLAS OMBOLU,DESA OMBOLU,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.2098,122.4487
+40206516,SMKS MUHAMADIYAH TERPADU TANGKIANG,TADULAKO,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-1.2019,122.6272
+69768356,TK ABA TANGKIANG,DESA TANGKIANG,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.2008,122.6283
+69931993,PAUD KB TALANG BATU,DESA KALOLOS KEC. KINTOM,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.2008,122.6283
+40201751,SD INPRES 2 TANGKIANG,Jl. Siswa Desa Tangkiang,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1994617,122.6279817
+40201570,SD NEGERI 1 TANGKIANG,Jln.Siswa no : 17 Tangkiang,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.199,122.6282
+P9999092,PKBM TALANG BATU TANGKIANG,Desa Tangkiang,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.1949,122.6316
+60726316,SMP NEGERI SATU ATAP BAKALINGA,Desa Bakalinga,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.21,122.9198
+40206277,SMP NEGERI SATU ATAP LUKPANENTENG,Jl. Siswa No 2 Desa Lukpanenteng,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.213977,122.969591
+60726317,TK NEGERI SABANG,"SABANG, KEC. BULAGI UTARA",Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.214113,122.96967
+40200105,SD NEGERI OMBULI,Desa Ombuli,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.1965,123.0041
+40206717,SMP NEGERI SATU ATAP OMBULI,Jl. Lingkar Peling,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1962,123.0039
+69942825,TK. SINAR KASIH OMBULI,desa ombuli,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.195803,123.004569
+P9984602,PKBM MINASIKON,Desa Sambulangan,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.2070902,123.0419308
+69952337,SMP NEGERI 4 BULAGI UTARA,Jalan Ogotan Nomor 02,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2131,123.1472
+69963985,SMAN 2 BULAGI UTARA,JL. OGOTAN NO. 03,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2147,123.1492
+40204006,SMP Negeri 2 Bulagi Utara,Jl. Lingkar Peling Bukit Karmel Koyobunga,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1966,123.1267
+40206480,SMK KRISTEN BUKIT SINAI BULAGI UTARA,JL. LINGKAR PELING BUKIT KARMEL,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMK,SWASTA,-1.1955,123.1266
+40200387,SD INPRES LUKPANENTENG,Desa Lukpanenteng,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2058,123.1872
+40200154,SD NEGERI BOLUBUNG,Desa Bolubung,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.2089,123.2208
+69942597,TK. PEMBAHARUAN BOLUBUNG,DESA BOLUBUNG,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.186011,123.21191
+69895255,Mts Arafah Ondo-ondolu I,Jl. Trans 5 Batui No 15,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.1873773,122.381929
+40210104,MTSS NURUL JIHAD BATUI,JL.DIPONEGORO NO 22 BALANTANG,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.172721,122.412749
+40201534,SD NEGERI PADANG,Jl. S.a. Amir No. 11,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1785,122.6362
+40201929,SD INPRES MANYULA,Desa Manyula,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1752,122.6341
+69768358,TK ANGGREK MANYULA,JL. Lauwak,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.175712,122.634866
+P9948429,PKBM MOSAUT,KEL. MENDONO,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.168549,122.646017
+40206297,SDN INPRES ULING,Desa Uling,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.16637,122.65219
+69768359,TK MELATI ULING,DESA ULING,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.166,122.6523
+69969160,KB KEMBANG KUNING,DESA SAMADOYA,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.15649,122.662354
+40200407,SD INPRES POGANDA, Poganda,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.182,122.9107
+69733952,SMP NEGERI 3 BULAGI UTARA,Jl. Jalur III Kel. Sabang,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1663,123.0945
+40204090,SD NEGERI SABANG,Desa Sabang,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.1661,123.094
+69925251,PAUD AXES MOZES,DESA KOYOBUNGA,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,SWASTA,-1.183199,123.121145
+40200327,SD GKLB Sabang,"Jl. Jalur 2, Kelurahan Sabang",Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,SWASTA,-1.164,123.0976
+40200196,SMP KRISTEN SABANG,Jl. Jalur 3,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SMP,SWASTA,-1.1641,123.0987
+40200163,SD NEGERI BAKALINGA,Desa Bakalinga,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.1588,123.1642
+40200382,SD INPRES MANDOK,Desa Mandok,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,SD,NEGERI,-1.1716,123.1994
+40210107,MTSS AL-MUHAJIRIN SINORANG,DESA SINORANG,Kec. Batui Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.1564,122.3716
+40201581,SD NEGERI I PEMBINA KINTOM,Desa Kintom,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.155659,122.660728
+69768458,KB DORKAS SOLAN BARU,SOLAN,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.146879,122.657461
+40201563,SD NEGERI 2 KINTOM,Samadoya,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1511583,122.663595
+69792742,KB SRIKANDI,Kel. Lontio Kec.Nmbo,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.141473,122.657375
+69768361,TK DIMSA DIMPALON,JL. S.A AMIR,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.1417,122.6651
+40201774,SD INPRES 3 KINTOM,Jln. Siswa,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1402,122.664955
+40201655,SMP NEGERI 1 KINTOM,Jl. Siswa No. 1 Dimpalon,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1393,122.6648
+40201724,SMAN 1 KINTOM,JL. S. A.  AMIR  KEC. KINTOM,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.138646,122.665288
+40201843,SD INPRES SOLAN,Desa Solan,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1333566,122.6877067
+69895928,SD ADVENT SOLAN,DESA SOLAN BARU KEC. KINTOM,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-1.1342133,122.69218
+40201576,SD NEGERI 1 MENDONO,Mendono,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1372,122.7022
+40210113,MTSS DARUSSALAM MENDONO,"JL. TRANS LUWUK-BATUI KM.27, KEL.MENDONO.",Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.1366,122.7005
+69768363,TK PGRI MENDONO,KARAMAT,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.1366,122.7043
+40201565,SD NEGERI 2 MENDONO,KELURAHAN MONDONUN,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.13548,122.70028
+40209817,MAS DARUSSALAM MENDONO,JL. TRANS LUWUK-BATUI KM 27 ,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.1354,122.6998
+69940129,TK NEGERI BAKALINGA,DESA BAKALINGA,Kec. Bulagi Utara,Kab. Banggai Kepulauan,Prov. Sulawesi Tengah,TK,NEGERI,-1.156334,123.165096
+40210114,MTS TALANG BATU TANGKIANG,JL. S.A Amir,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.104762,122.555147
+40209816,MAS ALKHAIRAAT KINTOM,Jl.Mogoyaman Kompleks Lapangan Bola Kaki Kel.Kintom Kec.Kintom,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.097028,122.567491
+69781496,TK IKAL SUB DIVRE,JL. PULAU LEMBE NO. 309,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.1041,122.6613
+40201851,SD INPRES SAYAMBONGIN,Desa Sayambongin,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.11179,122.714165
+69974636,KB MANDIRI,Desa Sayambongin,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.1082,122.7158
+40201568,SD NEGERI 2 PADUNGNYO,Kompleks Lapangan Sepak Bola Desa Padungnyo,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1043,122.7183
+40201654,SMP NEGERI 2 KINTOM,Jl. Taman Siswa  No. 1,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1017,122.7168
+40201578,SD NEGERI 1 PADUNGNYO,LUMBE,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.1003,122.7216
+69768459,KB TERPADU IDOLA LUMBE,POROS LUWUK,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.0974,122.7211
+40201574,SD NEGERI 1 LONTIO,Jln. Trans Sulawesi No. ..... KM 22 Kelurahan Lontio Baru Kecamatan Nambo,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0963,122.7232
+40201687,SD INPRES POPOSON,Desa Tobelombang,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0843,122.4058
+69898763,RA Arafah Ondo-ondolu I,Jl. Trans V Batui No.15,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-1.0775355,122.409395
+69894917,Alkhairaat Nonong,Nyiur Melambai No. 105,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.0775355,122.497285
+40210115,MTSS ALKHAIRAAT KINTOM,JL. MANGOYAMAN,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.083644,122.567342
+69901989,MIS Miftahul Jannah,Asean ,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.0775355,122.585176
+60723380,MIS ALKHAIRAAT DIMPALON,JL. S.AMIR No. 157 DIMPALON,Kec. Kintom,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.06788,122.571655
+69768365,TK NEGERI KALIBOSAN PADUNGNYO,JL. RAYA LUWUK-NAMBO,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-1.0698,122.6037
+40201731,SD INPRES 2 LONTIO,Kelurahan Lontio Baru,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.095,122.7234
+69792745,TK SRIKANDI LONTIO,BOSANYO BANDANG,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0919,122.7222
+40201649,SMP NEGERI 4 LUWUK,Jl Raya Luwuk-Nambo Km 20,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0848933,122.7262883
+40201636,SMKN 3 LUWUK,JL. RAYA LUWUK-NAMBO KM 20,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-1.084,122.7268
+69768485,KB MUTIARAKU NAMBO BOSAA,JL. TAMAN SISWA,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.084189,122.727171
+69792748,TK MUTIARA NAMBO BOSAA,Jl. Taman Siswa,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0841,122.7274
+40201775,SD INPRES 3 NAMBO,Jln. Jend. Sudirman,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.081,122.7291
+40201577,SD NEGERI 1 NAMBO,Jl. Trans Sulawesi Km 20,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0809467,122.7295067
+40201566,SD NEGERI 2 NAMBO,Kel. Nambo Lempek ,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0765167,122.736635
+40201943,SD INPRES KOYOAN,Desa Koyoan,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.071435,122.7399383
+40201533,SD NEGERI ONU BUBUNG,Jl. Raya Luwuk Km.14,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0477,122.7674
+69768461,KB PAUD DAHLIA BUBUNG,JL. TONGGOL,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.042817,122.770903
+70047544,TK DIRGANTARA,DESA BUBUNG,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0428,122.7709
+40201913,SD NEGERI BOLLO,Bollo,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0427,123.2793
+70002342,TK KHATOLIK SANTO YOSEPH,Desa Sulubombong,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0471,123.3284
+40204218,SMP KATOLIK PELITA SULUBOMBONG,Jln Luwuk-balantak Km.107 Sulubombong,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-1.0466,123.3285
+40201845,SD INPRES SULUBOMBONG,Jl. Kekean Papo No. 12,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0451,123.3335
+69971361,SMAN 1 MANTOH,Desa Sulubombong,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.0435,123.3281
+P9934478,PKBM SALUAN GLOBAL,Jl. Bumi Perkemahan Maleo Desa Koyoan Kec. Nambo,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.0308,122.6641
+69787556,SD NEGERI MAAHAS,Jl. Dr.moh.hatta No 06. Luwuk,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0121,122.7291
+69942345,KB AR-RAYYAN,Tanjung Tuwis Kec. Luwuk Selatan,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-1.011119,122.787323
+69938993,TK Satu Atap Km 8,Kel. tanjung Tuwis Kec. Luwuk selatan,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-1.008244,122.795037
+40201940,SD INPRES KM 8,Jl. Mandapar No. 212 Kel. Tanjung Tuwis,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0063,122.7961
+40201675,SD NEGERI SOBOL,Jl.pinontunuan,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0055,123.2436
+40204166,SMP KRISTEN BOMBANON,Jl. Yohanis No. 02,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-1.016,123.2881
+40201611,SD NEGERI BOMBANON,Jl. Saraa,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0168,123.2913
+40210116,MTSS AL IKHLAS LAMALA,DESA BONEBOBAKAL  KECAMATAN LAMALA  KABUPATEN BANGGAI,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.006145,123.296147
+40201617,SMP KRISTEN BORAS,Jl.Tadulako No 3 Desa Boras,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-1.0116,123.3682
+40201919,SD INPRES BORAS,Desa Lonas,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.0088,123.3725
+60723379,MIS ALKHAIRAAT BUNTA,JL.WR.MONGINSIDI NO.03,Kec. Bunta,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-0.9848,122.7229
+40201894,SD NEGERI HUNDUHON,Jln. Ipung Mang,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9999,122.7843
+69781474,TK NEGERI PEMBINA LUWUK,JL. PULAU KALIMANTAN,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.9884468,122.7642521
+165005  ,Politeknik Banggai Industri,,,Kab. Banggai,Prov. Sulawesi Tengah,Politeknik,Aktif,-0.99325,122.784181
+69824881,SMK KOMPUTER LUWUK,JL. NURMAL NO.11 KOMP.PERKANTORAN BUKIT HALIMUN,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.9931,122.7845
+40201635,SMKN 2 LUWUK,JL. Lemuru N0. 118,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-0.991,122.7902
+69969701,KB MUTIARA NAMBO,DESA NAMBO PADANG,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.994213,122.799683
+69768462,KB AIR MAMBUAL MAAHAS,JL. DR. MOH. HATTA,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.9784,122.786
+69947922,TK NEGERI  AIR MAMBUAL,Jl.Dr.Moh. Hatta No.101,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.9784,122.786
+40201653,SMP NEGERI 2 LAMALA,Jln.siswa No.3 Pondan,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.998,123.2322
+69792743,TK MANTO JAYA,"Jln. KARTINI No. 01, Desa Sobol Kec. Mantoh",Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0032,123.239
+40204324,SMAN 2 LAMALA,JL. SISWA NO. O1 SOBOL,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-1.0053,123.2465
+69768417,TK TOMPOTIKA RAYA KAMPANGAR,JL. UNTIKA,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.0048,123.3103
+40201524,SD NEGERI GARUGA,Dusun Garuga,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9895,123.3356
+60723383,MIS DDI MIDARUL ULUM KILONGAN,"JL TRAN SULAWESI KM 6 Kel,Kilongan Permai Kec, Luwuk Utara Kab, Banggai",Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-0.96073,122.727935
+69768481,KB MUTIARA KOMPO,JL. PULAU KALIMANTAN,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.974131,122.741232
+40201739,SD 2 INPRES BAYA,Jl. Ki Hajar Dewantara No. 1 Baya,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9623,122.7554
+69898765,Alkhairaat Kalaka,Moh. Yamin No. 61,Kec. Bunta,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-0.9676898,122.760957
+40206533,SMKS SPP KOSGORO LUWUK,JL. DUYUNG,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.973,122.7816
+69768368,TK AL KHAIRAAT SIMPONG,JL. P. BURU NO. 16 A,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9645,122.7731
+70000955,SD TAHFIZH PLUS KHOIRU UMMAH LUWUK,Jl. Edelweis Kelurahan Hanga-Hanga Permai,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9684,122.7798
+69926635,TK NEGERI SATU ATAP MAAHAS,JL. MUH. HATTA,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.970098,122.784748
+40201597,SD INPRES 9 LUWUK,Luwuk Selatan,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9676,122.7831
+40209820,MAS AL-KHAIRAAT LUWUK,JL. KH. AGUS SALIM NO. 68 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.9692,122.7846
+40209818,MAN 1 BANGGAI,"JL. PULAU IRIAN RT. 004 / RW. 006,  KEL. KOMPO, KEC. LUWUK SELATAN",Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MA,NEGERI,-0.9684,122.7851
+40210121,MTSS AL-HIDAYAH BUMINATA LUWUK,JALAN FLAMBOYAN HANGA-HANGA 1 LUWUK SELATAN,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9607,122.7789
+69959750,SMPTK Axel Mozes,Jl. Flamboyan Kelurahan Hanga hanga,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMPTK,SWASTA,-0.9609,122.7809
+69880441,SMTK AXEL MOZES,JL. BUNGA FLAMBOYAN,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMTK,SWASTA,-0.9609,122.7809
+40201512,SD NEGERI HANGA HANGA,Jl. Flamboyan No. 65 ,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9614,122.7816
+40201840,SD INPRES SIMPONG,Jl. P. Sulawesi,Kec. Luwuk Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9669,122.7879
+40201723,SD NEGERI TONTOUAN,Tontouan,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9585,122.7825
+40204269,SMP KATOLIK SANTO YOSEPH LUWUK,Jl. Bukit Tinggi No. 136,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.9596,122.7852
+40201703,SMAS KATHOLIK ST YOSEP,JL. BUKIT TINGGI NO. 136,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,SWASTA,-0.9598,122.7855
+40210119,MTSS AL-IKHLAS LUWUK,DESA TONTOUAN,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9578,122.7833
+69983978,MAS AL-IKHLAS TONTOUAN,JL. JATIWARINGIN ,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.9577,122.7832
+40209803,SDIT AR-RAYYAN LUWUK,Jl. Mekar Indah,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9575,122.7845
+K5650390,LKP Widyagama,Jl.Tg.Branjangan 28 Luwuk Kab.Banggai 94715,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,Kursus,SWASTA,-0.9587,122.7871
+161009  ,Universitas Tompotika Luwuk,Jalan Dewi Sartika No 67 Luwuk,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,Universitas,SWASTA,-0.9587484,122.7880874
+40201602,SD NEGERI 3 LUWUK,Jl. Dewi Sartika No 7,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9588,122.7884
+40201612,SMAN 1 LUWUK,JL. DEWI SARTIKA NO.02 A LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.958,122.7875
+40201633,SMK NEGERI 1 LUWUK,Jl. Ki Hajar Dewantara No. 17,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-0.9594,122.7891
+69781565,KB MENTARI,JL. DEWI SARTIKA NO. 3 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.958158,122.78813
+40201631,SMAN 3 LUWUK,JL. K.H. DEWANTARA 12 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.9588,122.7889
+40201604,SD NEGERI 4 LUWUK,Jl. Dewi Sartika No. 01/A,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9578,122.788
+40201537,SD NEGERI PEMBINA LUWUK,Kel. Simpong,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9572,122.7877
+40203961,SD INPRES 5 LUWUK,Jl. R.a. Kartini No. 59 Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9579693,122.7887091
+40201646,SMP NEGERI 3 LUWUK,Jl. KH. Dewantoro No. 10,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9585,122.7893
+K5650393,LKP LP3 Gajah Mada College Luwuk ,"Jl. Agus Salim 88 B Luwuk, Banggai, Sulteng",Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,Kursus,SWASTA,-0.9561,122.7868
+69939979,TK ABA SIMPONG,Jl. Prof. Moh. yamin Kel. Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.954994,122.785386
+40201652,SMP NEGERI 2 LUWUK,Jl. Ra.kartini No. 04,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9581,122.7896
+69768457,KB SALUAN PADUNGNYO,JL. TRANS LUWUK-KINTOM KM. 22,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.962632,122.799683
+40201599,SD INPRES 8 BERTINGKAT,Jl. Kh. Samanhudi Luwuk No.3,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9553,122.7899
+70033376,TK NEGERI ANNUR LUWUK,JL. PROF. MUH YAMIN NO 168 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.9532,122.786
+69950837,TK DARMA SIMPONG,KEL. KARATON,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.953428,122.798856
+69768477,KB ISLAM TERPADU MADANI KARATON,JL. YOS SUDARSO TANJUNG,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.953277,122.798223
+69768476,KB DARMA KARATON,JL. RE.MARTADINATA NO. 855,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.953047,122.799093
+69816286,SDS ISLAM TERPADU MADANI,JL.YOS SUDARSO NO. 77,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9517,122.7989
+69768381,TK ISLAM TERPADU MADANI KARATON,JL. YOS SUDARSO TANJUNG,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9516,122.7988
+70002692,TK ADHYAKSA BANGGAI,Jl. Brigjen Katamso No. 1 Kel. Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9504,122.7891
+69768373,TK AL HASANAH LUWUK,JL. PROF. MOH.YAMIN,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9500985,122.7871701
+40210117,MTSN 1 BANGGAI,JL. HOS.COKROAMINOTO NO.2,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,MTs,NEGERI,-0.9495,122.7894
+40201607,SD NEGERI 6 LUWUK,Jl.moh.yamin,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.949703,122.785844
+40201867,SD KATOLIK ST YOSEPH LUWUK,Jl. S. Parman No. 50,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9493,122.7888
+69768372,TK AL MUSTAQIM LUWUK,JL. HOS. COKROAMINOTO,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.949252,122.789371
+40201813,SD COKROAMINOTO LUWUK,Jln. Hos Cokroaminoto.No.08 luwuk ,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9487,122.7896
+40201632,SMKS COKROAMINOTO LUWUK,JL. HOS COKROAMINOTO NO. 08,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.9486,122.7896
+40201624,SMP COKROAMINOTO LUWUK,Jl. Hos Cokroaminoto No.8,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.9486,122.7896
+161008  ,Universitas Muhammadiyah Luwuk,Jalan KH Ahmad Dahlan No 79 ,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,Universitas,SWASTA,-0.9488283,122.7948199
+164010  ,AMIK Luwuk Banggai,"Jl. Sutardjo No. 30 Luwuk
+Kabupaten Banggai - Sulawesi Tengah",Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,Akademik,SWASTA,-0.947805,122.790393
+69768370,TK KATOLIK SANTO YOSEPH LUWUK,JL S PARMAN,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9478,122.7888
+69768371,TK ABA LUWUK,JL. PANGERAN DIPONEGORO,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9475,122.7947
+69785408,TK ABA BIAK,DUSUN 2 KOHOBOTIK,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9472454,122.7942937
+40201871,SD MUHAMMADIYAH 2 LUWUK,Jl. Kh. A. Dahlan No.III/79,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9465,122.7941
+40201705,SMAS MUHAMMADIYAH LUWUK,JL. KHA DAHLAN NO. 79 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,SWASTA,-0.9464,122.7936
+40201622,SMP MUHAMMADIYAH LUWUK,Jl. Kh. Ahmad Dahlan No. Iii/79 Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.9464,122.7938
+40201870,SD MUHAMMADIYAH 1 LUWUK,Jln. Kh. Ahmad  Dahlan No. III/79 Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9463,122.7938
+40201657,SMP NEGERI 1 LUWUK,Jl. Sultan Hasanuddin No. 190,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9459,122.7937
+40201815,SD GKLB 1 LUWUK,Jl. D. Tondano No 118,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9462,122.7968
+40203953,SD GKLB 3 LUWUK,Jl. D. Tondano No 120,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9458,122.7965
+40201613,SMP DAERAH LUWUK,Jl. Samratulangi No 215,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.946,122.7984
+40201501,SD NEGERI KAGITAKAN,Desa Kagitakan,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9548,123.1496
+10201594,SD NEGERI BINOTIK,Jl. Luwuk Balantak,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9734,123.2952
+40206755,SMP NEGERI 3 LAMALA,Desa Garuga,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9703,123.2932
+40201528,SD NEGERI MOLINO,Jln. Siswa RT 1 RW 1 Dusun 1 Desa Nipa,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9528,123.271
+69931973,PAUD TK BUKIT KASIH,DESA GARUGA KEC. MANTOH,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.950596,123.288124
+40201856,SD INPRES PONDAN,Desa Pondan,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9759,123.3118
+40201554,SD NEGERI BOOY,JL.SISWA,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9491,123.3468
+69786514,SMPN 6 BALANTAK,TOMBOS,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9589,123.3867
+40201721,SD NEGERI TOMBOS,Tombos,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9582,123.3869
+70006396,MTSS DAARUL HIKMAH LUWUK,JL. HASAN AL-BANNAH NO.1 DESA BIAK,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9265,122.7449
+40201556,SD NEGERI 1 INPRES KEL. BARU,Jl. Gunung Colo No. 657,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9424,122.7904
+40201630,SMAN 2 LUWUK,JL. G. MERAPI NO.540 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.9414,122.7926
+344067  ,Akademi Keperawatan Luwuk, Jl. S. Musi No. 15 Kec. Luwuk,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,Akademik,SWASTA,-0.943941,122.795487
+40201676,SD INPRES SOHO,Jl. T.sahuna Kel. Soho,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9407,122.7939
+40201609,SD NEGERI 7 BERTINGKAT LUWUK,Jl.Sungai Limboto,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9444,122.7958
+69768375,TK KEMALA BHAYANGKARI LUWUK,JL. SAMRATULANGI NO 14,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.945,122.7979
+40201575,SD NEGERI 1 LUWUK,Jl.samratulangi No.204,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9457,122.7983
+69751122,RA/BA/TA ISLAMIYAH LUWUK,JL. DANAU TONDANO NO.160 KEC.LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-0.943,122.7972
+233248  ,STT STAR'S LUB LUWUK BANGGAI, ,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,-0.941091,122.7969983
+40201634,SMKS DAERAH LUWUK,JL. SAM RATULANGI NO. 215,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.9445,122.7987
+69768376,TK NEGERI INDRIYA LUWUK,JL. SAMRATULANGI NO. 224 KEL BUNGIN KECAMATAN LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.944771,122.799211
+40204299,SD INPRES 2 KELURAHAN BARU,Jl. G. Tinombala 12,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9417,122.7991
+40201564,SD NEGERI 2 LUWUK,Jl. Danau Toba,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9417,122.7992
+40201816,SD GKLB 2 LUWUK,Jln. Imam Bonjol No. 83,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9422,122.801
+40201618,SMP KRISTEN LUWUK,Jl. Sam Ratulangi No. 81,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.942,122.8011
+40204285,SMKS HANDAYANI LUWUK,JL. SAM RATULANGI NO. 81 LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.9423,122.8014
+40201704,SMAS GKLB LUWUK,Jln. Imam Bonjol No.152,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SMA,SWASTA,-0.9422,122.8013
+60723381,MIN 1 BANGGAI,JL. IMAM BONJOL NO. 557,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,MI,NEGERI,-0.939601,122.806066
+P9948206,SKB BANGGAI,JL. Dewi Sartika Nomor 03 Luwuk,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SKB,NEGERI,-0.9362,122.8068
+69751120,RA/BA/TA AL-IKHLAS JALU II BUNGIN,JL. BATU PUTIH NO. 20 KEL. BUNGIN KEC. LUWUK,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-0.9368,122.808
+40201946,SD INPRES LUMPOKNYO,Jl. Imam Bonjol No. 107,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9388,122.8124
+69768379,TK NUR PERMATA HIJAU LUMPOKNYO,JL. TADULAKO NO. 01,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.938471,122.8144
+69768472,KB AMANAH PERTIWI LUMPOKNYO,JL. TADULAKO NO. 163,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.937787,122.817374
+69930837,PAUD TERPADU INTEGRAL YAABUNAYYA HIDAYATULLAH,KOMP. BINTARO KM 3,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.936876,122.820353
+40201526,SLB N LUWUK,Jl. Imam Bonjol Km. 4 kilongan permai,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SLB,NEGERI,-0.9309,122.8305
+40209819,MAS DDI MIDARUL ULUM LUWUK,JL. TRANS SULAWESI KM. 6 KEL. KILONGAN PERMAI,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.9287,122.8438
+40201667,SMP NEGERI 6 LUWUK,Jl. Tadulako,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.928,122.8429
+40210120,MTSS DDI MIDARUL ULUM KILONGAN,Kel. Kilongan,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9286,122.844
+69751123,RA/BA/TA NURUL ITIHAD KEL. KILONGAN,JL. NUSAGRIA KILONGAN,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-0.9244,122.8441
+40201514,SD INPRES BTN KILONGAN PERMAI,BTN Nusa Griya ,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9229,122.8418
+60723382,MIN 4 BANGGAI,JL. BELIMBING NO. 05 BTN NUSAGRIYA KELURAHAN KILONGAN PERMAI,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MI,NEGERI,-0.9242,122.8439
+69892184,TK ABA BUMI BERINGIN,JL. BUMI BERINGIN,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9279,122.8531
+40201699,SD NEGERI UNJULAN,Jl. Tadulako No. 100,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9278,122.8547
+40201525,SD INPRES BOYOU,Jalan Siswa Desa Awu,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9238,122.8582
+69793923,TK INDAH KASIH BOYOU,JL. TRANS SULAWESI,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.9234,122.8611
+69895257,MTsS Alkhairaat Nambo,Jl. Haweon No.1 Lumbe,Kec. Nambo,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9228,122.8601
+69925642,KB BUKIT PRATAMA,BTN MUSPRATAMA,Kec. Luwuk,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.921227,122.846209
+40201920,SDN INPRES BTN KILONGAN INDAH,Btn Muspratama Kilongan Indah,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9208,122.8447
+40201527,SD INPRES LEOKNYO,Dusun Leoknyo,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9227,122.8718
+40206530,SMKS SURYA LUWUK,"JL. TRANS SULAWESI, BIAK - BALANTAK NO. 16 KM. 10",Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.9291,122.8852
+40201593,SD NEGERI BIAK,Desa Biak,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9266,122.8824
+40201651,SMP NEGERI 5 LUWUK,Jl. Sohumangon No. 100,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9267,122.8848
+40201516,SD INPRES BUNGA,Jl Ki Hajar Dewantoro No 06,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9254,122.8981
+40201842,SD INPRES SIROM,Desa Sirom,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9349,123.1487
+40203959,SD KATOLIK SANTO YOSEPH,Sulubombong,Kec. Mantoh,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.936,123.263
+40201716,SD NEGERI TINTINGON,Tintingon,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9424,123.3043
+40205685,SMP NEGERI 4 SATAP BALANTAK,Desa Tintingon ,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9422,123.3045
+40201914,SDN INPRES BOLOAK,Desa Boloak,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9229,123.3107
+40201682,SD NEGERI SEPE,"Desa Sepe, Kec. Balantak Selatan",Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9335,123.37
+40201898,SD INPRES DONDO,Balantak Selatan,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9302,123.379
+69895256,MTs Nahdlatul Wathan Malik Makmur,Jln Darul Ilmi No. 02 Malik Makmur Kec. Bualemo,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9127655,122.848848
+69849410,SMK KESEHATAN NUSANTARA BANGGAI,JL.TADULAKO KM 06 KILONGAN ,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.901188,122.87617
+69955795,MA Daarul Hikmah,Jl. Trans Sulawesi,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.9125,122.8889
+40201518,SD INPRES BUON,Jl. Poros Luwuk-Balantak,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9007,122.9625
+69751125,RA/BA/TA BA AISYIYAH UWEDIKAN,DESA UWEDIKAN KEC. LUWUK TIMUR,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,RA,SWASTA,-0.8914822,122.972444
+40201573,SD NEGERI 1 KAYUTANYO,Desa Kayutanyo,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8946,123.0084
+69862679,SMP NEGERI 6 LUWUK TIMUR,JL. POROS LUWUK LAMALA,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8921,123.0093
+40203968,SD NEGERI UWEDIKAN,Uwedikan,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8993,123.0553
+40201688,SD NEGERI POROAN,DESA POROAN,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9094,123.1397
+P9956943,PKBM TELUK INDAH LAMALA,KANTOR UPTD DIKPORA KECAMATAN LAMALA,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,PKBM,SWASTA,-0.9046,123.1361
+40201656,SMP NEGERI 1 LAMALA,Jl. Balantak No. 112 Bonebobakal,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9026,123.1417
+40201855,SD INPRES PEMBINA BONEBOBAKAL,Jl. Poros Balantak,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9006,123.1418
+40201947,SD INPRES LOMBA,Desa Lomba,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9007,123.1422
+40201668,SMAN 1 LAMALA,JL. SISWA NO. 113,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8994,123.1417
+69768509,KB PIOLA KOTA BARU,JL. LOMPOGAYO,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.8954,123.1611
+40201942,SD INPRES KOTA BARU,Jl. PT. Usaha Mina,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8896,123.1489
+40206261,SMP NEGERI 4 LAMALA,Jl. PT. Usaha Mina,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8895,123.1492
+40201619,SMP KRISTEN TONGKE,Desa Talima B,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.894,123.3428
+40201679,SD NEGERI TALIMA,Desa Talima B,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8933,123.342
+40201747,SD INPRES 1 TONGKE,Desa Giwang,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9139,123.3827
+40201818,SD GKLB TONGKE,Desa Tongke,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.9132,123.3823
+40201643,SMP NEGERI 3 BALANTAK,Jl. Elokwati No 04,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9073,123.3881
+40201857,SD INPRES POYANG,Desa Poyang,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9033,123.3844
+40201770,SD INPRES 2 TONGKE,Ds. Gorontalo ,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9067,123.3885
+69765071,SMAN 1 BALANTAK SELATAN,Jl. Laginda No. 1,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8881,123.3596
+40201745,SD INPRES TANGGAWAS,Tanggawas,Kec. Balantak Selatan,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8985,123.3914
+40210127,MTSS NURUL IMAN BERINGIN JAYA,DESA BERINGIN JAYA,Kec. Simpang Raya,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.882357,122.444144
+69988147,SD NEGERI DONGKALAN,Desa Dongkalan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.86,122.5932
+69765048,SDN OBO BALINGARA,Desa Obo Balingara,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8841,122.6747
+40206510,SMP NEGERI 4 SATAP NUHON,DESA BOLOBUNGKANG,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8764,122.7014
+40210126,MTSS ALKHAIRAAT PAGIMANA,JL.ANYELIR,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.862565,122.688722
+40209823,MAS AL-KHAIRAAT PAGIMANA,JL. ANYELIR NO.03 KEC.PAGIMANA,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.857092,122.669924
+70000017,KB MAWAR SARON,DESA KAMUMU,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.8637,122.8778
+40201504,SD NEGERI KAMUMU,Jl.Tadulako N. 30,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8555,122.874
+69853296,DDI Nurul Ilmi Pohi,Desa Pohi,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.866406,122.953011
+40201729,SDN INPRES 2 KAYUTANYO,Lontos,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8799,122.9748
+40205684,SMP NEGERI 4 LUWUK TIMUR,Jl. Enang Saini,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8798,122.9748
+69792755,KB MOTOUTUS,JL. TRANS POHI,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.8771,122.9986
+40201686,SD NEGERI POHI,Jln. Luwuk Balantak,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8754,122.9996
+40201740,SD INPRES 1 LAUWON,Indang Sari,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8589,122.9736
+69937574,SMAN 1 LUWUK TIMUR,JL. SISWA NO 1 LOUK,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8575444,122.9690773
+40203977,SMP NEGERI 1 LUWUK TIMUR,Jl. Sangkalan No. 1 HUNDUHON,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8686,123.0185
+40201637,SMKN 5 LUWUK TIMUR,JL. SABUNG LOUTO NO. 1,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-0.8689,123.0193
+69919976,SD NEGERI LOUK,JL. IMAN M. PAMPAWA,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.860843,123.016734
+40201548,SD NEGERI LUKPALAMPANG,Desa Kota Baru,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8844,123.1553
+60723384,MIN 3 BANGGAI,JL. LABUAN NO 88 TANGEBAN,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,MI,NEGERI,-0.8694,123.1486
+40201584,SD NEGERI 2 TANGEBAN,Desa Serese,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8719,123.1523
+40201571,SD NEGERI 1 TANGEBAN,Desa Tangeban,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8678,123.1498
+40201759,SD INPRES BAHARI MAKMUR,Bahari Makmur,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8828,123.1756
+69892200,KB NYIURIAN TAUGI,JL. R.A KARTINI NO. 54,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.8658,123.1507
+40201848,SD INPRES TAUGI,Jl. Masama No.43,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8637,123.1508
+69768411,TK AISYIYAH BUSTANUL ATHFAL CEMERLANG,JL. RAYA LUWUK- MASAMA,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.8627,123.1494
+40201909,SDN INPRES CEMERLANG,Desa Cemerlang,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8627,123.1488
+40204173,SMP NEGERI 1 MASAMA,Jl. K.h. Dewantoro No 2 Cemerlang,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8587,123.1479
+69930196,PPS Persatuan Islam Al-Ittihad Al-Islami,Jl. Hasanuddin No. 1 Cemerlang,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,Pondok Pesantren,SWASTA,-0.8598,123.1402
+40201944,SD INPRES LABOTAN,Labotan,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8703,123.2117
+40206284,SMP NEGERI 5 LAMALA,Jalan Poros Luwuk Balantak,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8687,123.2124
+69787550,SMP NEGERI 6 LAMALA,Lamala,Kec. Lamala,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8652,123.2321
+40221911,SD INPRES BATUSIMPANG,Desa Batusimpang,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8822,123.3197
+40201939,SD INPRES KILOMA,Desa Kiloma,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8781,123.3513
+40201550,SD NEGERI MAMPING,Desa Mamping,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.879,123.3728
+40201623,SMP NEGERI 1 BALANTAK,Jl. Siswa No. 101,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8811,123.3916
+40201820,SD INPRES 1 BALANTAK,Balantak,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8803,123.3915
+40201750,SD INPRES 2 BALANTAK,Jl. Dale-dale,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8805,123.3931
+40201620,SMP MUHAMMADIYAH BALANTAK,Jl. Dale-dale N0 194,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.8799,123.3929
+40201872,SD MUHAMMADIYAH BALANTAK,Balantak,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.881,123.3938
+40201706,SMAN 1 BALANTAK,JL. MERDEKA NO.1 BALANTAK,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8774,123.3965
+40201814,SD COKROAMINOTO BALANTAK,Jl. Hos Cokroaminoto,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.8567,123.4216
+40210128,MTSS MUHAMMADIYAH SUMBER MULYA,DESA SUMBER MULYA  KECAMATAN SIMPANG RAYA  KABUPATEN BANGGAI  KP 94753,Kec. Simpang Raya,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.845773,122.41678
+40201515,SD NEGERI BULU,Dusun I Bulu,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8401,122.5711
+40201505,SD NEGERI KARYA BAKTI,Desa Ampera,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.852,122.6049
+40206282,SMP NEGERI 8 SATAP PAGIMANA,Desa Ampera Kecamatan Pagimana Kabupaten Banggai Provinsi Sulawesi Tengah,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8521,122.605
+40201586,SD NEGERI ASAAN,Desa Asaan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8343,122.6008
+40201529,SD NEGERI NAIN,Desa Nain,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8497,122.7395
+40201499,SD INPRES HOHUDONGAN,Jl. Desa Pagimana-Asaan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8288,122.7548
+40201730,SDN 2 INPRES LAUWON,Lauwon,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8487,122.9564
+69849506,MAS DDI Nurul Ilmi,Desa Pohi,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.8301,122.9323
+40206609,SMP NEGERI 5 SATAP LUWUK TIMUR,Jl Rambutan No 1 Trans Pohi,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8447,122.9859
+40201710,SD NEGERI TRANS POHI,Trans Pohi,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8446,122.986
+40201822,SD INPRES 1 BAYA,Dusun 2 Baya,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8538,122.9998
+40210122,MTSS AL-HASANAH BANTAYAN,JL. TADULAKO NO.206 BANTAYAN,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.826042,122.973193
+69925648,PAUD KB TUNAS MUDA,UNIT TRANSMIGRASI POHI,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.849934,123.020638
+69768490,KB PAUD TUNAS BANGSA LOUK,JL. BAYU,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.83167,123.009539
+69880965,SD AXEL MOZES,Desa Bunga,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.828716,122.992011
+69768488,KB NURHIDAYAH BAYA,JL. RAYA LUWUK-TANGEBAN,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.8563,123.0452
+40201589,SD NEGERI BANTAYAN,Bantayan,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8455,123.0654
+40201875,SD NEGERI BANPRES BANTAYAN 1,Blok F,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8278,123.0186
+69768412,TK NEGERI BAABULKHAIR PADANGON,JL. KH. DEWANTORO,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.851144,123.135272
+40206474,SMAN 1 MASAMA,Jl. Esa Karya No. 4,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8495,123.1335
+40209821,MAN 2 BANGGAI,JL. TUNAS JAYA NO. 2 DESA PADANGON,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,MA,NEGERI,-0.8537,123.1387
+40201535,SD NEGERI PADANGON,jln. siswa padangon,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8534,123.1385
+40201523,SD NEGERI ETENG,Desa Eteng,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8495,123.1346
+69768406,TK SILOAM ETENG,JL. TADULAKO,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.8486,123.1337
+40203980,SMP NEGERI 2 MASAMA,Jl. Mawar Indah,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8381,123.1256
+40201858,SD NEGERI INPRES PURWO AGUNG,Desa Purwo Agung,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8285,123.1253
+69831631,SDN RANGA-RANGA,RANGA-RANGA,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.827534,123.185352
+40201900,SDN INPRES DUWATA KARYA,Desa Duwata Karya,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8271,123.1919
+40205114,SMP NEGERI 3 MASAMA,Duwata Karya,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8269,123.1922
+69774534,SMKS IHSANUL FIKRI,JLN RAYA HGU KM 08,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.8517,123.3562
+40201938,SD INPRES LUOK,Desa Luok,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.849,123.4161
+40201587,SD NEGERI BAJO POAT,Desa Bajo Poat,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8021,122.4744
+40206640,SMP NEGERI SATU ATAP LINGKETENG,lobu,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8034,122.4842
+40201542,SD NEGERI LINGKETENG,Desa Bahingin,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8034,122.4842
+40201761,SD INPRES BALEAN,Desa Balean,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.799,122.4832
+40201509,SD INPRES LAMBULI,Desa Lambuli,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8065,122.5257
+40206498,SMP NEGERI 4 PAGIMANA,Desa Bajo Poat,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8154,122.5507
+40201536,SD INPRES PAKOWA,Jl. Garuda No. 6,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8116,122.5755
+40204374,SD INPRES LAMO,Desa Lamo Kec. Pagimana,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8021,122.6041
+40201672,SD NEGERI SINAMPANGNYO,Desa Sinampangnyo,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8045,122.6425
+40201627,SMAN 1 PAGIMANA,JL. MAWAR NO.45,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8024,122.646
+69768388,TK NEGERI PEMBINA PAGIMANA,JL. RAYA LUWUK-PAGIMANA,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,TK,NEGERI,-0.800646,122.647891
+40201538,SD INPRES PEMBINA PAGIMANA,Jl. Mawar,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7995,122.6485
+40201583,SD NEGERI 2 PAGIMANA,JL. SEDAP MALAM NO. 1 KELURAHAN PAGIMANA,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7986,122.651
+40201669,SD INPRES PISOU,Jln. Trans Sulawesi Desa Pisou,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8055,122.6661
+40206560,SMP NEGERI 9 PAGIMANA,Jl. Ampera Kel. Pakowa Kecamatan Pagimana,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7975,122.6522
+40204304,SMP NEGERI 1 PAGIMANA,Jl. Anggrek No1,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7973,122.6519
+40204263,SD NEGERI LAMBANGAN,Desa Lambangan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8074,122.6724
+40201680,SD NEGERI TALOYON,Jl. Trans Sulawesi,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8109,122.6969
+40201701,SD NEGERI UWEDAKA,Desa Uwedaka,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8139,122.73
+40201715,SD NEGERI TINTINGAN,Desa Tintingan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8102,122.7375
+40204319,SMP NEGERI 5 SATU ATAP PAGIMANA,Jl. Tadulako No. 12,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8099,122.7375
+69790080,TK NUR AIN TOMPOTIKA TINTINGAN,Desa Tintingan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.8092,122.7375
+40201720,SD INPRES TOMBANG,Desa Tombang,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.823,122.7853
+40201863,SD NEGERI SALODIK,Jl.pendidikan No. 1 Salodik,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8147,122.8697
+60730212,SMPN SATAP 7 LUWUK,Jl. Pendidikan No. 1,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.814429,122.8699903
+69768383,TK AL HIDAYAH LENYEK,JL TRANS BUALEMO,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.7984,122.9065
+69953265,SD MUHAMMADIYAH TERPADU BANTAYAN,"Jl. Poros Luwuk Bantayan, Ds. Bantayan Kec. Luwuk Timur",Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-0.8220873,122.9831228
+69827803,MA Al-Hasanah Bantayan,Jl. Tadulako nomor 206,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.809871,123.027806
+40205743,SMP NEGERI 3 LUWUK TIMUR,Jl. Perjuangan No. 2 Banpres 3,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7964,123.0245
+40201600,SD NEGERI BANPRES BANTAYAN 3,Jl. Perjuangan No. 01 Desa Molino Kec. Luwuk Timur,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7953,123.0267
+40201559,SD NEGERI BANPRES BANTAYAN 2,Jln. Idaman,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7964,123.0597
+40201506,SD NEGERI KEMBANG MERTHA,Desa Kembang Mertha,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8211,123.1157
+40201671,SD NEGERI SIMPANGAN,Desa Simpangan,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8227,123.1658
+40201941,SD INPRES KOSPA KARYA,Desa Kospa Dwata Karya,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8249,123.1786
+40201697,SD NEGERI TANOTU,Tanotu,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.801,123.3378
+40203965,SD NEGERI KAMPANGAR,Desa Kampangar,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.8213,123.4301
+40201507,SD NEGERI KOILI,Koili,Kec. Bunta,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7896,122.372
+40201547,SD NEGERI LONTIO,Jln. Trans Sulawesi,Kec. Bunta,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7782,122.4304
+40201916,SD INPRES BOMBAN,Bomban,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7897,122.4984
+40204167,SMP NEGERI 2 PAGIMANA,Jl. Tadulako,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7814,122.5079
+40201543,SD NEGERI LOBU,Desa Lobu,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7795,122.5054
+40204321,SMAN 2 PAGIMANA,JL. Ute Mustari,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.7771,122.5107
+69863279,SD INP. BOLOBUNGKANG,Jln. H. Polontalo Bolobungkang,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.78997,122.524654
+40201722,SD INPRES TONGKONUNUK,Tongkonunuk,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7878,122.64
+40201615,SMP ISLAM PAGIMANA,Jl. Panglima Polim Pagimana,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,SWASTA,-0.7941,122.6512
+40201579,SD NEGERI 1 PAGIMANA,Pagimana,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7952,122.6553
+69759852,SD INPRES 2 JAYA BAKTI,Desa Jaya Bakti,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7886,122.6515
+69781238,TK MUTIARA JAYABAKTI,JL. RAYA LUWUK-PAGIMANA,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.788469,122.652
+40201572,SD NEGERI 1 JAYA BAKTI,Desa Jaya Bakti Kec Pagimana Kab Banggai,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7887,122.6547
+60723389,MIS ISTIQAMAH JAYABAKTI,DUSUN IV JAYABAKTI,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-0.7843,122.6481
+40201917,SD INPRES BONDAT,Desa Bondat,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7933,122.7656
+40201517,SD NEGERI BUNGAWON,Desa Bungawon,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7885,122.7726
+40201500,SD NEGERI HUHAK,Desa Huhak,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7807,122.8032
+69987369,TK ABA BAHAGIA,Desa Huhak,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.7807,122.8037
+69876150,SMA NEGERI 3 PAGIMANA,JL. TRANS SULAWESI KM 28 POH,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.776,122.8515
+69932190,PAUD KB BUAH HATI,DESA TOIPAN,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.775972,122.85367
+40203983,SMP NEGERI 3 PAGIMANA,Jl. Jurusan Luwuk Km 28,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7755,122.8513
+40201719,SD NEGERI TOIPAN,Desa Toipan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7733,122.8548
+40201685,SD INPRES POH,Jl. Inpres,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7681,122.8485
+40203966,SD NEGERI LENYEK,JL. TRANS BUALEMO,Kec. Luwuk Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7948,122.9014
+40201590,SD INPRES BASABUNGAN,Jl. Flamboyan,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7716,122.9931
+40203979,SMP NEGERI 2 LUWUK TIMUR,Jl. Siswa No. 1,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7949,123.0904
+40201539,SD NEGERI MINANGANDALA,Desa Minangandala,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.791,123.1006
+69793925,PAUD KB TIRTASARI,TOMPOTIKA MAKMUR,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.7925,123.1031
+40201881,SD INPRES TOMPOTIKA MAKMUR,Desa Tompotika Makmur,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7929,123.1041
+40206538,SMP NEGERI 4 SATAP MASAMA,Desa Tompotika Makmur,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7927,123.1041
+69974944,SLB Mian Nu Lipuknyo,Molino,Kec. Luwuk Timur,Kab. Banggai,Prov. Sulawesi Tengah,SLB,SWASTA,-0.7662,123.0884
+40210123,MTSN 2 BANGGAI,JL. LABUAN NO.87 TANGEBAN,Kec. Masama,Kab. Banggai,Prov. Sulawesi Tengah,MTs,NEGERI,-0.794432,123.23863
+40209809,MAS ALKHAIRAAT BALANTAK,JL. HOS COKROAMINOTO KEC. BALANTAK,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.788601,123.356919
+69872319,SDN DOLOM,Desa Dolom,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.77911,123.381832
+40205726,SMP NEGERI 5 SATAP BALANTAK,Desa Teku,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7786,123.4048
+40210103,MTSS ALKHAIRAAT BALANTAK,JL. MERDEKA NO.50 BALANTAK,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.77911,123.412913
+40201698,SD NEGERI TEKU,Desa Teku,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7738,123.4421
+40203964,SD NEGERI SIUNA,Jln. Trans Luwuk - Bualemo,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7579,122.9616
+40206221,SMP NEGERI 7 SATAP PAGIMANA,Jl. Trans Luwuk - Bualemo Desa Siuna,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.7577,122.9616
+69881975,MIS Arafah Ondo Ondolu,Ondo Ondolu,Kec. Batui,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-0.764466,123.052095
+40201532,SD NEGERI ONDOLIANG,Desa Ondoliang,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.7466,123.4259
+40210108,MTSS AL KHAIRAT LEMBAH TOMPOTIKA,JL. BABUSSALAM  NO 21 LEMBAH TOMPOTIKA  KECAMATAN BUALEMO,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.708194,123.154102
+40201683,SD NEGERI SEPA,Desa Sepa,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6896,122.791
+40210110,MTSS MUHAMMADIYAH BUALEMO,JL.DIPONEGORO NO.27 KEC. BUALEMO,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.694977,123.080582
+40209813,MAS ALKHAIRAAT SALU,JL. TRANS SULAWESI DESA LONGKOGA BARAT,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.704064,123.12106
+69953787,KB ESTER,BATU MANDI,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.699,123.401
+40201854,SD INPRES PANGKALASEANG,Desa Pangkalaseang,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6769,123.388
+69975574,SMKN 1 Balantak Utara,Jl. Siswa No. 01 Pangkalaseang,Kec. Balantak Utara,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-0.6775,123.3821
+40201663,SMP NEGERI 2 BALANTAK,Jl. Maurani No 01  Desa Pangkalaseang Kec. Balantak Utara,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.6771,123.3819
+40201696,SD NEGERI TANJUNG JEPARA,Desa Tanjung Jepara,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.672,122.7293
+69765101,SMP NEGERI 6 SATAP BUALEMO,Desa Salipi,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.6748,122.7781
+40201693,SD NEGERI SALIPI,Salipi,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6743,122.7781
+40201948,SD INPRES LEMPEK,Lempek,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6527,122.8053
+40201893,SD INPRES TRANS TIKUPON,Trans Tikupon,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6644,122.8476
+40209814,MAS FASTABIQUL KHAIRAAT NAHDLATUL WATHAN TIKUPON,JL. Gunung Ngolos No. 90 Desa Tikupon,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.6571,122.8488
+40203978,SMP NEGERI 2 BUALEMO,Jl. Gunung Ngolos No 90,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.654,122.848
+40201714,SD NEGERI TIKUPON,Tikupon,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6454,122.8468
+40201882,SD INPRES TRANS BOMBAN,Trans Bomban,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6467,122.8921
+40201887,SD INPRES TRANS MAYAYAP,Sumber Wangi,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6475,122.9234
+69768512,KB SERUNI RAU,JL. DAJAELANI DUSUN 1,Kec. Balantak,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.658017,123.026361
+69765075,SMKS PERTANIAN MUHAMMADIYAH BUALEMO,JL. DIPONEGORO NO. 27,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMK,SWASTA,-0.6544,123.0977
+40201530,SD NEGERI NIPA,Nipa Kalemoan,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6595,123.1899
+40201689,SD NEGERI PULAU TEMBANG,Pulau Tembang,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.645,122.7481
+40201648,SMP NEGERI 4 BUALEMO,Jl. Dolingkang No 74,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.637,122.9157
+40201931,SD INPRES MAYAYAP,Jln. Dolingkang,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6321,122.916
+40205116,SMKN 1 BUALEMO,JL. LANTUTO,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMK,NEGERI,-0.6316,122.9219
+40201763,SD INPRES BATAKUNDAMO,Jalan Trans Bualemo,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6314,122.9766
+40201891,SD INPRES TRANS SAMAKU 2,Pantit,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6209,123.04
+40201885,SD INPRES TRANS LONGKOGA TIMUR,Lemba Makmur,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6257,123.1167
+40201892,SD INPRES TRANS SAMPAKA 2,Trans Sampaka 2,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6194,123.1274
+40201847,SD INPRES TAIMA,Desa Taima,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6167,123.3248
+40201852,SD INPRES SAMAKU,Lembah Tompotika,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5941,123.047
+40201889,SD INP TRANS SAMAKU I,Lembah Tompotika,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5949,123.063
+69933982,SMPN 7 BUALEMO,longkoga Barat.Kecamatan Bualemo,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.5871,123.0703
+40201884,SD INPRES TRANS LONGKOGA BARAT,Trans Longkoga Barat,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5974,123.0905
+40201695,SD NEGERI SAMPAKA,Sampaka,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6037,123.1539
+69765100,SMP NEGERI 5 SATAP BUALEMO,Desa Trans Sampaka 1,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.6071,123.1647
+40201742,SD INPRES TRANS SAMPAKA 1,Trans Sampaka 1,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.607,123.1652
+40201726,SD INPRES BUALEMO 2,Bualemo A,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5856,123.1526
+40201883,SD INPRES TRANS KALEMOWA,Trans Kalemowa,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.597,123.1954
+40210109,MTSS ALKHAIRAAT NIPA KALEMOAN,NIPA KALEMOAN KECAMATAN BUALEMO,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.5856,123.1812
+40201549,SD NEGERI MALIK,Desa Malik,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5916,123.2568
+69948288,TK ABA BIMA KARYA,Desa Bima Karya,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.613544,123.302711
+40201711,SD NEGERI TRANS 3 BINSIL,Bimakarya,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.6123,123.3035
+40201876,SD NEGERI 1 BINSIL,Binsil,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.592,123.2682
+40201644,SMP NEGERI 3 BUALEMO,Jl. Trans Bima Karya,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.5898,123.273
+40201737,SD INPRES 2 BINSIL,Binsil Padang,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5881,123.2669
+40201694,SD NEGERI SALU,Jalan Tadulako,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5787,123.0898
+69768392,TK KARYA SALU LONGKOGA BARAT,Jalan Pekuburan,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.5789,123.0901
+69862402,SD NEGERI LONGKOGA TIMUR,Longkoga Timur,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.582445,123.100993
+40201639,SMP NEGERI 1 BUALEMO,Jl. Tadulako No. 46 Bualemo,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.5803,123.1427
+40201708,SMAN 1 BUALEMO,JL.W. MONGONSIDI 07,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SMA,NEGERI,-0.582659,123.144815
+40201772,SD INPRES BUALEMO 3,Bualemo,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5812,123.1439
+40201877,SD NEGERI 1 BUALEMO,Bualemo B,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5803,123.145
+69768395,TK PERINTIS BUALEMO A,BUALEMO A,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-0.5837,123.1544
+69983977,MAS NAHDLATUL WATHAN,JL. DARUL ILMI NO.02 MALIK MAKMUR KEC. BUALEMO,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-0.5744,123.2075
+40201886,SD INPRES TRANS MALIK,MALIK MAKMUR,Kec. Bualemo,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5829,123.2215
+40201588,SD INPRES BALAIGONDI,Balaigondi,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5024,122.5441
+40201520,SD NEGERI DOLOM,Desa Dolom,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.5084,122.5583
+40203967,SD NEGERI UWEDAKA-DAKA,Desa Uewdaka-daka,Kec. Lobu,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.497,122.5755
+40201681,SD NEGERI TAMPE,Dusun Tampe,Kec. Pagimana,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.4867,122.5821
+40203468,SD NEGERI TINGKI,Desa Tingki Kec. Walea Besar,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.3142,122.3707
+40203385,SD NEGERI KATOGOP,Desa Katogop,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.3028,122.3703
+40203384,SD NEGERI KONDONGAN,Kondongan,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.3369,122.3603
+P9997007,PKBM. Katinjoan,Desa Pasokan,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-0.3022,122.3704
+40206005,SMP NEGERI 2 WALEA BESAR,Desa kotogop,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.3022,122.3703
+40203469,SD NEGERI PONGIDAN,DUSUN PONGIDAN,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.2879,122.3764
+40203432,SD NEGERI TONGIDON,Tongidon,Kec. Walea Besar,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.278,122.3607

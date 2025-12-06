@@ -1,0 +1,887 @@
+npsn,nama,alamat,kecamatan,kabupaten,provinsi,bentuk_pendidikan,status_sekolah,latitude,longitude
+40206401,TK EBEN HEIZER PETIRODONGI,Desa Petirodongi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-2.0763,120.5539
+40201419,SDN 5 MAYOA,Jl. Kompi Brimob,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0997,120.6267
+60723405,MIN 2 POSO,JL. H. Adam Malik No. 9,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,MI,NEGERI,-2.112635,120.632859
+40201465,SD NEGERI 1 BOE,Jl. Kasintuwu,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0742,120.6497
+69754413,SD NEGERI KODINA,Dusun Kodina,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.1244297,120.6826673
+40201199,SMP NEGERI 1 PAMONA SELATAN,Jl. Makasar No. 132,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-2.077,120.6845
+40201425,SD NEGERI I PENDOLO,Jl Makasar No 117,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0764,120.6846
+40201414,SD NEGERI PANDAYORA,Pandayora,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.104,120.6922
+40201386,SD GKST PENDOLO,Pendolo,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-2.0719,120.6829
+40201387,SD GKST PANDAYORA,Pandayora,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-2.1085,120.6951
+40201168,SD NEGERI BAWULU,Dusun Bawulu,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0877,120.6962
+40203885,SD NEGERI 8 MAYOA,Bangun Jaya,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0991,120.7064
+40201326,SMAN 1 PAMONA SELATAN,JL. S. PARMAN NO. 438,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-2.0714,120.6938
+40210139,MTSN 3 POSO,JL. JEND. SUDIRMAN NO. 8,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,MTs,NEGERI,-2.1237,120.7106
+40201420,SD NEGERI 4 MAYOA,Pandajaya,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.125,120.7099
+40209872,MAN 2 POSO,JL. H. ADAM MALIK NO. 10,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,MA,NEGERI,-2.123,120.7123
+40201308,SMP NEGERI 2 PAMONA SELATAN,Jl. H. Adam Malik No. 9,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-2.1225,120.7129
+40206468,TK TRI BHAKTI PANDAJAYA,Jalan H. Adam Malik,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-2.124058,120.711865
+70049739,SD IT EL-WAHYAIN,"JLN. H. ADAM MALIK,  LORONG 4",Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-2.125,120.7133
+P9985039,PKBM EL - WAHYAIN,Jln. H. Adam Malik Lrg. 4 RT 02. RW 04 Pandajaya,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,PKBM,SWASTA,-2.1253,120.7131
+40204646,SD NEGERI 6 MAYOA,PANDAJAYA,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.1226,120.7214
+40203908,SMAN 2 PAMONA SELATAN,JL. S. SAROSO,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-2.1344,120.7138
+40206611,SMKN 1 PAMONA SELATAN,JLN. TRANS SULAWESI,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-2.0651,120.7127
+40201417,SD NEGERI 7 MAYOA,Mayajaya,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0991,120.7462
+40201337,SD NEGERI UELENE,Uelene,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.1271,120.7378
+40201368,SD NEGERI WAYURA,Jln. Kihajardewantara,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0918,120.7529
+40206443,PAUD TERPADU EFRAT WAYURA,Jalan Buya Lemba,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-2.0904,120.7537
+40201448,SD NEGERI AMPORIWO,Amporiwo,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0729,120.7479
+69768150,SMP SATU ATAP WATUMAETA,Dusun Watumaeta,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-2.0589,120.7373
+40201478,SD NEGERI I MAYOA,Mayoa,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.1424,120.7282
+69858818,SD Negeri Malei,Dusun Malei,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.067002,120.874588
+40202751,SD NEGERI KASINGOLI,KASINGOLI,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0596,120.9041
+40202718,SD GKST GONTARA,Gontara,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.0599,120.9232
+69900175,SD Tunas Lestari Korola,Jl. Trans Pendolo,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.068591,121.012189
+40202806,SD NEGERI GILILANA,Desa Gililana,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.061,121.0336
+40204963,TK GKST MEKAR ELIM KOLAKA,KOLAKA,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0668,121.1058
+40204986,TK MARANATHA TINGKEAO,TINGKEAO,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.123247,121.231158
+69905960,PAUD KB SAYANG IBU,JL. Trans Sulawesi Desa Tingkeao,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,KB,SWASTA,-2.123247,121.231158
+40202607,SMP NEGERI 2 MAMOSALATO,Desa Lijo,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.1292,121.2513
+40202747,SD NEGERI JAMOR JAYA,JLN. ST. Jhosep desa jamor jaya,Kec. Lembo Raya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1196075,121.276539
+40202742,SD NEGERI KOROWALELO,Desa Korowalelo,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1065,121.287
+40202617,SD NEGERI UNDORO,Desa MORA,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1419,121.2515
+40202808,SD NEGERI DASAR,Desa Lijo,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1413,121.2647
+40202513,SD NEGERI TINOMPO,Desa Tinompo,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1271,121.2917
+40202755,SD NEGERI KUMPI,Desa Kumpi,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1282,121.2996
+40202635,SMAN 1 LEMBO,JL. PROTOKOL NO. 2,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-2.137,121.2845
+40202577,SMP NEGERI 1 LEMBO,Beteleme,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.137,121.2845
+40202612,SMKS RAHMANI BETELEME,JL. BETIKUM,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,SWASTA,-2.1431,121.2869
+40202721,SD KRISTEN GKST SAMPALOWO,Desa Sampalowo,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.0585,121.2954
+40202694,SD NEGERI 1 BETELEME,JLN. TADULAKO. NO.552,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1448,121.2814
+69899570,SMP Negeri 3 Lembo,"Desa Lemboroma, Kec. Lembo, Kab. Morowali Utara",Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.1228,121.3226
+40202564,SD NEGERI ONE PUTE,Jl. Kampung Baru,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0586,121.3019
+40205004,TK PGRI SIROSO KOROWOU,KOROWOU,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.12348,121.355667
+40202623,SD NEGERI TOMPIRA,Jalan Trans Sulawesi Desa Tompira,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0782,121.3869
+40204543,SMP NEGERI 2 PETASIA TIMUR SATU ATAP,Jl. Trans Sulawesi Tompira,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.0782,121.3869
+60728745,MIS AL-KHAERAAT TOMPIRA,DESA TOMPIRA,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,MI,SWASTA,-2.0739,121.3894
+69980344,SMK NEGERI 1 PETASIA TIMUR,JL. TRANS SULAWESI,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-2.070196,121.38775
+40202727,SD ALKHAERAAT BUNGINTIMBE,Bungintimbe,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.075,121.4454
+40202585,SMP ALKHAIRAAT BUNGINTIMBE,Desa Bungintimbe,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,SWASTA,-2.075,121.4454
+40202645,SMAS AL-KHAIRAAT BUNGINTIMBE,JL. TRANS SULAWESI BUNGINTIMBE,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,SWASTA,-2.077053,121.448896
+40202816,SD NEGERI BUNGINTIMBE,Desa Bungintimbe,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0795,121.4517
+69930744,TK ALKHAIRAT TOWARA,Towara,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0842,121.4557
+69923841,KB CERIA,JL. Trans Sulawesi Desa Molino,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,KB,SWASTA,-2.1172,121.4654
+40205592,SLB NEGERI MOLINO,"Jln. Trans Sulawesi No. 12 Molino, Kec. Petasia Timur",Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SLB,NEGERI,-2.118,121.4654
+40202619,SD NEGERI MOLINO,Desa Molino,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1168,121.4663
+40202629,SD NEGERI UE BANGKE,Dusun III Ue Bangke,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0909,121.4743
+40202760,SD INPRES LEMBAH SUMARA,Desa Lembah Sumara,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.1171,121.4743
+69856881,SD Negeri Towara,Desa Towara Kec. Petasia Timur,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.081274,121.474343
+69858817,SD NEGERI BENCUE,Desa Peleru Dusun Bencue,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.070786,121.499559
+69856889,SMP Negeri 4 Petasia Timur Satu Atap,Desa Ungkea Kecamatan Petasia Timur Kabupaten Morowali Utara,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.1119,121.5422
+40201488,SD NEGERI 2 BOE,JALAN PARIWISATA NO. 10 KOROMPAKA,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.043,120.6217
+40203906,SMP NEGERI 1 PAMONA TENGGARA,"Jln. Poa, Korobono",Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-2.053,120.7358
+40201416,SD NEGERI KOROBONO,Korobono,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0458,120.739
+40201336,SD NEGERI WATUMAETA,Watumaeta,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0355,120.7278
+40202759,SD NEGERI LEE,Desa Lee,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0488,120.8839
+40202499,SD NEGERI SAEMBA,Desa Saemba,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0323,120.8683
+40202498,SD NEGERI SAEMBA WALATI,Saemba Walati,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0337,120.8764
+40202609,SMP NEGERI 2 MORI ATAS,Jl Poros Pape Tomata,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.0294,120.8689
+40202624,SD NEGERI TOMUI KARYA,Desa Tomui Karya,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0257,120.8936
+40202744,SD INPRES KOYA,Desa Koya,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0284,120.9989
+40204574,SD NEGERI 2 KOLAKA,Desa Kolaka,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0441,121.0991
+69862424,SD Negeri Towi,"Desa Tamainusi, Kecamatan Soyo Jaya",Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.029687,121.210975
+P2965296,PKBM RANO RAYA,Desa Bunta,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-2.0485,121.3054
+P9947941,PKBM ASA AROA,Desa Togo Mulya,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-2.0485,121.3054
+69856880,SD Negeri Tadaku,Desa Tadaku Kecamatan Petasia Barat Kabupaten Morowali Utara,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0369,121.2892
+40202549,SD NEGERI MONDOWE,Desa Mondowe,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0403,121.3025
+40202741,SD NEGERI KOROMATANTU,Desa Koromatantu,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0444,121.3237
+40204922,TK ALKHAIRAAT KOROMATANTU,KOROMATANTU,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0406,121.3268
+40202817,SD NEGERI 1 BUNTA,Bunta,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0459,121.3654
+40204576,SD NEGERI 2 BUNTA,Bunta,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0405,121.3705
+69856888,SMP Negeri 3 Petasia Timur,Jl. Trans Bunta Desa Bunta Kecamatan Petasia Timur Kabupaten Morowali Utara,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.038233,121.387228
+40202550,SD NEGERI PANCA MAKMUR,Desa Panca Makmur,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0405,121.3916
+40203928,SD NEGERI BAU,Desa Bau,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.037,121.4321
+40201413,SD NEGERI PANJO,Panjo,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0063,120.5995
+40201318,SMP NEGERI 3 PAMONA SELATAN,Jl. Anggrek No. 143,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9998,120.5928
+40201392,SD GKST BANCEA,Bancea,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.9967,120.5913
+40201340,SD NEGERI TOKILO,"Desa Tokilo, Kecamatan Pamona Tenggara",Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0241,120.7119
+40201421,SD NEGERI 3 MAYOA,Mayasari,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0198,120.7233
+40206703,SD NEGERI KORONCALAE,KORONCALAE,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0118,120.8213
+40204550,SD SMP NEGERI SATU ATAP BARATI,Barati,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-2.0157,120.8329
+40201171,SD NEGERI BARATI,Barati,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-2.0157,120.8329
+40202746,SD NEGERI 1 KOLAKA,Desa Kolaka,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0243,120.9406
+40204937,TK BUKIT ZAITUN TOMATA,TOMATA,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0009,120.9765
+40202679,SD NEGERI 2 TOMATA,Desa Tomata,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9995,120.975
+40202657,SD NEGERI 1 TOMATA,Desa Tomata Rt 10 Rw 02,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9961,120.9782
+40202584,SMKN 1 MORI ATAS,JL. TARIKMATA NO. 7,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-1.9955,120.9819
+40202570,SD NEGERI LONDI,Jln Kartini No.08,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0044,121.0098
+40204961,TK GKST KALVARI TAENDE,TAENDE,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0146,121.0396
+40202509,SD NEGERI TAENDE,Desa Taende,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0165,121.0472
+40202801,SD NEGERI ENSA,"Jln Trans. Sulawesi, Ensa",Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0136,121.0721
+40202717,SD GKST ENSA,Ensa,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.0127,121.0727
+40202587,SMP KRISTEN GKST ENSA,Desa Ensa,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,SWASTA,-2.0136,121.0736
+69787782,SD NEGERI KOROMONTO,Jalan Dusun Koromonto,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0198,121.091
+40202558,SD Negeri Peonea,Desa Peonea,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0136,121.1126
+40204957,TK GKST EBEN HAEZER GONTARA,GONTARA,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.0116,121.1149
+70003616,SMKN 1 Petasia Barat,Jl. Budi Utomo,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-2.0148407,121.1881734
+40202593,SMP NEGERI 1 PETASIA BARAT,Jln. Trans Maralee-Tiu,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-2.0249,121.2992
+40202588,SMP KRISTEN GKST TIU,Jl. Jend. Sudirman No. 9 Maralee,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,SWASTA,-2.0187,121.2973
+40202722,SD GKST TIU,Desa Tiu,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-2.0157,121.2948
+40202516,SD INPRES TIU,Tiu,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0147,121.2961
+40202640,SMAN 2 PETASIA,JL.WULANDERI NO.100,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-2.021,121.3362
+40204921,TK ALKHAIRAAT KOLONODALE,KOLONODALE,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-2.023218,121.341733
+40202740,SD NEGERI KOROLOLAMA,Korololama,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0162,121.3396
+P2966441,PKBM   FEYZAH SALSABILAH,KELURAHAN KOLONODALE,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-2.0062,121.3496
+P9954082,PKBM FYAT SEZQIN,Jalan Poros Ganda-ganda,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-2.0062,121.3496
+40202683,SD NEGERI 3 KOLONODALE,Jl. Kh. Dewantara No.!4 ,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-2.0013,121.3396
+40201190,SD NEGERI BANCEA,Desa Bancea,Kec. Pamona Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9925,120.5839
+40201360,SD NEGERI TINDOLI,Tindoli,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9875,120.687
+40204549,SD SMP NEGERI SATAP TINDOLI,Desa Tindoli,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9873,120.687
+40202580,SMP NEGERI 1 MORI ATAS,Jln. Tarikmata No.7,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.995,120.981
+40202637,SMAN 1 MORI ATAS,JL. TARIK MATA NO.  369,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.9887,120.982
+40202654,SD NEGERI 1 TALIWAN,Desa Wawondula,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9707,120.9848
+40202590,SMP NEGERI 4 MORI UTARA,Jl. Tadulako -Trans Sulawesi ,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9704,120.9791
+40202675,SD NEGERI 2 TALIWAN,Desa Tabarano,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9694,120.9813
+40202766,SD NEGERI LANUMOR SMP NEGERI SATAP MORI ATAS,Desa Lanumor,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9713,121.0813
+40202626,SD NEGERI TONTOWEA,Desa Tontowea,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.988,121.2928
+40209862,MAS AL-KHAIRAAT PETASIA,JLN. SULTAN HASANUDDIN NO. 83,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,MA,SWASTA,-1.9938,121.3392
+40202665,SD NEGERI 1 KOLONODALE,"Jl. St. Hasanuddin, No.86A",Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9949,121.3402
+P9984643,PKBM BINA POTENSI,Jalan Jenderal Sudirman No. 08,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.989961,121.33776
+40202728,SD ALKHAIRAAT KOLONODALE,Jln. Ahmad Yani,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.9884,121.3391
+40202719,SD GKST KOLONODALE,Jln. Jendral Sudirman No. 05,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.9853,121.3377
+40202686,SD NEGERI 2 KOLONODALE,Jl. Yos Sudarso No. 35,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9865,121.3393
+40202638,SMAN 1 PETASIA,JL. PATIMURA NO. 8 KOLONODALE,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.9835,121.3373
+40202591,SMP NEGERI 1 PETASIA,Jl. Jend. Sudirman No. 28,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.984,121.3383
+40202788,SD INPRES 5 KOLONODALE,Jl. Bumi Nangka Kolonodale,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9799,121.338
+40202610,SMP NEGERI 2 PETASIA,Jl. Dr. Saharjo.sh 03,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9732,121.3382
+40202611,SMKN 1 PETASIA,"JL. DR. SUHARDJO, SH  NO. 03 B",Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-1.9728,121.3366
+40210210,MTSN 1 MOROWALI UTARA,"JALAN KUDA LAUT,KELURAHAN BAHOUE",Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,MTs,NEGERI,-1.97,121.3393
+69983132,MTSS AL-KHAIRAAT DESA KOYA,SIS AL-JUFRI ,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,MTs,SWASTA,-1.9817,121.379
+40201152,SD NEGERI SALINDU,Jl.TRANS SULAWESI  NO.32,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9544,120.4846
+40201373,SD INPRES TOLAMBO,Desa Tolambo,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9644,120.6797
+40204280,SMPN SATAP MASEWE,Masewe,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9645,120.7696
+40201133,SD NEGERI MASEWE,Desa Masewe,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9648,120.7698
+69754412,SD NEGERI TANAH TUWU,DESA BARATI,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9541,120.8009
+40204966,TK GKST SILOAM SAEMBA,SAEMBA,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.952599,120.933354
+40204559,SMP NEGERI 2 MORI UTARA,Lembontonara,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9442,120.9322
+69900712,SMK NEGERI 1 MORI UTARA,Jl. Poros Tiwaa - Era No. 7,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-1.9435,120.9323
+40202517,SD NEGERI TIWAA,Jln. Trans Sulawesi,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9374,120.9238
+40204962,TK GKST LANUMOR,LANUMOR,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.962555,121.092107
+69856882,SD Negeri Ululaa,Desa Ululaa Kecamatan Petasia Barat Kabupaten Morowali Utara,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9586,121.2242
+69856879,SD Negeri 2 Moleono,Dusun Peilia,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9548,121.2278
+40204575,SD NEGERI 1 ULU LAA,Kab. Morowali Utara,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.962189,121.2459644
+40202804,SD INPRES GANDA-GANDA,Ganda-ganda,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9525,121.3395
+40204578,SD NEGERI LAMBOLO,Kab. Morowali Utara,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9378,121.3152
+40201124,SD NEGERI OWINI,Jalan Pendidikan No.1,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9329,120.5243
+40201143,SD NEGERI TAIPA,Taipa,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9258,120.5472
+40201158,SD NEGERI DULUMAI,Dulumai,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9156,120.6661
+40201184,SD NEGERI KANCUU,Desa Kancuu,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.92,120.7904
+40201132,SD NEGERI MATIALEMBA,Jl. Trans Sulawesi,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9221,120.8694
+40205721,SMP NEGERI SATU ATAP MATIALEMBA,MATiALEMBA,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9221,120.87
+40201127,SD NEGERI PANCASILA,Desa Pancasila,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9264,120.895
+40201157,SD NEGERI MAGAPU,Jl Baliwulu No.21,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9199,120.9078
+40201323,SMP NEGERI 2 PAMONA TIMUR,Jl Trans Sulawesi No. 1,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9087,120.9057
+69775313,SMAN 2 MORI ATAS,Jl. Tomata_Pape No.007,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.9326,120.9669
+69787060,SMP NEGERI 3 MORI UTARA SATU ATAP,DESA MAYUMBA,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9236,120.9743
+40202531,SD NEGERI MAYUMBA,Jl. Tamalaera,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.924,120.9748
+40202692,SD NEGERI 2 PELERU,Peleru,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9174,121.0524
+40202672,SD NEGERI 1 PELERU,Desa Peleru,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9101,121.0524
+69844525,KB ANATAPURA SIBOWI,JL. POROS PALU-KULAWI DESA SIBOWI KM. 29,Kec. Tanambulava,Kab. Sigi,Prov. Sulawesi Tengah,KB,SWASTA,-1.933227,121.201172
+40202592,SMP NEGERI 1 SOYO JAYA,Desa Malino,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9162,121.2662
+40202651,SD NEGERI TOKONANAKA,Tokonanaka,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9323,121.483
+40204544,SMP NEGERI 3 SATU ATAP BUNGKU UTARA,Desa Matube,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9333,121.5491
+40202530,SD NEGERI MATUBE,MATUBE,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9333,121.5494
+40201307,SMP NEGERI 2 PAMONA BARAT,Jln. Pariwisata No. 100,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.9025,120.5191
+40201486,SD NEGERI 2 MEKO,Meko,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8878,120.508
+40204647,SD NEGERI 3 MEKO,JLN PARIWISATA,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8947,120.5246
+40201477,SD NEGERI 1 MEKO,Desa Meko,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8868,120.5249
+69875560,SMK Negeri 1 Pamona Timur,Desa Tiu,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.886765,120.76771
+40201375,SD NEGERI SINGKONA,Singkona,Kec. Pamona Tenggara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.9034,120.7887
+40201342,SMAN 1 PAMONA TIMUR,Jl. Trans Sulawesi,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.8876,120.8077
+40201198,SMP NEGERI 1 PAMONA TIMUR,Jl. Torulemba No. 58,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.8936,120.8208
+20401471,SD NEGERI 1 TARIPA,Jl.torulemba No.56,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8924,120.822
+40201384,SD KRISTEN GKST POLEGANYARA,JL. Trans Sulawesi,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.8844,120.8085
+40201325,SMP GKST TARIPA,Jl.torulemba No.6,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.8901,120.8237
+40201443,SD NEGERI 2 TARIPA,Desa Taripa,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8894,120.8236
+40201381,SD KRISTEN GKST TARIPA,Petiro Jln. Pelima no 56,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.8883,120.8276
+40201185,SD NEGERI KAMBA,Jl. Ki Hajar Dewantara No 77,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.89,120.8543
+40201122,SD NEGERI OLUMOKUNDE,Jl. Tadulako No.101,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.896,120.8609
+40202524,SD NEGERI TAMONJENGI,Tamonjengi,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9064,120.9368
+40204523,SMP NEGERI 1 MORI UTARA,Desa Peleru,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.8961,121.0515
+P9948233,PKBM MUTIARA QWIN,Jalan Trans Sulawesi,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.9001,121.0624
+40202802,SD NEGERI ERA,Desa Era,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.8946,121.1191
+40202542,SD NEGERI MALINO,Desa Malino,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.9031,121.1876
+40201441,SD NEGERI 2 TOINASA,Desa Uranosari,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8562,120.5081
+69935386,PAUD TERPADU PERMATA HATI SALUKAIA,Desa Salukaia,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.8663,120.5301
+40201151,SD NEGERI 1 SALUKAIA,Salukaia,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8691,120.5337
+40203882,SD NEGERI 2 SALUKAIA,Jl. Pariwisata,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8623,120.5289
+40204615,SMP NEGERI 6 PAMONA UTARA,DESA PEURA,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.8525,120.6459
+40201385,SD GKST PEURA,Desa Peura,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.8512,120.6445
+69758469,SMPN 5 MORI ATAS SATU ATAP,LANUMOR,Kec. Mori Atas,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.8683,121.0091
+40202553,SD NEGERI PARAWI,Desa Paawaru,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.8712,121.6564
+40203884,SD NEGERI 3 TOINASA,Jl. Pariwisata,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8416,120.5171
+40203907,SMAN 1 PAMONA BARAT,JL. WISATA,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.8453,120.5218
+40201300,SMP NEGERI 1 PAMONA BARAT,Jln. Melati,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.8416,120.5204
+40201469,SD NEGERI 1 TOINASA,Desa Toinasa,Kec. Pamona Barat,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.8431,120.526
+40202776,SD NEGERI 4 KOLONODALE,Jl. Wulanderi No.31 A,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.822,120.8782
+40202763,SD NEGERI LEMBONTONARA,Desa Lembontonara,Kec. Mori Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.8404,121.0596
+P2966445,PKBM WULANDERI,Jalan Trans Sulawesi,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.8189,121.2281
+40201129,SD NEGERI PANJOKA,Desa Panjoka,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.819,120.4748
+40201388,SD KRISTEN GKST KELEI,Desa Kelei,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7874,120.6924
+40203899,SMP NEGERI 3 PAMONA TIMUR,Jl. A. Mobanggo No. 5 Kelei,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7879,120.6963
+40201160,SD NEGERI DIDIRI,Desa Didiri,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.79,120.7493
+40202534,SD NEGERI MOHONI,"Desa Mohoni, Kec. Petasia Timur",Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7954,121.1701
+40202571,SD NEGERI TOKALA ATAS,Desa Tokala Atas,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7899,121.7416
+69931856,TK. PGRI AL-HIDAYAH TOKALA ATAS,Tokala Atas,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.7895,121.7406
+40202681,SD NEGERI 3 BATURUBE,Uewaju,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.787,121.7887
+40201422,SD NEGERI 2 TONUSU,Desa Leboni,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7856,120.5512
+40206428,TK TIBERIAS TONUSU,Jalan Suolemba Desa Tonusu,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.78,120.5487
+69900539,TK WIDYA DHARMA LEBONI,Desa Leboni,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.7835,120.5561
+40201467,SD NEGERI I TONUSU,Desa Tonusu,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7837,120.5585
+40206414,TK GALILEA LEBONI,DESA LEBONI,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.7816,120.5578
+40206411,TK GKST LIDIA WERA,JLN. WERA SUOPA,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.7777,120.5609
+40204645,SMP NEGERI 3 PAMONA UTARA,Tonusu,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7808,120.5649
+69923076,KB STAR KIDS,Desa Leboni,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.777,120.5716
+40205718,SD NEGERI 2 MAYAKELI,DESA MAYAKELI,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7832,120.5851
+40201131,SD NEGERI MAYAKELI,Desa Soe,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7748,120.5903
+40204547,SMP NEGERI 5 PAMONA UTARA,Jln kemakmuran no. 2 ,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7688,120.586
+40201335,SD NEGERI WERA LEBONI,Jalan Air Terjun Wera Saluopa,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.759,120.5499
+40201391,SD GKST BUYUMPONDOLI,Jalan Handayani No. 3,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7748,120.6052
+40201351,SMKS TEKNIK EKLESIA TENTENA,JL. LAMONGI,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.769,120.6106
+233246  ,Sekolah Tinggi Teologi Pantekosta Poso, ,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,-1.7678539,120.6149843
+40201350,SMKS GKST TENTENA,JL. TORULEMBA NO. 81 TENTENA,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.7635,120.6253
+40201331,SMAS GKST 2 TENTENA,Jalan Torulemba,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMA,SWASTA,-1.7628,120.6365
+233247  ,Sekolah Tinggi Teologi Gereja Kristen Sulawesi Tengah Tentena, Jl. Torulemba No. 21 Tentena,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,-1.7622426,120.6386487
+40201332,SMAS GKST 1 TENTENA,JL. RUMBENUNU NO.1 ,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMA,SWASTA,-1.7613,120.6373
+40205723,SMKS GKST 2 TENTENA,Jalan Torulemba ,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.7616,120.6382
+161017  ,Universitas Kristen Tentena,Jalan Torulemba No 21 ,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Universitas,SWASTA,-1.76162,120.638912
+40201347,SMP GKST 2 TENTENA,Tentena,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.7637,120.643
+40201377,SD GKST 3 TENTENA,Jln.  Rumbenunu No. 25,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7605,120.6393
+40201450,SD NEGERI 7 TENTENA,Jl. Dian Wacana,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7568,120.6286
+40201348,SMP KRISTEN GKST 1 TENTENA,Jl. Ue Datu No. 31,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.7606,120.6401
+40201362,SD GKST 2 TENTENA,JLN. PUSELEMBA NO. 26,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7575,120.6504
+40201182,SD NEGERI KELEI,Kelei,Kec. Pamona Timur,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7836,120.6948
+40202520,SD NEGERI TAMAINUSI,Desa Tamainusi,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7696,121.2971
+69772580,SMP Negeri 3 Petasia Barat Satu Atap,Kab. Morowali Utara,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7721,121.3957
+69858807,SD NEGERI POKEANG,Desa Pokeang Kecamatan Bungku Utara,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.784738,121.695689
+69889065,SD ANUGRAH,Dusun Uetuwu,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.764051,121.670683
+40202725,SD GKST TARONGGO,Jl. Ratobae No. 1,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.7587,121.6767
+40202502,SD NEGERI POSANGKE,Posangke,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7758,121.7142
+60724754,SMPN 5 BUNGKU UTARA SATU ATAP,POSANGKE,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.775,121.7145
+40202540,SD NEGERI LOSONG,Woomparigi ,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7657,121.7426
+40204524,SMP NEGERI 2 BUNGKU UTARA,Jln Siswa No.1,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7644,121.7437
+40202522,SD NEGERI TAMBAROBONE,Tambarobone,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7572,121.7204
+40202660,SD NEGERI 2 BATURUBE,Baturube,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7776,121.7931
+40210209,MTSN 2 MOROWALI UTARA,BATURUBE,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,MTs,NEGERI,-1.7725,121.7901
+60723451,MIN MOROWALI UTARA,"JLN.,MANGGIS LRG. SISWA NO.02 BATURUBE",Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,MI,NEGERI,-1.7725,121.7929
+40202576,SMP NEGERI 1 BUNGKU UTARA,Jln. Ketimun No. 05 Baturube,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.77,121.7931
+40202695,SD NEGERI 1 BATURUBE,Jln. Durian No.07 Baturube,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7699,121.7963
+40202515,SD NEGERI TIRONGAN BAWAH,Tirongan Bawah,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7658,121.7938
+40202633,SMAN 1 BUNGKU UTARA,JL. NANGKA NO. 35,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.7653,121.7992
+40202750,SD NEGERI KALOMBANG,Kalombang,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7577,121.7836
+40203886,SD NEGERI 9 TENTENA,Jalan Posunga,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7527,120.6336
+40201346,SMP KRISTEN GKST 3 TENTENA,JALAN RUMBENUNU NO. 131 KULINTI PAMONA,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.7525,120.6398
+40201452,SD NEGERI 6 TENTENA,Desa Kulinti,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7506,120.6401
+40204282,SD NEGERI 10 TENTENA,Petirodongi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7455,120.6398
+40201470,SD NEGERI 1 TENTENA,Tentena,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7548,120.6486
+69980412,SD MUHAMMADIYAH TENTENA,Jalan Setia Budi Tentena,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.752856,120.649899
+40201364,SD GKST 1 TENTENA,Jln Samratulangi No. 309,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7547,120.6509
+40201442,SD NEGERI 2 TENTENA,Petirodongi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7432,120.6457
+40201176,SD NEGERI LENA,Desa Lena,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7546,120.6544
+P9954305,PKBM Lamongi,Jln. Rumbenunu,Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.7447,120.6609
+40201418,SD NEGERI 5 TENTENA,Jln Setia Budi No. 8 Sawidago,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7438,120.6588
+40201197,SMP NEGERI 1 PAMONA UTARA,"Jl.Jendral Sudirman No. 21, Tentena",Kec. Pamona Puselemba,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7412,120.656
+40201378,SD GKST 4 TENTENA,Sawidago,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.7384,120.6666
+40203883,SD NEGERI 3 TENTENA,Jalan Trans Sulawesi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7339,120.6543
+69787914,SMP NEGERI SATU ATAP LENA,DESA LENA,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7353,120.6659
+40201343,SMAN 1 PAMONA UTARA,JL. TRANS SULAWESI,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.7308,120.6528
+69754409,SMP NEGERI TOARO,Dusun Toaro,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7315,120.6866
+60724749,SMPN 3 PETASIA SATU ATAP,GILILANA,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7503,121.093
+60728743,MIS TSAMARATUL HIZBI,DESA PANCA MAKMUR,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,MI,SWASTA,-1.7356,121.1501
+60724751,SMP NEGERI 2 PETASIA BARAT SATU ATAP,Desa Togo Mulya,Kec. Petasia Barat,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7488,121.2778
+40202527,SD INPRES TANDOYONDO,Desa Tondoyondo,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.756,121.2976
+40202523,SD NEGERI TAMBAYOLI,Desa Tambayoli,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7372,121.3243
+40202602,SMP NEGERI 2 SOYO JAYA,Desa Lembah Sumara,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.726704,121.306379
+40206563,SMAN 1 SOYO JAYA,LEMBAH SUMARA,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.726643,121.306115
+40202630,SD NEGERI UEMASI,Uemasi,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.75,121.719
+40202489,SD NEGERI SALUBIRO,SALUBIRO,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7471,121.7637
+40202514,SD NEGERI TIRONGAN ATAS,Desa Tirongan Atas,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7488,121.765
+69902028,SD Woonsa,Dusun Woonsa ,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.7302,121.8063
+40202652,SD NEGERI LEMOWALIA,Lemowalia,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7302,121.8063
+40202494,SD NEGERI SILITI,Desa Siliti,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.73,121.8062
+40201148,SD NEGERI SAOJO,Desa Saojo,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.7034,120.6542
+40202525,SD NEGERI TANAUGE,Tanauge,Kec. Petasia,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7023,121.1803
+40202736,SD NEGERI LEMO,Lemo,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7082,121.7531
+40202512,SD NEGERI TINGKULUI,Desa Tanakuraya,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6979,121.73
+40204516,SD ALESINTOWE,Uempanapa,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.7051,121.7546
+40202535,SD NEGERI MOKOTO,Mokoto,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7092,121.7752
+60724755,SMPN 6 BUNGKU UTARA SATU ATAP,SILITI,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.7239,121.8012
+40202622,SD NEGERI UERURU,Ueruru,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.7173,121.8239
+40201173,SD NEGERI UELINCU,Uelincu,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6775,120.4992
+40204281,SD NEGERI 8 TENTENA,Petirodongi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6882,120.595
+40204273,SMKN 1 PAMONA UTARA,"TRANS SULAWESI, SULEWANA",Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.6725,120.6611
+69875557,SMA NEGERI HARMONI,Jalan Trans Sulawesi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.6696,120.6618
+69770331,SMKS KESEHATAN PALINDONDAYA,JL. TRANS SULAWESI,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.6687,120.6615
+69775314,SMAN 2 SOYO JAYA,Jl. Poros Malino No 001,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.6933,121.1419
+40210212,MTSS TSAMARATUL HIZBI,-,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,MTs,SWASTA,-1.665708,121.18812
+40202764,SD NEGERI LEMBOROMA,Desa Lemboroma,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6916,121.381
+40202811,SD NEGERI BOBA,Desa Boba,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.692,121.8379
+40204624,SMPN 4 MAMOSALATO SATU ATAP,Jl. Pangkape No. 02 Kolo Atas,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.67,121.8543
+40202745,SD NEGERI KOLO ATAS,Kolo Atas,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6699,121.8541
+40204556,SMP NEGERI 3 MAMOSALATO SATU ATAP,"Jl. Pendidikan, Desa Kolo Bawah, Kec. Mamosalato, Kan.Morowali Utara",Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.6946,121.893
+40202737,SD NEGERI KOLO BAWAH,Kolo Bawah,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6946,121.8931
+40201458,SD NEGERI 4 TENTENA,Toaro,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6446,120.6053
+40204276,SMP NEGERI 4 PAMONA UTARA,Jln.Pakoka,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.6564,120.6634
+40201483,SD NEGERI 2 SULEWANA,Desa Sulewana,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6545,120.6654
+40201474,SD NEGERI 1 SULEWANA,"RT 8, Dusun 2, Desa Sulewana",Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6517,120.6617
+40201322,SMP NEGERI 2 PAMONA UTARA,Jl Trans Sulawesi,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.6526,120.6834
+40201149,SD NEGERI SANGIRA,Desa Sangira,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6494,120.6888
+60724725,PAUD TK  MANDIRI MAKMUR,DESA BAU,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.6632,121.1505
+69931666,KB. BINA ANPRASA SUMARA JAYA,Sumara Jaya,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,KB,SWASTA,-1.6643,121.281
+40202508,SD INPRES SUMARA JAYA,Sumara Jaya,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6637,121.2814
+69775317,SMKN 1 BUNGKU UTARA,Jl. Sasule,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMK,NEGERI,-1.6363,121.7552
+40202548,SD NEGERI MOMO,"Desa Momo, Kecamatan Mamosalato",Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6653,121.9174
+40202676,SD NEGERI GIRI MULYA,Jalan Trans Sulawesi No. 01 Girimulya,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6461,121.9313
+40202578,SMP NEGERI 1 MAMOSALATO,Jl. Cempaka  No. 71 Mamosalato,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.6517,121.9567
+40202655,SD NEGERI 1 TANANAGAYA,Desa Tananagaya,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6477,121.9579
+40202634,SMAN 1 MAMOSALATO,Jln.Trans Sulawesi,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMA,NEGERI,-1.6465,121.9588
+40202677,SD NEGERI 2 TANASUMPU,Jl. Tadulako No. 108 Tanasumpu,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6367,121.975
+40201178,SD NEGERI KUKU,Desa Kuku,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.6159,120.712
+40203903,SMP SATU ATAP NEGERI UELINCU,Uelincu,Kec. Pamona Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.6104,120.7565
+60728775,MTS BAITUL MUTTAQIN,DESA TANASUMPUH,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,MTs,SWASTA,-1.627208,121.96628
+40205054,TK PAUD NEGERI DHARMA WANITA PERSATUAN,TANASUMPU,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,NEGERI,-1.634027,121.975399
+40202656,SD NEGERI 1 TANASUMPU,Desa Tanasumpu,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6333,121.9759
+40202521,SD NEGERI TAMBALE,Desa Tambale,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6131,122.0268
+69768326,TK MELATI INDAH GUNUNG KRAMAT,JL. PENDIDIKAN NO.1,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.616,122.0633
+69726700,MIS AL IKHLAS TOMBIANO,Jalan Pendidikan,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.584523,120.987788
+40210259,MTSS AL-ABRAAR,JL. TRANS POSO-AMPANA NO.49 NGGAWIA,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.58415,121.014282
+40202543,SD NEGERI MALINO JAYA,Desa Malino Jaya,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.6,121.1597
+40204577,SD NEGERI UNGKEA,Desa Ungkea,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.5858,121.1468
+P2966439,PKBM KASINTUWU  ANTA,Jalan Trans Sulawesi Desa Tandoyondo,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.59,121.1697
+40202798,SD NEGERI BIMOR JAYA,Desa Bimor Jaya,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.5814,121.2368
+40202556,SD NEGERI PEB OOA,Desa Pebooa,Kec. Petasia Timur,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.5858,121.304
+60728238,MAS DARUL HIKMAH AL-KHAERAAT,JL. MANGGIS LRG. SISWA,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,MA,SWASTA,-1.586342,121.603487
+69947845,SMP NEGERI 7 BUNGKU UTARA,Desa Tanakuraya,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5859547,121.690652
+69768325,TK DHARMA WANITA LEMBAH KRAMAT,JL. PONGTIKU NO.1,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,TK,SWASTA,-1.5976,122.0582
+40201903,SD INPRES HTI TOILI,Desa Bumi Harapan,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.5968,122.0656
+40201878,SD INPRES UWELOLU,JL.TADULAKO,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.5836,122.0971
+40201902,SD INPRES GUNUNG KERAMAT,Jl. Pendidikan No. 2,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.5903,122.1157
+40204168,SMP NEGERI 2 TOILI BARAT,Jl. Pendidikan No.1 Gunung Keramat,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5907,122.1165
+69983615,MAS JABAL RAHMAH,"JL. PESANTREN NO.2 DESA GUNUNG KERAMAT,KEC. TOILI BARAT,KAB. BANGGAI,PROV. SULAW",Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,MA,SWASTA,-1.5897,122.1192
+40201691,SD NEGERI RATA,Desa Rata,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.6076,122.1327
+60723413,MIS ALKHAIRAAT PATIWUNGA,JL.TRANS POSO-NAPU,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.570823,120.564999
+40201150,SD NEGERI SANGGINORA,Desa Sangginora,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.5734,120.6232
+40203901,SMP SATU ATAP SANGGINORA,Jl. Garuda No.11,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5736,120.624
+40201427,SD GKST DEWUA,Jalan Setia Budi No.1,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.5465,120.5919
+40201156,SD NEGERI TAMPEMADORO,Tampemadoro,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.5661,120.7297
+40204278,SMP SATAP NEGERI TAMPEMADORO,Tampemadoro,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5661,120.7297
+40203932,SD NEGERI DATARAN BUGI,Jl. Sunan Muria No. 1,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.551,121.1806
+69849507,Tsamaratul Hizbi,Jl. WR. Supratman,Kec. Soyo Jaya,Kab. Morowali Utara,Prov. Sulawesi Tengah,MA,SWASTA,-1.56689,121.24209
+40206562,SMP NEGERI 4 BUNGKU UTARA SATU ATAP,Dusun Penang,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5604,121.6717
+69896784,SD SALIANO,Dusun Saliano,Kec. Bungku Utara,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,SWASTA,-1.5488,121.7366
+40206371,TK ZAITUN TAMPEMADORO,Jalan Kenangan,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.5228,120.749102
+40203889,SD NEGERI TRANSMIGRASI WATUAWU,Transmigrasi Watuawu Di Ratoombu,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.5221,120.7821
+40203347,SMP NEGERI 1 TOJO BARAT,Jl. KKN  No. 70,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5379,120.9752
+40203283,SD NEGERI TANAMAWAU,Tanamawau,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.5216,121.0485
+40203475,SD NEGERI 2 BALINGARA,Desa Balingara,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.529,121.1171
+40203400,SD NEGERI KALEMBA ,Desa Kalemba 1,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.518,121.1794
+69985317,SD NEGERI SEA,Sea,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.534815,121.826434
+69751147,RA/BA/TA AL IKHLAS TANGKURA,JL. TRANS NAPU,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.496717,120.630642
+40201186,SD NEGERI KALORA,Kalora,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.489,120.623
+40201445,SD NEGERI 2 TANGKURA,Desa Tangkura,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.49,120.6331
+40201128,SD NEGERI PANDIRI,"Jln. Trans Sulawesi, No.09, Desa Pandiri",Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.5151,120.7496
+69965083,SDN BUYUNGKATEDO,Dusun Buyungkatedo,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.5095399,120.7637313
+40201319,SMP NEGERI 3 LAGE,Jl.trans Sulawesi,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.5013,120.7574
+40206338,TK GKST EKLESIA PANDIRI,Jalan Trans Sulawesi,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.503581,120.762405
+69787794,SMP NEGERI SATU ATAP TRANS WATUAWU,RATOOMBU,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.492,120.7351
+40206340,TK GKST KARMEL WATUAWU,Jalan Trans Sulawesi,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.487365,120.76129
+40201482,SD NEGERI 1 WATUAWU,JL. BANUMBU NO. 58,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4853,120.766
+40203313,SMP NEGERI 4 TOJO,Kalemba,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4959,121.1313
+40204939,TK CERIA DOLUPO KARYA, Dusun 2 Dolupo Karya Kec Lembo Raya,Kec. Lembo,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.49565,121.491246
+69985318,SD NEGERI UEPAKATU,Uepakatu,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.491822,121.882752
+69768240,SMKN 1 POSO PESISIR UTARA,Jl. Trans Sulawesi,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4754,120.5239
+40201137,SD NEGERI MALITU,Malitu,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4697,120.6213
+40201472,SD NEGERI I TANGKURA,Jln. Trans Poso - Napu,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4857,120.6352
+40204272,SMAN 1 POSO PESISIR SELATAN,"JL. ANGKASA, PATIWUNGA ",Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.471,120.6322
+40206429,PAUD TERPADU GKST TORSINA PATIWUNGA,DESA PATIWUNGA,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.469797,120.633724
+40201313,SMP NEGERI 1 POSO PESISIR SELATAN,Jalan Sungai Puna,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4685,120.634
+40201126,SD NEGERI PADALEMBARA,Padalembara,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4629,120.6177
+40201140,SD NEGERI PATIWUNGA,Desa Patiwunga,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4635,120.6385
+40206476,SDIT PERMATA ISLAM 1 ,"Jl.P.Irian Jaya,Lrg.Cendrawasih",Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4622,120.657
+40201437,SD NEGERI 2 WATUAWU,Jl.trans Sulawesi No.17,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.479,120.7654
+40201141,SD NEGERI TAMBARO,"Desa Tambaro, Kec. Lage",Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4609,120.765
+P9968098,PKBM. Tombiano Indah,Jl. Trans Sulawesi,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4705814,121.0135747
+40203288,SD NEGERI GANDALARI,Desa Korondoda,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4586,121.093
+69944609,TK PANCARAN KASIH,Desa Korondoda,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.456326,121.092789
+69931687,TK PKK MASINDO LIJO,Lijo,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,TK,SWASTA,-1.463083,121.879921
+69947255,SD NEGERI UEMALINGKU,Dusun III Uemalingku,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.4566,121.9095
+60730210,SMP NEGERI 6 TOILI BARAT,Jl Jend. Sudirman Desa Mantawa B,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.467779,122.115179
+40204596,SD AL-KHAERAAT MARANDA, MARANDA,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4278,120.4977
+40205850,SD NEGERI TAUNCA,Desa Taunca,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4405,120.6076
+40201166,SD NEGERI BETALEMBA,Betalemba,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4518,120.6314
+69751148,RA/BA/TA ALMARHAMAH II,JL. TRANS POSO NAPU,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.438285,120.64765
+40206296,SDIT PERMATA ISLAM 2 ,JLN TRANS SULAWESI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4389,120.6492
+40201454,SD NEGERI 6 KASIGUNCU,Tabalu,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4343,120.6504
+40201460,SD NEGERI 4 KASIGUNCU,"Jln.Trans Napu,Dusun Ratolene,Kel. Kasiguncu",Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4292,120.6519
+40201480,SD NEGERI 1 KASIGUNCU,Jalan Anggrek No. 06,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4266,120.6719
+40201430,SD NEGERI 28 POSO,Jln.Metompa. No.02,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4304,120.7148
+40201146,SD NEGERI SINTUWULEMBA,Jl. Ki Hadjar Dewantara No 2,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4536,120.7695
+40204271,SMAN 1 LAGE,JL. TRANS SULAWESI,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4459,120.7705
+69920213,TK BAKTI ABADI SINTUWULEMBA,Desa Sintuwulemba,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.44412,120.774078
+40201304,SMP NEGERI 1 LAGE,Jln. Trans Sulawesi No 91 A,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4417,120.7745
+40201144,SD NEGERI TAGOLU,Jl. Talamuru No. 12,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4371,120.771
+40206326,TK DHARMA WANITA TAGOLU,JLN. TRANS SULAWESI,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.434767,120.779228
+40201383,SD GKST TAGOLU,Jl. Trans Sulawesi No. 19,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4335,120.7726
+40206332,TK GKST ELIM MALIWUKO,Jalan Trans Sulawesi,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.432579,120.772576
+40201475,SD NEGERI 1 SILANCA,Desa Silanca,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4394,120.7939
+40206358,TK MAWAR SARON SEPE,Desa Sepe,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.435668,120.793047
+40201484,SD NEGERI 2 SILANCA,Silanca,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4354,120.7949
+40205706,SMP NEGERI 4 LAGE,SILANCA,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4337,120.7947
+40201136,SD NEGERI MALIWUKO,Jl. Trans Sulawesi No 06,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4255,120.7679
+40205847,SD NEGERI 3 SILANCA,Desa Silanca,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4336,120.7972
+40206330,PAUD TERPADU EKSODUS RATOOMBU,Desa Ratoombu,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.430212,120.793983
+40205422,SD NEGERI TANAMBI,"Dusun IV Tanambi, No. 266",Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4406,121.0121
+40203281,SD NEGERI TATARI,Jln. Trans Sulawesi,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4341,121.0349
+40203287,SD NEGERI KABALO,Kabalo,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.446,121.0557
+40206009,SMP NEGERI 2 TOJO BARAT,Jln. Trans Sulawesi. No 27 Mawomba ,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.447,121.0598
+40203299,SD NEGERI MAWOMBA,Mawomba,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4448,121.0684
+40203301,SD NEGERI MALEWA,Malewa,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4524,121.0757
+69793150,TK GKST EBENHAESER MALEWA,TRANS SULAWESI,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.45255,121.076471
+40203274,SD NEGERI TOMBIANO,"Jln. Trans Sulawesi, Desa Tombiano",Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4277,121.0276
+40205925,TK ALKHAERAAT LEMORO,LEMORO,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.447338,121.083755
+40203280,SD NEGERI TAYAWA,Tayawa,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4443,121.0947
+40205982,TK NEGERI TAYAWA,Tayawa,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-1.443702,121.09486
+69944604,TK ALKHAIRAAT BAHARI,Jl. Samudra,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.438881,121.098253
+40205423,SD NEGERI BAHARI,Desa Bahari,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4402,121.1012
+60723491,MIS ALKHAIRAAT UEKULI,UEKULI,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.4384,121.1032
+40205959,TK NEGERI UEKULI,UEKULI,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-1.429351,121.116505
+40203366,SMP NEGERI 1 TOJO,Jln. Ki. Hajar Dewantara No 22 Desa Uekuli,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4293,121.1181
+40209895,MAS ALKHAIRAAT UEKULI,JL. SIS ALJUFRIE NO.1,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,SWASTA,-1.4524,121.1602
+40203293,SMP NEGERI 5 TOJO,Desa Tongku,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4391,121.1937
+40206245,TK PAUD MUTIARAKU,JL. PADIGATA NO 410 DUSUN SINGGA LAKATAN,Kec. Galang,Kab. Tolitoli,Prov. Sulawesi Tengah,TK,SWASTA,-1.4291,121.4464
+40202552,SD NEGERI PARAMBA,Menyoe,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.4449,121.5721
+70007906,SMPN 5 Mamosalato,Dusun Paramba,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4338,121.5688
+40204310,SMP NEGERI 1 TOILI BARAT,Jalan Asean No.10 ,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4282,122.105
+40201139,SDN PANTANGOLEMBA,Pantangolemba,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4238,120.6174
+40205719,SMP SATU ATAP Pantangolemba,Pantangolemba,Kec. Poso Pesisir Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4236,120.6174
+40201153,SD NEGERI SAATU,Desa Saatu,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3986,120.6318
+69792587,KB SINAR KASIH,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.422106,120.659269
+40201390,SD GKST GINTU,Jl. Protokol No. 152,Kec. Lore Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4222,120.6594
+40201389,SD GKST KASIGUNCU,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4222,120.6594
+69751145,RA  AL IKHLAS PINEDAPA,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.397786,120.629646
+69792565,SPS SM BETESDA,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SPS,SWASTA,-1.421296,120.65958
+40206336,TK GKST BETHESDA KASIGUNCU,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.421472,120.660131
+40209876,MAN POSO,JL. TRANS SULAWESI NO. 61A,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MA,NEGERI,-1.4223,120.6653
+40201195,SMP NEGERI 1 POSO PESISIR,Jln. Pelabuhan Udara No. 51 Kasiguncu,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.423,120.6674
+40201446,SD NEGERI 3 KASIGUNCU,Patirobajo,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4238,120.6683
+69792571,KB KASINTUWU,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.421725,120.66782
+P9952738,SKB Negeri Poso,Jln. Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SKB,NEGERI,-1.4214,120.6678
+40201167,SD NEGERI BEGA,Desa Bega,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4165,120.6644
+40210145,MTSN 1 POSO,JL. PANCA BAKTI NO. 168,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MTs,NEGERI,-1.4227,120.6735
+40201352,SMKN 1 POSO PESISIR,"Andi Baso Ali, Kel. Mapane , Kec.Poso Pesisir,Kab.Poso Sulawesi Tengah",Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4167,120.6676
+40203880,SD NEGERI 2 KASIGUNCU,Jln. Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4192,120.6749
+69751146,RA ALKHAIRAAT TOINI,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.42187,120.685751
+40201365,SD GKST 1 POSO,Jl. Jendral Sudirman No. 22,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3998,120.6559
+40201457,SD NEGERI 5 KASIGUNCU,Jln. Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4208,120.6936
+69788100,MAS AMANAH TOINI,JL. TRANS SULAWESI DESA TOINI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MA,SWASTA,-1.4128,120.701
+40210146,MTSS AMANAH TOINI,JL. TRANS SULAWESI DUSUN BUNTA,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MTs,SWASTA,-1.4131,120.7016
+40201461,SD NEGERI 33 POSO,Jalan Pulau Batam,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4212,120.7206
+40201338,SD NEGERI TONIPA,Jln. Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4059,120.7113
+40209874,MAS MUHAMMADIYAH POSO,JL. W. MONGINSIDI NO. 25,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,MA,SWASTA,-1.4075,120.7357
+40210141,MTSS MUHAMMADIYAH POSO,JL. Talasa,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,MTs,SWASTA,-1.403577,120.731857
+163045  ,Sekolah Tinggi Ilmu Kesehatan Husada Mandiri Poso, Jalan Pulau Kalimantan No.29,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,-1.3969944,120.7144249
+40201493,SD NEGERI 11 POSO,Jln. Sintuwu,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4247,120.7533
+70012543,KB EBENHAEZER RANONONCU,Jln. Eboni,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.4227,120.7605
+40204277,SLB NEGERI POSO,Ranononcu,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SLB,NEGERI,-1.4203,120.7584
+40204546,SMP NEGERI 1 POSO KOTA SELATAN,Jl. eboni 3,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4253,120.7626
+40201357,SMAN 2 POSO,EBONI NO. 70,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4244,120.7628
+40206335,TK GKST BEITEL POSO,Jalan Tabatoki,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.423248,120.762148
+40206566,SMK PP AL-KHAIRAAT POSO,JLN. TRANS SULAWESI,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.4244,120.763
+40201494,SD NEGERI 12 POSO,Jalan  Ebony ,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4219,120.762
+40206357,PAUD TERPADU MARANATHA POSO,Jalan Tabatoki,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.413059,120.756569
+40201436,SD NEGERI 20 POSO,Jalan Tabatoki Km. 4 Poso Kota Selatan,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4103,120.7576
+40206290,TK ALKHAIRAT 3 POSO,Jalan Pulau Irian Jaya,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.4068,120.7499
+40201354,SMKN 1 POSO,JL. TABATOKI KM. 4 KAWUA POSO,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4083,120.7544
+40201353,SMKN 2 POSO,JL. TABATOKI KM. 4,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4088,120.7562
+40201434,SD NEGERI 22 POSO,Jalan Pulau Irian Jaya,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4038,120.7486
+60723407,MIN 1 POSO,JL. P. IRIAN JAYA LRG. CENDRAWASIH NO. 15,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,MI,NEGERI,-1.402,120.7479
+40201462,SD NEGERI 32 POSO,Kawua,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4055,120.7579
+69915244,KB LEMBAYUNG,Kelurahan Lembomawo,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.403363,120.755281
+40206327,PAUD TERPADU EBENHAEZER RANONONCU,Jalan Trans Sulawesi,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.402591,120.756226
+40210143,MTSS ALKHAIRAAT POSO,JL. P. SABANG NO. 154 POSO,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,MTs,SWASTA,-1.399536,120.74552
+69792576,PAUD TERPADU  AISYIYAH 4 POSO,Jalan Pangeran Diponegoro No. 99,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.402333,120.756311
+69944811,SPS SM GKST PENIEL POSO,Jl. Ki Hajar Dewantoro,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SPS,SWASTA,-1.402162,120.75614
+40203879,SD INTEGRAL HIDAYATULLAH,Jl. Pulau Kalimantan Ujung,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.4013,120.7563
+40205682,SD NEGERI 26 POSO,Jl. P. Kalimantan,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.401,120.7562
+40206479,SMP NEGERI 6 POSO,KAYAMANYA,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3973,120.7419
+40210142,MTSS ALKHAIRAAT TEGALREJO,JL. UMANASOLI NO. 1,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,MTs,SWASTA,-1.397547,120.733332
+40201491,SD NEGERI 17 POSO,Jalan Pulau Bali No. 250,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3981,120.7516
+40201305,SMP SINTUWU MAROSO POSO,Jln. TABATOKI,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.400755,120.759353
+40201459,SD NEGERI 4 POSO,Jl. Tabatoki,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4008,120.7597
+40209875,MAS AL IKHLAS POSO,JL. Umanasoli No. 135 ,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,MA,SWASTA,-1.397547,120.751742
+40201356,SMAN 3 POSO,JL. P. SERAM No. 16,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.398228,120.754435
+40210140,MTSN 2 POSO,JL. P. KALIMANTAN NO. 50A,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,MTs,NEGERI,-1.3987,120.756
+40201169,SD NEGERI BATEGENCU,Desa Bategencu,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4087,120.8189
+40201339,SD NEGERI TONGKO,Jln.Ki Hajar Dewantara No.04 Desa Tongko,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.408,120.849
+40206482,SMAS ALKH TONGKO,JLN. TRANS SULAWESI POSO - AMPANA,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMA,SWASTA,-1.4064,120.8479
+40203902,SMP NEGERI SATU ATAP TOYADO,Jl. Trans Poros Ampana,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4012,120.8312
+40201439,SD NEGERI 2 TOYADO,Toyado,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4012,120.8312
+40201463,SD NEGERI 3 TOYADO,Dusun Lee,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4009,120.8308
+P9952747,PKBM Titian Ilmu,Jln. Trans Sulawesi,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3987,120.8289
+40201194,SMP NEGERI 2 LAGE,Jl. Kasintuwu No.4,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.415,120.8809
+69994400,MIS ALKHAIRAAT MALEI,JL. TRANS POSO - AMPANA DESA MALEI,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.414,120.8807
+40201487,SD NEGERI 2 MALEI,Malei,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4164,120.8839
+40201479,SD NEGERI 1 MALEI,Malei,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.4146,120.8829
+70014719,MTs ALKHAIRAAT MALEI TOJO,Jl. Trans Sulawesi Poso Ampana,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.4159,120.8925
+40203302,SD NEGERI MALEI TOJO,Malei Tojo,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4161,120.895
+69751231,RA/BA/TA MATAKO,DESA MATAKO,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-1.418465,120.9
+40206317,TK ALKHAIRAAT TONGKO,JLN. TRANS POSO AMPANA,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.419237,120.905228
+40203379,SD GKST MATAKO,Matako,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,SWASTA,-1.4197,120.9139
+40206006,SMP NEGERI 3 TOJO BARAT,Desa Matako,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.4219,120.9185
+40203935,SD NEGERI MATAKO,Matako,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4215,120.9184
+40203443,SD NEGERI BAMBALO,Bambalo,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4213,120.9309
+69793192,TK. ALKH. TOLIBA,TRANS SULAWESI,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.421511,120.931578
+40203289,SD NEGERI GALUGA,Desa Galuga,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4199,120.9427
+40205949,TK BETESDA GALUGA,"Jln. Trans Sulawesi Poso Ampana No. 33, Desa Galuga",Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.419674,120.942808
+40203361,SMP ALKHAIRAAT TOLIBA,Jl. Trans Sulawesi No. 35,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,SWASTA,-1.4153,120.9614
+40203275,SD NEGERI TOLIBA,Toliba,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4132,120.9637
+69751230,RA/BA/TA ALKHAIRAAT NGGAWIA,JLN. TRANS SULAWESI,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-1.411772,120.983333
+40203350,SD NEGERI UJUNG TIBU,Ujung Tibu,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4045,120.9773
+40209896,MAS TOJO BARAT,JL. Trans Sulawesi No. 49 ,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,SWASTA,-1.4158,121.002
+40203285,SD NEGERI NGGAWIA,Jalan Latimumu,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4167,121.005
+69751227,RA/BA/TA ALKHAIRAAT KABALO,DESA KABALO,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-1.4230983,121.017696
+40205933,TK ALKHAERAAT TOMBIANO,Jl. Trans Sulawesi,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.425,121.0247
+69967684,KB. Permata Bunda,"Jl. Batu Bata, Desa Tombiano",Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-1.425023,121.02697
+40203311,SMKN 1 TOJO BARAT,Jl. KKN  No. 70 ,Kec. Tojo Barat,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-1.4231,121.0252
+40203343,SMAN 1 TOJO,JL. TRANS SULAWESI NO.117,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-1.4231,121.1206
+40203483,SD NEGERI 2 UEKULI,Jl. Trans Sulawesi,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4224,121.1211
+40205935,TK ALKHAERAAT UEKULI,Jl. Melati,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.417092,121.125641
+69917487,SD Negeri Bomba Lestari,Jln.Trans Betaua,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4054,121.1495
+P9970023,PKBM. Sivia Patuju,Jl. Protokol Masologi Tojo,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.4219144,121.2018803
+40203419,SD NEGERI BANANO,Desa Banano,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4168,121.246
+69961591,TK. Alkhairaat Banano,Jl. Trans Sulawesi,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.4168,121.246
+69793215,TK. ALKHAIRAAT BETAUA,Sis Aljufri,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.39845,121.230699
+40210257,MTSS ALKAIRAAT UEKULI,JLN. SIS ALJUFRI NO.1,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.3969,121.2114
+40203398,SD NEGERI 1 UEKULI,Uekuli,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.4058,121.3039
+69965972,TK KARTINI,JLN. DESA MODO,Kec. Bukal,Kab. Buol,Prov. Sulawesi Tengah,TK,SWASTA,-1.420136,121.46446
+69943193,SLB RAUDHATUL BAHARA,Jalan Trans Sulawesi,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SLB,SWASTA,-1.3775024,120.5863079
+40201155,SD NEGERI PINEDAPA,Desa Pinedapa,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3955,120.6293
+40205710,SMP NEGERI 3 POSO PESISIR,Jl. Trans Sulawesi Lrg. Mormin No. 33,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3955,120.6306
+40203881,SD NEGERI RATALEMBA,Dusun Ratalemba,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3671,120.598
+40201134,SD NEGERI MASANI,Desa Masani,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3767,120.6458
+40203877,SD ALKHAERAT LAPE,Jln. Pendidikan ,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3675,120.6394
+69754405,SDIT WIHDATUL UMMAH,Jl.lingkar Moengko lembomawo,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3876,120.7314
+69951857,PPS Wihdatul Ummah,Jalan. Lingkar moengko - Lembomawo kelurahan Moengko,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,Pondok Pesantren,SWASTA,-1.3873,120.7313
+P9956975,PKBM MANDIRI,JLN. P. MADURA,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.3908789,120.7348239
+69751144,RA/BA/TA WIHDATUL UMMAH,JL. LINGKAR MOENGKO LEMBOMAWO,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.3878,120.7323
+40201455,SD NEGERI 5 POSO,"Jalan Pulau Batam, No. 18 B",Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3847,120.7333
+40206287,TK AISYIYAH 5 POSO,Jalan Mawar,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.384,120.7361
+40201490,SD NEGERI 18 POSO,Jalan Pulau Sabang No. 182 Poso,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3846,120.737
+40201355,SMAN 4 POSO,JL. P. NIAS NO. 65,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3944,120.7445
+40201314,SMP NEGERI 4 POSO,Jl. Nusantara No. 1 Poso,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3833,120.7401
+40201433,SD NEGERI 23 POSO,Jalan Pulau Sabang No. 101,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3885,120.7441
+40201447,SD NEGERI 3 POSO,Jalan Pulau Nias No. 32,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3912,120.7469
+40201492,SD NEGERI 10 POSO,Jl. P. Mentawai No. 16,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3898,120.7465
+40201431,SD NEGERI 27 POSO,Jalan Pulau Irian Jaya No. 01,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3932,120.7496
+40201411,SMP MUHAMMADIYAH POSO,Jl. P. Sabang,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.3913,120.7503
+40201379,SD MUHAMMADIYAH POSO,Jl. Hi. Agus Salim No. 7,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3913,120.7503
+60723408,MIS MUHAMMADIYAH POSO,JL. P. SABANG NO. 18,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.3916,120.7505
+69792605,PAUD TERPADU TJOKROAMINOTO POSO,"Jalan Pulau Bali, No. 72 Poso",Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.3956,120.7522
+40206294,PAUD TERPADU PUTRA 2 POSO,Jalan Pulau Timor,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.3973,120.7543
+40206362,TK OFRA TAMBARO,Desa Tambaro,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.395898,120.754166
+40206365,TK PERTIWI LEMBOMAWO,Jalan Tadulako,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.395469,120.753908
+40201451,SD NEGERI 7 POSO,Jalan Pulau Kalimantan No. 31 Poso,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3955,120.757
+161004  ,Universitas Sintuwu Maroso Poso,Jalan Pulau Timor No 1 ,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Universitas,SWASTA,-1.392692,120.756169
+40201412,SD ALKHAIRAAT POSO,Jl. H Agus Salim No 1 Poso,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3877,120.7541
+40209873,MA ALKHAIRAAT POSO,JL. H. AGUS SALIM NO. 08,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,MA,SWASTA,-1.3879,120.7545
+40206310,TK ALKHAIRAT 6 POSO,"Jalan Hi. Agus Salim, No. 8",Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.3878,120.7545
+40201435,SD NEGERI 21 POSO,Jln. Tabatoki,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3926,120.7605
+40201489,SD NEGERI 19 POSO,Jl. P. Kalimantan No. 7,Kec. Poso Kota,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3897,120.7583
+40205699,SD NEGERI 8 POSO,Jl. Abdul Wahab,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3925,120.7636
+60723409,MIS AL IKHLAS SAYO,JL. P. DIPONEGORO NO. 199 POSO,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.3912,120.7626
+40210144,MTSS AL IKHLAS SAYO,JL. P. DIPONEGORO,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,MTs,SWASTA,-1.3898,120.7615
+69918559,KB NAZWATUL KHAIRAAT,Jalan Hi. Agus Salim Bonesompe,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,KB,SWASTA,-1.3853,120.7565
+40201324,SMP GKST POSO,Jl. Tadulako,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.3861,120.7579
+40201330,SMKS GKST POSO,YOS SUDARSO NO.28,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMK,SWASTA,-1.3859,120.7584
+70050484,SMP IT TILAWATI,"Jln. Abd. Wahab, Lorong Sawerigading",Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SMP,SWASTA,-1.3938,120.7672
+40201453,SD NEGERI 6 POSO,Jl. Dr. Adriani,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3848,120.761
+40201321,SMP NEGERI 2 POSO,Jl. Jend. Ahmad Yani,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3813,120.757
+40206341,PAUD TERPADU PENIEL POSO,Jalan K.H. Dewantoro,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.384443,120.762684
+40204592,SMAS MUHAMMADIYAH POSO,JL. MONGONSIDI,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMA,SWASTA,-1.3807,120.7579
+40201312,SMP NEGERI 5 POSO,Jl. Kihajar Dewantoro No. 37,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3823,120.7623
+40206355,PAUD TERPADU KEMALA BHAYANGKARI 04,Jalan Ade Irma,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.3798,120.7595
+40201196,SMP NEGERI 1 POSO,Jl. Brigjen Katamso No.18 Poso,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3796,120.7603
+40201476,SD NEGERI 1 POSO KOTA UTARA,Jalan. Ki Hajar Dewantoro No. 2 Poso,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3801,120.7622
+40201359,SMAN 1 POSO,JL. TALASA N0. 6,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.3808,120.7634
+40201317,SMP NEGERI 3 POSO KOTA UTARA,Jln. Letjend Suprapto No. 36 Poso,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3766,120.7613
+40201495,SD NEGERI 13 POSO,Jl. Tvri No. 17 ,Kec. Poso Kota Selatan,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3874,120.773
+40201363,SD GKST 2 POSO,Jl. Jend. Sudirman,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.39,120.7882
+40201432,SD NEGERI 24 POSO,Jl. Flamboyan No. 24,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3788,120.7785
+40201147,SD NEGERI SEPE,Sepe,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3945,120.8035
+213092  ,Sekolah Tinggi Agama Islam (STAI) Poso, Jl. Umanasoli No. 135 Kelurahan Lawanga Kecamatan Poso Kota Utara,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,Sekolah Tinggi,SWASTA,-1.371865,120.764861
+40201498,SD NEGERI 16 POSO,Jl. Umanasoli No 134,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3705,120.7674
+40201496,SD NEGERI 14 POSO,Jalan Karawasa,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3734,120.792
+60723402,MIS AL IKHLAS MAJULEA,JL. LINDORAYA DUSUN MAJULEA,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.3793,120.8187
+40201485,SD NEGERI 2 POSO,Jalan  Bridgjend Katamso,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3703,120.8009
+40201466,SD NEGERI 1 TOYADO,Jl. Trans Poso Ampana,Kec. Lage,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3908,120.8403
+40203310,SD NEGERI BETAUA,Betaua,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3825,121.1557
+40202793,SD NEGERI ANDOLIA,Desa Pandauke Kec. Mamosalato,Kec. Mamosalato,Kab. Morowali Utara,Prov. Sulawesi Tengah,SD,NEGERI,-1.3725,121.5932
+70002664,SD AL-QURAN LEMAH ABANG,Desa Mekar Sari,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,SWASTA,-1.3930017,122.1053279
+40201728,SD INPRES 2 KARYA MAKMUR,Desa Karya Makmur,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.395977,122.1095734
+40204279,SMP NEGERI SATU ATAP UERALULU,Jln. Kampung Mesjid,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3618,120.5239
+60723411,MIS DDI MASAMBA,JL. TRANS SULAWESI DESA MASAMBA,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.347873,120.51998
+40201311,SMP NEGERI 2 POSO PESISIR,Jl. Katombo,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3636,120.6411
+69994401,MIS ALKHAIRAAT TOKORONDO,Jl. Trans Sulawesi Lrg. Sis Aljufri,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.3551,120.6422
+40201468,SD NEGERI 1 TOKORONDO,Tokorondo,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3557,120.6438
+69787916,SMP NEGERI 5 POSO KOTA UTARA,Jl. Karawasa,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3599,120.7929
+40201497,SD NEGERI 15 POSO,Jl Karawasa Lingkungan,Kec. Poso Kota Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3574,120.8125
+40203429,SD NEGERI 1 UEDELE,Uedele,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3384,121.1716
+40203484,SD NEGERI 2 UEDELE,"Jl, Trans Sulawesi",Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3379,121.1735
+40205917,TK ALHAERAAT UEDELE,Uedele,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.3376,121.1727
+40204346,SMP NEGERI 3 TOJO,Desa Uedele,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.3379,121.1747
+40205930,TK ALKHAERAAT SANDADA,SANDADA,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.343127,121.248035
+40201921,SD INPRES BUKIT MAKARTI,Desa Bukit Makarti,Kec. Toili Barat,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.346,122.0381
+60723412,MIS ALKHAIRAAT MAPANE,JL. TRANS SULAWESI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.317225,120.616882
+40203887,SEKOLAH DASAR NEGERI PASAU,JL TRANS SULAWESI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3228,120.6411
+40203424,SD NEGERI SANDADA,Trans Sulawesi,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3172,121.1816
+40203306,SD NEGERI LEMORO,Jl. Protokol Ampana-poso,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3232,121.3463
+40210253,MTSS ALKHAIRAAT BANTUGA,JL. TRANS SULAWESI NO.12 DESA BANTUGA,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.331357,121.992905
+40203434,SD NEGERI WANASARI,"Desa Wanasari, Kecamatan Ampana Tete",Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.3257,121.9881
+69751149,RA/BA/TA AL IKHLAS SIPATUO,DUSUN SIPATUO,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,RA,SWASTA,-1.29619,120.583951
+60723410,MIS MUHAMMADIYAH LANDANGAN,JL. ANGGREK,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.302351,120.605163
+40203878,SD AL KHAIRAAT TOWU,Towu,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,SWASTA,-1.3001,120.62
+40201341,SD NEGERI TIWAA,Jln. Panca Bhakti no. 14,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.3032,120.6238
+40201180,SD NEGERI KILO OBYEK,Tri Mulya,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.2807,120.5825
+40206712,SMKN 2 POSO PESISIR,JL. TRANS SULAWESI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMK,NEGERI,-1.3041,120.629
+69754408,SMP NEGERI 4 POSO PESISIR,JLN TRANS SULAWESI,Kec. Poso Pesisir,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2842,120.6971
+40210258,MTSS FASTABIQUL KHAIRAAT,"JL. TRANS SULAWESI N0. 40, DESA TOJO KODE POS 94681",Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.2972,121.1947
+40203276,SD NEGERI 1 TOJO,Jl. Trans Sulawesi No.95,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2901,121.1946
+40203317,SMP NEGERI 2 TOJO,"Jln, Protokol Masologi Desa Tojo",Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2813,121.2049
+69822751,SMA NEGERI 2 TOJO,DESA TOJO,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2818,121.2073
+40205931,TK ALKHAERAAT TOJO,TOJO,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.2779,121.2716
+40203939,SD NEGERI TAKIBANGKE,Takibangke,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2979,121.4457
+40203352,SD NEGERI UEMATOPA,Uematopa,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2912,121.8069
+69880240,SMP NEGERI 6 ULUBONGKA,DESA UEMATOPA,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2944,121.8186
+P9984919,PKBM. Cahaya Ilmi,Jl. Sungai Bongka,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.2976266,121.8873566
+40204335,SD NEGERI MPOA,Desa Mpoa,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2994,121.9778
+40203340,SMAN 1 AMPANA TETE,DATARAN BULAN,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-1.2944,122.0124
+40203416,SD NEGERI BULAN JAYA,Dataran Bulan,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2925,122.0118
+60729361,MAS ALKHAIRAAT BANTUGA,JL.TRANS SULAWESI NO.12,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,SWASTA,-1.2813,122.041
+40201135,SD NEGERI MARANDA,Jln Trans Sulawesi no 83,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.2668,120.5728
+40201181,SD NEGERI KILO,Jln. Trans Sulawesi,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.2741,120.5899
+40205701,SMP NEGERI 3 POSO PESISIR UTARA,JLN TRANS SULAWESI,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2723,120.5935
+40205915,TK ALHAERAAT MIRE,MIRE,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.249853,121.470101
+40205419,SD NEGERI NGALUT,Dusun III Woko,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2466,121.7336
+40201819,SD INPRES 1 ARGAKENCANA,Desa Sidomakmur,Kec. Moilong,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.2463,122.0984
+40206422,TK GKST MARANATHA KAWENDE,Jalan Trans Sulawesi,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.215566,120.558869
+40203269,SD NEGERI PANCUMA,Desa  Pancuma,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2393,121.2117
+40203292,SD NEGERI BUYUNTARIPA,Desa Buyuntaripa,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2152,121.3062
+40205426,SD NEGERI LINTE TUA,Linte Tua,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2248,121.5784
+40206651,SD NEGERI LEMBAH SINARA,Lembah Sinara,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2255,121.6442
+40206008,SMP NEGERI 7 ULUBONGKA,KASIALA,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.223,121.6466
+40203356,SD NEGERI UEBONE HULU,Desa Kasiala,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2229,121.6467
+70005023,SMP ALKHAIRAAT MIRE,Desa Mire,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,SWASTA,-1.2225378,121.892896
+60723414,MIN 3 POSO,DUSUN SIPATUO DESA KILO,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,MI,NEGERI,-1.213687,120.468249
+60723415,MIS ALKHAIRAAT TAMBARANA,JL. TRANS SULAWESI NO. 75 TAMBARANA,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,MI,SWASTA,-1.187818,120.48451
+40201183,SD NEGERI KAWENDE,Jalan Trans Sulawesi No.78,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.2145,120.56
+40201320,SMP NEGERI 1 POSO PESISIR UTARA,Desa Kalora,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.2065,120.5621
+40206382,TK AISYIYAH KALORA,"Jalan Trans Sulawesi, Lorong Anggrek",Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.2004,120.5616
+40201316,SMP NEGERI 2 POSO PESISIR UTARA,Jl. Pelabuhan No. 77,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1883,120.5769
+40205934,TK ALKHAERAAT TONGKU,Jl. Trans Sulawesi,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.206562,121.225135
+40203373,SD NEGERI TONGKU,Desa Tongku,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2064,121.2251
+69971252,KB. Kash Bunda,Jl. Ki Hajar Dewantoro,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-1.2017,121.5893
+40210254,MTSS ALKHAIRAAT TETE,DESA TETE.B JL. SIS ALJUFRI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.197133,121.919783
+69872387,SD NEGERI PAKANANGI,Dusun Pakanangi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.2037,122.0213
+60723488,MIS NURUL HUDA,JL. BERINGIN DUSUN 1 RT.04 RW.02,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.190121,122.017947
+60723401,MIS DARUTTAQWA TOHITISARI,TOHITISARI,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.18662,122.085391
+40201464,SD NEGERI 2 TAMBARANA,Jalan Utama 2,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.1793,120.5656
+40201473,SD NEGERI 1 TAMBARANA,Jl. Trans Sulawesi,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.1794,120.5661
+40203423,SD NEGERI KAINYOLE,Dusun IV Kainyole,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1706,121.3318
+40203353,SD NEGERI BONGKA MAKMUR,Desa Bongka Makmur,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1632,121.481
+40203417,SD NEGERI 1 BALINGARA,Desa Balingara,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.177,121.9948
+40210134,MTSS HIKMATUL HUSNA NAHDATUL WATHAN,DESA SENTRALSARI,Kec. Toili,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-1.1627,122.062268
+40206383,TK AISYIYAH TAMBARANA,Desa Bakti Agung,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,SWASTA,-1.156369,120.577746
+69792554,POS PAUD TPQ NURUL HUDA,TRANS SULAWESI LORONG MASJID NURUL HUDA,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SPS,SWASTA,-1.155117,120.578384
+40201358,SMAN 1 POSO PESISIR UTARA,Jl. Trans Sulawesi Desa Bakti Agung Kec. Poso Pesisir Utara,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SMA,NEGERI,-1.1499,120.5803
+40201438,SD NEGERI 2 TUMORA,Tumora,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.1366,120.576
+40203266,SD NEGERI PODI,Desa Podi,Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1497,121.2869
+40205928,TK ALKHAERAAT PODI,"DESA PODI,KECAMATAN TOJO",Kec. Tojo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.1362,121.3161
+40203268,SD NEGERI PARANONGE,Paranonge,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1329,121.4103
+40203318,SMP NEGERI 3 AMPANA TETE,Jl Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1311,121.707
+40206001,SMP NEGERI 7 Ampana Tete,Jln. Trans Balingara-Bulan,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1422,121.7422
+40209894,MAN TOJO UNAUNA,JL. TRANS SULAWESI LORONG SIS AL JUFRI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,NEGERI,-1.142041,121.755509
+40203314,SMP NEGERI 4 AMPANA TETE,DATARAN BULAN,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1261,121.8117
+40203181,SD INPRES PAKAREME,Desa Sausu Pakareme,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.1088,120.519
+40205129,SMP NEGERI SATU ATAP NEGERI 2 SAUSU,JL Kihajar Dewantara Ds Sausu Pakareme ,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1089,120.5194
+40202997,SD KECIL SIWAKARYA,Jl. Pemuda Sausu Pakareme,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0961,120.5074
+40201481,SD NEGERI 1 TUMORA,Jl. Trans Sulawesi No. 206,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,SD,NEGERI,-1.1111,120.5763
+69792534,TK NEGERI PEMBINA  AL-MUNAWARAH POSO PESISIR UTARA,Jalan Trans Sulawesi,Kec. Poso Pesisir Utara,Kab. Poso,Prov. Sulawesi Tengah,TK,NEGERI,-1.111,120.5778
+40203008,SD NEGERI MALEALI,Jl. Trans Sulawesi,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0994,120.5631
+40203295,SD NEGERI BONGKAKOY,Bongkakoy,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1194,121.4507
+40205960,TK EFRATA WATUSONGO,WATUSONGO,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-1.105087,121.433945
+40203322,SMP NEGERI 2 ULUBONGKA,Jl.Gunung Katopas  No.01 ,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.1113,121.4713
+40203349,SD NEGERI WATUSONGU,Jl. Pendidikan,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.1125,121.4758
+69822752,SMAS ALKHAIRAAT ULUBONGKA,SUNGAI BONGKA,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,SWASTA,-1.1048,121.4795
+69880239,SMP NEGERI 5 ULUBONGKA,DESA TAKIBANGKE,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.124093,121.544634
+40210260,MTSS ALKHAIRAAT MAROWO,JL. PROTOKOL NO.21,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-1.1159,121.5474
+69983927,SD NEGERI PADAFUYU,DUSUN PADAFUYU,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.104311,121.548781
+60723484,MIS ALKHAIRAAT UEMAKUNI,JL. TRANS SULAWESI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.103977,121.825626
+60723489,MIS ALKHAIRAAT BANTUGA,JL. TRANS SULAWESI NO.193,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.118,121.8727
+60723490,MIS ALKHAIRAAT MANTANGISI,DESA MANTANGISI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-1.121006,121.913773
+40205251,TK NEGERI 6 SAUSU,Jl. Banteng Desa Terpencil Pakareme,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,-1.08943,120.509825
+69935869,TK ISLAM DEWI SARTIKA,Jl. Anggrek No. 2,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,-1.091742,120.517778
+69788469,MTsS DARUSSHOLIHIN NAHDLATUL WATHAN,JL. TRANS SULAWESI DUSUN 01 DESA SAUSU AUMA,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MTs,SWASTA,-1.082187,120.48638
+40202982,SDK SAUSU TORONO,Jl. Latsitarda,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0702,120.485
+40205130,SMP NEGERI SATU ATAP 3 SAUSU,Jl. Latsitanda Dusun. 3 Desa Sausu Torono,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0702,120.4847
+69964841,TK SARI MEKAR,DUSUN I GUNUNG SARI,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,-1.080341,120.548501
+40203190,SD INPRES MALEALI,Jl. Trans Sulawesi,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0746,120.5369
+40203414,SD ALKHAIRAAT MIRE,Jln. Gunung Katopas,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,SWASTA,-1.0891,121.3497
+40203278,SD NEGERI TOBAMAWU,Tobamawu,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0658,121.4518
+40203355,SD NEGERI UEKAMBUNO,Uekambuno,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0749,121.4895
+69987313,SMA NEGERI 2 ULUBONGKA,Jl. Gunung Katopas No. 4,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-1.077457,121.506035
+40203946,SMP NEGERI 3 ULUBONGKA,Bongka Makmur,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0673,121.5088
+60723386,MIS HAYATUL ISLAM,JAYA MAKMUR KEC. NUHON,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.0707,121.9546
+69983979,MAS DARUSSHOLIHIN NAHDLATUL WATHAN,JL. TRANS SULAWESI DUSUN 1,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MA,SWASTA,-1.0641,120.4949
+60723473,MIS DARUSSHOLIHIN NAHDLATUL WATHAN,Jln. Trans Sulawesi Dusun 01 Desa Sausu Auma ,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,MI,SWASTA,-1.0638,120.4949
+40203243,SD INPRES 3 SAUSU,Jl. Trans Sulawesi Km.160,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0572,120.4963
+40205244,TK AL-KHAIRAAT PIORE,Dusun II Desa Piore,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,-1.0637441,120.4810557
+40205252,TK NEGERI 2 SAUSU,Jl. Trans Sulawesi,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,-1.063853,120.46998
+70026482,KB ISLAM DEWI SARTIKA,Jl. Pakareme,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,KB,SWASTA,-1.0558,120.468
+40203212,SD INPRES 2 SAUSU,Jl. Trans Sulawesi,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0608,120.4625
+40205255,TK NEGERI 4 SAUSU,Desa Sausu Piore,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,-1.038645,120.51014
+40203081,SD INPRES 1 SAUSU,Desa Sausu Peore,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.038,120.511
+69935900,TK NEGERI 5 SAUSU,Jl. Pobelo Dusun III,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,NEGERI,-1.041479,120.526029
+40203174,SD INPRES 4 SAUSU,Jl. Gusti Ngurah Rai,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0366,120.5216
+40206004,SMP NEGERI 4 ULUBONGKA,Tojo Una-una,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0577,121.4329
+69952027,PAUD PERMATA BUNDA,JL. DESA ROMPI,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-1.064817,121.449843
+40203305,SD NEGERI LINTE,Linte,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0503,121.4375
+P9969971,PKBM. Manoto Raya,Jl. Transmigrasi,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.0408084,121.4592782
+69793173,TK NEGERI BORNEANG,BORNEANG,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-1.0582,121.4973
+40203354,SD NEGERI BORNEANG,BORNEANG,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0425,121.4932
+40206674,SD NEGERI UEJIMI,Desa Marowo,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0369,121.4827
+40203474,SD NEGERI GIRI MULYO,Desa Giri Mulyo,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0505,121.6413
+40202980,SMP NEGERI 2 SAUSU,Jl. Tadulako No. 09,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0352,120.5174
+69935659,TK DARMA KHANTI,Jl. I Gusti Ngurah Rai,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,-1.03085,120.51278
+40205190,SD KECIL SINGURA,Singura,Kec. Toribulu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0253,120.4794
+40203010,SD NEGERI SAUSU,Dusun 2 Sausu Peore,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.0074,120.5015
+69935881,TK AISYIYAH BUSTANUL ATHFAL SAUSU 2,Jl. Ahmad Yani,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,TK,SWASTA,-1.056516,120.45599
+40203272,SD NEGERI TAMPANOMBO,Tampanombo,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.0093,121.4222
+40203931,SD NEGERI BANTUGA,Desa Bantuga,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-1.034,121.6624
+P9970635,PKBM Sambaaraya,Desa Bulan Jaya,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.0225263,121.706882
+P9970008,PKBM. Karya Mandiri,Jl. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-1.0076251,121.7973537
+60723385,MIS ALKHAIRAAT SUMBER AGUNG,SUMBER AGUNG KEC.NUHON,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-1.03575,122.021507
+40201690,SD INPRES PULO DALAGAN,Desa Pulo Dalagan,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-1.020993,122.092853
+40205128,SMP NEGERI SATU ATAP 1 SAUSU,Desa Gandasari,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SMP,NEGERI,-1.0019,120.4666
+40202854,SD KECIL CEMPAKASARI,Jl. Hanoman Dusun Cempakasari,Kec. Sausu,Kab. Parigi Moutong,Prov. Sulawesi Tengah,SD,NEGERI,-1.002,120.4665
+40203291,SD NEGERI CEMPA,Cempa,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9887,121.4266
+69904312,SD Negeri Lengkasa,Desa Uematopa,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9777,121.4489
+40203342,SMAN 1 ULUBONGKA,JL. TRANS SULAWESI,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-0.9777,121.4489
+40209892,MAS ALKHAIRAAT AMPANA KOTA,JL.MOH.HATTA NO.178,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,SWASTA,-0.992473,121.595456
+69877621,SMP NEGERI 6 AMPANA TETE,JL. POA DUSUN III PAYOMPO,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9862,121.7499
+40203267,SD NEGERI PAYOMPO,Desa Borone,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9861,121.7499
+69751224,RA/BA/TA NURUL KHAIRAAT UEMAKUNI,DESA UEMAKUNI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.985974,121.75
+69751225,RA/BA/TA NURUL KHAIRAAT UETOLI,DESA URUNDAKA,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.9862265,121.758455
+69793198,TK Pertiwi Longge,Jl. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-0.9809,121.8476
+40204264,SD INPRES BATU HITAM,Batu hitam,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9944,121.9522
+40203365,SMP NEGERI 1 ULUBONGKA,JL.Protokol No.14,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9769,121.4469
+40203431,SD NEGERI 3 MAROWO,Bonevoto,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9665,121.4554
+40203380,SD NEGERI 1 MAROWO,"Jln, Beringin No 16",Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9587,121.4623
+40203476,SD NEGERI 2 MAROWO,Jl. Tanjumbulu No. 20 Desa Marowo Kode Pos 94682,Kec. Ulubongka,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9585,121.4641
+69793188,TK-SD SATU ATAP,JL. Gunung Rapambai No. 14,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-0.9588,121.5593
+40203325,SMKN 1 AMPANA TETE,"JL. TRANS SULAWESI, DESA BANTUGA, KECAMATAN AMPANA TETE, KABUPATEN TOJO UNA-UNA",Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-0.9557,121.7215
+69751226,RA/BA/TA SABILUL KHAIRAAT BANTUGA,JL.TRANS SULAWESI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.945334,121.704896
+40203351,SD NEGERI UETOLI,Jalan Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9622,121.7376
+40203294,SD NEGERI BORONE,Jl. Trans Sulawesi Desa Borone,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9662,121.7488
+40203304,SD NEGERI LONGGE ,Jl. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9709,121.7595
+69751220,RA/BA/TA ANNUR ALKHAIRAAT BALANGGALA,DESA BALANGGALA,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.9718,121.7629
+40203445,SD NEGERI BALANGGALA,Jl. Trans Sulawesi No. 23,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.973,121.7652
+40205920,TK ALKH ALHUDA TANPABATU,Jl. Trans Sulawesi Ampana-Luwuk,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-0.9684,121.7917
+40203284,SD NEGERI PADAULOYO,Jln. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9674,121.7933
+40203348,SMP NEGERI 2 AMPANA TETE,Jl. Trans Sulawesi No.44,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9674,121.7943
+69793167,TK Al Hilal,Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-0.9639,121.812
+40203264,SD NEGERI SABO,Sabo,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9641,121.8128
+40204322,SMP NEGERI 3 NUHON,Desa Bangketa,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SMP,NEGERI,-0.9649,121.9891
+40201762,SD INPRES BANGKETA,Desa Bangketa,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9644,121.989
+60723387,MIS ALKHAIRAAT BALAANG,DESA BALAANG,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,MI,SWASTA,-0.964,122.1063
+40201700,SD INPRES BALAANG,Desa Balaang,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.9608,122.1125
+40201905,SD INPRES KABUABUA,Desa Kabua Bua,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,SD,NEGERI,-0.973,122.1308
+40203438,SD NEGERI 12 AMPANA KOTA,Dusun 3 Uebae,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.928053,121.5176208
+69952023,PAUD CERIA,Jl. Desa Padang Uloyo,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-0.93517,121.540546
+60723487,MIS UEMALINGKU,JL.SIS ALJUFRI NO.17,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-0.9291,121.5317
+40203436,SD NEGERI 13 AMPANA KOTA,Jln. Sungai Podi,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9236,121.5407
+40205418,SD NEGERI 5 AMPANA KOTA,Jl. Sabandara,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9290917,121.58645
+40203396,SD NEGERI 6 RATOLINDO,JLN. ALMAHDALI,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.922905,121.5835317
+P9960034,SKB KAB. TOJO UNA-UNA,Jl. Tanjung Kramat,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SKB,NEGERI,-0.9267393,121.6020497
+69751217,RA/BA/TA JABAL NUR SALUABA,Jln. Sis. Aldjufrie No. 17,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.916279,121.583333
+69944611,TK NEGERI PEMBINA TETE A,Jl. Pendidikan No. 42,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-0.9206,121.6241
+40205970,TK MANTANGISI,MANTANGISI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-0.9343,121.6967
+40203300,SD NEGERI MANTANGISI,MANTANGISI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9335,121.6982
+40203485,SD NEGERI 2 UEBONE,Jln. Trans Sulawesi No. 170,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9174,121.6604
+40210125,MTSS HAYATUL ISLAM,JAYA MAKMUR,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9535,122.1276
+69768448,KB PAUD LIA-LIA TONGON TOMEANG,JL. TRANS SULAWESI TOMEANG,Kec. Nuhon,Kab. Banggai,Prov. Sulawesi Tengah,KB,SWASTA,-0.946326,122.127628
+70025664,SD NEGERI 14 AMPANA KOTA,Jompi,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9108,121.5374
+40203463,SD NEGERI 11 AMPANA KOTA,Jl. Fatukarama No. 45,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9130667,121.5652483
+40203262,SD NEGERI SANSARINO,Jl. Cengkeh No. 150 Sansarino,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9131083,121.574185
+P9963146,PKBM. MNUA PANDE,Jl. Tadulako No. 24,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-0.9015652,121.5579229
+40203312,SMP NEGERI 3 AMPANA KOTA,Jl. Langsat Nomor 01,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.911,121.5753
+40204597,SLB N TOJO UNA-UNA,JL.TADULAKO NO.59,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SLB,NEGERI,-0.9072,121.5756
+40203326,SMKN 3 AMPANA KOTA,"JL. TADULAKO NO. 57, DESA SANSARINO, KECAMATAN AMPANA KOTA, KABUPATEN TOJO UNA-",Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-0.9074,121.5759
+40210251,MTSS ALKHAIRAAT UEMALINGKU,JL. SIS ALJUFRI NO.17 KEL. UEMALINGKU,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-0.9076,121.5835
+40203263,SD NEGERI SABULIRA,Jl. Sungai Sabulira,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.909,121.611
+60723485,MIN TOJO UNAUNA,JL. RADEN SALEH NO.1,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,NEGERI,-0.906353,121.612845
+40209893,MA AL-IKHLAS SABULIRA TOBA,JL. RADEN SALEH NO.3,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MA,SWASTA,-0.894,121.6011
+40203480,SD NEGERI 12 RATOLINDO,Jl. Sungai Bongka No. 118,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8864,121.5838
+P9969966,PKBM. Mototompiaan,Jl. Ahmad Yani No. 95,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-0.8909,121.6
+40203460,SD NEGERI KAJULANGKO,Desa Kajulangko,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.89978,121.6284017
+69751218,RA/BA/TA SABULITOBA,JL. Toba tobin RT.9 RW.3,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.8929411,121.607135
+40206536,SMP NEGERI 5 AMPANA TETE,Jalan Tadulako,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8915167,121.62815
+40203399,SD NEGERI 1 UEBONE,Jl. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.9114,121.6556
+69751222,RA/BA/TA NURUL HIDAYAH UEBONE,JL. TRANS SULAWESI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.9048757,121.653589
+40203391,SD NEGERI 7 AMPANA KOTA,Jl. Samratulangi,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.880845,121.5329117
+40203448,SD NEGERI 4 AMPANA KOTA,Jl. Tadulako,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8796,121.5415
+40203315,SMP NEGERI 2 AMPANA KOTA,Jln. Beringin No. 16,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8799,121.5487
+40203327,SMKN 2 AMPANA KOTA,"JL. BERINGIN NO.14 BAILO, KECAMATAN AMPANA KOTA, KABUPATEN TOJO UNA-UNA",Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-0.8790933,121.5485633
+40203394,SD NEGERI 6 AMPANA KOTA,Jl. Jend. Sudirman No. 18,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8776,121.5493
+40203390,SD NEGERI 8 AMPANA KOTA,Jl. Sarikaya No. 18 Kel.Bailo,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8768683,121.55564
+69793218,TK MIFTAHUL KHAIRAAT,Jl. Jenderal sudirman No.96,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-0.8758,121.5559
+40209808,SMAS CHAIRUL AMIN,JL. JEND. SUDIRMAN NO. 96,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,SWASTA,-0.8758783,121.556075
+40210252,MTSS CHAIRUL AMIN,JL. JEND. SUDIRMAN NO.96,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-0.8755,121.5562
+40203439,SD NEGERI 3 AMPANA KOTA,Jln Tadulako No.11,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8737,121.5554
+40204598,SMKN 4 AMPANA KOTA,JL.JENDERAL SUDIRMAN No.140,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-0.8748,121.5571
+40203479,SD NEGERI 10 AMPANA KOTA,Jl. Tadulako  No. 81 Ampana,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8822,121.5777
+40203481,SD NEGERI 9 AMPANA KOTA,Jl. S. Hasanudin No. 17,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8699,121.565
+40204331,SMKS INFORMASI KOMPUTER AMPANA,JL. SAMPRIA NO. 1,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,SWASTA,-0.8761,121.5745
+69793197,TK ALKHAIRAAT AMPANA,JL. LAPASERE,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-0.8705,121.5729
+40203464,SD NEGERI 2 AMPANA KOTA,Jl. Sultan Hasanudin,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.868625,121.5712133
+40203344,SMAN 1 AMPANA KOTA,JL. TADULAKO NO. 30 AMPANA ,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8708,121.5762
+69969471,KB. Sinar Kasih,Jl. Tadulako,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-0.87112,121.57709
+40203369,SMP NEGERI 1 AMPANA KOTA,Jl. Sultan Hasanudin No. 101,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.868645,121.57454
+40203418,SD NEGERI 1 AMPANA KOTA,Jl. Sultan Hasanudin No. 84,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8687267,121.5751133
+40203393,SD NEGERI 8 RATOLINDO,Jl. Sensus No. 31,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8826,121.5867
+40203461,SD NEGERI 2 RATOLINDO,Jl Gunung Rapambai,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.875,121.5831
+40206699,SMP MUHAMMADIYAH BOARDING SCHOOL,Kabupaten Tojo Una-una,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,SWASTA,-0.8675,121.5762
+40203435,SD NEGERI 1 RATOLINDO,Jl. R.A Kartini No. 34,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8706,121.5805
+40203392,SD NEGERI 9 RATOLINDO,Jl. Pulau Togean No. 14,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8717367,121.58199
+40203362,SMP NEGERI 1 RATOLINDO,Jl. Nusantara No. 9,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8711,121.5823
+69751219,RA/BA/TA ULUMUL QURAN,JL. YOS SUDARSO NO.14,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.8670498,121.579042
+70006697,SD IT AL-WAHDAH TOJO UNA UNA,"Jl. Tanjumbulu, Desa Sumoli,Kec. Ratolindo",Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,SWASTA,-0.881,121.5944
+40203271,SD NEGERI SUMOLI,Jl. Kepiting No. 113,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8801633,121.5937683
+P9963144,PKBM. MAPAKAPANDE,Jl. Anoa Desa Sumoli Kecamatan Ratolindo,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,PKBM,SWASTA,-0.8799,121.5941
+40210249,MTSN TOJO UNAUNA,JL. RADEN SALEH NO. 03 SABULIRA TOBA,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,NEGERI,-0.8731,121.5867
+40203375,SD NEGERI 11 RATOLINDO,Jl. Kepiting No. 63,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8749,121.5927
+40203446,SD NEGERI 5 RATOLINDO,Jl. Pulau Walea No. 16,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8712867,121.5860433
+69793161,TK ALKHAIRAAT UENT. BAWAH,PULAU WALEA NO. 09,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,SWASTA,-0.8713,121.5862
+69986952,SMA NEGERI 2 AMPANA KOTA,Jl. Delima,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMA,NEGERI,-0.8699,121.5908
+40210250,MTSS ALKHAIRAAT AMPANA KOTA,JL. MOH. HATTA NO.178,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-0.8693,121.5891
+40203360,SMP ALKHAIRAAT RATOLINDO,Jl. Moh Hatta No. 178,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,SWASTA,-0.8690433,121.5891567
+40203478,SD NEGERI 13 RATOLINDO,Jl. Tongkol No. 24,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8676,121.5893
+40203389,SD NEGERI 10 RATOLINDO,Jl. Tanjung Kramat,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8653,121.5943
+60723486,MIS ALKHAIRAAT DONDO,JL. AHMAD YANI NO.57,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MI,SWASTA,-0.8643,121.5936
+69751216,RA/BA/TA FASTABIQUL KHAIRAAT DONDO,JL.TG. KERAMAT II,Kec. Ampana Kota,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.8633861,121.595821
+40203449,SD NEGERI 3 RATOLINDO,Jln. Tanjung Kramat No. 34,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.863,121.5966
+40203447,SD NEGERI 4 RATOLINDO,Kelurahan Dondo,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8627467,121.596985
+69965741,KB. Stroberi,Jl. Siti Buana Dusun 02 Muara Bandeng,Kec. Una - Una,Kab. Tojo Una Una,Prov. Sulawesi Tengah,KB,SWASTA,-0.85776,121.586895
+40203319,SMP NEGERI 2 RATOLINDO,JL.W.MONGINSIDI,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8597,121.5989
+69751223,RA/BA/TA NURUL ILMI KAJULANGKO,JL. MERDEKA NO.03,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,RA,SWASTA,-0.8834,121.6229
+40203488,SD NEGERI 2 PUSUNGI,Pusungi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8709,121.6256
+40203376,SD NEGERI 1 PUSUNGI,Desa Pusungi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8731333,121.6294917
+40210255,MTSS ALKHAIRAAT PUSUNGI,JL. SIS ALJUFRI NO.11 PUSUNGI,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,MTs,SWASTA,-0.8717,121.6274
+40205918,TK NEGERI PUSUNGI,Jl. Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,TK,NEGERI,-0.8716,121.6274
+40203430,SD NEGERI 3 PUSUNGI,Jln.Trans Sulawesi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.86944,121.62622
+40203440,SD NEGERI 4 PUSUNGI,Desa Pusungi,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8708167,121.6296817
+40203437,SD NEGERI 14 RATOLINDO,Jl. Wolter Mongindisi No. 80,Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8619717,121.6057467
+40203328,SMKN 1 AMPANA KOTA,"JL. TANJUNG API NO. 26, DESA LABUAN, KECAMATAN RATOLINDO, KABUPATEN TOJO UNA-UNA",Kec. Ratolindo,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMK,NEGERI,-0.8573133,121.60082
+40203368,SMP NEGERI 1 AMPANA TETE,Jl. Pendidikan No. 11,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SMP,NEGERI,-0.8812517,121.6529717
+40203388,SD NEGERI TETE A,Jl. Trans Sulawesi No. 20 Desa Tete A Kec. Ampana Tete,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8794317,121.6521517
+40203486,SD NEGERI TETE B,Jl. Kihajar Dewantara No. 6,Kec. Ampana Tete,Kab. Tojo Una Una,Prov. Sulawesi Tengah,SD,NEGERI,-0.8765167,121.658635

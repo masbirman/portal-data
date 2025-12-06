@@ -89,10 +89,10 @@
                         Dashboard
                     </a>
 
-                    <!-- Direktori Sekolah Menu -->
+                    <!-- Data Sekolah Menu -->
                     <a href="{{ route('direktori-sekolah.index') }}"
                         class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                        Direktori Sekolah
+                        Data Sekolah
                     </a>
 
                     <!-- Dropdown Pengajuan Unduh Data -->
@@ -261,7 +261,7 @@
                 <a href="{{ route('public.dashboard') }}"
                     class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Dashboard</a>
                 <a href="{{ route('direktori-sekolah.index') }}"
-                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Direktori
+                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Data
                     Sekolah</a>
 
                 <div class="px-4 py-2 mt-2">
