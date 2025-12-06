@@ -32,8 +32,8 @@ services:
       context: ./docker/nginx
       dockerfile: Dockerfile
     restart: unless-stopped
-    expose:
-      - "80"
+    ports:
+      - "8080:80"
     volumes:
       - ./:/var/www/html:ro
     depends_on:
