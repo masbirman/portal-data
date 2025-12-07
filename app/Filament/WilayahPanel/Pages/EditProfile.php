@@ -66,4 +66,9 @@ class EditProfile extends BaseEditProfile
 
         return parent::mutateFormDataBeforeSave($data);
     }
+
+    protected function afterSave(): void
+    {
+        $this->js('window.location.reload()');
+    }
 }
