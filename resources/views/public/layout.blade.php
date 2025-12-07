@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Portal Data AN-TKA Disdik Sulteng' }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('storage/favicon-sulteng.ico') }}">
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -131,12 +132,14 @@
                         </div>
                     </div>
 
-                    <!-- Dropdown Statistik -->
-                    <div class="relative" @mouseenter="openDropdown = true" @mouseleave="openDropdown = false">
+                    <!-- Mega Menu Statistik -->
+                    <div class="static" x-data="{ openStatistik: false, timeout: null }"
+                        @mouseenter="clearTimeout(timeout); openStatistik = true"
+                        @mouseleave="timeout = setTimeout(() => openStatistik = false, 150)">
                         <button
                             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
                             Statistik
-                            <svg class="ml-1 h-4 w-4 transition-transform" :class="{ 'rotate-180': openDropdown }"
+                            <svg class="ml-1 h-4 w-4 transition-transform" :class="{ 'rotate-180': openStatistik }"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -144,48 +147,106 @@
                             </svg>
                         </button>
 
-                        <!-- Dropdown Menu -->
-                        <div x-show="openDropdown" x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
+                        <!-- Mega Menu Dropdown - Full Width -->
+                        <div x-show="openStatistik" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0"
+                            x-transition:enter-end="transform opacity-100"
                             x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                            x-transition:leave-start="transform opacity-100"
+                            x-transition:leave-end="transform opacity-0"
+                            class="absolute left-0 right-0 bg-white dark:bg-gray-800 shadow-xl border-t border-gray-200 dark:border-gray-700 z-50"
                             style="display: none;">
-                            <div class="py-1">
-                                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    📊 Asesmen Nasional 2023
-                                </a>
-                                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    📊 Asesmen Nasional 2024
-                                </a>
-                                <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    📊 Asesmen Nasional 2025
-                                </a>
-                                <div class="border-t border-gray-200 dark:border-gray-600 my-1"></div>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    📊 Survei Lingkungan Belajar 2024
-                                </a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    📊 Tes Kemampuan Akademik 2025
-                                </a>
+                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                                <div class="grid grid-cols-3 gap-8">
+                                    <!-- Kolom 1: Asesmen Nasional -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Asesmen
+                                            Nasional</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Data hasil Asesmen
+                                            Nasional
+                                            Berbasis Komputer</p>
+                                        <div class="space-y-1">
+                                            <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2023</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2024</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2025</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Kolom 2: Tes Kemampuan Akademik -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tes
+                                            Kemampuan
+                                            Akademik</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Data hasil Tes
+                                            Kemampuan Akademik</p>
+                                        <div class="space-y-1">
+                                            <a href="#"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2025</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Kolom 3: Survei Lingkungan Belajar -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Survei
+                                            Lingkungan Belajar</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Data hasil Survei
+                                            Lingkungan Belajar</p>
+                                        <div class="space-y-1">
+                                            <a href="#"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2024</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Dropdown Peta Data -->
-                    <div class="relative" x-data="{ openPetaDropdown: false }" @mouseenter="openPetaDropdown = true"
-                        @mouseleave="openPetaDropdown = false">
+                    <!-- Mega Menu Peta Data -->
+                    <div class="static" x-data="{ openPetaData: false, timeout: null }"
+                        @mouseenter="clearTimeout(timeout); openPetaData = true"
+                        @mouseleave="timeout = setTimeout(() => openPetaData = false, 150)">
                         <button
                             class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors">
                             Peta Data
-                            <svg class="ml-1 h-4 w-4 transition-transform" :class="{ 'rotate-180': openPetaDropdown }"
+                            <svg class="ml-1 h-4 w-4 transition-transform" :class="{ 'rotate-180': openPetaData }"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -193,24 +254,92 @@
                             </svg>
                         </button>
 
-                        <!-- Dropdown Menu -->
-                        <div x-show="openPetaDropdown" x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
+                        <!-- Mega Menu Dropdown - Full Width -->
+                        <div x-show="openPetaData" x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="transform opacity-0"
+                            x-transition:enter-end="transform opacity-100"
                             x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 z-50"
+                            x-transition:leave-start="transform opacity-100"
+                            x-transition:leave-end="transform opacity-0"
+                            class="absolute left-0 right-0 bg-white dark:bg-gray-800 shadow-xl border-t border-gray-200 dark:border-gray-700 z-50"
                             style="display: none;">
-                            <div class="py-1">
-                                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2023]) }}"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Peta Data 2023
-                                </a>
-                                <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2024]) }}"
-                                    class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-gray-600 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                    🗺️ Peta Data 2024
-                                </a>
+                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                                <div class="grid grid-cols-3 gap-8">
+                                    <!-- Kolom 1: Asesmen Nasional -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Asesmen
+                                            Nasional</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Peta sebaran data
+                                            Asesmen Nasional</p>
+                                        <div class="space-y-1">
+                                            <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2023]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2023</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2024]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2024</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2025]) }}"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2025</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Kolom 2: Tes Kemampuan Akademik -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tes
+                                            Kemampuan Akademik</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Peta sebaran data Tes
+                                            Kemampuan Akademik</p>
+                                        <div class="space-y-1">
+                                            <a href="#"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2025</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Kolom 3: Survei Lingkungan Belajar -->
+                                    <div>
+                                        <h3 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Survei
+                                            Lingkungan Belajar</h3>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Peta sebaran data
+                                            Survei Lingkungan Belajar</p>
+                                        <div class="space-y-1">
+                                            <a href="#"
+                                                class="flex items-center justify-between px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-white rounded-md transition-colors">
+                                                <span>Tahun 2024</span>
+                                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -265,7 +394,8 @@
                     Sekolah</a>
 
                 <div class="px-4 py-2 mt-2">
-                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Pengajuan
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                        Pengajuan
                     </p>
                 </div>
                 <a href="{{ route('download-request.index') }}"
@@ -276,21 +406,40 @@
                     Tracking Status</a>
 
                 <div class="px-4 py-2 mt-2">
-                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Data
-                        Statistik</p>
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                        Asesmen
+                        Nasional</p>
                 </div>
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2023]) }}"
                     class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊
-                    Asesmen Nasional 2023</a>
+                    Tahun 2023</a>
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2024]) }}"
                     class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊
-                    Asesmen Nasional 2024</a>
+                    Tahun 2024</a>
                 <a href="{{ route('asesmen-nasional.index', ['tahun' => 2025]) }}"
                     class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📊
-                    Asesmen Nasional 2025</a>
+                    Tahun 2025</a>
 
                 <div class="px-4 py-2 mt-2">
-                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Peta Data
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Tes
+                        Kemampuan Akademik</p>
+                </div>
+                <a href="#"
+                    class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📝
+                    Tahun 2025</a>
+
+                <div class="px-4 py-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                        Survei
+                        Lingkungan Belajar</p>
+                </div>
+                <a href="#"
+                    class="block px-6 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">📋
+                    Tahun 2024</a>
+
+                <div class="px-4 py-2 mt-2">
+                    <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Peta
+                        Data
                     </p>
                 </div>
                 <a href="{{ route('asesmen-nasional.peta', ['tahun' => 2023]) }}"
