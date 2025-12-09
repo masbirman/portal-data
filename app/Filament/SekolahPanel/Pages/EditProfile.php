@@ -62,10 +62,17 @@ class EditProfile extends BaseEditProfile
     protected function mutateFormDataBeforeSave(array $data): array
     {
         $user = auth()->user();
-        
-        if (array_key_exists('avatar', $data) && $data['avatar'] !== $user->avatar) {
-            if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
-                Storage::disk('public')->delete($user->avatar);
+
+        // Handle avatar: only process if there's a NEW file uploaded
+        if (array_key_exists('avatar', $data)) {
+            if (empty($data['avatar'])) {
+                // No new upload - keep existing avatar
+                $data['avatar'] = $user->avatar;
+            } elseif ($data['avatar'] !== $user->avatar) {
+                // New file uploaded - delete old one if exists
+                if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+                    Storage::disk('public')->delete($user->avatar);
+                }
             }
         }
 
@@ -79,19 +86,19 @@ class EditProfile extends BaseEditProfile
         $data = $this->mutateFormDataBeforeSave($data);
 
         $user = auth()->user();
-        
+
         if (array_key_exists('avatar', $data)) {
             $user->avatar = $data['avatar'];
         }
-        
+
         if (isset($data['name'])) {
             $user->name = $data['name'];
         }
-        
+
         if (!empty($data['password'])) {
             $user->password = Hash::make($data['password']);
         }
-        
+
         $user->save();
         $this->afterSave();
     }

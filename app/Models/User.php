@@ -96,7 +96,11 @@ class User extends Authenticatable implements FilamentUser, HasAvatar
 
     public function getFilamentAvatarUrl(): ?string
     {
-        return $this->avatar ? \Storage::disk('public')->url($this->avatar) : null;
+        // Check if avatar exists in database AND file exists in storage
+        if ($this->avatar && \Storage::disk('public')->exists($this->avatar)) {
+            return \Storage::disk('public')->url($this->avatar);
+        }
+        return null;
     }
 
     // ==================== RELATIONSHIPS ====================

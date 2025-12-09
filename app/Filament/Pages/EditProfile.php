@@ -57,18 +57,25 @@ class EditProfile extends BaseEditProfile
     {
         // Ensure avatar is loaded from the user
         $data['avatar'] = auth()->user()->avatar;
-        
+
         return $data;
     }
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        // Handle avatar deletion if old avatar exists and new one is uploaded
         $user = auth()->user();
-        
-        if (array_key_exists('avatar', $data) && $data['avatar'] !== $user->avatar) {
-            if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
-                Storage::disk('public')->delete($user->avatar);
+
+        // Handle avatar: only process if there's a NEW file uploaded
+        // If avatar is null/empty but user has existing avatar, keep the existing one
+        if (array_key_exists('avatar', $data)) {
+            if (empty($data['avatar'])) {
+                // No new upload - keep existing avatar
+                $data['avatar'] = $user->avatar;
+            } elseif ($data['avatar'] !== $user->avatar) {
+                // New file uploaded - delete old one if exists
+                if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+                    Storage::disk('public')->delete($user->avatar);
+                }
             }
         }
 
@@ -84,12 +91,12 @@ class EditProfile extends BaseEditProfile
         $data = $this->mutateFormDataBeforeSave($data);
 
         $user = auth()->user();
-        
-        // Explicitly save avatar
+
+        // Save avatar (already handled in mutateFormDataBeforeSave)
         if (array_key_exists('avatar', $data)) {
             $user->avatar = $data['avatar'];
         }
-        
+
         // Save name and email
         if (isset($data['name'])) {
             $user->name = $data['name'];
@@ -97,12 +104,12 @@ class EditProfile extends BaseEditProfile
         if (isset($data['email'])) {
             $user->email = $data['email'];
         }
-        
+
         // Save password if provided
         if (!empty($data['password'])) {
             $user->password = Hash::make($data['password']);
         }
-        
+
         $user->save();
 
         $this->callAfterSave();
