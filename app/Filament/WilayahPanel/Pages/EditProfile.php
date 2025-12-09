@@ -98,6 +98,6 @@ class EditProfile extends BaseEditProfile
 
     protected function afterSave(): void
     {
-        $this->js('window.location.reload()');
+        redirect(request()->header('Referer'));
     }
 }
