@@ -30,6 +30,32 @@ class AsesmenImport implements ToCollection, WithHeadingRow, WithChunkReading
     }
 
     /**
+     * Normalize wilayah name to handle variations
+     * e.g., Tolitoli/Toli-Toli, Tojo Unauna/Tojo Una-Una
+     */
+    protected function normalizeWilayahName(string $name): string
+    {
+        $name = trim($name);
+        if (empty($name)) {
+            return '';
+        }
+        
+        $lowerName = strtolower($name);
+        
+        // Normalize Toli-Toli variants
+        if (preg_match('/toli[\s\-]*toli/i', $lowerName)) {
+            return 'Toli-Toli';
+        }
+        
+        // Normalize Tojo Una-Una variants
+        if (preg_match('/tojo[\s\-]*una[\s\-]*una/i', $lowerName)) {
+            return 'Tojo Una-Una';
+        }
+        
+        return Str::title($name);
+    }
+
+    /**
      * @param Collection $rows
      */
     public function collection(Collection $rows)
@@ -38,12 +64,7 @@ class AsesmenImport implements ToCollection, WithHeadingRow, WithChunkReading
 
         foreach ($rows as $row) {
             // Normalize Wilayah name
-            $wilayahName = $row['kota_kabupaten'] ?? ''; // Ensure it's not null
-            // Fix specific case for Tojo Unauna (remove hyphen if present)
-            if (stripos($wilayahName, 'Tojo Una-una') !== false) {
-                $wilayahName = str_ireplace('Tojo Una-una', 'Tojo Unauna', $wilayahName);
-            }
-            $wilayahName = Str::title($wilayahName);
+            $wilayahName = $this->normalizeWilayahName($row['kota_kabupaten'] ?? '');
             if (!$wilayahName) continue;
 
             $wilayahId = $this->getWilayahId($wilayahName);
