@@ -7,6 +7,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class EditProfile extends BaseEditProfile
@@ -52,19 +53,47 @@ class EditProfile extends BaseEditProfile
             ]);
     }
 
+    protected function mutateFormDataBeforeFill(array $data): array
+    {
+        $data['avatar'] = auth()->user()->avatar;
+        return $data;
+    }
+
     protected function mutateFormDataBeforeSave(array $data): array
     {
-        // Handle avatar deletion if old avatar exists and new one is uploaded
-        if (array_key_exists('avatar', $data) && $data['avatar'] !== auth()->user()->avatar) {
-            if (auth()->user()->avatar && Storage::disk('public')->exists(auth()->user()->avatar)) {
-                Storage::disk('public')->delete(auth()->user()->avatar);
+        $user = auth()->user();
+        
+        if (array_key_exists('avatar', $data) && $data['avatar'] !== $user->avatar) {
+            if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+                Storage::disk('public')->delete($user->avatar);
             }
         }
 
-        // Remove current_password from data as it's only for validation
         unset($data['current_password']);
+        return $data;
+    }
 
-        return parent::mutateFormDataBeforeSave($data);
+    public function save(): void
+    {
+        $data = $this->form->getState();
+        $data = $this->mutateFormDataBeforeSave($data);
+
+        $user = auth()->user();
+        
+        if (array_key_exists('avatar', $data)) {
+            $user->avatar = $data['avatar'];
+        }
+        
+        if (isset($data['name'])) {
+            $user->name = $data['name'];
+        }
+        
+        if (!empty($data['password'])) {
+            $user->password = Hash::make($data['password']);
+        }
+        
+        $user->save();
+        $this->afterSave();
     }
 
     protected function afterSave(): void

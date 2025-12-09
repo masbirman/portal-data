@@ -53,19 +53,64 @@ class EditProfile extends BaseEditProfile
             ]);
     }
 
+    protected function mutateFormDataBeforeFill(array $data): array
+    {
+        // Ensure avatar is loaded from the user
+        $data['avatar'] = auth()->user()->avatar;
+        
+        return $data;
+    }
+
     protected function mutateFormDataBeforeSave(array $data): array
     {
         // Handle avatar deletion if old avatar exists and new one is uploaded
-        if (array_key_exists('avatar', $data) && $data['avatar'] !== auth()->user()->avatar) {
-            if (auth()->user()->avatar && Storage::disk('public')->exists(auth()->user()->avatar)) {
-                Storage::disk('public')->delete(auth()->user()->avatar);
+        $user = auth()->user();
+        
+        if (array_key_exists('avatar', $data) && $data['avatar'] !== $user->avatar) {
+            if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+                Storage::disk('public')->delete($user->avatar);
             }
         }
 
         // Remove current_password from data as it's only for validation
         unset($data['current_password']);
 
-        return parent::mutateFormDataBeforeSave($data);
+        return $data;
+    }
+
+    public function save(): void
+    {
+        $data = $this->form->getState();
+        $data = $this->mutateFormDataBeforeSave($data);
+
+        $user = auth()->user();
+        
+        // Explicitly save avatar
+        if (array_key_exists('avatar', $data)) {
+            $user->avatar = $data['avatar'];
+        }
+        
+        // Save name and email
+        if (isset($data['name'])) {
+            $user->name = $data['name'];
+        }
+        if (isset($data['email'])) {
+            $user->email = $data['email'];
+        }
+        
+        // Save password if provided
+        if (!empty($data['password'])) {
+            $user->password = Hash::make($data['password']);
+        }
+        
+        $user->save();
+
+        $this->callAfterSave();
+    }
+
+    protected function callAfterSave(): void
+    {
+        $this->afterSave();
     }
 
     protected function afterSave(): void
