@@ -28,6 +28,29 @@ Route::get('/admin/backup-manager/oauth-callback', function () {
     return redirect('/admin/backup-manager')->with('error', 'OAuth gagal');
 })->middleware(['web', 'auth']);
 
+// Template Download Routes (Admin)
+Route::middleware(['web', 'auth'])->prefix('admin/template')->name('admin.template.')->group(function () {
+    Route::get('/pelaksanaan-asesmen', function () {
+        $filePath = storage_path('app/templates/template_pelaksanaan_asesmen.xlsx');
+        $fileName = 'template_pelaksanaan_asesmen.xlsx';
+        
+        return response()->file($filePath, [
+            'Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+        ]);
+    })->name('pelaksanaan-asesmen');
+    
+    Route::get('/sekolah', function () {
+        $filePath = storage_path('app/templates/template_sekolah.xlsx');
+        $fileName = 'template_sekolah.xlsx';
+        
+        return response()->file($filePath, [
+            'Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+        ]);
+    })->name('sekolah');
+});
+
 // Public Routes
 Route::get('/', [PublicDashboardController::class, 'landing'])->name('public.landing');
 

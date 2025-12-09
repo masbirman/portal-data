@@ -53,7 +53,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                \App\Filament\Widgets\WelcomeWidget::class,
+                AccountWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
