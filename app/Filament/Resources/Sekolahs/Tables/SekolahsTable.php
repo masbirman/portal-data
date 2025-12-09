@@ -15,6 +15,8 @@ class SekolahsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->paginated([10, 25, 50, 100])
+            ->defaultPaginationPageOption(10)
             ->columns([
                 TextColumn::make('jenjangPendidikan.nama')
                     ->label('Jenjang')
