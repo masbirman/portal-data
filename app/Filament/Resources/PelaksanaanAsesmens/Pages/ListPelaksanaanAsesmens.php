@@ -5,7 +5,9 @@ namespace App\Filament\Resources\PelaksanaanAsesmens\Pages;
 use App\Filament\Resources\PelaksanaanAsesmens\PelaksanaanAsesmenResource;
 use App\Models\JenjangPendidikan;
 use App\Models\PelaksanaanAsesmen;
+use App\Models\Sekolah;
 use Filament\Actions;
+use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Schemas\Components\Tabs\Tab;
 use Illuminate\Database\Eloquent\Builder;
@@ -77,6 +79,91 @@ class ListPelaksanaanAsesmens extends ListRecords
                         ->success()
                         ->send();
                 }),
+            Actions\Action::make('sync_status')
+                ->label('Sync Status')
+                ->icon('heroicon-o-arrow-path')
+                ->color('warning')
+                ->requiresConfirmation()
+                ->modalHeading('Sinkronisasi Status Sekolah')
+                ->modalDescription('Ini akan mengupdate status sekolah (Negeri/Swasta) dari data CSV Kemendikdasmen berdasarkan NPSN untuk semua sekolah yang terkait dengan Pelaksanaan Asesmen. Lanjutkan?')
+                ->action(function () {
+                    $result = $this->syncStatusFromCsv();
+
+                    if ($result['updated'] > 0) {
+                        Notification::make()
+                            ->title('Sync Status Selesai')
+                            ->body("Updated: {$result['updated']}, Skipped: {$result['skipped']}, Not Found: {$result['not_found']}")
+                            ->success()
+                            ->persistent()
+                            ->send();
+                    } else {
+                        Notification::make()
+                            ->title('Tidak Ada Perubahan')
+                            ->body("Semua status sudah sinkron. Skipped: {$result['skipped']}, Not Found: {$result['not_found']}")
+                            ->info()
+                            ->persistent()
+                            ->send();
+                    }
+                }),
         ];
+    }
+
+    protected function syncStatusFromCsv(): array
+    {
+        $csvDir = base_path('kabupaten_csv');
+        $files = glob($csvDir . '/*.csv');
+
+        // Load status from CSV indexed by NPSN
+        $csvStatus = [];
+        foreach ($files as $file) {
+            $handle = fopen($file, 'r');
+            $header = fgetcsv($handle);
+            $columns = array_flip($header);
+
+            while (($row = fgetcsv($handle)) !== false) {
+                $npsn = isset($columns['npsn']) && isset($row[$columns['npsn']])
+                    ? trim($row[$columns['npsn']]) : null;
+                $status = isset($columns['status_sekolah']) && isset($row[$columns['status_sekolah']])
+                    ? trim($row[$columns['status_sekolah']]) : null;
+
+                if ($npsn && $status) {
+                    // Normalize status: NEGERI -> Negeri, SWASTA -> Swasta
+                    $csvStatus[$npsn] = ucfirst(strtolower($status));
+                }
+            }
+            fclose($handle);
+        }
+
+        // Get unique schools from PelaksanaanAsesmen
+        $sekolahIds = PelaksanaanAsesmen::distinct()->pluck('sekolah_id');
+
+        // Update schools
+        $stats = ['updated' => 0, 'skipped' => 0, 'not_found' => 0];
+
+        $schools = Sekolah::withoutGlobalScopes()
+            ->whereIn('id', $sekolahIds)
+            ->whereNotNull('npsn')
+            ->where('npsn', '!=', '')
+            ->get();
+
+        foreach ($schools as $school) {
+            if (!isset($csvStatus[$school->npsn])) {
+                $stats['not_found']++;
+                continue;
+            }
+
+            $newStatus = $csvStatus[$school->npsn];
+
+            if ($school->status_sekolah === $newStatus) {
+                $stats['skipped']++;
+                continue;
+            }
+
+            $school->status_sekolah = $newStatus;
+            $school->save();
+            $stats['updated']++;
+        }
+
+        return $stats;
     }
 }
